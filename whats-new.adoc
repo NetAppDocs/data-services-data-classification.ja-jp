@@ -1,0 +1,711 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
+summary: BlueXP classificationの新機能について学びます。 
+---
+= NetAppデータ分類の新機能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification の新機能について説明します。
+
+
+
+== 2025年10月6日
+
+
+
+=== バージョン1.47
+
+.BlueXP classificationはNetAppデータ分類になりました
+BlueXP classificationがNetApp Data Classification に変更されました。名前の変更に加えて、ユーザー インターフェイスも強化されました。
+
+.BlueXPはNetAppコンソールになりました
+BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。
+
+NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
+
+変更内容の詳細については、 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+
+.アクション（プレビュー）
+データ分類では、調査ページでのアクションがサポートされるようになりました。データ分類からファイルをコピー、移動、削除できます。
+
+.ファイルのタグ付けのサポート（プレビュー）
+データ分類では、個々のファイルのタグ付けがサポートされるようになりました。ファイル タグを使用すると、データを識別およびフィルター処理するために使用できる特定のファイルのカスタム識別子を作成できます。タグを使用すると、データ調査で特定の品質を識別したり、タグの結果に基づいて保存されたクエリやポリシーを作成したりできます。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["ファイルのメタデータを表示"] 。
+
+.保存されたクエリのポリシー（プレビュー）
+保存された検索の名前が保存されたクエリに変更されました。保存したクエリを実用的なポリシーに変換することもできます。保存したクエリ結果に基づいて、データを削除したり、電子メール通知を送信したりすることができます。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["ポリシーを作成"] 。
+
+
+
+== 2025年8月11日
+
+
+
+=== バージョン1.46
+
+このデータ分類リリースには、バグ修正と次の更新が含まれています。
+
+.監査ページでのスキャンイベントの分析情報が強化されました
+監査ページでは、 BlueXP classificationのスキャン イベントに関する強化された分析がサポートされるようになりました。監査ページには、システムのスキャンが開始された日時、システムのステータス、および問題が表示されるようになりました。共有とシステムのステータスはマッピング スキャンでのみ使用できます。
+
+監査ページの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["NetAppコンソールの操作を監視する"^] 。
+
+.RHEL 9.6 のサポート
+このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。
+
+次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、9.4、および 9.5。
+
+
+
+== 2025年7月14日
+
+
+
+=== バージョン1.45
+
+このBlueXP classificationリリースには、リソース使用率を最適化するコード変更が含まれており、次のようになります。
+
+.スキャン対象ファイル共有を追加するワークフローの改善
+ファイル共有グループにファイル共有を追加するワークフローが簡素化されました。このプロセスでは、認証タイプ (Kerberos または NTLM) に基づいて CIFS プロトコルのサポートも区別されるようになりました。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-scanning-file-shares.html["ファイル共有をスキャンする"] 。
+
+.拡張ファイル所有者情報
+調査タブでキャプチャされたファイルのファイル所有者に関する詳細情報を表示できるようになりました。 [調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directory が稼働している作業環境でのみ使用できます。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["組織内に保存されているデータを調査する"] 。
+
+
+
+== 2025年6月10日
+
+
+
+=== バージョン1.44
+
+このBlueXP classificationリリースには以下が含まれます。
+
+.ガバナンスダッシュボードの更新時間の改善
+ガバナンス ダッシュボードの個々のコンポーネントの更新時間が改善されました。次の表は、各コンポーネントの更新頻度を示しています。
+
+[cols="1,1"]
+|===
+| コンポーネント | 更新時間 
+
+
+| データの時代 | 24 時間 
+
+
+| カテゴリ | 24 時間 
+
+
+| データの概要 | 5分 
+
+
+| 重複ファイル | 2 時間 
+
+
+| ファイルの種類 | 24 時間 
+
+
+| 非ビジネスデータ | 2 時間 
+
+
+| オープン権限 | 24 時間 
+
+
+| 保存されたクエリ | 2 時間 
+
+
+| 機密データと幅広い権限 | 24 時間 
+
+
+| データのサイズ | 24 時間 
+
+
+| 古いデータ | 2 時間 
+
+
+| 機密レベル別トップデータリポジトリ | 2 時間 
+|===
+最終更新の時刻を表示し、重複ファイル、非ビジネス データ、保存されたクエリ、古いデータ、および機密レベル別の上位データ リポジトリ コンポーネントを手動で更新できます。ガバナンスダッシュボードの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["組織に保存されているデータに関するガバナンスの詳細を表示する"] 。
+
+.パフォーマンスとセキュリティの改善
+BlueXP分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。
+
+.バグ修正
+Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。  BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。
+
+
+
+== 2025年5月12日
+
+
+
+=== バージョン1.43
+
+このデータ分類リリースには以下が含まれます。
+
+.分類スキャンの優先順位付け
+データ分類では、マッピングのみのスキャンに加えて、マップと分類のスキャンを優先順位付けする機能がサポートされており、最初に完了するスキャンを選択できます。マップと分類スキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンを優先することを選択した場合、マッピングスキャンと分類スキャンの両方が優先されます。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンを優先する"] 。
+
+.カナダの個人識別情報（PII）データカテゴリのサポート
+データ分類スキャンは、カナダの PII データ カテゴリを識別します。これらのカテゴリには、すべてのカナダの州および準州の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康保険証番号が含まれます。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["個人データのカテゴリ"] 。
+
+.カスタム分類（プレビュー）
+データ分類では、マップと分類スキャンのカスタム分類をサポートします。カスタム分類を使用すると、正規表現を使用して組織固有のデータを取得するようにデータ分類スキャンをカスタマイズできます。この機能は現在プレビュー段階です。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["カスタム分類を追加する"] 。
+
+.保存されたクエリタブ
+**ポリシー**タブの名前が変更されましたlink:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**保存されたクエリ**"]。機能に変更はありません。
+
+.スキャンイベントを監査ページに送信する
+データ分類は、分類イベント（スキャンの開始時と終了時）をlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetAppコンソール監査ページ"^]。
+
+.セキュリティアップデート
+* Keras パッケージが更新され、脆弱性 (BDSA-2025-0107 および BDSA-2025-1984) が軽減されました。
+* Docker コンテナの構成が更新されました。コンテナは、生のネットワーク パケットを作成するためにホストのネットワーク インターフェイスにアクセスできなくなります。このアップデートでは、不要なアクセスを減らすことで、潜在的なセキュリティ リスクを軽減します。
+
+
+.パフォーマンスの向上
+RAM 使用量を削減し、データ分類の全体的なパフォーマンスを向上させるために、コード強化が実装されました。
+
+.バグ修正
+StorageGRIDスキャンが失敗し、調査ページのフィルター オプションが読み込まれず、大量の評価でデータ検出評価がダウンロードされないというバグが修正されました。
+
+
+
+== 2025年4月14日
+
+
+
+=== バージョン1.42
+
+このBlueXP classificationリリースには以下が含まれます。
+
+.作業環境の一括スキャン
+BlueXP classificationは、作業環境の一括操作をサポートします。作業環境において、マッピング スキャンを有効にするか、マップと分類スキャンを有効にするか、スキャンを無効にするか、ボリューム全体にカスタム構成を作成するかを選択できます。個々のボリュームを選択した場合は、一括選択が上書きされます。一括操作を実行するには、[**構成**] ページに移動して選択を行います。
+
+.調査レポートをローカルにダウンロードする
+BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用でき、最初の 10,000 行のデータのみが表示されます。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["BlueXP classificationを使用して組織内に保存されているデータを調査します"] 。
+
+
+
+== 2025年3月10日
+
+
+
+=== バージョン1.41
+
+このBlueXP classificationリリースには、一般的な改善とバグ修正が含まれています。また、次のものも含まれます:
+
+.スキャンステータス
+BlueXP classificationは、ボリューム上の初期マッピングおよび分類スキャンの進行状況をリアルタイムで追跡します。個別のプログレッシブ バーでマッピング スキャンと分類スキャンが追跡され、スキャンされたファイルの合計数の割合が表示されます。進行状況バーにマウスを移動すると、スキャンされたファイルの数とファイルの合計数を表示することもできます。スキャンのステータスを追跡すると、スキャンの進行状況に関するより深い分析情報が得られ、スキャンをより適切に計画し、リソースの割り当てを把握できるようになります。
+
+スキャンのステータスを表示するには、 BlueXP classificationの **構成** に移動し、**作業環境構成** を選択します。各ボリュームごとに進行状況が一行で表示されます。
+
+
+
+== 2025年2月19日
+
+
+
+=== バージョン1.40
+
+このBlueXP classificationリリースには、次の更新が含まれています。
+
+.RHEL 9.5 のサポート
+このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v9.5 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。
+
+次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、9.4、および 9.5。
+
+.マッピングのみのスキャンを優先する
+マッピングのみのスキャンを実行する場合、最も重要なスキャンを優先できます。この機能は、作業環境が多数あり、優先度の高いスキャンが最初に完了するようにしたい場合に役立ちます。
+
+デフォルトでは、スキャンは開始された順序に基づいてキューに入れられます。スキャンを優先順位付けする機能を使用すると、スキャンをキューの先頭に移動できます。複数のスキャンを優先できます。優先順位は先入れ先出しの順序で指定されます。つまり、最初に優先順位を指定したスキャンがキューの先頭に移動し、2 番目に優先順位を指定したスキャンはキューの 2 番目になり、以下同様に続きます。
+
+優先権は 1 回限り付与されます。マッピング データの自動再スキャンはデフォルトの順序で実行されます。
+
+優先順位はlink:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["マッピングのみのスキャン"^]; マップスキャンや分類スキャンには使用できません。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンを優先する"^] 。
+
+.すべてのスキャンを再試行する
+BlueXP classificationは、失敗したすべてのスキャンを一括して再試行する機能をサポートしています。
+
+**すべて再試行** 機能を使用すると、バッチ操作でスキャンを再試行できます。ネットワークの停止などの一時的な問題により分類スキャンが失敗した場合は、スキャンを個別に再試行するのではなく、1 つのボタンですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。
+
+すべてのスキャンを再試行するには:
+
+. BlueXP classificationメニューから、*構成*を選択します。
+. 失敗したスキャンをすべて再試行するには、「すべてのスキャンを再試行」を選択します。
+
+
+.分類モデルの精度向上
+機械学習モデルの精度はlink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["定義済みカテゴリ"]11%向上しました。
+
+
+
+== 2025年1月22日
+
+
+
+=== バージョン1.39
+
+このBlueXP classificationリリースでは、データ調査レポートのエクスポート プロセスが更新されます。このエクスポートの更新は、データの追加分析を実行したり、データで追加の視覚化を作成したり、データ調査の結果を他のユーザーと共有したりするのに役立ちます。
+
+以前は、データ調査レポートのエクスポートは 10,000 行に制限されていました。このリリースでは、制限が解除され、すべてのデータをエクスポートできるようになりました。この変更により、データ調査レポートからより多くのデータをエクスポートできるようになり、データ分析の柔軟性が向上します。
+
+作業環境、ボリューム、保存先フォルダー、JSON または CSV 形式を選択できます。エクスポートされたファイル名には、データがいつエクスポートされたかを識別するのに役立つタイムスタンプが含まれます。
+
+サポートされている作業環境は次のとおりです。
+
+* Cloud Volumes ONTAP
+* ONTAP向け FSx
+* ONTAP
+* 共有グループ
+
+
+データ調査レポートからのデータのエクスポートには、次の制限があります。
+
+* ダウンロードできるレコードの最大数は、タイプ（ファイル、ディレクトリ、テーブル）ごとに5億件です。
+* 100 万件のレコードをエクスポートするには約 35 分かかると予想されます。
+
+
+データ調査とレポートの詳細については、 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["組織内に保存されているデータを調査する"] 。
+
+
+
+== 2024年12月16日
+
+
+
+=== バージョン1.38
+
+このBlueXP classificationリリースには、一般的な改善とバグ修正が含まれています。
+
+
+
+== 2024年11月4日
+
+
+
+=== バージョン1.37
+
+このBlueXP classificationリリースには、次の更新が含まれています。
+
+.RHEL 8.10 のサポート
+このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v8.10 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。
+
+次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、および 9.4。
+
+詳細はこちら https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"]。
+
+.NFS v4.1 のサポート
+このリリースでは、以前サポートされていたバージョンに加えて、NFS v4.1 のサポートも提供されます。
+
+詳細はこちら https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"]。
+
+
+
+== 2024年10月10日
+
+
+
+=== バージョン1.36
+
+.RHEL 9.4 のサポート
+このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v9.4 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。
+
+次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、9.0、9.1、9.2、9.3、および 9.4。
+
+詳細はこちら https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP classification展開の概要"]。
+
+.スキャンパフォーマンスの向上
+このリリースでは、スキャン パフォーマンスが向上しました。
+
+
+
+== 2024年9月2日
+
+
+
+=== バージョン1.35
+
+.StorageGRIDデータをスキャンする
+BlueXP classificationは、 StorageGRID内のデータのスキャンをサポートします。
+
+詳細については、link:task-scanning-storagegrid.html["StorageGRIDデータをスキャンする"] 。
+
+
+
+== 2024年8月5日
+
+
+
+=== バージョン1.34
+
+このBlueXP classificationリリースには、次の更新が含まれています。
+
+.CentOSからUbuntuへの変更
+BlueXP classificationは、 Microsoft Azure および Google Cloud Platform (GCP) 向けの Linux オペレーティング システムを CentOS 7.9 から Ubuntu 22.04 に更新しました。
+
+展開の詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["インターネットにアクセスできる Linux ホストにインストールし、Linux ホスト システムを準備します。"] 。
+
+
+
+== 2024年7月1日
+
+
+
+=== バージョン1.33
+
+.Ubuntuをサポート
+このリリースは、Ubuntu 24.04 Linux プラットフォームをサポートしています。
+
+.マッピングスキャンはメタデータを収集する
+次のメタデータはマッピング スキャン中にファイルから抽出され、ガバナンス、コンプライアンス、調査のダッシュボードに表示されます。
+
+* 労働環境
+* 作業環境の種類
+* ストレージリポジトリ
+* ファイル タイプ
+* 使用済み容量
+* ファイル数
+* ファイル サイズ
+* ファイル作成
+* ファイルの最終アクセス
+* ファイルの最終更新日時
+* ファイル発見時刻
+* 権限の抽出
+
+
+.ダッシュボードの追加データ
+このリリースでは、マッピング スキャン中にガバナンス、コンプライアンス、調査ダッシュボードに表示されるデータが更新されます。
+
+詳細については、 link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["マッピングスキャンと分類スキャンの違いは何ですか？"] 。
+
+
+
+== 2024年6月5日
+
+
+
+=== バージョン1.32
+
+.構成ページの新しいマッピングステータス列
+このリリースでは、構成ページに新しいマッピング ステータス列が表示されるようになりました。新しい列は、マッピングが実行中か、キューに入れられているか、一時停止中かなどを識別するのに役立ちます。
+
+ステータスの説明については、 https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html["スキャン設定を変更する"] 。
+
+
+
+== 2024年5月15日
+
+
+
+=== バージョン1.31
+
+.分類はBlueXPのコアサービスとして利用可能
+BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。この新しいバージョンでは、 BlueXP classification機能をNetAppストレージ システムのスキャンに重点的に取り組んでいるため、一部の従来の機能は、以前にライセンスを支払った顧客のみが利用できるようになります。これらのレガシー機能の使用は、有料契約の終了日に達すると無効になります。
+
+
+NOTE: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+
+
+
+== 2024年4月1日
+
+
+
+=== バージョン1.30
+
+.RHEL v8.8 および v9.3 BlueXP classificationのサポートが追加されました
+このリリースでは、Docker エンジンではなく Podman を必要とする、以前サポートされていた 9.x に加えて、Red Hat Enterprise Linux v8.8 および v9.3 のサポートも提供されます。これは、 BlueXP classificationの手動オンプレミス インストールに適用されます。
+
+次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、9.0、9.1、9.2、および 9.3。
+
+詳細はこちら https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["BlueXP classification展開の概要"]。
+
+オンプレミスにある RHEL 8 または 9 ホストにコネクタをインストールする場合、 BlueXP classificationがサポートされます。RHEL 8 または 9 ホストが AWS、Azure、または Google Cloud に存在する場合はサポートされません。
+
+.監査ログ収集を有効にするオプションが削除されました
+監査ログ収集を有効にするオプションが無効になっています。
+
+.スキャン速度の向上
+セカンダリ スキャナー ノードでのスキャン パフォーマンスが向上しました。スキャンに追加の処理能力が必要な場合は、スキャナー ノードを追加できます。詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるホストにBlueXP classificationをインストールする"] 。
+
+.自動アップグレード
+インターネットにアクセスできるシステムにBlueXP classificationを展開した場合、システムは自動的にアップグレードされます。以前は、最後のユーザー アクティビティから特定の時間が経過した後にアップグレードが実行されていました。このリリースでは、現地時間が午前 1 時から午前 5 時の間であれば、 BlueXP classificationは自動的にアップグレードされます。現地時間がこれらの時間外の場合、最後のユーザーアクティビティから特定の時間が経過した後にアップグレードが行われます。詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにインストールする"] 。
+
+インターネットにアクセスせずにBlueXP classificationを展開した場合は、手動でアップグレードする必要があります。詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["インターネットにアクセスできない Linux ホストにBlueXP classificationをインストールする"] 。
+
+
+
+== 2024年3月4日
+
+
+
+=== バージョン1.29
+
+.特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました
+BlueXP classificationで特定のデータ ソース ディレクトリにあるスキャン データを除外する場合は、 BlueXP classificationが処理する構成ファイルにこれらのディレクトリ名を追加できます。この機能により、不要なディレクトリのスキャンや、誤った個人データ結果が返されるディレクトリのスキャンを回避できます。
+
+https://docs.netapp.com/us-en/data-services-data-classification/task-exclude-scan-paths.html["詳細情報"] 。
+
+.エクストララージインスタンスのサポートが認定されました
+2 億 5,000 万を超えるファイルをスキャンするためにBlueXP classificationが必要な場合は、クラウド展開またはオンプレミス インストールで特大インスタンスを使用できます。このタイプのシステムは最大 5 億個のファイルをスキャンできます。
+
+https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#the-data-classification-instance["詳細情報"] 。
+
+
+
+== 2024年1月10日
+
+
+
+=== バージョン1.27
+
+.調査ページの結果には、アイテムの合計数に加えて合計サイズが表示されます。
+調査ページのフィルタリングされた結果には、ファイルの合計数に加えて、アイテムの合計サイズが表示されます。これは、ファイルを移動したり、削除したりする場合などに役立ちます。
+
+.追加のグループIDを「組織に公開」として設定する
+グループが最初にその権限で設定されていなかった場合、NFS 内のグループ ID をBlueXP classificationから直接「組織に公開」として設定できるようになりました。これらのグループ ID が添付されているファイルとフォルダーは、調査の詳細ページで「組織に公開」として表示されます。方法を見るlink:https://docs.netapp.com/us-en/data-services-data-classification/task-add-group-id-as-open.html["追加のグループIDを「組織に公開」として追加する"]。
+
+
+
+== 2023年12月14日
+
+
+
+=== バージョン1.26.6
+
+このリリースにはいくつかのマイナーな機能強化が含まれています。
+
+このリリースでは、次のオプションも削除されました。
+
+* 監査ログ収集を有効にするオプションが無効になっています。
+* ディレクトリ調査中は、ディレクトリ別に個人識別情報 (PII) データの数を計算するオプションは使用できません。。 link:task-investigate-data.html["組織内に保存されているデータを調査する"] 。
+* Azure Information Protection (AIP) ラベルを使用してデータを統合するオプションが無効になりました。
+
+
+
+
+== 2023年11月6日
+
+
+
+=== バージョン1.26.3
+
+このリリースでは以下の問題が修正されました
+
+* ダッシュボードでシステムによってスキャンされたファイルの数を表示する際の不一致を修正しました。
+* 名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることにより、スキャン動作が改善されました。
+
+
+
+
+== 2023年10月4日
+
+
+
+=== バージョン1.26
+
+.RHEL バージョン 9 でのBlueXP classificationのオンプレミス インストールのサポート
+Red Hat Enterprise Linux バージョン 8 および 9 は、 BlueXP classificationのインストールに必要な Docker エンジンをサポートしていません。コンテナ インフラストラクチャとして Podman バージョン 4 以上を使用して、RHEL 9.0、9.1、9.2 へのBlueXP classificationのインストールをサポートするようになりました。ご使用の環境で最新バージョンの RHEL を使用する必要がある場合は、Podman を使用するときにBlueXP classification(バージョン 1.26 以上) をインストールできるようになりました。
+
+現時点では、RHEL 9.x を使用する場合、ダーク サイトのインストールまたは分散スキャン環境 (マスター スキャナー ノードとリモート スキャナー ノードを使用) はサポートされていません。
+
+
+
+== 2023年9月5日
+
+
+
+=== バージョン1.25
+
+.小規模および中規模の展開は一時的に利用できません
+AWS でBlueXP classificationのインスタンスをデプロイする場合、*デプロイ > 構成* を選択して小規模または中規模のインスタンスを選択するオプションは現時点では使用できません。*[デプロイ] > [デプロイ]* を選択すると、大きなインスタンス サイズを使用してインスタンスをデプロイできます。
+
+.調査結果ページから最大10万件のアイテムにタグを適用します
+これまでは、調査結果ページで一度に 1 ページにしかタグを適用できませんでした (20 項目)。調査結果ページですべての項目を選択し、一度に最大 100,000 項目まですべての項目にタグを適用できるようになりました。
+
+.最小ファイルサイズが 1 MB の重複ファイルを識別します
+BlueXP classificationは、ファイルが 50 MB 以上の場合にのみ重複ファイルを識別します。1 MB から始まる重複ファイルを識別できるようになりました。調査ページのフィルター「ファイル サイズ」と「重複」を使用すると、環境内で重複している特定のサイズのファイルを確認できます。
+
+
+
+== 2023年7月17日
+
+
+
+=== バージョン1.24
+
+.BlueXP classificationにより、ドイツの個人データの2つの新しいタイプが特定されました
+BlueXP classificationでは、次の種類のデータを含むファイルを識別して分類できます。
+
+* ドイツの ID (Personalausweisnummer)
+* ドイツの社会保障番号 (Sozialversicherungsnummer)
+
+
+link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["BlueXP classificationがあなたのデータ内で識別できるすべての個人データの種類を確認します"] 。
+
+.BlueXP classificationは制限モードとプライベートモードで完全にサポートされています
+BlueXP classificationは、インターネット アクセスがないサイト (プライベート モード) およびインターネットからの送信アクセスが制限されているサイト (制限モード) でも完全にサポートされるようになりました。link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["コネクタのBlueXP展開モードの詳細"^] 。
+
+.BlueXP classificationのプライベートモードインストールをアップグレードするときにバージョンをスキップする機能
+順次的でない場合でも、 BlueXP classificationの新しいバージョンにアップグレードできるようになりました。つまり、 BlueXP classificationを一度に 1 バージョンずつアップグレードするという現在の制限は必要なくなります。この機能はバージョン 1.24 以降で適用されます。
+
+.BlueXP classificationAPIが利用可能になりました
+BlueXP classificationAPI を使用すると、アクションの実行、クエリの作成、スキャンしているデータに関する情報のエクスポートが可能になります。インタラクティブなドキュメントは Swagger を使用して利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、 BlueXP classificationUI のタブへの参照です。
+
+link:https://docs.netapp.com/us-en/data-services-data-classification/api-classification.html["BlueXP classificationAPIの詳細"] 。
+
+
+
+== 2023年6月6日
+
+
+
+=== バージョン1.23
+
+.データ主体名の検索時に日本語がサポートされるようになりました
+データ主体アクセス要求 (DSAR) に応じて主体の名前を検索するときに、日本語の名前を入力できるようになりました。生成することができますlink:https://docs.netapp.com/us-en/data-services-data-classification/task-generating-compliance-reports.html["データ主体アクセス要求レポート"]結果の情報とともに。日本語名を入力することもできますlink:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["データ調査ページの「データ主体」フィルター"]対象者の名前が含まれるファイルを識別します。
+
+.Ubuntuは現在、BlueXP classificationをインストールできるLinuxディストリビューションとしてサポートされています。
+Ubuntu 22.04 は、 BlueXP classificationのサポート対象オペレーティング システムとして認定されました。インストーラーのバージョン 1.23 を使用する場合、ネットワーク内の Ubuntu Linux ホスト、またはクラウド内の Linux ホストにBlueXP classificationをインストールできます。 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP classificationをインストールする方法をご覧ください"] 。
+
+.Red Hat Enterprise Linux 8.6 および 8.7 は、新しいBlueXP classificationのインストールではサポートされなくなりました。
+Red Hat は前提条件である Docker をサポートしなくなったため、これらのバージョンは新しいデプロイメントではサポートされません。  RHEL 8.6 または 8.7 で実行されている既存のBlueXP classificationマシンがある場合、 NetApp は引き続きその構成をサポートします。
+
+.BlueXP classificationは、 ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます。
+作業環境内のボリュームで検出されたファイル アクセス イベントについて、 BlueXP classificationシステムでファイル アクセス監査ログを収集できるようにすることができます。  BlueXP classificationでは、作成、読み取り、書き込み、削除、名前の変更、所有者/権限の変更、SACL/DACL の変更といった FPolicy イベントの種類と、ファイルに対してアクションを実行したユーザーをキャプチャできます。
+
+.Data Sense BYOLライセンスがダークサイトでサポートされるようになりました
+ライセンスが少なくなると通知が届くように、Data Sense BYOL ライセンスをダーク サイトのBlueXP digital walletにアップロードできるようになりました。
+
+
+
+== 2023年4月3日
+
+
+
+=== バージョン1.22
+
+.新しいデータ検出評価レポート
+データ検出評価レポートでは、スキャンされた環境の高レベルの分析が提供され、システムの検出結果が強調表示され、懸念される領域と潜在的な修復手順が示されます。このレポートの目的は、データ セットのデータ ガバナンスの懸念、データ セキュリティの露出、およびデータ コンプライアンスのギャップについての認識を高めることです。 https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["データ検出評価レポートの生成方法と使用方法をご覧ください"] 。
+
+.クラウド内の小規模なインスタンスにBlueXP classificationを展開する機能
+AWS 環境でBlueXPコネクタからBlueXP classificationを展開する場合、デフォルトのインスタンスで使用できるものよりも小さい 2 つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合、クラウド コストを節約できます。ただし、小さいインスタンスを使用する場合は、いくつかの制限があります。 https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["利用可能なインスタンスタイプと制限事項を確認する"] 。
+
+.BlueXP classificationのインストール前に Linux システムを認定するためのスタンドアロン スクリプトが利用可能になりました
+BlueXP classificationインストールの実行とは別に、Linux システムがすべての前提条件を満たしていることを確認したい場合は、前提条件のみをテストする別のスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/data-services-data-classification/task-test-linux-system.html["LinuxホストがBlueXP classificationをインストールする準備ができているかどうかを確認する方法をご覧ください"] 。
+
+
+
+== 2023年3月7日
+
+
+
+=== バージョン1.21
+
+.BlueXP classificationUIから独自のカスタムカテゴリを追加できる新機能
+BlueXP classificationでは、独自のカスタム カテゴリを追加できるようになりました。これにより、 BlueXP classificationはそれらのカテゴリに適合するファイルを識別します。  BlueXP classificationには多くの https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["定義済みカテゴリ"]この機能を使用すると、カスタム カテゴリを追加して、組織固有の情報がデータ内のどこにあるかを識別することができます。
+
+.BlueXP classificationUIからカスタムキーワードを追加できるようになりました
+BlueXP classificationには、しばらくの間、将来のスキャンでBlueXP classificationが識別するカスタム キーワードを追加する機能がありました。ただし、キーワードを追加するには、 BlueXP classificationLinux ホストにログインし、コマンド ライン インターフェイスを使用する必要がありました。このリリースでは、カスタム キーワードを追加する機能がBlueXP classificationUI に組み込まれ、これらのキーワードの追加と編集が非常に簡単になりました。
+
+.「最終アクセス時間」が変更された場合、 BlueXP classificationでファイルをスキャンしないようにする機能
+デフォルトでは、 BlueXP classificationに適切な「書き込み」権限がない場合、 BlueXP classificationは「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のファイルをスキャンしません。ただし、ファイルの最終アクセス時刻が元の時刻にリセットされても問題がない場合は、構成ページでこの動作を上書きして、 BlueXP classificationが権限に関係なくボリュームをスキャンするようにすることができます。
+
+この機能と連動して、「スキャン分析イベント」という新しいフィルターが追加され、 BlueXP classificationで最終アクセス時間を戻せなかったために分類されなかったファイル、またはBlueXP classificationで最終アクセス時間を戻せなかったにもかかわらず分類されたファイルを表示できるようになりました。
+
+https://docs.netapp.com/us-en/data-services-data-classification/reference-collected-metadata.html["「最終アクセスタイムスタンプ」とBlueXP classificationに必要な権限について詳しくは、こちらをご覧ください。"] 。
+
+.BlueXP classificationにより3つの新しいタイプの個人データが識別される
+BlueXP classificationでは、次の種類のデータを含むファイルを識別して分類できます。
+
+* ボツワナ ID カード (オマン) 番号
+* ボツワナのパスポート番号
+* シンガポール国民登録身分証明書（NRIC）
+
+
+https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["BlueXP classificationがあなたのデータ内で識別できるすべての個人データの種類を確認します"] 。
+
+.ディレクトリの機能を更新しました
+* データ調査レポートの「軽量 CSV レポート」オプションに、ディレクトリからの情報が含まれるようになりました。
+* 「最終アクセス」時間フィルターに、ファイルとディレクトリの両方の最終アクセス時間が表示されるようになりました。
+
+
+.インストールの機能強化
+* インターネットにアクセスできないサイト (ダークサイト) 用のBlueXP classificationインストーラーは、インストールを正常に実行するために必要なシステムとネットワークの要件が満たされているかどうかを確認するための事前チェックを実行するようになりました。
+* インストール監査ログファイルは保存され、次の場所に書き込まれます。 `/ops/netapp/install_logs` 。
+
+
+
+
+== 2023年2月5日
+
+
+
+=== バージョン1.20
+
+.ポリシーベースの通知メールを任意のメールアドレスに送信する機能
+BlueXP classificationの以前のバージョンでは、特定の重要なポリシーが結果を返すときに、アカウント内のBlueXPユーザーに電子メールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、 BlueXPアカウントに登録されていない他のユーザー (最大 20 件の電子メール アドレス) に電子メール アラートを送信できるようになりました。
+
+https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["ポリシー結果に基づいてメールアラートを送信する方法の詳細"] 。
+
+.BlueXP classificationUIから個人パターンを追加できるようになりました
+BlueXP classificationには、しばらくの間、将来のスキャンでBlueXP classificationが識別するカスタム「個人データ」を追加する機能がありました。ただし、カスタム パターンを追加するには、 BlueXP classificationLinux ホストにログインし、コマンド ラインを使用する必要がありました。このリリースでは、正規表現を使用して個人パターンを追加する機能がBlueXP classificationUI に組み込まれ、これらのカスタム パターンの追加と編集が非常に簡単になりました。
+
+.BlueXP classificationを使用して1500万個のファイルを移動する能力
+以前は、 BlueXP classificationによって最大 100,000 個のソース ファイルを任意の NFS 共有に移動できました。一度に最大 1500 万個のファイルを移動できるようになりました。
+
+.SharePoint Online ファイルにアクセスできるユーザーの数を確認する機能
+「アクセス権を持つユーザーの数」フィルターは、SharePoint Online リポジトリに保存されているファイルをサポートするようになりました。以前は、CIFS 共有上のファイルのみがサポートされていました。現時点では、アクティブ ディレクトリ ベースではない SharePoint グループはこのフィルターではカウントされないことに注意してください。
+
+.アクションステータスパネルに新しい「部分的成功」ステータスが追加されました
+新しい「部分的な成功」ステータスは、 BlueXP classificationアクションが完了し、一部の項目は失敗し、一部の項目は成功したことを示します (たとえば、100 個のファイルを移動または削除する場合)。さらに、「完了」ステータスの名前が「成功」に変更されました。以前は、「完了」ステータスに成功したアクションと失敗したアクションがリストされることがありました。ここで、「成功」ステータスは、すべてのアイテムに対するすべてのアクションが成功したことを意味します。 https://docs.netapp.com/us-en/data-services-data-classification/task-view-compliance-actions.html["アクションステータスパネルの表示方法を確認する"] 。
+
+
+
+== 2023年1月9日
+
+
+
+=== バージョン1.19
+
+.機密データを含むファイルと過度に許可されているファイルのチャートを表示する機能
+ガバナンス ダッシュボードに、機密データ (機密データと機密個人データの両方を含む) を含むファイルと過度に許可されているファイルのヒートマップを提供する新しい [機密データと幅広い権限] 領域が追加されました。これにより、機密データにリスクがある可能性がある場所を確認するのに役立ちます。 https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["詳細情報"] 。
+
+.データ調査ページで3つの新しいフィルターが利用可能になりました
+データ調査ページに表示される結果を絞り込むための新しいフィルターが利用可能になりました。
+
+* 「アクセス権を持つユーザー数」フィルターは、特定の数のユーザーに公開されているファイルとフォルダーを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51 ～ 100 人のユーザーがアクセスできるファイルを確認することができます。
+* 「作成時刻」、「検出時刻」、「最終更新日時」、および「最終アクセス日時」フィルターでは、事前定義された日数の範囲を選択するだけでなく、カスタムの日付範囲を作成できるようになりました。たとえば、「作成日時」が「6 か月以上前」のファイルや、「最終更新日時」が「過去 10 日以内」のファイルを検索できます。
+* 「ファイル パス」フィルターを使用すると、フィルターされたクエリ結果から除外するパスを指定できるようになりました。特定のデータを含めるパスと除外するパスの両方を入力すると、 BlueXP classificationは最初に含めるパス内のすべてのファイルを検索し、次に除外するパスからファイルを削除して、結果を表示します。
+
+
+https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["データを調査するために使用できるすべてのフィルターのリストを表示します"] 。
+
+.BlueXP classificationは日本のマイナンバーを識別できる
+BlueXP classificationは、日本の個人番号 (マイナンバーとも呼ばれます) を含むファイルを識別して分類できます。これには個人マイナンバーと法人マイナンバーの両方が含まれます。 https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["BlueXP classificationがあなたのデータ内で識別できるすべての個人データの種類を確認します"] 。

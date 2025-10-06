@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: task-access.html 
+keywords: log in, sign in 
+summary: NetAppコンソールでサービスにアクセスして、 NetApp Data Classification を開始します。 
+---
+= NetAppデータ分類にアクセス
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppコンソールからNetAppデータ分類にアクセスできます。
+
+コンソールにサインインするには、 NetAppサポート サイトの認証情報を使用するか、電子メールとパスワードを使用してNetAppコンソール ログインにサインアップすることができます。link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["コンソールへのログインについて詳しくは"^] 。
+
+特定のタスクには、特定のコンソール ユーザー ロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+
+.開始する前に
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コンソール エージェントを追加する必要があります。"^]
+* link:task-deploy-cloud-compliance.html["どのデータ分類展開スタイルがワークロードに適しているかを理解します。"]
+
+
+.手順
+. ウェブブラウザで、link:https://console.netapp.com/["コンソール"^] 。
+. コンソールにログインします。
+. NetAppコンソールのメイン ページから、*ガバナンス* > *データ分類* を選択します。
+. 初めてデータ分類にアクセスする場合は、ランディング ページが表示されます。
++
+分類インスタンスの展開を開始するには、*オンプレミスまたはクラウドでの分類の展開*を選択します。詳細については、link:task-deploy-cloud-compliance.html["どのデータ分類展開を使用する必要がありますか?"]
+
++
+image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
+
++
+それ以外の場合は、データ分類ダッシュボードが表示されます。
+
+

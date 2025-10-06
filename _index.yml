@@ -1,0 +1,62 @@
+---
+indexpage:
+  title: NetAppデータ分類ドキュメント
+  summary: NetApp Data Classificaiton を使用すると、組織のハイブリッド マルチクラウド全体のデータをスキャンして分類できます。データ分類では、AI
+    駆動型の自然言語処理 (NLP) を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速化を実現します。
+  keywords: bluexp, data classification, cloud data sense, data sense, compliance,
+    security, netapp console, bluexp classification
+  lead: NetApp Data Classificaiton を使用すると、組織のハイブリッド マルチクラウド全体のデータをスキャンして分類できます。データ分類では、AI
+    駆動型の自然言語処理 (NLP) を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速化を実現します。
+  tiles:
+  - title: 始めましょう
+    links:
+    - title: データ分類について学ぶ
+      url: concept-classification.html
+    - title: 最新情報
+      url: whats-new.html
+    - title: クラウドでデータ分類を展開
+      url: task-deploy-cloud-compliance.html
+    - title: インターネットに接続できるLinuxホストにデータ分類をインストールする
+      url: task-deploy-compliance-onprem.html
+  - title: データソースをスキャンする
+    links:
+    - title: Amazon FSxのONTAPボリュームをスキャンする
+      url: task-scanning-fsx.html
+    - title: Azure NetApp Filesボリュームをスキャンする
+      url: task-scanning-anf.html
+    - title: Cloud Volumes ONTAPボリュームをスキャンする
+      url: task-getting-started-compliance.html
+    - title: データベーススキーマをスキャンする
+      url: task-scanning-databases.html
+    - title: ファイル共有をスキャンする（CIFS、NFS）
+      url: task-scanning-file-shares.html
+    - title: オンプレミスのONTAPボリュームをスキャンする
+      url: task-getting-started-compliance.html
+    - title: StorageGRIDをスキャン
+      url: task-scanning-storagegrid.html
+  - title: データの詳細を表示する
+    links:
+    - title: 個人情報を含むファイルを表示する
+      url: task-controlling-private-data.html
+    - title: ストレージ内に重複したファイルを表示する
+      url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
+    - title: データをフィルタリングして特定のファイルを表示する
+      url: task-investigate-data.html
+    - title: 保存したクエリを作成する
+      url: task-using-policies.html
+    - title: コンプライアンスレポートを生成する
+      url: task-generating-compliance-reports.html
+    - title: データ主体のアクセス要求への対応
+      url: task-generating-compliance-reports.html
+  - title: ブログとコミュニティ
+    links:
+    - title: NetAppコンソール
+      url: https://www.netapp.com/console
+    - title: NetAppデータサービス
+      url: https://www.netapp.com/data-services/
+    - title: NetAppコミュニティ
+      url: https://community.netapp.com/
+    - title: データ分類のユースケース
+      url: https://bluexp.netapp.com/netapp-cloud-data-sense
+    - title: データ分類ビデオ
+      url: https://youtube.com/playlist?list=PLdXI3bZJEw7m0dFDhu3w6Yqt71Zqyl2Pw

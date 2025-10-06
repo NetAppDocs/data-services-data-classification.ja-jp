@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-add-group-id-as-open.html 
+keywords: permissions, open to organization, file access 
+summary: 'NFS ファイル共有内のファイルまたはフォルダーにグループ ID が添付されると、ファイルまたはフォルダーの権限（組織に公開されているかどうかなど）が定義されます。一部のグループ ID (GID) が最初に「組織に公開」権限レベルで設定されていない場合は、その権限を GID に追加して、その GID が添付されているすべてのファイルとフォルダーが「組織に公開」されているとみなされるようにすることができます。' 
+---
+= NetApp Data Classificationで組織に公開されている追加のグループIDを定義します。
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+グループ ID (GID) が NFS ファイル共有内のファイルまたはフォルダーに関連付けられると、そのファイルまたはフォルダーのアクセス許可 (組織に公開されているかどうかなど) が定義されます。一部の GID が最初に「組織に公開」権限レベルで設定されていない場合は、その権限を GID に追加して、その GID が添付されているすべてのファイルとフォルダーが「組織に公開」されているとみなされるようにすることができます。
+
+この変更を行った後、 NetApp Data Classification によってファイルとフォルダが再スキャンされると、これらのグループ ID が添付されているすべてのファイルとフォルダの [調査の詳細] ページにこの権限が表示され、ファイル権限を表示するレポートにも表示されます。
+
+この機能を有効にするには、データ分類システムにログインして、構成ファイルを編集し、スクリプトを実行する必要があります。方法を見るlink:reference-log-in-to-instance.html["データ分類システムにログインする"]Linux マシンにソフトウェアを手動でインストールしたか、インスタンスをクラウドに展開したかによって異なります。
+
+
+
+== グループIDに「組織に公開」権限を追加する
+
+このタスクを開始する前に、グループ ID 番号 (GID) が必要です。
+
+.手順
+. データ分類システムで、「/opt/netapp/config/custom_configuration」に移動し、ファイルを開きます。 `data_provider.yaml` 。
+. 「organization_group_ids: []」の行にグループIDを追加します。例えば：
++
+ organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
++
+このファイルの他の部分は変更しないでください。
+
+. ファイルへの変更を保存します。
+. 「/opt/netapp/Datasense/tools/customer_configuration/data_providers」に移動し、次のスクリプトを実行します。
++
+ update_data_providers_from_config_file.sh
++
+このコマンドは、変更されたグループ ID 権限を分類エンジンにコミットします。
+
+
+
+.結果
+データのその後のすべてのスキャンでは、これらのグループ ID が添付されているファイルまたはフォルダーが「組織に公開」として識別されます。
+
+同じ手順を使用して、グループ ID のリストを編集し、過去に追加したグループ ID を削除できます。スクリプトを実行して変更をコミットすると、修正されたグループ ID のリストが更新されます。
+
+
+
+== 現在のグループIDのリストを表示する
+
+内容は `data_provider.yaml`設定ファイルは、実行後に実際にコミットされたものと異なる可能性があります。 `update_data_providers_from_config_file.sh`スクリプト。データ分類に追加したグループ ID の現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer_configuration/data_providers」から次のコマンドを実行します。
+
+ get_data_providers_configuration.sh

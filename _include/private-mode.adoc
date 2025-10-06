@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+IMPORTANT: BlueXPプライベート モード (レガシーBlueXPインターフェイス) は通常、インターネット接続がなく、AWS Secret Cloud、AWS Top Secret Cloud、Azure IL6 などの安全なクラウド領域があるオンプレミス環境で使用されます。NetApp は、従来のBlueXPインターフェースを使用してこれらの環境を引き続きサポートします。従来のBlueXPインターフェースのプライベートモードのドキュメントについては、link:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXPプライベートモードの PDF ドキュメント"^] 。

@@ -1,0 +1,160 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: NetApp Data Classification で特定のデータ ソース ディレクトリにあるデータのスキャンを除外する場合は、これらのディレクトリ名を構成ファイルに追加できます。この変更を適用すると、データ分類エンジンはこれらのディレクトリ内のスキャン データを除外します。 
+---
+= NetApp Data Classificationスキャンから特定のディレクトリを除外する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification で特定のディレクトリをスキャンから除外する場合は、これらのディレクトリ名を構成ファイルに追加できます。この変更を適用すると、データ分類エンジンはそれらのディレクトリをスキャンから除外します。
+
+
+NOTE: デフォルトでは、データ分類スキャンでは、ボリューム内のソースと同一のボリューム スナップショット データが除外されます。
+
+
+
+== サポートされているデータソース
+
+データ分類スキャンから特定のディレクトリを除外することは、次のデータ ソースの NFS および CIFS 共有でサポートされています。
+
+* オンプレミスのONTAP
+* Cloud Volumes ONTAP
+* Amazon FSx for NetApp ONTAP
+* Azure NetApp Files
+* 一般的なファイル共有
+
+
+
+
+== スキャンから除外するディレクトリを定義する
+
+ディレクトリを分類スキャンから除外する前に、データ分類システムにログインして、構成ファイルを編集し、スクリプトを実行する必要があります。方法を見るlink:reference-log-in-to-instance.html["データ分類システムにログインする"]Linux マシンにソフトウェアを手動でインストールしたか、インスタンスをクラウドに展開したかによって異なります。
+
+.考慮事項
+* データ分類システムごとに最大 50 個のディレクトリ パスを除外できます。
+* ディレクトリ パスを除外すると、スキャン時間に影響する可能性があります。
+
+
+.手順
+. データ分類システムで、「/opt/netapp/config/custom_configuration」に移動し、ファイルを開きます。 `data_provider.yaml` 。
+. 「exclude:」行の下の「data_providers」セクションに、除外するディレクトリ パスを入力します。例えば：
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+このファイル内の他の部分は変更しないでください。
+
+. ファイルへの変更を保存します。
+. 「/opt/netapp/Datasense/tools/customer_configuration/data_providers」に移動し、次のスクリプトを実行します。
+
+
+`update_data_providers_from_config_file.sh`
+
++ このコマンドは、スキャンから除外するディレクトリを分類エンジンにコミットします。
+
+.結果
+以降のすべてのデータスキャンでは、指定されたディレクトリのスキャンは除外されます。
+
+同じ手順を使用して、除外リストの項目を追加、編集、または削除できます。スクリプトを実行して変更をコミットすると、修正された除外リストが更新されます。
+
+
+
+== 例
+
+.構成1:
+名前のどこかに「folder1」が含まれるすべてのフォルダーは、すべてのデータ ソースから除外されます。
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.除外されるパスの予想される結果:
+* /CVO1/フォルダ1
+* /CVO1/フォルダ1名
+* /CVO1/フォルダ10
+* /CVO1/*フォルダ1
+* /CVO1/+フォルダ1名
+* /CVO1/notfolder10
+* /CVO22/フォルダ1
+* /CVO22/フォルダ1名
+* /CVO22/フォルダ10
+
+
+.除外されないパスの例:
+* /CVO1/*フォルダ
+* /CVO1/フォルダ名
+* /CVO22/*フォルダ20
+
+
+.構成2:
+名前の先頭にのみ「*folder1」が含まれるすべてのフォルダーが除外されます。
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.除外されるパスの予想される結果:
+* /CVO/*フォルダ1
+* /CVO/*フォルダ1名
+* /CVO/*フォルダ10
+
+
+.除外されないパスの例:
+* /CVO/フォルダ1
+* /CVO/フォルダ1名
+* /CVO/not*folder10
+
+
+.構成3:
+データ ソース「CVO22」内の、名前のどこかに「folder1」が含まれるすべてのフォルダーが除外されます。
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.除外されるパスの予想される結果:
+* /CVO22/フォルダ1
+* /CVO22/フォルダ1名
+* /CVO22/フォルダ10
+
+
+.除外されないパスの例:
+* /CVO1/フォルダ1
+* /CVO1/フォルダ1名
+* /CVO1/フォルダ10
+
+
+
+
+== フォルダ名の特殊文字をエスケープする
+
+フォルダー名に次のいずれかの特殊文字が含まれており、そのフォルダー内のデータをスキャン対象から除外する場合は、フォルダー名の前にエスケープ シーケンス \\ を使用する必要があります。
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+例えば：
+
+ソース内のパス: `/project/*not_to_scan`
+
+除外ファイルの構文: `"\\*not_to_scan"`
+
+
+
+== 現在の除外リストを表示する
+
+内容は `data_provider.yaml`実行後に実際にコミットされたものと異なる設定ファイルを作成する `update_data_providers_from_config_file.sh`スクリプト。データ分類スキャンから除外したディレクトリの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer_configuration/data_providers」から次のコマンドを実行します。
+
+ get_data_providers_configuration.sh

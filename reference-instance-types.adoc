@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: reference-instance-types.html 
+keywords: BlueXP classification, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。クラウドでデータ分類を展開する場合は、完全な機能を実現するために「大規模」な特性を持つシステムを使用することをお勧めします。 
+---
+= サポートされているNetApp Data Classificationインスタンスタイプ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。クラウドでデータ分類を展開する場合は、完全な機能を実現するために「大規模」特性を持つシステムを使用することをお勧めします。
+
+CPU 数と RAM 数が少ないシステムでもデータ分類を展開できますが、これらの非力なシステムを使用する場合はいくつかの制限があります。link:concept-classification.html["これらの制限について学ぶ"^] 。
+
+次の表で、「デフォルト」とマークされているシステムが、Data Classification をインストールするリージョンで使用できない場合は、表の次のシステムが展開されます。
+
+
+
+== AWSインスタンスタイプ
+
+[cols="20,30,25"]
+|===
+| システムサイズ | 仕様 | インスタンスタイプ 
+
+
+| 特大 | 32 個の CPU、128 GB の RAM、1 TiB の gp3 SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.8xlarge"^]（デフォルト） 
+
+
+| 大規模 | 16 CPU、64 GB RAM、500 GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^](デフォルト) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+
+
+| 中 | 8 CPU、32 GB RAM、200 GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xlarge"^](デフォルト) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+
+
+| 小規模 | 8 CPU、16 GB RAM、100 GiB SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^](デフォルト) c5a.2xlarge c5.2xlarge c4.2xlarge 
+|===
+
+
+== Azureインスタンスの種類
+
+[cols="20,30,25"]
+|===
+| システムサイズ | 仕様 | インスタンスタイプ 
+
+
+| 特大 | 32 個の CPU、128 GB の RAM、OS ディスク (2,048 GiB、最小 250 MB/秒のスループット)、およびデータ ディスク (1 TiB SSD、最小 750 MB/秒のスループット) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["標準_D32_v3"^]（デフォルト） 
+
+
+| 大規模 | 16 CPU、64 GB RAM、500 GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["標準_D16s_v3"^]（デフォルト） 
+|===
+
+
+== GCPインスタンスタイプ
+
+[cols="20,30,25"]
+|===
+| システムサイズ | 仕様 | インスタンスタイプ 
+
+
+| 大規模 | 16 CPU、64 GB RAM、500 GiB SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-標準-16"^](デフォルト) n2d-standard-16 n1-standard-16 
+|===

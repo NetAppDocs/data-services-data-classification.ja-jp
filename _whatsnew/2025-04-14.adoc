@@ -1,0 +1,17 @@
+= バージョン1.42
+:allow-uri-read: 
+
+
+
+
+=== バージョン1.42
+
+このBlueXP classificationリリースには以下が含まれます。
+
+.作業環境の一括スキャン
+BlueXP classificationは、作業環境の一括操作をサポートします。作業環境において、マッピング スキャンを有効にするか、マップと分類スキャンを有効にするか、スキャンを無効にするか、ボリューム全体にカスタム構成を作成するかを選択できます。個々のボリュームを選択した場合は、一括選択が上書きされます。一括操作を実行するには、[**構成**] ページに移動して選択を行います。
+
+.調査レポートをローカルにダウンロードする
+BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用でき、最初の 10,000 行のデータのみが表示されます。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["BlueXP classificationを使用して組織内に保存されているデータを調査します"] 。

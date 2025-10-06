@@ -1,0 +1,119 @@
+---
+sidebar: sidebar 
+permalink: task-active-directory.html 
+keywords: active directory, ad, data sense, cloud data sense 
+summary: グローバル Active Directory をNetApp Data Classification と統合して、ファイル所有者やファイルにアクセスできるユーザーとグループに関する Data Classification のレポート結果を強化できます。 
+---
+= Active Directory とNetApp Data Classification を統合
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+グローバル Active Directory をNetApp Data Classification と統合して、ファイル所有者やファイルにアクセスできるユーザーとグループに関する Data Classification のレポート結果を強化できます。
+
+特定のデータ ソース (以下にリスト) を設定する場合、データ分類で CIFS ボリュームをスキャンするには、Active Directory の資格情報を入力する必要があります。この統合により、データ分類では、それらのデータ ソースに存在するデータのファイル所有者と権限の詳細が提供されます。これらのデータ ソースに入力された Active Directory は、ここで入力するグローバル Active Directory 資格情報とは異なる場合があります。データ分類では、統合されたすべての Active Directory でユーザーと権限の詳細を検索します。
+
+この統合により、データ分類の次の場所に追加情報が提供されます。
+
+* 「ファイル所有者」を使用することができますlink:task-investigate-data.html["フィルター"]調査ペインのファイルのメタデータで結果を確認します。  SID (セキュリティ ID) を含むファイル所有者の代わりに、実際のユーザー名が入力されます。
++
+また、ファイル所有者の詳細情報（アカウント名、メール アドレス、SAM アカウント名）を表示したり、そのユーザーが所有するアイテムを表示したりすることもできます。
+
+* 見ることができますlink:task-investigate-data.html["完全なファイル権限"]「すべての権限を表示」ボタンをクリックすると、各ファイルとディレクトリに対して権限が表示されます。
+* の中でlink:task-controlling-governance-data.html["ガバナンスダッシュボード"]、Open Permissions パネルにデータに関するより詳細な情報が表示されます。
+
+
+
+NOTE: ローカル ユーザーの SID および不明なドメインの SID は、実際のユーザー名に変換されません。
+
+
+
+== サポートされているデータソース
+
+Active Directory と Data Classification の統合により、次のデータ ソース内のデータを識別できます。
+
+* オンプレミスのONTAPシステム
+* Cloud Volumes ONTAP
+* Azure NetApp Files
+* ONTAP向け FSx
+
+
+
+
+== Active Directoryサーバーに接続する
+
+データ分類を展開し、データ ソースのスキャンを有効にしたら、データ分類を Active Directory と統合できます。  Active Directory には、DNS サーバー IP アドレスまたは LDAP サーバー IP アドレスを使用してアクセスできます。
+
+Active Directory の資格情報は読み取り専用にすることができますが、管理者の資格情報を提供することで、データ分類は昇格された権限を必要とするすべてのデータを読み取ることができるようになります。資格情報は、データ分類インスタンスに保存されます。
+
+CIFS ボリューム/ファイル共有の場合、ファイルの「最終アクセス時刻」がデータ分類分類スキャンによって変更されていないことを確認するには、ユーザーに属性の書き込み権限が必要です。可能であれば、Active Directory で構成されたユーザーを、すべてのファイルへの権限を持つ組織内の親グループの一部にすることをお勧めします。
+
+.要件
+* 社内のユーザー用に Active Directory がすでに設定されている必要があります。
+* Active Directory の情報が必要です:
++
+** DNSサーバーのIPアドレス、または複数のIPアドレス
++
+または
+
++
+LDAPサーバーのIPアドレス、または複数のIPアドレス
+
+** サーバーにアクセスするためのユーザー名とパスワード
+** ドメイン名（アクティブディレクトリ名）
+** セキュアLDAP（LDAPS）を使用しているかどうか
+** LDAP サーバー ポート (通常、LDAP の場合は 389、セキュア LDAP の場合は 636)
+
+
+* データ分類インスタンスによる送信通信のために、次のポートが開いている必要があります。
++
+[cols="20,20,30,30"]
+|===
+| プロトコル | ポート | デスティネーション | 目的 
+
+
+| TCPとUDP | 389 | Active Directory | LDAP 
+
+
+| TCP | 636 | Active Directory | LDAP over SSL 
+
+
+| TCP | 3268 | Active Directory | グローバルカタログ 
+
+
+| TCP | 3269 | Active Directory | SSL経由のグローバルカタログ 
+|===
+
+
+.手順
+. データ分類構成ページで、*Active Directory の追加*をクリックします。
++
+image:screenshot_compliance_integrate_active_directory.png["Active Directory サーバーをデータ分類に追加するためのボタンをクリックするスクリーンショット。"]
+
+. 「Active Directory への接続」ダイアログで、Active Directory の詳細を入力し、「接続」をクリックします。
++
+必要に応じて、「*IP を追加*」を選択して複数の IP アドレスを追加できます。
+
++
+image:screenshot_compliance_active_directory_dialog.png["データ分類と統合する Active Directory を定義するダイアログのスクリーンショット。"]
+
++
+データ分類は Active Directory に統合され、構成ページに新しいセクションが追加されます。
+
++
+image:screenshot_compliance_active_directory_added.png["データ分類に統合された新しい Active Directory を示すスクリーンショット。"]
+
+
+
+
+
+== Active Directory統合を管理する
+
+Active Directory 統合の値を変更する必要がある場合は、[*編集*] ボタンをクリックして変更を加えます。
+
+統合を削除するには、image:button-gallery-options.gif["詳細ボタン"]ボタンをクリックし、[Active Directory を削除] をクリックします。

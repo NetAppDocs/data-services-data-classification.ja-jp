@@ -1,0 +1,264 @@
+---
+sidebar: sidebar 
+permalink: task-test-linux-system.html 
+keywords: cloud compliance, bluexp, data sense, get started, deploy, data classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, ubuntu, rhel, dark site 
+summary: Linux ホストに Data Classification を手動でインストールする前に、ホスト上でスクリプトを実行して、Data Classification をインストールするための前提条件がすべて満たされていることを確認できます。このスクリプトは、ネットワーク内の Linux ホストまたはクラウド内の Linux ホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに存在することもできます。 
+---
+= LinuxホストがNetApp Data Classificationをインストールする準備ができていることを確認します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Linux ホストにNetApp Data Classification を手動でインストールする前に、オプションでホスト上でスクリプトを実行し、Data Classification をインストールするための前提条件がすべて満たされていることを確認します。このスクリプトは、ネットワーク内の Linux ホストまたはクラウド内の Linux ホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト (_ダーク サイト_) に存在することもできます。
+
+また、データ分類インストール スクリプトの一部である前提条件テスト スクリプトもあります。ここで説明するスクリプトは、データ分類インストール スクリプトの実行とは独立して Linux ホストを検証したいユーザー向けに特別に設計されています。
+
+
+
+== はじめる
+
+以下のタスクを実行します。
+
+. 必要に応じて、コンソール エージェントがまだインストールされていない場合はインストールします。コンソール エージェントがインストールされていなくてもテスト スクリプトを実行できますが、スクリプトはコンソール エージェントとデータ分類ホスト マシン間の接続をチェックするため、コンソール エージェントを使用することをお勧めします。
+. ホスト マシンを準備し、すべての要件を満たしていることを確認します。
+. データ分類ホスト マシンからのアウトバウンド インターネット アクセスを有効にします。
+. すべてのシステムで必要なすべてのポートが有効になっていることを確認します。
+. 前提条件テスト スクリプトをダウンロードして実行します。
+
+
+
+
+== コンソールエージェントを作成する
+
+Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ただし、コンソール エージェントなしで前提条件スクリプトを実行することは可能です。
+
+あなたはできる https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
+
+クラウドプロバイダー環境でコンソールエージェントを作成するには、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^] 、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
+
+前提条件スクリプトを実行するときは、コンソール エージェント システムの IP アドレスまたはホスト名が必要になります。オンプレミスでコンソール エージェントをインストールした場合は、この情報が得られます。コンソール エージェントがクラウドに展開されている場合は、コンソールからこの情報を確認できます。ヘルプ アイコンを選択し、次に *サポート*、*コンソール エージェント* を選択します。
+
+
+
+== ホストの要件を確認する
+
+データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。
+
+* データ分類は、他のアプリケーションと共有されているホストではサポートされません。ホストは専用ホストである必要があります。
+* オンプレミスでホスト システムを構築する場合、データ分類スキャンを実行する予定のデータセットのサイズに応じて、これらのシステム サイズから選択できます。
++
+[cols="17,17,27,31"]
+|===
+| システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
+
+
+| *特大* | CPU×32 | 128GBのRAM  a| 
+** / に 1 TiB SSD、または /opt に 100 GiB 利用可能
+** /var/lib/docker で 895 GiB が利用可能
+** /tmp に 5 GiB
+** *Podman の場合、/var/tmp に 30 GB*
+
+
+
+
+| *大きい* | CPU×16 | 64GBのRAM  a| 
+** / に 500 GiB SSD、または /opt に 100 GiB 利用可能
+** /var/lib/docker または Podman /var/lib/containers で 400 GiB が利用可能
+** /tmp に 5 GiB
+** *Podman の場合、/var/tmp に 30 GB*
+
+
+|===
+* データ分類インストール用にクラウドにコンピューティング インスタンスをデプロイする場合は、上記の「大規模」システム要件を満たすシステムを使用することをお勧めします。
++
+** *Amazon Elastic Compute Cloud (Amazon EC2) インスタンスタイプ*:「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを見る"^] 。
+** *Azure VM サイズ*:「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを見る"^] 。
+** *GCP マシンタイプ*:「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["その他の GCP インスタンスタイプを見る"^] 。
+
+
+* *UNIX フォルダ権限*: 次の最低限の UNIX 権限が必要です。
++
+[cols="25,25"]
+|===
+| フォルダ | 最低限の権限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /usr/lib/systemd/システム | `rwxr-xr-x` 
+|===
+* *オペレーティング·システム*：
++
+** 次のオペレーティング システムでは、Docker コンテナ エンジンを使用する必要があります。
++
+*** Red Hat Enterprise Linux バージョン 7.8 および 7.9
+*** Ubuntu 22.04 (データ分類バージョン 1.23 以上が必要)
+*** Ubuntu 24.04 (データ分類バージョン 1.23 以上が必要)
+
+
+** 次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、Data Classification バージョン 1.30 以上が必要です。
++
+*** Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、および 9.6。
+
+
+** ホスト システムで Advanced Vector Extensions (AVX2) を有効にする必要があります。
+
+
+* *Red Hat サブスクリプション管理*: ホストは Red Hat サブスクリプション管理に登録されている必要があります。登録されていない場合、システムはリポジトリにアクセスできず、インストール中に必要なサードパーティ製ソフトウェアを更新できません。
+* *追加ソフトウェア*: Data Classification をインストールする前に、ホストに次のソフトウェアをインストールする必要があります。
++
+** 使用している OS に応じて、次のいずれかのコンテナ エンジンをインストールする必要があります。
++
+*** Docker Engine バージョン 19.3.1 以上。 https://docs.docker.com/engine/install/["インストール手順を見る"^] 。
+*** Podman バージョン 4 以上。  Podmanをインストールするには、次のように入力します。(`sudo yum install podman netavark -y` ）。
+
+
+
+
+
+
+* Python バージョン 3.6 以上。 https://www.python.org/downloads/["インストール手順を見る"^] 。
++
+** *NTP に関する考慮事項*: NetApp、データ分類システムをネットワーク タイム プロトコル (NTP) サービスを使用するように構成することを推奨しています。データ分類システムとコンソール エージェント システムの間で時刻を同期する必要があります。
+
+
+
+
+* *Firewalldの考慮事項*: 使用を計画している場合 `firewalld`、データ分類をインストールする前に有効にすることをお勧めします。設定するには次のコマンドを実行します `firewalld`データ分類と互換性があるように:
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+追加のデータ分類ホストをスキャナー ノードとして使用することを計画している場合 (分散モデル)、この時点で次のルールをプライマリ システムに追加します。
+
++
+....
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+....
++
+有効化または更新するたびにDockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld`設定。
+
+
+
+
+
+== データ分類からのインターネットへのアウトバウンドアクセスを有効にする
+
+データ分類には、アウトバウンドのインターネット アクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネット アクセスにプロキシ サーバーを使用している場合は、データ分類インスタンスに次のエンドポイントに接続するための送信インターネット アクセスがあることを確認してください。
+
+
+TIP: このセクションは、インターネットに接続できないサイトにインストールされたホスト システムでは必要ありません。
+
+[cols="43,57"]
+|===
+| エンドポイント | 目的 
+
+
+| \https://api.bluexp.netapp.com | NetAppアカウントを含むコンソール サービスとの通信。 
+
+
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | 集中ユーザー認証のためのコンソール Web サイトとの通信。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供し、ログとメトリックを送信します。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
+
+
+| \https://github.com/docker \https://download.docker.com | docker インストールの前提条件となるパッケージを提供します。 
+
+
+| \http://packages.ubuntu.com/ \http://archive.ubuntu.com | Ubuntu インストールの前提条件となるパッケージを提供します。 
+|===
+
+
+== 必要なポートがすべて有効になっていることを確認します
+
+コンソール エージェント、データ分類、Active Directory、およびデータ ソース間の通信に必要なすべてのポートが開いていることを確認する必要があります。
+
+[cols="25,25,50"]
+|===
+| 接続タイプ | ポート | 説明 
+
+
+| コンソールエージェント <> データ分類 | 8080 (TCP)、443 (TCP)、および 80。9000 | コンソール エージェントのファイアウォールまたはルーティング ルールでは、ポート 443 経由のデータ分類インスタンスとの間の受信トラフィックと送信トラフィックを許可する必要があります。コンソールでインストールの進行状況を確認できるように、ポート 8080 が開いていることを確認してください。  Linux ホストでファイアウォールが使用されている場合、Ubuntu サーバー内の内部プロセスにはポート 9000 が必要です。 
+
+
+| コンソールエージェント <> ONTAPクラスタ (NAS) | 443（TCP）  a| 
+コンソールは、HTTPS を使用してONTAPクラスターを検出します。カスタム ファイアウォール ポリシーを使用する場合、コンソール エージェント ホストはポート 443 経由の送信 HTTPS アクセスを許可する必要があります。コンソール エージェントがクラウド内にある場合、すべての送信通信は事前定義されたファイアウォールまたはルーティング ルールによって許可されます。
+
+|===
+
+
+== データ分類の前提条件スクリプトを実行する
+
+データ分類の前提条件スクリプトを実行するには、次の手順に従います。
+
+https://youtu.be/5ONowfPWkFs?si=QLGUw8mqPrz9qs4B["このビデオを見る"^]前提条件スクリプトを実行して結果を解釈する方法を確認します。
+
+.開始する前に
+* Linuxシステムが<<ホストの要件を確認する,ホスト要件>>。
+* システムに 2 つの前提条件ソフトウェア パッケージ (Docker Engine または Podman、および Python 3) がインストールされていることを確認します。
+* Linux システムでルート権限を持っていることを確認してください。
+
+
+.手順
+. データ分類の前提条件スクリプトを以下からダウンロードします。 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^] 。選択するファイルの名前は *standalone-pre-requisite-tester-<version>* です。
+. 使用する予定のLinuxホストにファイルをコピーします（ `scp`または他の方法）。
+. スクリプトを実行するための権限を割り当てます。
++
+[source, cli]
+----
+chmod +x standalone-pre-requisite-tester-v1.25.0
+----
+. 次のコマンドを使用してスクリプトを実行します。
++
+[source, cli]
+----
+ ./standalone-pre-requisite-tester-v1.25.0 <--darksite>
+----
++
+インターネットにアクセスできないホストでスクリプトを実行する場合にのみ、オプション「--darksite」を追加します。ホストがインターネットに接続されていない場合、特定の前提条件テストはスキップされます。
+
+. スクリプトは、データ分類ホスト マシンの IP アドレスの入力を求めます。
++
+** IP アドレスまたはホスト名を入力します。
+
+
+. スクリプトは、コンソール エージェントがインストールされているかどうかを尋ねます。
++
+** コンソール エージェントがインストールされていない場合は、*N* と入力します。
+** コンソール エージェントがインストールされている場合は、「*Y*」と入力します。次に、テスト スクリプトがこの接続をテストできるように、コンソール エージェントの IP アドレスまたはホスト名を入力します。
+
+
+. スクリプトはシステム上でさまざまなテストを実行し、進行中に結果を表示します。終了すると、セッションのログを次のファイルに書き込みます。 `prerequisites-test-<timestamp>.log`ディレクトリ内 `/opt/netapp/install_logs`。
+
+
+.結果
+すべての前提条件テストが正常に実行された場合、準備ができたらホストに Data Classification をインストールできます。
+
+問題が発見された場合は、修正が「推奨」または「必須」として分類されます。推奨される問題は通常、データ分類のスキャンと分類のタスクの実行速度を低下させる項目です。これらの項目は修正する必要はありませんが、対処することをお勧めします。
+
+「必須」の問題がある場合は、問題を修正して、前提条件テスト スクリプトを再度実行する必要があります。

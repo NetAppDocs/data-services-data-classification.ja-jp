@@ -1,0 +1,90 @@
+= 
+:allow-uri-read: 
+
+
+* データ分類は、他のアプリケーションと共有されているホストではサポートされません。ホストは専用ホストである必要があります。
+* オンプレミスでホスト システムを構築する場合、データ分類スキャンを実行する予定のデータセットのサイズに応じて、これらのシステム サイズから選択できます。
++
+[cols="17,17,27,31"]
+|===
+| システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
+
+
+| *特大* | CPU×32 | 128GBのRAM  a| 
+** / に 1 TiB SSD、または /opt に 100 GiB 利用可能
+** /var/lib/docker で 895 GiB が利用可能
+** /tmp に 5 GiB
+** *Podman の場合、/var/tmp に 30 GB*
+
+
+
+
+| *大きい* | CPU×16 | 64GBのRAM  a| 
+** / に 500 GiB SSD、または /opt に 100 GiB 利用可能
+** /var/lib/docker または Podman /var/lib/containers で 400 GiB が利用可能
+** /tmp に 5 GiB
+** *Podman の場合、/var/tmp に 30 GB*
+
+
+|===
+* データ分類インストール用にクラウドにコンピューティング インスタンスをデプロイする場合は、上記の「大規模」システム要件を満たすシステムを使用することをお勧めします。
++
+** *Amazon Elastic Compute Cloud (Amazon EC2) インスタンスタイプ*:「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを見る"^] 。
+** *Azure VM サイズ*:「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを見る"^] 。
+** *GCP マシンタイプ*:「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["その他の GCP インスタンスタイプを見る"^] 。
+
+
+* *UNIX フォルダ権限*: 次の最低限の UNIX 権限が必要です。
++
+[cols="25,25"]
+|===
+| フォルダ | 最低限の権限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /usr/lib/systemd/システム | `rwxr-xr-x` 
+|===
+* *オペレーティング·システム*：
++
+** 次のオペレーティング システムでは、Docker コンテナ エンジンを使用する必要があります。
++
+*** Red Hat Enterprise Linux バージョン 7.8 および 7.9
+*** Ubuntu 22.04 (データ分類バージョン 1.23 以上が必要)
+*** Ubuntu 24.04 (データ分類バージョン 1.23 以上が必要)
+
+
+** 次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、Data Classification バージョン 1.30 以上が必要です。
++
+*** Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、および 9.6。
+
+
+** ホスト システムで Advanced Vector Extensions (AVX2) を有効にする必要があります。
+
+
+* *Red Hat サブスクリプション管理*: ホストは Red Hat サブスクリプション管理に登録されている必要があります。登録されていない場合、システムはリポジトリにアクセスできず、インストール中に必要なサードパーティ製ソフトウェアを更新できません。
+* *追加ソフトウェア*: Data Classification をインストールする前に、ホストに次のソフトウェアをインストールする必要があります。
++
+** 使用している OS に応じて、次のいずれかのコンテナ エンジンをインストールする必要があります。
++
+*** Docker Engine バージョン 19.3.1 以上。 https://docs.docker.com/engine/install/["インストール手順を見る"^] 。
+*** Podman バージョン 4 以上。  Podmanをインストールするには、次のように入力します。(`sudo yum install podman netavark -y` ）。
+
+
+
+
+
+
+* Python バージョン 3.6 以上。 https://www.python.org/downloads/["インストール手順を見る"^] 。
++
+** *NTP に関する考慮事項*: NetApp、データ分類システムをネットワーク タイム プロトコル (NTP) サービスを使用するように構成することを推奨しています。データ分類システムとコンソール エージェント システムの間で時刻を同期する必要があります。
+
+
+

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-overview.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
+summary: ニーズを満たすNetApp Data Classification の展開を計画します。 
+---
+= どのNetApp Data Classification 展開を使用する必要がありますか?
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification はさまざまな方法で導入できます。どの方法がニーズに合っているかを学びます。
+
+データ分類は次の方法で展開できます。
+
+* link:task-deploy-cloud-compliance.html["コンソールを使用してクラウドにデプロイする"] 。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。
+* link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにインストールする"] 。インターネットにアクセスできるネットワーク内の Linux ホスト、またはクラウド内の Linux ホストに Data Classification をインストールします。このタイプのインストールは、オンプレミスにあるデータ分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、必須ではありません。
+* link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミス サイトの Linux ホストにインストールする"]_プライベート モード_ とも呼ばれます。インストール スクリプトを使用するこのタイプのインストールでは、コンソール SaaS レイヤーへの接続はありません。
+
+
+
+IMPORTANT: BlueXPプライベート モード (レガシーBlueXPインターフェイス) は通常、インターネット接続がなく、AWS Secret Cloud、AWS Top Secret Cloud、Azure IL6 などの安全なクラウド領域があるオンプレミス環境で使用されます。NetApp は、従来のBlueXPインターフェースを使用してこれらの環境を引き続きサポートします。従来のBlueXPインターフェースのプライベートモードのドキュメントについては、link:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXPプライベートモードの PDF ドキュメント"^] 。
+
+インターネットにアクセスできる Linux ホストへのインストールと、インターネットにアクセスできない Linux ホストへのオンプレミス インストールの両方で、インストール スクリプトが使用されます。スクリプトは、システムと環境が前提条件を満たしているかどうかを確認することから始まります。前提条件が満たされている場合は、インストールが開始されます。データ分類のインストールを実行せずに前提条件を検証したい場合は、前提条件のみをテストする別のソフトウェア パッケージをダウンロードできます。
+
+。 link:task-test-linux-system.html["Linuxホストがデータ分類をインストールする準備ができていることを確認します"] 。

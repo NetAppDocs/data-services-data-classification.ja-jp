@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task-managing-compliance.html 
+keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
+summary: 必要に応じて、データ分類による 1 つ以上のシステム、データベース、ファイル共有グループ、OneDrive アカウント、Google Drive アカウント、または SharePoint アカウントのスキャンを停止できます。 
+---
+= NetApp Data Classificationからデータソースを削除する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+必要に応じて、 NetApp Data Classification による 1 つ以上のシステム、データベース、またはファイル共有グループのスキャンを停止できます。
+
+
+
+== システムのコンプライアンススキャンを無効にする
+
+スキャンを非アクティブ化すると、データ分類はシステム上のデータをスキャンしなくなり、インデックス付けされたコンプライアンス分析情報がデータ分類インスタンスから削除されます (システム自体のデータは削除されません)。
+
+. _Configuration_ページから、image:button-gallery-options.gif["詳細ボタン"]システムの行のボタンをクリックし、*データ分類を非アクティブ化*します。
+
+
+
+TIP: システムを選択するときに、[サービス] パネルからシステムのコンプライアンス スキャンを無効にすることもできます。
+
+
+
+== データ分類からデータベースを削除する
+
+特定のデータベースをスキャンする必要がなくなった場合は、データ分類インターフェースからそのデータベースを削除し、すべてのスキャンを停止できます。
+
+. _Configuration_ページから、image:button-gallery-options.gif["詳細ボタン"]データベースの行のボタンをクリックし、*DB サーバーの削除*をクリックします。
+
+
+
+
+== データ分類からファイル共有のグループを削除する
+
+ファイル共有グループからユーザー ファイルをスキャンする必要がなくなった場合は、データ分類インターフェースからファイル共有グループを削除し、すべてのスキャンを停止できます。
+
+.手順
+. _Configuration_ページから、image:button-gallery-options.gif["詳細ボタン"]ファイル共有グループの行にあるボタンをクリックし、*ファイル共有グループの削除*をクリックします。
++
+image:screenshot_compliance_remove_db.png["スキャン構成ページの「DB サーバーの削除」ボタンのスクリーンショット。"]
+
+. 確認ダイアログから*共有グループの削除*を選択します。
+

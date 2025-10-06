@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-compliance-dark-site.html 
+keywords: cloud compliance, bluexp, data sense, get started, web browser connectivity, cloud compliance access, privacy, linux, ubuntu, compliance, on-premises, dark site, upgrade, private mode, docker, podman, rhel, bluexp classification, classification, install, cloud data sense, linux host 
+summary: 'インターネットにアクセスできないオンプレミス サイトの Linux ホストにNetApp Data Classification をインストールするには、いくつかの手順を実行します (「プライベート モード」とも呼ばれます)。このタイプのインストールは、安全なサイトに最適です。' 
+---
+= インターネットにアクセスできない Linux ホストにNetApp Data Classification をインストールする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+インターネットにアクセスできないオンプレミス サイトの Linux ホストにNetApp Data Classification をインストールすることを、_プライベート モード_ と呼びます。インストール スクリプトを使用するこのタイプのインストールでは、 NetAppコンソール SaaS レイヤーに接続できません。
+
+
+IMPORTANT: BlueXPプライベート モード (レガシーBlueXPインターフェイス) は通常、インターネット接続がなく、AWS Secret Cloud、AWS Top Secret Cloud、Azure IL6 などの安全なクラウド領域があるオンプレミス環境で使用されます。NetApp は、従来のBlueXPインターフェースを使用してこれらの環境を引き続きサポートします。従来のBlueXPインターフェースのプライベートモードのドキュメントについては、link:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXPプライベートモードの PDF ドキュメント"^] 。

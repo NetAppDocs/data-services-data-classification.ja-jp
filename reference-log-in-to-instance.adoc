@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: reference-log-in-to-instance.html 
+keywords: log in, data sense, classification 
+summary: ログ ファイルにアクセスしたり、構成ファイルを編集したりするために、 NetApp Data Classification システムにログインする必要がある場合があります。 
+---
+= NetAppデータ分類システムにログインする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ログ ファイルにアクセスしたり、構成ファイルを編集したりするには、 NetApp Data Classification システムにログインする必要があります。
+
+Data Classification がオンプレミスの Linux マシンまたはクラウドに展開した Linux マシンにインストールされている場合は、構成ファイルとスクリプトに直接アクセスできます。
+
+Data Classification をクラウドにデプロイする場合は、Data Classification インスタンスに SSH で接続する必要があります。ユーザー名とパスワードを入力するか、コンソール エージェントのインストール時に指定した SSH キーを使用して、システムに SSH 接続します。  SSH コマンドは次のとおりです。
+
+`ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>`
+
+* `<path_to_the_ssh_key>`= SSH認証キーの場所
+* `<machine_user>:`
++
+** AWSの場合: <ec2-user> を使用します
+** Azureの場合: コンソールインスタンス用に作成されたユーザーを使用します
+** GCPの場合: コンソールインスタンス用に作成されたユーザーを使用します
+
+
+* `<datasense_ip>`= 仮想マシンインスタンスのIPアドレス
+
+
+クラウド内のシステムにアクセスするには、セキュリティ グループの受信ルールを変更する必要があります。詳細については、以下を参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWSのセキュリティグループルール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure のセキュリティ グループ ルール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud のファイアウォール ルール"^]
+

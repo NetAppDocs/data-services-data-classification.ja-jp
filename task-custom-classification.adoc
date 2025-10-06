@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task-custom-classification.html 
+keywords: custom classification, customize, regular expression, keyword, regex 
+summary: NetApp Data Classification を使用すると、機密情報の検索をカスタマイズし、組織に関連する個別のパターンやキーワードに合わせてサービスをカスタマイズできます。 
+---
+= NetApp Data Classificationでカスタム分類を作成する
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification を使用すると、機密情報のカスタム検索を作成できます。検索の範囲を正規表現 (regex) に設定できます。
+
+
+
+== カスタム分類を作成する
+
+カスタム分類は、マッピングと分類のスキャンでのみ使用でき、マッピングのみのスキャンでは使用できません。この機能は現在プレビュー段階です。
+
+.手順
+. **カスタム分類** タブを選択します。
+. **新しい分類子を追加** ボタンを選択します。
+. 新しい分類子の分類子名と説明を追加します。
+. 分類子を *個人識別子* または *カテゴリ* として追加することを選択します。
++
+image:screenshot-custom-classifier-name.png["分類子を追加したスクリーンショット"]
+
+. *次へ*を選択します。
+. カスタマイズを正規表現として追加するには、[**カスタム正規表現**] を選択し、[**次へ**] を選択します。
+. データの特定の情報を検出するためのパターンを追加します。入力した構文を確認するには、[**検証**] を選択します。image:screenshot-create-logic-regex.png["正規表現を作成するためのダイアログのスクリーンショット。"]
+. カスタム分類を作成するには、[**完了**] を選択します。
+
+
+新しいカスタマイズは、次回のスケジュールされたスキャンでキャプチャされます。結果を見るには、xref:task-generating-compliance-reports.html[コンプライアンスレポートを生成する] 。

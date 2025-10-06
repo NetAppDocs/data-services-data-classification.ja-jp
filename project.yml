@@ -1,0 +1,109 @@
+---
+settings:
+  name: NetApp Data Classification
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+    lipi_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: NetAppデータ分類ドキュメント
+    url: "/index.html"
+  - title: リリース ノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+    - title: 既知の制限事項
+      url: "/reference-limitations.html"
+  - title: 始めましょう
+    entries:
+    - title: データ分類について学ぶ
+      url: "/concept-classification.html"
+    - title: アクセスデータ分類
+      url: "/task-access.html"
+    - title: データ分類を展開する
+      entries:
+      - title: どの展開を使用すべきか
+        url: "/task-deploy-overview.html"
+      - title: クラウドに展開
+        url: "/task-deploy-cloud-compliance.html"
+      - title: インターネットにアクセスできる Linux ホストにインストールする
+        url: "/task-deploy-compliance-onprem.html"
+      - title: インターネットにアクセスできないオンプレミスの Linux ホストにインストールする
+        url: "/task-deploy-compliance-dark-site.html"
+      - title: Linuxホストがデータ分類をインストールする準備ができていることを確認します
+        url: "/task-test-linux-system.html"
+    - title: データソースのスキャンを有効にする
+      entries:
+      - title: データソースの概要をスキャンする
+        url: "/task-scanning-overview.html"
+      - title: Azure NetApp Files
+        url: "/task-scanning-anf.html"
+      - title: Amazon FSx for ONTAP
+        url: "/task-scanning-fsx.html"
+      - title: Cloud Volumes ONTAPとオンプレミスONTAP
+        url: "/task-getting-started-compliance.html"
+      - title: データベーススキーマ
+        url: "/task-scanning-databases.html"
+      - title: ファイル共有
+        url: "/task-scanning-file-shares.html"
+      - title: StorageGRID
+        url: "/task-scanning-storagegrid.html"
+    - title: Active Directoryを統合する
+      url: "/task-active-directory.html"
+  - title: データ分類を使用する
+    entries:
+    - title: データに関するガバナンスの詳細を表示する
+      url: "/task-controlling-governance-data.html"
+    - title: データに関するコンプライアンスの詳細を表示する
+      url: "/task-controlling-private-data.html"
+    - title: 個人データのカテゴリ
+      url: "/reference-private-data-categories.html"
+    - title: カスタムスキャンを作成する
+      url: "/task-custom-classification.html"
+    - title: データを調査する
+      url: "/task-investigate-data.html"
+    - title: 保存したクエリを管理する
+      url: "/task-using-policies.html"
+    - title: スキャン設定を変更する
+      url: "/task-managing-repo-scanning.html"
+    - title: コンプライアンスレポートを生成する
+      url: "/task-generating-compliance-reports.html"
+  - title: データ分類の管理
+    entries:
+    - title: ディレクトリをスキャンから除外する
+      url: "/task-exclude-scan-paths.html"
+    - title: 既存のグループ ID を「組織に公開」として定義する
+      url: "/task-add-group-id-as-open.html"
+    - title: データ分類からデータソースを削除する
+      url: "/task-managing-compliance.html"
+    - title: アンインストールデータ分類
+      url: "/task-uninstall.html"
+  - title: 参照
+    entries:
+    - title: サポートされているデータ分類インスタンスタイプ
+      url: "/reference-instance-types.html"
+    - title: データソースから収集されたメタデータ
+      url: "/reference-collected-metadata.html"
+    - title: データ分類にログイン
+      url: "/reference-log-in-to-instance.html"
+    - title: データ分類API
+      url: "/api-classification.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録する
+      url: "/task-support-registration.html"
+    - title: ヘルプを受ける
+      url: "/task-get-help.html"
+  - title: FAQ
+    url: "/faq-cloud-compliance.html"
+  - title: 法律上の表示
+    url: "/legal-notices.html"
+product-family:
+  name: NetApp Data Services
+  repo: data-services-family

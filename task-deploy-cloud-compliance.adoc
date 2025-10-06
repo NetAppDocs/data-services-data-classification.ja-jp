@@ -1,0 +1,247 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cloud-compliance.html 
+keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
+summary: NetApp Data Classification をクラウドに導入するには、いくつかの手順を実行します。  NetAppコンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。 
+---
+= NetAppコンソールを使用してクラウドにNetApp Data Classificationを導入する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppコンソールを使用して、 NetApp Data Classification をクラウドに導入できます。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。
+
+また、link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにデータ分類をインストールする"] 。このタイプのインストールは、オンプレミスにあるデータ分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
+
+
+
+== クイック スタート
+
+以下の手順に従ってすぐに開始するか、残りのセクションまでスクロールして詳細を確認してください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]コンソールエージェントを作成する
+[role="quick-margin-para"]
+コンソール エージェントがまだない場合は作成します。見る https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
+
+[role="quick-margin-para"]
+また、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]前提条件
+[role="quick-margin-para"]
+ご使用の環境が前提条件を満たしていることを確認してください。これには、インスタンスのアウトバウンド インターネット アクセス、ポート 443 経由のコンソール エージェントとデータ分類間の接続などが含まれます。  <<前提条件、完全なリストを参照してください>>。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]データ分類を展開する
+[role="quick-margin-para"]
+インストール ウィザードを起動して、データ分類インスタンスをクラウドにデプロイします。
+
+
+
+== コンソールエージェントを作成する
+
+コンソール エージェントがまだない場合は、クラウド プロバイダーにコンソール エージェントを作成します。見る https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^]、 または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["コンソール機能にはコンソールエージェントが必要です"]ただし、今すぐ設定する必要がある場合もあります。
+
+特定のクラウド プロバイダーにデプロイされたコンソール エージェントを使用する必要があるシナリオがいくつかあります。
+
+* AWS のCloud Volumes ONTAPまたはAmazon FSx for ONTAPバケット内のデータをスキャンする場合は、AWS のコンソールエージェントを使用します。
+* Azure のCloud Volumes ONTAPまたはAzure NetApp Filesでデータをスキャンする場合は、Azure のコンソール エージェントを使用します。
++
+** Azure NetApp Filesの場合、スキャンするボリュームと同じリージョンにデプロイする必要があります。
+
+
+* GCP のCloud Volumes ONTAPでデータをスキャンする場合は、GCP のコンソール エージェントを使用します。
+
+
+これらのクラウド コンソール エージェントのいずれかを使用すると、オンプレミスのONTAPシステム、 NetAppファイル共有、およびデータベースをスキャンできます。
+
+また、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワークまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
+
+ご覧のとおり、状況によっては https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["複数のコンソールエージェント"]。
+
+
+TIP: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+
+
+
+=== 政府地域支援
+
+データ分類は、コンソール エージェントが政府リージョン (AWS GovCloud、Azure Gov、または Azure DoD) にデプロイされている場合にサポートされます。この方法で展開する場合、データ分類には次の制限があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["政府地域におけるコンソールエージェントの導入に関する詳細情報"^] 。
+
+
+
+== 前提条件
+
+クラウドにデータ分類を展開する前に、次の前提条件を確認して、サポートされている構成があることを確認してください。クラウドにデータ分類を展開すると、コンソール エージェントと同じサブネットに配置されます。
+
+データ分類からのインターネットへのアウトバウンドアクセスを有効にする:: データ分類には、アウトバウンドのインターネット アクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネット アクセスにプロキシ サーバーを使用している場合は、データ分類インスタンスに次のエンドポイントに接続するための送信インターネット アクセスがあることを確認してください。プロキシは非透過である必要があります。透過プロキシは現在サポートされていません。
++
+--
+データ分類を AWS、Azure、GCP のいずれに展開するかに応じて、以下の適切な表を確認してください。
+
+--
+
+
+[role="tabbed-block"]
+====
+.AWSに必要なエンドポイント
+--
+[cols="43,57"]
+|===
+| エンドポイント | 目的 
+
+
+| \https://api.bluexp.netapp.com | NetAppアカウントを含むコンソール サービスとの通信。 
+
+
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | 集中ユーザー認証のためのコンソール Web サイトとの通信。 
+
+
+| \https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供します。 
+
+
+| \https://kinesis.us-east-1.amazonaws.com | NetApp が監査レコードからデータをストリーミングできるようにします。 
+
+
+| \https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com | データ分類を有効にして、マニフェストとテンプレートにアクセスしてダウンロードし、ログとメトリックを送信できるようにします。 
+|===
+--
+.Azureに必要なエンドポイント
+--
+[cols="43,57"]
+|===
+| エンドポイント | 目的 
+
+
+| \https://api.bluexp.netapp.com | NetAppアカウントを含むコンソール サービスとの通信。 
+
+
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | 集中ユーザー認証のためのコンソール Web サイトとの通信。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供し、ログとメトリックを送信します。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
+|===
+--
+.GCP に必要なエンドポイント
+--
+[cols="43,57"]
+|===
+| エンドポイント | 目的 
+
+
+| \https://api.bluexp.netapp.com | NetAppアカウントを含むコンソール サービスとの通信。 
+
+
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | 集中ユーザー認証のためのコンソール Web サイトとの通信。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供し、ログとメトリックを送信します。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
+|===
+--
+====
+データ分類に必要な権限があることを確認する:: データ分類に、リソースをデプロイし、データ分類インスタンスのセキュリティ グループを作成するための権限があることを確認します。
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Google Cloud の権限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["AWS 権限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Azure のアクセス許可"^]
+
+
+--
+コンソールエージェントがデータ分類にアクセスできることを確認する:: コンソール エージェントとデータ分類インスタンス間の接続を確認します。コンソール エージェントのセキュリティ グループは、ポート 443 経由のデータ分類インスタンスとの間の受信トラフィックと送信トラフィックを許可する必要があります。この接続により、データ分類インスタンスのデプロイが可能になり、コンプライアンス タブとガバナンス タブで情報を表示できるようになります。データ分類は、AWS および Azure の政府リージョンでサポートされています。
++
+--
+AWS および AWS GovCloud のデプロイメントには、追加の受信および送信セキュリティ グループ ルールが必要です。見る https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS のコンソールエージェントのルール"^]詳細については。
+
+Azure および Azure Government の展開には、追加の受信および送信セキュリティ グループ ルールが必要です。見る https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure のコンソール エージェントのルール"^]詳細については。
+
+--
+データ分類を継続して実行できるようにする:: データを継続的にスキャンするには、データ分類インスタンスをオンのままにしておく必要があります。
+データ分類へのWebブラウザ接続を確保する:: データ分類を有効にした後、ユーザーがデータ分類インスタンスに接続しているホストからコンソール インターフェイスにアクセスすることを確認します。
++
+--
+データ分類インスタンスは、インデックス付けされたデータがインターネットからアクセスできないようにするためにプライベート IP アドレスを使用します。そのため、コンソールにアクセスするために使用する Web ブラウザは、そのプライベート IP アドレスに接続している必要があります。この接続は、クラウド プロバイダーへの直接接続 (VPN など) から行うことも、データ分類インスタンスと同じネットワーク内にあるホストから行うこともできます。
+
+--
+vCPUの制限を確認する:: クラウド プロバイダーの vCPU 制限によって、必要な数のコアを持つインスタンスのデプロイが許可されていることを確認します。コンソールが実行されているリージョン内の関連するインスタンス ファミリの vCPU 制限を確認する必要があります。link:concept-classification.html#the-data-classification-instance["必要なインスタンスタイプを確認する"] 。
++
+--
+vCPU 制限の詳細については、次のリンクを参照してください。
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS ドキュメント: Amazon EC2 サービスクォータ"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure ドキュメント: 仮想マシンの vCPU クォータ"^]
+* https://cloud.google.com/compute/quotas["Google Cloud ドキュメント: リソース割り当て"^]
+
+
+--
+
+
+
+
+== クラウドでデータ分類を展開
+
+クラウドにデータ分類のインスタンスをデプロイするには、次の手順に従います。コンソール エージェントはクラウドにインスタンスを展開し、そのインスタンスにデータ分類ソフトウェアをインストールします。
+
+デフォルトのインスタンスタイプが利用できない地域では、データ分類はlink:reference-instance-types.html["代替インスタンスタイプ"]。
+
+[role="tabbed-block"]
+====
+.AWSにデプロイ
+--
+.手順
+. データ分類のメイン ページから、*オンプレミスまたはクラウドでの分類の展開* を選択します。
++
+image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
+
+. [インストール] ページで、[デプロイ] > [デプロイ] を選択し、「大」インスタンス サイズを使用してクラウド デプロイ ウィザードを起動します。
+. ウィザードは、展開手順を実行する際の進行状況を表示します。入力が必要な場合、または問題が発生した場合には、プロンプトが表示されます。
+. インスタンスがデプロイされ、データ分類がインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
+
+
+--
+.Azureにデプロイする
+--
+.手順
+. データ分類のメイン ページから、*オンプレミスまたはクラウドでの分類の展開* を選択します。
++
+image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
+
+. *デプロイ* を選択して、クラウド デプロイ ウィザードを起動します。
+. ウィザードは、展開手順の実行中に進行状況を表示します。問題が発生すると停止し、入力を求められます。
+. インスタンスがデプロイされ、データ分類がインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
+
+
+--
+.Google Cloud にデプロイ
+--
+.手順
+. データ分類のメイン ページから、*ガバナンス > 分類* を選択します。
+. *オンプレミスまたはクラウドでの分類の展開*を選択します。
++
+image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
+
+. *デプロイ* を選択して、クラウド デプロイ ウィザードを起動します。
+. ウィザードは、展開手順の実行中に進行状況を表示します。問題が発生すると停止し、入力を求められます。
+. インスタンスがデプロイされ、データ分類がインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
+
+
+--
+====
+.結果
+コンソールは、クラウド プロバイダーにデータ分類インスタンスをデプロイします。
+
+インスタンスがインターネットに接続されている限り、コンソール エージェントとデータ分類ソフトウェアへのアップグレードは自動的に行われます。
+
+.次は何？
+構成ページから、スキャンするデータ ソースを選択できます。

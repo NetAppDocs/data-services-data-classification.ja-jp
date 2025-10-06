@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall.html 
+keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
+summary: 問題のトラブルシューティングを行うため、またはホストからソフトウェアを完全に削除するために、データ分類ソフトウェアをアンインストールすることができます。インスタンスを削除すると、インデックス付けされたデータが存在する関連ディスクも削除されます。データ分類によってスキャンされたすべての情報は永久に削除されます。 
+---
+= NetApp Data Classification をアンインストールする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+問題のトラブルシューティングを行ったり、ホストからソフトウェアを完全に削除したりするために、 NetApp Data Classification をアンインストールすることができます。インスタンスを削除すると、インデックス付けされたデータが存在する関連ディスクも削除されるため、データ分類によってスキャンされたすべての情報が完全に削除されます。
+
+使用する必要がある手順は、データ分類をクラウドに展開したか、オンプレミス ホストに展開したかによって異なります。
+
+
+
+== クラウドプロバイダーからデータ分類をアンインストールする
+
+. データ分類から**構成**を選択します。
+. 構成ページの下部で、[**Uninstall Classification**] を選択します。
++
+image:screenshot-uninstall.png["Data Classification をアンインストールするボタンのスクリーンショット。"]
+
+. ダイアログで「uninstall」と入力して、コンソール エージェントからデータ分類インスタンスの切断を続行します。確認するには**アンインストール**を選択します。
+. [_Uninstall Classification_] ダイアログで、「*uninstall*」と入力して、コンソール エージェントからデータ分類インスタンスを切断することを確認し、[*Uninstall*] を選択します。
+. アンインストール プロセスを完了するには、クラウド プロバイダーのコンソールに移動し、データ分類インスタンスを削除します。インスタンスの名前は _CloudCompliance_ となり、生成されたハッシュ (UUID) が連結されます。例: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+
+
+
+
+== オンプレミス展開からデータ分類をアンインストールする
+
+. データ分類から**構成**を選択します。
+. 構成ページの下部で、[**Uninstall Classification**] を選択します。
++
+image:screenshot-uninstall.png["Data Classification をアンインストールするボタンのスクリーンショット。"]
+
+. ダイアログで「uninstall」と入力して、コンソール エージェントからデータ分類インスタンスの切断を続行します。確認するには**アンインストール**を選択します。
+. ホストからソフトウェアをアンインストールするには、 `cleanup.sh`データ分類ホスト マシン上のスクリプト。例:
++
+[source, cli]
+----
+cleanup.sh
+----
++
+スクリプトは `/install/light_probe/onprem_installer/cleanup.sh`ディレクトリ。方法を見るlink:reference-log-in-to-instance.html["データ分類ホストマシンにログインする"]。
+
+

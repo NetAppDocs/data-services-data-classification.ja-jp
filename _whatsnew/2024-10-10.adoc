@@ -1,0 +1,17 @@
+= バージョン1.36
+:allow-uri-read: 
+
+
+
+
+=== バージョン1.36
+
+.RHEL 9.4 のサポート
+このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v9.4 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。
+
+次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、9.0、9.1、9.2、9.3、および 9.4。
+
+詳細はこちら https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP classification展開の概要"]。
+
+.スキャンパフォーマンスの向上
+このリリースでは、スキャン パフォーマンスが向上しました。
