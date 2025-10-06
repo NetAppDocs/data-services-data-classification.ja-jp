@@ -36,10 +36,10 @@ image:diagram_deploy_onprem_cloud_instance.png["必要なコンソールとネ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]コンソールエージェントを作成する
 [role="quick-margin-para"]
-コンソールエージェントがまだない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コンソールエージェントをオンプレミスに展開する"^]ネットワーク内の Linux ホスト上、またはクラウド内の Linux ホスト上。
+コンソールエージェントがまだない場合は、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["コンソールエージェントをオンプレミスに展開する"^]ネットワーク内の Linux ホスト上、またはクラウド内の Linux ホスト上。
 
 [role="quick-margin-para"]
-クラウド プロバイダーを使用してコンソール エージェントを作成することもできます。見る https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
+クラウド プロバイダーを使用してコンソール エージェントを作成することもできます。見る https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^]、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]前提条件を確認する
 [role="quick-margin-para"]
@@ -56,9 +56,9 @@ NetAppサポート サイトから Cloud Data Classification ソフトウェア�
 
 == コンソールエージェントを作成する
 
-Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コンソール機能にはコンソールエージェントが必要です"]ただし、今すぐ設定する必要がある場合もあります。
+Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソール機能にはコンソールエージェントが必要です"]ただし、今すぐ設定する必要がある場合もあります。
 
-クラウドプロバイダー環境で作成するには、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^] 、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
+クラウドプロバイダー環境で作成するには、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^] 、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
 
 特定のクラウド プロバイダーにデプロイされたコンソール エージェントを使用する必要があるシナリオがいくつかあります。
 
@@ -72,7 +72,7 @@ Azure NetApp Filesの場合、スキャンするボリュームと同じリー�
 
 オンプレミスのONTAPシステム、 NetAppファイル共有、データベース アカウントは、これらのクラウド コンソール エージェントのいずれかを使用してスキャンできます。
 
-また、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["コンソールエージェントをオンプレミスに展開する"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
+また、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["コンソールエージェントをオンプレミスに展開する"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
 
 Data Classification をインストールするときは、コンソール エージェント システムの IP アドレスまたはホスト名が必要になります。オンプレミスでコンソール エージェントをインストールした場合は、この情報が得られます。コンソール エージェントがクラウドに展開されている場合は、コンソールからこの情報を確認できます。ヘルプ アイコンを選択し、次に *サポート*、**コンソール エージェント** を選択します。
 
@@ -210,16 +210,16 @@ NOTE: データ分類ホスト システムの IP アドレスは、インスト
 | エンドポイント | 目的 
 
 
-| \https://api.bluexp.netapp.com | NetAppアカウントを含むコンソールとの通信。 
+| \https://api.console.netapp.com | NetAppアカウントを含むコンソールとの通信。 
 
 
 | \https://netapp-cloud-account.auth0.com \https://auth0.com | 集中ユーザー認証のためのコンソール Web サイトとの通信。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供し、ログとメトリックを送信します。 
+| \https://support.compliance.api.console.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供し、ログとメトリックを送信します。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
+| \https://support.compliance.api.console.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
 
 
 | \https://github.com/docker \https://download.docker.com | docker インストールの前提条件となるパッケージを提供します。 
@@ -293,7 +293,7 @@ image:diagram_deploy_onprem_single_host_internet.png["インターネット ア�
 インスタンスがインターネットに接続されている限り、データ分類ソフトウェアへのアップグレードは自動化されます。
 
 
-NOTE: 現在、Data Classification は、ソフトウェアがオンプレミスにインストールされている場合、S3 バケット、 Azure NetApp Files、または FSx for ONTAPをスキャンできません。このような場合には、クラウドに別のコンソールエージェントとデータ分類のインスタンスを展開し、 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタ間の切り替え"^]さまざまなデータ ソース用。
+NOTE: 現在、Data Classification は、ソフトウェアがオンプレミスにインストールされている場合、S3 バケット、 Azure NetApp Files、または FSx for ONTAPをスキャンできません。このような場合には、クラウドに別のコンソールエージェントとデータ分類のインスタンスを展開し、 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コネクタ間の切り替え"^]さまざまなデータ ソース用。
 
 
 

@@ -29,7 +29,7 @@ NetAppコンソールは、オンプレミスとクラウド環境全体にわ�
 
 NetAppコンソールの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
 
-詳細はこちらlink:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetAppコンソール"^]。
+詳細はこちらlink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetAppコンソール"^]。
 
 
 
@@ -37,7 +37,7 @@ NetAppコンソールの使用を開始するためにライセンスやサブ�
 
 データ分類では、人工知能 (AI)、自然言語処理 (NLP)、機械学習 (ML) を使用してスキャンしたコンテンツを理解し、エンティティを抽出してそれに応じてコンテンツを分類します。これにより、データ分類では次の機能領域が提供できるようになります。
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["データ分類のユースケースについて学ぶ"^] 。
+link:https://www.netapp.com/data-services/classification/["データ分類のユースケースについて学ぶ"^] 。
 
 .コンプライアンスを維持する
 データ分類では、コンプライアンスの取り組みに役立ついくつかのツールが提供されます。データ分類を使用すると次のことができます。
@@ -60,7 +60,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["データ分類のユース�
 データ分類は、ストレージの総所有コスト (TCO) の削減に役立つツールを提供します。データ分類を使用すると次のことができます。
 
 * 重複データやビジネスに関係のないデータを識別して、ストレージ効率を向上させます。
-* 非アクティブなデータを特定し、より安価なオブジェクト ストレージに階層化することで、ストレージ コストを節約します。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAPシステムの階層化について詳しくは"^] 。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["オンプレミスのONTAPシステムからの階層化の詳細"^] 。
+* 非アクティブなデータを特定し、より安価なオブジェクト ストレージに階層化することで、ストレージ コストを節約します。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAPシステムの階層化について詳しくは"^] 。 https://docs.netapp.com/us-en/data-services-tiering/concept-cloud-tiering.html["オンプレミスのONTAPシステムからの階層化の詳細"^] 。
 
 
 
@@ -76,6 +76,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["データ分類のユース�
 * Cloud Volumes ONTAP （AWS、Azure、または GCP にデプロイ）
 * オンプレミスのONTAPクラスタ
 * StorageGRID
+* Google Cloud NetApp Volumes
 
 
 *データソース*
@@ -107,7 +108,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["データ分類のユース�
 === インフラコスト
 
 * クラウドにデータ分類をインストールするには、クラウド インスタンスを展開する必要があり、展開先のクラウド プロバイダーから料金が発生します。見る<<データ分類インスタンス,各クラウドプロバイダーに展開されるインスタンスの種類>> 。オンプレミス システムに Data Classification をインストールする場合、料金はかかりません。
-* データ分類では、コンソール エージェントを展開する必要があります。多くの場合、コンソールで使用している他のストレージやサービスがあるため、既にコンソール エージェントが存在します。コンソール エージェント インスタンスには、デプロイされているクラウド プロバイダーからの料金が発生します。参照 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["各クラウドプロバイダーに展開されるインスタンスの種類"^]。オンプレミス システムにコンソール エージェントをインストールする場合、料金はかかりません。
+* データ分類では、コンソール エージェントを展開する必要があります。多くの場合、コンソールで使用している他のストレージやサービスがあるため、既にコンソール エージェントが存在します。コンソール エージェント インスタンスには、デプロイされているクラウド プロバイダーからの料金が発生します。参照 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["各クラウドプロバイダーに展開されるインスタンスの種類"^]。オンプレミス システムにコンソール エージェントをインストールする場合、料金はかかりません。
 
 
 
@@ -125,7 +126,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["データ分類のユース�
 
 == データ分類インスタンス
 
-クラウドにデータ分類をデプロイすると、コンソールはコンソール エージェントと同じサブネットにインスタンスをデプロイします。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コンソール エージェントの詳細について説明します。"^]
+クラウドにデータ分類をデプロイすると、コンソールはコンソール エージェントと同じサブネットにインスタンスをデプロイします。 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソール エージェントの詳細について説明します。"^]
 
 image:diagram_cloud_compliance_instance.png["クラウド プロバイダーで実行されているコンソール インスタンスとデータ分類インスタンスを示す図。"]
 
@@ -183,7 +184,7 @@ image:diagram_cloud_compliance_scan.png["クラウド プロバイダーで実�
 ボリューム レベルまたはデータベース スキーマ レベルでスキャンを有効または無効にすることができます。
 
 
-NOTE: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+NOTE: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。+ コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
 
 
 

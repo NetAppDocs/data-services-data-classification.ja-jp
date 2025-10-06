@@ -11,23 +11,23 @@
 .分類スキャンの優先順位付け
 データ分類では、マッピングのみのスキャンに加えて、マップと分類のスキャンを優先順位付けする機能がサポートされており、最初に完了するスキャンを選択できます。マップと分類スキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンを優先することを選択した場合、マッピングスキャンと分類スキャンの両方が優先されます。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンを優先する"] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンを優先する"] 。
 
 .カナダの個人識別情報（PII）データカテゴリのサポート
 データ分類スキャンは、カナダの PII データ カテゴリを識別します。これらのカテゴリには、すべてのカナダの州および準州の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康保険証番号が含まれます。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["個人データのカテゴリ"] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["個人データのカテゴリ"] 。
 
 .カスタム分類（プレビュー）
 データ分類では、マップと分類スキャンのカスタム分類をサポートします。カスタム分類を使用すると、正規表現を使用して組織固有のデータを取得するようにデータ分類スキャンをカスタマイズできます。この機能は現在プレビュー段階です。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["カスタム分類を追加する"] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-custom-classification.html["カスタム分類を追加する"] 。
 
-.保存されたクエリタブ
-**ポリシー**タブの名前が変更されましたlink:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**保存されたクエリ**"]。機能に変更はありません。
+.保存した検索タブ
+**ポリシー**タブの名前が変更されましたlink:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["**保存された検索**"]。機能に変更はありません。
 
 .スキャンイベントを監査ページに送信する
-データ分類は、分類イベント（スキャンの開始時と終了時）をlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetAppコンソール監査ページ"^]。
+データ分類は、分類イベント（スキャンの開始時と終了時）をlink:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetAppコンソール監査ページ"^]。
 
 .セキュリティアップデート
 * Keras パッケージが更新され、脆弱性 (BDSA-2025-0107 および BDSA-2025-1984) が軽減されました。

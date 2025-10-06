@@ -26,4 +26,4 @@
 * 100 万件のレコードをエクスポートするには約 35 分かかると予想されます。
 
 
-データ調査とレポートの詳細については、 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["組織内に保存されているデータを調査する"] 。
+データ調査とレポートの詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["組織内に保存されているデータを調査する"] 。

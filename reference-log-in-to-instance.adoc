@@ -35,7 +35,7 @@ Data Classification をクラウドにデプロイする場合は、Data Classif
 
 クラウド内のシステムにアクセスするには、セキュリティ グループの受信ルールを変更する必要があります。詳細については、以下を参照してください。
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWSのセキュリティグループルール"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure のセキュリティ グループ ルール"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud のファイアウォール ルール"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-aws.html["AWSのセキュリティグループルール"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-azure.html["Azure のセキュリティ グループ ルール"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-gcp.html["Google Cloud のファイアウォール ルール"^]
 

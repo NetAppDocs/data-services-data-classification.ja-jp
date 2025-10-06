@@ -5,7 +5,6 @@
   <block id="610f7d5f79f384f359db6b6e03367472" category="inline-link-macro">別のコンソールエージェントをインストールする</block>
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">別のデータ分類インスタンスをデプロイする</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">複数のコンソールエージェントを操作する</block>
-  <block id="6e34d61d6bca2c00d20d835d229b0cb1" category="paragraph">データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、<block ref="eeefa3a7df6ac6ed2095f7ad46b64f36" category="inline-link-macro-rx"></block>それから<block ref="5eea3619bc46427cc0fe40a7ee99bcc5" category="inline-link-macro-rx"></block>。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、<block ref="79cb417b711835e9290ab9a201050303" category="inline-link-macro-rx"></block> 。</block>
   <block id="c459d0d5027551c8ad596d2701837012" category="list-text">データ分類は、他のアプリケーションと共有されているホストではサポートされません。ホストは専用ホストである必要があります。</block>
   <block id="14246e64b6cc314c499299b0f4808cdb" category="list-text">オンプレミスでホスト システムを構築する場合、データ分類スキャンを実行する予定のデータセットのサイズに応じて、これらのシステム サイズから選択できます。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">システムサイズ</block>
@@ -83,7 +82,6 @@
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v9.4 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、9.0、9.1、9.2、9.3、および 9.4。</block>
   <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link">BlueXP classification展開の概要</block>
-  <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">詳細はこちら<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>。</block>
   <block id="7062dd46798946172bc9078744756dfc" category="paragraph-title">スキャンパフォーマンスの向上</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">このリリースでは、スキャン パフォーマンスが向上しました。</block>
   <block id="c1922490c576eff789b323f98c667589" category="doc">バージョン1.37</block>
@@ -92,7 +90,6 @@
   <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v8.10 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。</block>
   <block id="d4f80552d7e61deedef657200662a6be" category="paragraph">次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、および 9.4。</block>
   <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXP classification</block>
-  <block id="02614716996ee79f19fd518d96245572" category="paragraph">詳細はこちら<block ref="70c3dcecc9d46325f71ec51056cc6355" category="inline-link-rx"></block>。</block>
   <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">NFS v4.1 のサポート</block>
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">このリリースでは、以前サポートされていたバージョンに加えて、NFS v4.1 のサポートも提供されます。</block>
   <block id="5ae300808387123005a76abbd5a99f46" category="doc">バージョン1.38</block>
@@ -110,7 +107,6 @@
   <block id="d33a90467b78849917ec44b3e694a192" category="list-text">ダウンロードできるレコードの最大数は、タイプ（ファイル、ディレクトリ、テーブル）ごとに5億件です。</block>
   <block id="9720aabb6c8d5eb9cfcffd189ef86ed1" category="list-text">100 万件のレコードをエクスポートするには約 35 分かかると予想されます。</block>
   <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">組織内に保存されているデータを調査する</block>
-  <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">データ調査とレポートの詳細については、<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block> 。</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="doc">バージョン1.40</block>
   <block id="dc4b47101650865122105745fe8d0a2c" category="paragraph-title">RHEL 9.5 のサポート</block>
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v9.5 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。</block>
@@ -139,15 +135,12 @@
   <block id="cb79cf2c786ed3992ebf9c4489793af5" category="paragraph">デフォルトでは、スキャンは開始された順序に基づいてキューに入れられます。スキャンを優先順位付けする機能を使用すると、スキャンをキューの先頭に移動できます。複数のスキャンを優先できます。優先順位は先入れ先出しの順序で指定されます。つまり、最初に優先順位を指定したスキャンがキューの先頭に移動し、2 番目に優先順位を指定したスキャンはキューの 2 番目になり、以下同様に続きます。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">優先権は 1 回限り付与されます。マッピング データの自動再スキャンはデフォルトの順序で実行されます。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">マッピングのみのスキャン</block>
-  <block id="67fe9ebf97d37e44f7e38b8221cb5c10" category="paragraph">優先順位は<block ref="ad7d2e316f23d4f85c7d05a68105a84b" category="inline-link-macro-rx"></block>; マップスキャンや分類スキャンには使用できません。</block>
-  <block id="65d0aa01e8cb73d7f5c3ed79051f78c8" category="paragraph">詳細については、以下を参照してください。 <block ref="7906b79b56c525526a8be1ef38207fbe" category="inline-link-macro-rx"></block> 。</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">すべてのスキャンを再試行する</block>
   <block id="fc758db0d443b9a8e3de231c43de89d5" category="paragraph">BlueXP classificationは、失敗したすべてのスキャンを一括して再試行する機能をサポートしています。</block>
   <block id="ce19c0b7b750b810547f423b2290cfd8" category="paragraph">**すべて再試行** 機能を使用すると、バッチ操作でスキャンを再試行できます。ネットワークの停止などの一時的な問題により分類スキャンが失敗した場合は、スキャンを個別に再試行するのではなく、1 つのボタンですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。</block>
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">すべてのスキャンを再試行するには:</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">分類モデルの精度向上</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">定義済みカテゴリ</block>
-  <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">機械学習モデルの精度は<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>11%向上しました。</block>
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">バージョン1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">このBlueXP classificationリリースには、一般的な改善とバグ修正が含まれています。また、次のものも含まれます:</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">スキャンステータス</block>
@@ -160,26 +153,18 @@
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">調査レポートをローカルにダウンロードする</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用でき、最初の 10,000 行のデータのみが表示されます。</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">BlueXP classificationを使用して組織内に保存されているデータを調査します</block>
-  <block id="4b23e8e8b3c785425bb2f43c66b07bac" category="paragraph">詳細については、以下を参照してください。 <block ref="7ebae31e4d4430330abc2c251fc33af0" category="inline-link-macro-rx"></block> 。</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">バージョン1.43</block>
   <block id="bb4c36ac9f10bc64e16bd125cb997dcd" category="paragraph">このデータ分類リリースには以下が含まれます。</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">分類スキャンの優先順位付け</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">データ分類では、マッピングのみのスキャンに加えて、マップと分類のスキャンを優先順位付けする機能がサポートされており、最初に完了するスキャンを選択できます。マップと分類スキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンを優先することを選択した場合、マッピングスキャンと分類スキャンの両方が優先されます。</block>
-  <block id="57d85b4f49f470b7d997c29f8429b5e7" category="paragraph">詳細については、以下を参照してください。 <block ref="f531a90b2f521cc15b6c40a4fefd348c" category="inline-link-macro-rx"></block> 。</block>
   <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">カナダの個人識別情報（PII）データカテゴリのサポート</block>
   <block id="e01a3dc881c55884c6048183c704e40b" category="paragraph">データ分類スキャンは、カナダの PII データ カテゴリを識別します。これらのカテゴリには、すべてのカナダの州および準州の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康保険証番号が含まれます。</block>
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-link-macro">個人データのカテゴリ</block>
-  <block id="306edd7aeedf6507cc97939f9da0078d" category="paragraph">詳細については、以下を参照してください。 <block ref="4bbd4987f0bfb0027f16d1ecbeb0ac2a" category="inline-link-macro-rx"></block> 。</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">カスタム分類（プレビュー）</block>
   <block id="3a5909ab4d10a09f1edd87c832553506" category="paragraph">データ分類では、マップと分類スキャンのカスタム分類をサポートします。カスタム分類を使用すると、正規表現を使用して組織固有のデータを取得するようにデータ分類スキャンをカスタマイズできます。この機能は現在プレビュー段階です。</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-link-macro">カスタム分類を追加する</block>
-  <block id="99eed1f6672cc1f43b2df5c4804244c8" category="paragraph">詳細については、以下を参照してください。 <block ref="dff0174af6dfcf02b13f904a99df6834" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d9fd2e19f645697f8125f2973a36e4cc" category="paragraph-title">保存されたクエリタブ</block>
-  <block id="25efc68f5c945b55b2e1783928f30956" category="inline-link-macro">**保存されたクエリ**</block>
-  <block id="ff882fb8bb6d062c5a6386ca03370a0b" category="paragraph">**ポリシー**タブの名前が変更されました<block ref="fcc9e11198db12db661e6accf863f824" category="inline-link-macro-rx"></block>。機能に変更はありません。</block>
   <block id="2e2e722b53fe801ed6bcd1713f8325ac" category="paragraph-title">スキャンイベントを監査ページに送信する</block>
   <block id="0d01ca23121427aff206ecc678cb7af3" category="inline-link-macro">NetAppコンソール監査ページ</block>
-  <block id="c760bec5d3c809a66d340c87aad1e683" category="paragraph">データ分類は、分類イベント（スキャンの開始時と終了時）を<block ref="5cf8e4e65e05f71735dcd850286cd78b" category="inline-link-macro-rx"></block>。</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">セキュリティアップデート</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Keras パッケージが更新され、脆弱性 (BDSA-2025-0107 および BDSA-2025-1984) が軽減されました。</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Docker コンテナの構成が更新されました。コンテナは、生のネットワーク パケットを作成するためにホストのネットワーク インターフェイスにアクセスできなくなります。このアップデートでは、不要なアクセスを減らすことで、潜在的なセキュリティ リスクを軽減します。</block>
@@ -202,13 +187,11 @@
   <block id="f12b42eece54a56ffab836a42eb37488" category="cell">ファイルの種類</block>
   <block id="8c8fee331e9f3e5231bff4fd3c702b79" category="cell">非ビジネスデータ</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">オープン権限</block>
-  <block id="47e39f40942a49cfb34848514072c778" category="cell">保存されたクエリ</block>
   <block id="8b15c77295fd06496b4e5497d3038948" category="cell">機密データと幅広い権限</block>
   <block id="3b082340d0ec4e5cb8705d8e8dbd7b20" category="cell">データのサイズ</block>
   <block id="3c321d8be960cf9c4e3de3feeb79454d" category="cell">古いデータ</block>
   <block id="66f1eb6a68ea177f7b25f4befa2afcb5" category="cell">機密レベル別トップデータリポジトリ</block>
   <block id="b97835ec7267635dbdb6a030bb594b9b" category="inline-link-macro">組織に保存されているデータに関するガバナンスの詳細を表示する</block>
-  <block id="c87807de15a8b516f0524de15fba57a6" category="paragraph">最終更新の時刻を表示し、重複ファイル、非ビジネス データ、保存されたクエリ、古いデータ、および機密レベル別の上位データ リポジトリ コンポーネントを手動で更新できます。ガバナンスダッシュボードの詳細については、以下を参照してください。<block ref="1ce3f0a304b1b93276c322629a323f14" category="inline-link-macro-rx"></block> 。</block>
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">パフォーマンスとセキュリティの改善</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">BlueXP分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。  BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。</block>
@@ -217,17 +200,14 @@
   <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">スキャン対象ファイル共有を追加するワークフローの改善</block>
   <block id="7363f98210e80281886d9b88b644899c" category="paragraph">ファイル共有グループにファイル共有を追加するワークフローが簡素化されました。このプロセスでは、認証タイプ (Kerberos または NTLM) に基づいて CIFS プロトコルのサポートも区別されるようになりました。</block>
   <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-link-macro">ファイル共有をスキャンする</block>
-  <block id="c10aaeed86973ee0f442f2e7b73b80b8" category="paragraph">詳細については、以下を参照してください。 <block ref="c56cfb642e9d697265520a2d16e8cbad" category="inline-link-macro-rx"></block> 。</block>
   <block id="2cc1f0459a8aa18da26c0c17c08edd37" category="paragraph-title">拡張ファイル所有者情報</block>
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">調査タブでキャプチャされたファイルのファイル所有者に関する詳細情報を表示できるようになりました。 [調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directory が稼働している作業環境でのみ使用できます。</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">組織内に保存されているデータを調査する</block>
-  <block id="476669d16044da6b8fccc04e3a65c887" category="paragraph">詳細については、以下を参照してください。 <block ref="202490d1a2feeed942d0b33752539ffd" category="inline-link-macro-rx"></block> 。</block>
   <block id="7a4e65e1bd3f1685ea059c893a13cb58" category="doc">バージョン1.46</block>
   <block id="98f52421b10c8b076970cd9d4bc2932c" category="paragraph">このデータ分類リリースには、バグ修正と次の更新が含まれています。</block>
   <block id="2c3661dfa2b24a2bf7320699cd536d69" category="paragraph-title">監査ページでのスキャンイベントの分析情報が強化されました</block>
   <block id="56693a88c5f83646349fbcd49bc5c045" category="paragraph">監査ページでは、 BlueXP classificationのスキャン イベントに関する強化された分析がサポートされるようになりました。監査ページには、システムのスキャンが開始された日時、システムのステータス、および問題が表示されるようになりました。共有とシステムのステータスはマッピング スキャンでのみ使用できます。</block>
   <block id="00b752fcc4ff0f02c4a53ddfe7ca85f1" category="inline-link-macro">NetAppコンソールの操作を監視する</block>
-  <block id="f4994cfd58f7f9c7ef87909cf26088ef" category="paragraph">監査ページの詳細については、以下を参照してください。<block ref="89b9ba3fca391e327c51760119274daf" category="inline-link-macro-rx"></block> 。</block>
   <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">RHEL 9.6 のサポート</block>
   <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。</block>
   <block id="ffc4cf2b04c0381567893ed4b4045ccf" category="doc">バージョン1.47</block>
@@ -237,15 +217,9 @@
   <block id="745be0d280d894f70c3f88e76f519456" category="paragraph">BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。</block>
   <block id="7e4f7c37590688c797d9b40e3a3423e3" category="paragraph">NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。</block>
   <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link">NetAppコンソールのリリースノート</block>
-  <block id="9d88b780dd182bc558e5dd7624d35838" category="paragraph">変更内容の詳細については、<block ref="857ac87b6d807bceb0af9d0ff774da69" category="inline-link-rx"></block> 。</block>
   <block id="d57567637ab51796d55a7b44fb6ebc11" category="paragraph-title">アクション（プレビュー）</block>
-  <block id="3bee4a233eeb7f3ddf8f141c297c72aa" category="paragraph">データ分類では、調査ページでのアクションがサポートされるようになりました。データ分類からファイルをコピー、移動、削除できます。</block>
-  <block id="47b074b6c38a50f24d2394037df9e007" category="paragraph-title">ファイルのタグ付けのサポート（プレビュー）</block>
-  <block id="1ce2d22605a8a281dea6ac1c373a0043" category="paragraph">データ分類では、個々のファイルのタグ付けがサポートされるようになりました。ファイル タグを使用すると、データを識別およびフィルター処理するために使用できる特定のファイルのカスタム識別子を作成できます。タグを使用すると、データ調査で特定の品質を識別したり、タグの結果に基づいて保存されたクエリやポリシーを作成したりできます。</block>
   <block id="d9ff86959e1f6d2016c4db58114184ab" category="inline-link-macro">ファイルのメタデータを表示</block>
-  <block id="22f0e881e8ef5054d7acbf5d864e7e75" category="paragraph">詳細については、以下を参照してください。 <block ref="8dc97c3711123fd306d6ce2e896174a0" category="inline-link-macro-rx"></block> 。</block>
   <block id="505912d307cab52606f6debfb848dd6b" category="paragraph-title">保存されたクエリのポリシー（プレビュー）</block>
-  <block id="a1007eaf34401d51ecc76b27d45038c8" category="paragraph">保存された検索の名前が保存されたクエリに変更されました。保存したクエリを実用的なポリシーに変換することもできます。保存したクエリ結果に基づいて、データを削除したり、電子メール通知を送信したりすることができます。</block>
   <block id="663b8460da445a8bdcdacd5586794a5a" category="inline-link-macro">ポリシーを作成</block>
   <block id="8ce840152bdbc7f0d0ab73586b35794e" category="paragraph">詳細については、以下を参照してください。 <block ref="8475d31dfff4871bdba543b2c91cd563" category="inline-link-macro-rx"></block> 。</block>
   <block id="5eb2a16d2fa5bf1cf608a92f8904a2ae" category="summary">Web UI を通じて利用できるNetAppデータ分類機能は、API を通じても利用できます。</block>
@@ -256,7 +230,6 @@
   <block id="9c0408c775a2b61052a2e700a89f396f" category="list-text">コンプライアンス</block>
   <block id="5a935787d6f091fc760443ab4c491465" category="list-text">ガバナンス</block>
   <block id="254f642527b45bc260048e30704edb39" category="list-text">構成</block>
-  <block id="8b9894465ae8ffe8540ab225929ef751" category="paragraph">Swagger ドキュメントの API を使用すると、検索、データの集約、スキャンの追跡、コピー、移動などのアクションの実行が可能です。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概要</block>
   <block id="0834282da4451153933b764b7c467961" category="paragraph">API を使用すると、次の機能を実行できます。</block>
   <block id="e9877434dd91b8be501cfda768f3d62d" category="list-text">輸出情報</block>
@@ -292,11 +265,9 @@
   <block id="6e333b6c93480f6d32d540f9875aaf58" category="paragraph">データ分類はNetAppコンソールからアクセスできます。</block>
   <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。</block>
   <block id="874065797510ef71853078d085cab4b0" category="paragraph">NetAppコンソールの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。</block>
-  <block id="e955295a860e893d00951c8233972d56" category="paragraph">詳細はこちら<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block>。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">機能</block>
   <block id="37cb16e4669da87ff6f679ed55f7bc40" category="paragraph">データ分類では、人工知能 (AI)、自然言語処理 (NLP)、機械学習 (ML) を使用してスキャンしたコンテンツを理解し、エンティティを抽出してそれに応じてコンテンツを分類します。これにより、データ分類では次の機能領域が提供できるようになります。</block>
   <block id="1302d934616739b1e67d00e4a81af9ca" category="inline-link">データ分類のユースケースについて学ぶ</block>
-  <block id="0f7af1e3eff4c9d2897ce2ee43122bb8" category="paragraph"><block ref="c39319a1d73c1cb19b0501d6a5bf8c55" category="inline-link-rx"></block> 。</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="paragraph-title">コンプライアンスを維持する</block>
   <block id="eefee6760c920e2f37921a16b9f4ddc6" category="paragraph">データ分類では、コンプライアンスの取り組みに役立ついくつかのツールが提供されます。データ分類を使用すると次のことができます。</block>
   <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">個人を特定できる情報 (PII) を特定します。</block>
@@ -313,7 +284,6 @@
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">重複データやビジネスに関係のないデータを識別して、ストレージ効率を向上させます。</block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">Cloud Volumes ONTAPシステムの階層化について詳しくは</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">オンプレミスのONTAPシステムからの階層化の詳細</block>
-  <block id="fb9f305ae47362d3da6e3ade499105ee" category="list-text">非アクティブなデータを特定し、より安価なオブジェクト ストレージに階層化することで、ストレージ コストを節約します。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="b7350948393fc35e7105d2df80148b7f" category="inline-link-rx"></block> 。</block>
   <block id="14d419d6dcfdbca61341f104ce611d2c" category="section-title">サポートされているシステムとデータソース</block>
   <block id="b06f93a227008c7db0423fc12da7a094" category="paragraph">データ分類では、次の種類のシステムおよびデータ ソースからの構造化データと非構造化データをスキャンして分析できます。</block>
   <block id="e3c12542b137e17b4e96acf4577f9ef4" category="paragraph">*システム*</block>
@@ -339,7 +309,6 @@
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">各クラウドプロバイダーに展開されるインスタンスの種類</block>
   <block id="af00b9be43eb959d9d26443cb2033e8c" category="list-text">クラウドにデータ分類をインストールするには、クラウド インスタンスを展開する必要があり、展開先のクラウド プロバイダーから料金が発生します。見る<block ref="562efa8521f22786acd4dac0160ca725" category="inline-xref-macro-rx"></block> 。オンプレミス システムに Data Classification をインストールする場合、料金はかかりません。</block>
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">各クラウドプロバイダーに展開されるインスタンスの種類</block>
-  <block id="b0b0aa0d64e0327d3e981ac99992fdc5" category="list-text">データ分類では、コンソール エージェントを展開する必要があります。多くの場合、コンソールで使用している他のストレージやサービスがあるため、既にコンソール エージェントが存在します。コンソール エージェント インスタンスには、デプロイされているクラウド プロバイダーからの料金が発生します。参照<block ref="48e31103093fd55a8a781c9c8d4b19d2" category="inline-link-rx"></block>。オンプレミス システムにコンソール エージェントをインストールする場合、料金はかかりません。</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">データ転送コスト</block>
   <block id="20a016b26127d34612cd81d9ef817efe" category="paragraph">データ転送コストは設定によって異なります。データ分類インスタンスとデータ ソースが同じアベイラビリティー ゾーンとリージョンにある場合、データ転送コストは発生しません。ただし、 Cloud Volumes ONTAPシステムなどのデータ ソースが別のアベイラビリティ ゾーンまたはリージョンにある場合は、クラウド プロバイダーからデータ転送コストが請求されます。詳細については、次のリンクを参照してください。</block>
   <block id="f3d1244221881043e7d38d834935042d" category="inline-link">AWS: Amazon Elastic Compute Cloud (Amazon EC2) の料金</block>
@@ -350,7 +319,6 @@
   <block id="b32e9a6456108ba85b0f804d74e36f06" category="list-text"><block ref="b32e9a6456108ba85b0f804d74e36f06" category="inline-link-rx"></block></block>
   <block id="d602cd7dff9038874f4d53bf5f5b80bc" category="section-title">データ分類インスタンス</block>
   <block id="243db0e87ca622775ff7a0bd536434cf" category="inline-link">コンソール エージェントの詳細について説明します。</block>
-  <block id="2c6a739fc13c379322ac61da752bb9ae" category="paragraph">クラウドにデータ分類をデプロイすると、コンソールはコンソール エージェントと同じサブネットにインスタンスをデプロイします。<block ref="75a419b700ff62b06ba829acd5876ea5" category="inline-link-rx"></block></block>
   <block id="2aa86c5208d31611c5b696e1f8b7bcc1" category="inline-image-macro">クラウド プロバイダーで実行されているコンソール インスタンスとデータ分類インスタンスを示す図。</block>
   <block id="e3039a8cdad0a73851473ddb07dde2db" category="paragraph"><block ref="e3039a8cdad0a73851473ddb07dde2db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0fcbb838b28fe6620124c2e3523d9aec" category="paragraph">デフォルトインスタンスについては次の点に注意してください。</block>
@@ -484,7 +452,6 @@
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">完全スキャン後には、データ調査ページでのデータの表示と絞り込み、ファイル内の名前の検索、ソース ファイルのコピー、移動、削除など、データに適用できる追加のデータ分類機能が多数あります。</block>
   <block id="8f6adf4dbf6fab8e9a0fa95709bc6780" category="paragraph">データ分類では、ファイル名、権限、作成時間、最終アクセス、最終変更などのメタデータを取得します。これには、データ調査の詳細ページとデータ調査レポートに表示されるすべてのメタデータが含まれます。</block>
   <block id="b8ede2d0f0baf0dbbcd6b1caa3c24a82" category="inline-link">データ分類がスキャンする個人データのカテゴリ</block>
-  <block id="d3b8da892fcaa0209443977060316126" category="paragraph">データ分類では、個人情報 (PII) や機密個人情報 (SPII) など、さまざまな種類のプライベート データを識別できます。個人データの詳細については、<block ref="ad46cce0e6275598737aa0430fd9f9f3" category="inline-link-rx"></block> 。</block>
   <block id="cc6c818a7ff4844f95f831b7fea5d028" category="section-title">データ分類情報を特定のユーザーに制限できますか?</block>
   <block id="6a1848c615c0a6fa2147d1c6a685db83" category="paragraph">はい、データ分類はNetAppコンソールと完全に統合されています。  NetAppコンソール ユーザーは、権限に応じて表示資格のあるシステムの情報のみを表示できます。</block>
   <block id="bd09e325dd3fadca882741496ea0db32" category="paragraph">さらに、特定のユーザーにデータ分類設定の管理権限を与えずにデータ分類スキャン結果の表示のみを許可する場合は、そのユーザーに *分類閲覧者* ロール ( NetAppコンソールを標準モードで使用する場合) または *コンプライアンス閲覧者* ロール ( NetAppコンソールを制限モードで使用する場合) を割り当てることができます。<block ref="d17fd0889fdecbf44291c8706a754975" category="inline-link-macro-rx"></block> 。</block>
@@ -512,7 +479,6 @@
   <block id="bcdb2f393c3c29bc329a8b2e81ff4d7b" category="list-text">GCP のCloud Volumes ONTAPの場合: コンソール エージェントは GCP にあります。</block>
   <block id="5b048c185021991afc29c7cbfc99edd1" category="list-text">オンプレミスのONTAPシステムの場合: コンソール エージェントはオンプレミスです。</block>
   <block id="4499f4b8ecc24cd40dec3cac40d24ffb" category="inline-link">複数のコンソールエージェント</block>
-  <block id="2949ae303037fe477598c86ea8ec232c" category="paragraph">これらの場所にデータがある場合は、<block ref="d8e11d258192aa23649aeec82a62bba0" category="inline-link-rx"></block> 。</block>
   <block id="fbb9f7940d33043a3e5b2503379af008" category="section-title">データ分類には資格情報へのアクセスが必要ですか?</block>
   <block id="f57ddacd84c3e7c699c578225a0b996d" category="paragraph">データ分類自体はストレージ資格情報を取得しません。代わりに、コンソール エージェント内に保存されます。</block>
   <block id="79e01ffb0f61cc0708700278781a7228" category="paragraph">データ分類では、スキャン前に共有をマウントするための CIFS 資格情報などのデータ プレーン資格情報を使用します。</block>
@@ -553,7 +519,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、 NetAppソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が提供されます。</block>
   <block id="50dbf63cd0ab8144a287e5cd6a0f1de2" category="inline-link">NetAppコンソールに関するお知らせ</block>
-  <block id="e672b1ea49afca81ea77f91f12f606ea" category="list-text"><block ref="e672b1ea49afca81ea77f91f12f606ea" category="inline-link-rx"></block></block>
   <block id="f37c3290cc7809950665b5453a791168" category="inline-link-macro">NetAppデータ分類に関する通知</block>
   <block id="ac504804f226f1152fbc41d9f7d275a8" category="list-text"><block ref="ac504804f226f1152fbc41d9f7d275a8" category="inline-link-macro-rx"></block></block>
   <block id="7d8a62fbff7754d15c3345a4a5a2a42c" category="summary">データ分類は、データ ソースおよびシステムからのデータの分類スキャンを実行するときに、特定のメタデータを収集します。データ分類では、データを分類するために必要なメタデータのほとんどにアクセスできますが、必要なデータにアクセスできないソースもいくつかあります。</block>
@@ -590,7 +555,6 @@
   <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類 - 最終アクセス時間を戻すことができません」 - 書き込み権限がないため分類されなかったファイルが表示されます。</block>
   <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">「分類され、更新された最終アクセス時刻」 - 分類されたファイルが表示され、データ分類では最終アクセス時刻を元の日付にリセットできませんでした。このフィルターは、*「属性の書き込み」権限がない場合にスキャン*をオンにした環境にのみ関連します。</block>
   <block id="529e58159a0567a96e1265aa7c80760b" category="inline-link">データ調査レポートの詳細</block>
-  <block id="94a52882adfe57c5834eeba52357fc83" category="paragraph">必要に応じて、これらの結果をレポートにエクスポートして、権限によりスキャンされているファイルとスキャンされていないファイルを確認できます。<block ref="12cdeb999c26684f4f639c285d1ab42e" category="inline-link-rx"></block> 。</block>
   <block id="eacfad7ae9e6aba32bdbef2948b1d628" category="summary">データベース スキーマをスキャンするときに、 NetApp Data Classification では使用できない機能がいくつかあります。</block>
   <block id="e6dbbec80e173d3f91cf2b227477d31c" category="doc">NetApp Data Classification でサポートされているデータベース機能とサポートされていないデータベース機能</block>
   <block id="ad52d3616ca8f733ae442a642767c792" category="paragraph">データベース スキーマをスキャンするときに、 NetApp Data Classification では使用できない機能がいくつかあります。以下のリストを参照してください。</block>
@@ -708,11 +672,8 @@
   <block id="69dddba0a55185cef9f4fdc90185faf0" category="list-text"><block ref="d34115f08a9cd05cd08bb71d5c12bce6" prefix="" category="inline-code"></block>= 仮想マシンインスタンスのIPアドレス</block>
   <block id="d80c05f70aef61e54d7435b5f2f7b540" category="paragraph">クラウド内のシステムにアクセスするには、セキュリティ グループの受信ルールを変更する必要があります。詳細については、以下を参照してください。</block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWSのセキュリティグループルール</block>
-  <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
   <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azure のセキュリティ グループ ルール</block>
-  <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud のファイアウォール ルール</block>
-  <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
   <block id="45a11a8c985eaff97501440b44c7931b" category="summary">データ分類によってボリューム内で識別できるプライベート データには多くの種類があります。</block>
   <block id="9a279b74403b50c92a686a9f4191393d" category="doc">NetApp Data Classificationにおけるプライベートデータのカテゴリ</block>
   <block id="9d1da2aad50a693d2d036e5e45ae2906" category="paragraph">NetApp Data Classification がボリュームやデータベース内で識別できるプライベート データには多くの種類があります。</block>
@@ -924,10 +885,8 @@
   <block id="590c4cddccf03d5e6226c6a420453b3a" category="inline-link-macro">コンソールへのログインについて詳しくは</block>
   <block id="0dfeedf5746ffe757d9288f5ea0a7c7e" category="paragraph">コンソールにサインインするには、 NetAppサポート サイトの認証情報を使用するか、電子メールとパスワードを使用してNetAppコンソール ログインにサインアップすることができます。<block ref="9ff7aa37af5608f3763961558f648927" category="inline-link-macro-rx"></block> 。</block>
   <block id="2152a2d176eba534e81c7e1450f6b5e0" category="inline-link-macro">すべてのサービスのコンソールアクセスロールについて学習します</block>
-  <block id="31491b158b65404937ecc66b819d3d81" category="paragraph">特定のタスクには、特定のコンソール ユーザー ロールが必要です。<block ref="c63b2c8d20974c1834bc75207be469f3" category="inline-link-macro-rx"></block> 。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始する前に</block>
   <block id="1b8c7f66e9045676fe4f85416e518b8c" category="inline-link-macro">コンソール エージェントを追加する必要があります。</block>
-  <block id="1142c2246a5ae57a43ec32fa34c32107" category="list-text"><block ref="1142c2246a5ae57a43ec32fa34c32107" category="inline-link-macro-rx"></block></block>
   <block id="88cd5729368801e33f498c554bfb966c" category="inline-link-macro">どのデータ分類展開スタイルがワークロードに適しているかを理解します。</block>
   <block id="86f7583767096445977fa5ff855fffb0" category="list-text"><block ref="86f7583767096445977fa5ff855fffb0" category="inline-link-macro-rx"></block></block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="inline-link-macro">コンソール</block>
@@ -1161,9 +1120,7 @@
   <block id="77b5d2f21e25341a3f84901a513bf64c" category="inline-link">AWSでコンソールエージェントを作成する</block>
   <block id="5dc317f5e4506014a6457cea6e36b5e8" category="inline-link">Azureでコンソールエージェントを作成する</block>
   <block id="48c24d9c6f6e8d0b548116a386c62dbe" category="inline-link">GCP でコンソール エージェントを作成する</block>
-  <block id="9269b303ec3b5551c249a722035ef520" category="paragraph">コンソール エージェントがまだない場合は作成します。見る<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>、<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> 、 または<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="02559d50684120805e2f264bdea2e4c1" category="inline-link">オンプレミスにコンソールエージェントをインストールする</block>
-  <block id="6eb3b1d7a9e4b047c0ac4e6c4c76fcd0" category="paragraph">また、<block ref="1e978d352407f0b82159fac054bda46b" category="inline-link-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2</block>
   <block id="0e2ddd6334405299d1b4c44e894c9e78" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>前提条件</block>
   <block id="339dbb3aad86454446f85f0a0a7f7606" category="paragraph">ご使用の環境が前提条件を満たしていることを確認してください。これには、インスタンスのアウトバウンド インターネット アクセス、ポート 443 経由のコンソール エージェントとデータ分類間の接続などが含まれます。  &lt;&lt;前提条件、完全なリストを参照してください&gt;&gt;。</block>
@@ -1172,19 +1129,15 @@
   <block id="9f0ba00e2450c6e218eaa2d60c8c8ee7" category="paragraph">インストール ウィザードを起動して、データ分類インスタンスをクラウドにデプロイします。</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="section-title">コンソールエージェントを作成する</block>
   <block id="1f96813eb41ebd0c3dd5544a17de7743" category="inline-link">コンソール機能にはコンソールエージェントが必要です</block>
-  <block id="183feca85a67d14c7ee7bf94e79ca425" category="paragraph">コンソール エージェントがまだない場合は、クラウド プロバイダーにコンソール エージェントを作成します。見る<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>または<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block>、 または<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。<block ref="d4a7b9e26395cc2d871371cd60caf40e" category="inline-link-rx"></block>ただし、今すぐ設定する必要がある場合もあります。</block>
   <block id="529213d44c3711e3260c35b12c2d2580" category="paragraph">特定のクラウド プロバイダーにデプロイされたコンソール エージェントを使用する必要があるシナリオがいくつかあります。</block>
   <block id="cfea0a57313e8ccb9a39d4af86e20ca9" category="list-text">AWS のCloud Volumes ONTAPまたはAmazon FSx for ONTAPバケット内のデータをスキャンする場合は、AWS のコンソールエージェントを使用します。</block>
   <block id="5603e4788fdafa67a19bd479883972c6" category="list-text">Azure のCloud Volumes ONTAPまたはAzure NetApp Filesでデータをスキャンする場合は、Azure のコンソール エージェントを使用します。</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">Azure NetApp Filesの場合、スキャンするボリュームと同じリージョンにデプロイする必要があります。</block>
   <block id="2f3343ea56a236ac7df9fd71459af465" category="list-text">GCP のCloud Volumes ONTAPでデータをスキャンする場合は、GCP のコンソール エージェントを使用します。</block>
   <block id="e49d11048063c821e2d61e7d656352c8" category="paragraph">これらのクラウド コンソール エージェントのいずれかを使用すると、オンプレミスのONTAPシステム、 NetAppファイル共有、およびデータベースをスキャンできます。</block>
-  <block id="bdf7e92c75266702aa020b38b94bcfb2" category="paragraph">また、<block ref="1e978d352407f0b82159fac054bda46b" category="inline-link-rx"></block>ネットワークまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
-  <block id="b8c91e73d9bca3aab488aa1e9c034b33" category="paragraph">ご覧のとおり、状況によっては<block ref="d2d5c9bbe6a5c3a11bcc18d9c9932817" category="inline-link-rx"></block>。</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府地域支援</block>
   <block id="90476c1dd7be704eec72e67e38b53fff" category="paragraph">データ分類は、コンソール エージェントが政府リージョン (AWS GovCloud、Azure Gov、または Azure DoD) にデプロイされている場合にサポートされます。この方法で展開する場合、データ分類には次の制限があります。</block>
   <block id="2f39ad11fa41d7d59b3cab13367c7762" category="inline-link">政府地域におけるコンソールエージェントの導入に関する詳細情報</block>
-  <block id="469b2299225c9649c2f8076ecb2bb940" category="paragraph"><block ref="9ada21d83e897f90787f5eb5f131f279" category="inline-link-rx"></block> 。</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="section-title">前提条件</block>
   <block id="f4df53c9081ea6340923013025dd19a1" category="paragraph">クラウドにデータ分類を展開する前に、次の前提条件を確認して、サポートされている構成があることを確認してください。クラウドにデータ分類を展開すると、コンソール エージェントと同じサブネットに配置されます。</block>
   <block id="b3afed32875b4a54f2caed1b075ae9f5" category="list-text">データ分類からのインターネットへのアウトバウンドアクセスを有効にする</block>
@@ -1192,7 +1145,6 @@
   <block id="3f7618999090f33dbcc2e2edc5392f99" category="paragraph">データ分類を AWS、Azure、GCP のいずれに展開するかに応じて、以下の適切な表を確認してください。</block>
   <block id="4ea85be63fc1085d8a7d469d21ced42a" category="open-title">AWSに必要なエンドポイント</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="cell">\https://api.bluexp.netapp.com</block>
   <block id="c9350c8c56191db5db9cd04a1e21547f" category="cell">NetAppアカウントを含むコンソール サービスとの通信。</block>
   <block id="739c84d599ed76e9cac5ee121e899564" category="cell">\https://netapp-cloud-account.auth0.com \https://auth0.com</block>
   <block id="8d461f918f9b37676c35d300a2355df1" category="cell">集中ユーザー認証のためのコンソール Web サイトとの通信。</block>
@@ -1203,24 +1155,17 @@
   <block id="9f95203b9ac2e9ce54061e42c78f9259" category="cell">\https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com</block>
   <block id="8db7984346884c838bdfacb910058ead" category="cell">データ分類を有効にして、マニフェストとテンプレートにアクセスしてダウンロードし、ログとメトリックを送信できるようにします。</block>
   <block id="7d3a5fc6a103d9c54c1a430dd56ab45f" category="open-title">Azureに必要なエンドポイント</block>
-  <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/</block>
   <block id="5147b0c617e7ed1d50e337cd63b46209" category="cell">ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供し、ログとメトリックを送信します。</block>
-  <block id="a326c778205842f816c52ca7e63cae5d" category="cell">\https://support.compliance.api.bluexp.netapp.com/</block>
   <block id="c35738c7864c7cbf5383db60bc7aceb3" category="open-title">GCP に必要なエンドポイント</block>
   <block id="0a9279c26692a66680ccd417cfd379e8" category="list-text">データ分類に必要な権限があることを確認する</block>
   <block id="18f2222a552f3462d521b4fcc0450a1e" category="list-text">データ分類に、リソースをデプロイし、データ分類インスタンスのセキュリティ グループを作成するための権限があることを確認します。</block>
   <block id="d3846482b7a5f3467b05518965422219" category="inline-link-macro">Google Cloud の権限</block>
-  <block id="c46f60718e1e68e31a7a27b785a25a23" category="list-text"><block ref="c46f60718e1e68e31a7a27b785a25a23" category="inline-link-macro-rx"></block></block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="inline-link-macro">AWS 権限</block>
-  <block id="b08bb744ad1ab6a2ee30e20e034859bc" category="list-text"><block ref="b08bb744ad1ab6a2ee30e20e034859bc" category="inline-link-macro-rx"></block></block>
   <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="inline-link-macro">Azure のアクセス許可</block>
-  <block id="ff27171010c4f698d0174fb8b8ce6b5d" category="list-text"><block ref="ff27171010c4f698d0174fb8b8ce6b5d" category="inline-link-macro-rx"></block></block>
   <block id="f245a509e7aaad64edcf6b06cce99a16" category="list-text">コンソールエージェントがデータ分類にアクセスできることを確認する</block>
   <block id="32c6835118381edea3eb14f6325f21dd" category="list-text">コンソール エージェントとデータ分類インスタンス間の接続を確認します。コンソール エージェントのセキュリティ グループは、ポート 443 経由のデータ分類インスタンスとの間の受信トラフィックと送信トラフィックを許可する必要があります。この接続により、データ分類インスタンスのデプロイが可能になり、コンプライアンス タブとガバナンス タブで情報を表示できるようになります。データ分類は、AWS および Azure の政府リージョンでサポートされています。</block>
   <block id="4f9872e66e4124b2c51607327d07d6ea" category="inline-link">AWS のコンソールエージェントのルール</block>
-  <block id="2cfb418c9b03a78b4628db2d4a5308d3" category="paragraph">AWS および AWS GovCloud のデプロイメントには、追加の受信および送信セキュリティ グループ ルールが必要です。見る<block ref="0e0c0f87c5930eae079944fac5b7de7b" category="inline-link-rx"></block>詳細については。</block>
   <block id="c8a6f5b35623034a3b81bd2fc65c5050" category="inline-link">Azure のコンソール エージェントのルール</block>
-  <block id="58a1f11b08e6b6505c537698bd9f8330" category="paragraph">Azure および Azure Government の展開には、追加の受信および送信セキュリティ グループ ルールが必要です。見る<block ref="f794f85d9f04e67b11ac004c6249f8d5" category="inline-link-rx"></block>詳細については。</block>
   <block id="15286b82c79833cde4a68eb8d886e067" category="list-text">データ分類を継続して実行できるようにする</block>
   <block id="a3fd829019cc6435e00a2120b3eda54c" category="list-text">データを継続的にスキャンするには、データ分類インスタンスをオンのままにしておく必要があります。</block>
   <block id="a33ecb25ee677c728543ed91bd07871f" category="list-text">データ分類へのWebブラウザ接続を確保する</block>
@@ -1269,8 +1214,6 @@
   <block id="f6e3ad4e2f1393513d919f090b15ac68" category="paragraph">クラウド内の Linux ホストへの一般的なインストールには、次のコンポーネントと接続が含まれます。</block>
   <block id="698774b1604e7a8a35a9d5fc63549b0f" category="paragraph"><block ref="698774b1604e7a8a35a9d5fc63549b0f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38a926ae155f71fdb422885eaf7ade84" category="inline-link">コンソールエージェントをオンプレミスに展開する</block>
-  <block id="b0240befb055c97230209f9e65e269ba" category="paragraph">コンソールエージェントがまだない場合は、<block ref="fdb06d31aecc446c27206e56a1fca774" category="inline-link-rx"></block>ネットワーク内の Linux ホスト上、またはクラウド内の Linux ホスト上。</block>
-  <block id="cc358954b03e69a495514d10181db35e" category="paragraph">クラウド プロバイダーを使用してコンソール エージェントを作成することもできます。見る<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>、<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> 、 または<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="dbb438ff0747a3a5f69dfe3d4e6b3d31" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>前提条件を確認する</block>
   <block id="259ae55ab8dda4624f19d41ec0f1fb11" category="inline-xref">完全なリストを見る</block>
   <block id="277d3ba222cfac4014b47f6655e1e476" category="paragraph">ご使用の環境が前提条件を満たしていることを確認してください。これには、インスタンスのアウトバウンド インターネット アクセス、ポート 443 経由のコンソール エージェントとデータ分類間の接続などが含まれます。<block ref="0ccfce86aa8a501d1ea0230a6f71468a" category="inline-xref-macro-rx"></block> 。</block>
@@ -1278,11 +1221,8 @@
   <block id="0c2ece8552f22362671f28b71520f912" category="paragraph">また、以下の要件を満たすLinuxシステムも必要です。<block ref="a2ec304d11350e1ba44149ab8f817c68" category="inline-xref-macro-rx"></block> 。</block>
   <block id="5d293a2c666c5eead9a1aa1764a54149" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>データ分類をダウンロードして展開する</block>
   <block id="3f9b883796ce93e6532e3eaa51a72a1e" category="paragraph">NetAppサポート サイトから Cloud Data Classification ソフトウェアをダウンロードし、使用する予定の Linux ホストにインストーラ ファイルをコピーします。次に、インストール ウィザードを起動し、プロンプトに従ってデータ分類インスタンスをデプロイします。</block>
-  <block id="2df8801228b9f867d1952a23ac12122d" category="paragraph">Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。<block ref="50a9e1d4429bd3b2639aa8c94a28445f" category="inline-link-rx"></block>ただし、今すぐ設定する必要がある場合もあります。</block>
-  <block id="73bfa7d52c1473a0cd967acf91c73181" category="paragraph">クラウドプロバイダー環境で作成するには、<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block> 、<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> 、 または<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="8fce3267a5255029e8b05cea0527894e" category="list-text">AWS のCloud Volumes ONTAPまたはAmazon FSx for ONTAPでデータをスキャンする場合は、AWS のコンソールエージェントを使用します。</block>
   <block id="2244c8c0cb4961ee8fd3125b10b3182b" category="paragraph">オンプレミスのONTAPシステム、 NetAppファイル共有、データベース アカウントは、これらのクラウド コンソール エージェントのいずれかを使用してスキャンできます。</block>
-  <block id="37f661c44438b7a149ea3d45adee3f29" category="paragraph">また、<block ref="fdb06d31aecc446c27206e56a1fca774" category="inline-link-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
   <block id="2456c734678a782575f89ef3370435d9" category="paragraph">Data Classification をインストールするときは、コンソール エージェント システムの IP アドレスまたはホスト名が必要になります。オンプレミスでコンソール エージェントをインストールした場合は、この情報が得られます。コンソール エージェントがクラウドに展開されている場合は、コンソールからこの情報を確認できます。ヘルプ アイコンを選択し、次に *サポート*、**コンソール エージェント** を選択します。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Linuxホストシステムを準備する</block>
   <block id="66e4379227a7d33b780ff6f4c095c172" category="paragraph">データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。  Linux ホストはネットワーク内またはクラウド内に配置できます。</block>
@@ -1332,7 +1272,6 @@
   <block id="fd64d5b5c904222e866c887e0cb28537" category="paragraph">見る<block ref="dc1d236e8ef0d554549faeaffd48b8b2" category="inline-xref-macro-rx"></block>そして<block ref="647d8b86627aa9060250a73a902ae922" category="inline-xref-macro-rx"></block>データ分類を展開する前に、要件の完全なリストを確認してください。</block>
   <block id="115f488b6f37a902c94d9f38641f84d9" category="paragraph">インスタンスがインターネットに接続されている限り、データ分類ソフトウェアへのアップグレードは自動化されます。</block>
   <block id="ae8f9609c5884d9f4db4d05e14862cd4" category="inline-link">コネクタ間の切り替え</block>
-  <block id="7850445d1a2f56df103b475ba3e52413" category="admonition">現在、Data Classification は、ソフトウェアがオンプレミスにインストールされている場合、S3 バケット、 Azure NetApp Files、または FSx for ONTAPをスキャンできません。このような場合には、クラウドに別のコンソールエージェントとデータ分類のインスタンスを展開し、<block ref="3cd9b819ecbc63be3401566b7b7cbf66" category="inline-link-rx"></block>さまざまなデータ ソース用。</block>
   <block id="fadc42ee050a70884c159ab263e06542" category="section-title">一般的な構成の単一ホストインストール</block>
   <block id="d9cebd32697df61b4cd711b9647c99cf" category="paragraph">単一のオンプレミス ホストにデータ分類ソフトウェアをインストールする場合は、要件を確認し、次の手順に従ってください。</block>
   <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">このビデオを見る</block>
@@ -1904,7 +1843,6 @@
   <block id="997021f46ccb2a532d7192cfcff79a31" category="paragraph">Azure NetApp FilesのNetApp Data Classification を開始するには、いくつかの手順を完了します。</block>
   <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">スキャンするAzure NetApp Filesシステムを検出します</block>
   <block id="e600551a2da340f45ada0f5e1dc6e5a5" category="inline-link-macro">システムページに追加します</block>
-  <block id="202560b77d68da6dabe15e86ad18171c" category="paragraph">スキャンするAzure NetApp FilesシステムがNetAppコンソールにシステムとしてまだ登録されていない場合は、<block ref="b6bcd8c86645ce69edaf0e98cb142aae" category="inline-link-macro-rx"></block> 。</block>
   <block id="842f910d26756f518671d7ec5b3d5121" category="section-title">データ分類インスタンスをデプロイする</block>
   <block id="f4ef9fdcc60c0330381d382e9ec1fc58" category="inline-link-macro">データ分類を展開する</block>
   <block id="08c4981c70f1e972602ce371c0b2b57b" category="paragraph"><block ref="a2eab8ee506f152cc24568358989ad66" category="inline-link-macro-rx"></block>インスタンスがまだデプロイされていない場合。</block>
@@ -2123,7 +2061,6 @@
   <block id="60af55bf08ad38c0294a3471f71d0b10" category="cell">作成する<block ref="c6f83034cbcf2b49c5be50f2bdf16112" category="inline-link-macro-rx"></block>カスタム検索結果を提供する</block>
   <block id="2dfcc311be6fe47855e067cf6907780f" category="cell">他のレポートを実行する機能</block>
   <block id="921e1958c2e1cced7a0200842dd15ae8" category="cell">ファイルのメタデータを表示する機能**</block>
-  <block id="a1edf1ebd61e8f8488c29f98d1a5a77e" category="paragraph">{アスタリスク} データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、<block ref="eeefa3a7df6ac6ed2095f7ad46b64f36" category="inline-link-macro-rx"></block>それから<block ref="5eea3619bc46427cc0fe40a7ee99bcc5" category="inline-link-macro-rx"></block>。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、<block ref="79cb417b711835e9290ab9a201050303" category="inline-link-macro-rx"></block> 。</block>
   <block id="62b4a38bfbd6d272f9f899599071cf61" category="paragraph">{アスタリスク}{アスタリスク} マッピング スキャン中にファイルから次のメタデータが抽出されます。</block>
   <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">使用済み容量</block>
   <block id="18de356008c3efffac62590fd7849509" category="list-text">ファイル数</block>
@@ -2272,8 +2209,6 @@
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">すべてのシステムで必要なすべてのポートが有効になっていることを確認します。</block>
   <block id="638dfa4dd42c802c871ad02b969b48ab" category="list-text">前提条件テスト スクリプトをダウンロードして実行します。</block>
   <block id="e9baee2a4f78225d19d9d1c38a6df205" category="paragraph">Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ただし、コンソール エージェントなしで前提条件スクリプトを実行することは可能です。</block>
-  <block id="5b20a9b4287cdda3d76a2d4ceff1cbe5" category="paragraph">あなたはできる<block ref="1e978d352407f0b82159fac054bda46b" category="inline-link-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
-  <block id="c458f74efb35b7feee4823fa0fc7fa74" category="paragraph">クラウドプロバイダー環境でコンソールエージェントを作成するには、<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block> 、<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> 、 または<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="e6527c2694cae7b14a8260e681318eb1" category="paragraph">前提条件スクリプトを実行するときは、コンソール エージェント システムの IP アドレスまたはホスト名が必要になります。オンプレミスでコンソール エージェントをインストールした場合は、この情報が得られます。コンソール エージェントがクラウドに展開されている場合は、コンソールからこの情報を確認できます。ヘルプ アイコンを選択し、次に *サポート*、*コンソール エージェント* を選択します。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">ホストの要件を確認する</block>
   <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。</block>
@@ -2465,7 +2400,6 @@
   <block id="cc03e6c41965c31f768e9ce4bd324829" category="paragraph"><block ref="b4549212e209f263a3caaae9d9d5e56b" category="inline-link-macro-rx"></block> 。</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="paragraph-title">BlueXP classificationは制限モードとプライベートモードで完全にサポートされています</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link-macro">コネクタのBlueXP展開モードの詳細</block>
-  <block id="8dea75c06fe7de2f5e657d929b3d5f31" category="paragraph">BlueXP classificationは、インターネット アクセスがないサイト (プライベート モード) およびインターネットからの送信アクセスが制限されているサイト (制限モード) でも完全にサポートされるようになりました。<block ref="e514f819f29452d59bd6c581ff940938" category="inline-link-macro-rx"></block> 。</block>
   <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="paragraph-title">BlueXP classificationのプライベートモードインストールをアップグレードするときにバージョンをスキップする機能</block>
   <block id="241957d9f6c696915858d43476112454" category="paragraph">順次的でない場合でも、 BlueXP classificationの新しいバージョンにアップグレードできるようになりました。つまり、 BlueXP classificationを一度に 1 バージョンずつアップグレードするという現在の制限は必要なくなります。この機能はバージョン 1.24 以降で適用されます。</block>
   <block id="c77d5103bf67167dd667762d984e1e14" category="paragraph-title">BlueXP classificationAPIが利用可能になりました</block>
@@ -2604,4 +2538,75 @@
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="sidebar">サポートに登録する</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="sidebar">ヘルプを受ける</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
+  <block id="813ae9f2c1d0f0f27d01eeab67dcb1d7" category="paragraph">データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block>それから<block ref="b84ff2addee2a287f168d097865dda36" category="inline-link-macro-rx"></block>。+ コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ed86b5b4b59dfed3be7d90507a982e16" category="paragraph">詳細はこちら<block ref="8a553bdd7b5187af06654af7127bede8" category="inline-link-rx"></block>。</block>
+  <block id="d310870b76fd0108508e2cefec1ac4a4" category="paragraph">データ調査とレポートの詳細については、<block ref="100af2ad54892a67967d5c4b6c0a5d22" category="inline-link-rx"></block> 。</block>
+  <block id="ed16e45a63496894d4f69f3ad9257c0a" category="paragraph">優先順位は<block ref="9f49d69d8a2b2a5c3ff36b98378f6446" category="inline-link-macro-rx"></block>; マップスキャンや分類スキャンには使用できません。</block>
+  <block id="382361d81e14da89918a76b71860bcab" category="paragraph">詳細については、以下を参照してください。 <block ref="2f2c0cf6c40ec606389bccf6943b3b53" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3c83d9ffa8db579e805de307f057c519" category="paragraph">機械学習モデルの精度は<block ref="4258f204d4b8f149538aa226ed3589d3" category="inline-link-macro-rx"></block>11%向上しました。</block>
+  <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">詳細については、以下を参照してください。 <block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">詳細については、以下を参照してください。 <block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> 。</block>
+  <block id="75d2298c4d2e2b8d379d579c681b0581" category="paragraph">詳細については、以下を参照してください。 <block ref="39444789f4adf1075cd6ff8f0426a2b4" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a31a7b73e0f6489cdde14ea7754e29d2" category="paragraph">詳細については、以下を参照してください。 <block ref="496eb865a6bb9e6228b16bf86701d2c1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">保存した検索タブ</block>
+  <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-link-macro">**保存された検索**</block>
+  <block id="7d05e5a22d1961e95b7be92d35164378" category="paragraph">**ポリシー**タブの名前が変更されました<block ref="8d1bca00b0b16766f87fd78ec3ac185e" category="inline-link-macro-rx"></block>。機能に変更はありません。</block>
+  <block id="0fddd3e20389e20ca1c63de5412406ae" category="paragraph">データ分類は、分類イベント（スキャンの開始時と終了時）を<block ref="3dcf10816a01bda1b4320932f26d59f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="e804ac99d8e193e9d3e3437979ce7bdf" category="cell">保存済みの検索</block>
+  <block id="190630723d230843de3c85b32a478df5" category="paragraph">最終更新の時刻を表示し、重複ファイル、非ビジネス データ、保存された検索、古いデータ、および機密レベル別の上位データ リポジトリ コンポーネントを手動で更新できます。ガバナンスダッシュボードの詳細については、以下を参照してください。<block ref="e54252fa31ad44dc404e5787faf06263" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9b403464e6af8d2ec9948d73766ff20b" category="paragraph">詳細については、以下を参照してください。 <block ref="127ec44212ed37ce8b3bcb004aea4f22" category="inline-link-macro-rx"></block> 。</block>
+  <block id="726bb63ef50725c7e3c4766906388acd" category="paragraph">詳細については、以下を参照してください。 <block ref="26029df2267a3a60cd67c1340e62ae48" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2602ef05ceb5e5b51fe554db44e59c2c" category="paragraph">監査ページの詳細については、以下を参照してください。<block ref="33e0fa7818f83bbe32f6e9c2e830952c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7c2f2b72d5ae6fd05d7d6047507f2af7" category="paragraph">変更内容の詳細については、<block ref="55233a601a39d3cf31ec58df3f760d9b" category="inline-link-rx"></block> 。</block>
+  <block id="946f70163294fc4ea89cf3a8a4f7979b" category="paragraph-title">強化された調査エクスペリエンス</block>
+  <block id="576845aedce0c5b1e2da0722b6d5b908" category="paragraph">新しい検索可能なフィルター、値ごとの結果数、主要な調査結果をまとめたリアルタイムの分析情報、カスタマイズ可能な列とスライド式の詳細ペインを備えた更新された結果テーブルを使用して、データをより速く見つけて理解できます。</block>
+  <block id="50ccc3c910d687d185cba54457548270" category="paragraph">詳細については、以下を参照してください。 <block ref="93a993564ec95ed7a219162140437cd9" category="inline-link-macro-rx"></block> 。</block>
+  <block id="893b2443c1eb73a025f5c3a5bafda52a" category="paragraph-title">新しいガバナンスとコンプライアンスのダッシュボード</block>
+  <block id="3520b3d47203763a73081f6d97f46d23" category="inline-link-macro">データに関するガバナンス情報を確認する</block>
+  <block id="885746277f8f91a4f015c86ee1723838" category="inline-link-macro">データに関するコンプライアンス情報を表示する</block>
+  <block id="b079dfcfb953333a976ef2f897a33fe7" category="paragraph">直感的なウィジェット、より鮮明なビジュアル、改善された読み込みパフォーマンスにより、重要な洞察をより早く得ることができます。詳細については、<block ref="e763feb2558444e18702b24a8d7b126c" category="inline-link-macro-rx"></block>そして<block ref="635393ff0ea5792fd291ac9f76f0ede9" category="inline-link-macro-rx"></block>。</block>
+  <block id="640ed4c4729a4d5d09e9b663e79d7d98" category="paragraph">データ分類により、条件付きアクションによるガバナンスを自動化できるようになりました。自動削除を含む保持ルールを作成し、定期的な電子メール通知を設定できます。これらはすべて、更新された保存済みクエリ ページから管理されます。</block>
+  <block id="680190e7731697b57d44b7ccb192ec16" category="paragraph">調査ページから直接制御し、ファイルを個別または一括で削除、移動、コピー、タグ付けして、効率的なデータ管理と修復を実現します。</block>
+  <block id="89d69ff3dca93dc4c1c160728186e722" category="paragraph-title">Google Cloud NetApp Volumesのサポート</block>
+  <block id="028f3210e3fb8059c59cfc831af1660c" category="paragraph">Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。  NetAppコンソールからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。</block>
+  <block id="d238b3b06de1f7994bfe976041b5d3e0" category="paragraph">Swagger ドキュメントの API を使用すると、検索、データの集約、スキャンの追跡、コピー、移動、削除などのアクションを実行できます。</block>
+  <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">詳細はこちら<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block>。</block>
+  <block id="89073ebfdec87f01ba2de97bf2838871" category="paragraph"><block ref="f4803e06203a33d5098bb13a3ce23454" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9b317123224190f31630700e3d04b51f" category="list-text">非アクティブなデータを特定し、より安価なオブジェクト ストレージに階層化することで、ストレージ コストを節約します。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="e06f3c17ab825c043e1b562901775a66" category="inline-link-rx"></block> 。</block>
+  <block id="1f3c3a2b9e4ca2f543ead53a3346f67f" category="list-text">データ分類では、コンソール エージェントを展開する必要があります。多くの場合、コンソールで使用している他のストレージやサービスがあるため、既にコンソール エージェントが存在します。コンソール エージェント インスタンスには、デプロイされているクラウド プロバイダーからの料金が発生します。参照<block ref="3226d03483e6ef310354bdd4ac85d9e3" category="inline-link-rx"></block>。オンプレミス システムにコンソール エージェントをインストールする場合、料金はかかりません。</block>
+  <block id="036726a14120f1741321547425925892" category="paragraph">クラウドにデータ分類をデプロイすると、コンソールはコンソール エージェントと同じサブネットにインスタンスをデプロイします。<block ref="16cd0b484440aefb3b12e07bc8224a2c" category="inline-link-rx"></block></block>
+  <block id="0a2a2726fa4f033804e23ae8e734f53d" category="paragraph">データ分類では、個人情報 (PII) や機密個人情報 (SPII) など、さまざまな種類のプライベート データを識別できます。個人データの詳細については、<block ref="99786247576d4194bfb6afa2ffe45770" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="adfe462ee0bd220692dba88a90e4ceb4" category="paragraph">これらの場所にデータがある場合は、<block ref="7ed7edf7fcb85237714bfffa089220ee" category="inline-link-rx"></block> 。</block>
+  <block id="c87093fc5ce0aab848deaeae14c761b9" category="list-text"><block ref="c87093fc5ce0aab848deaeae14c761b9" category="inline-link-rx"></block></block>
+  <block id="527a617e21a6be89120075fb2d22b20d" category="paragraph">必要に応じて、これらの結果をレポートにエクスポートして、権限によりスキャンされているファイルとスキャンされていないファイルを確認できます。<block ref="20c76d71f84d76d844619e46acfe2877" category="inline-link-macro-rx"></block> 。</block>
+  <block id="27a3d1652dd9fbd571f3b5ccab0eed50" category="list-text"><block ref="27a3d1652dd9fbd571f3b5ccab0eed50" category="inline-link-rx"></block></block>
+  <block id="7e27d458c48634cbeeb76bb6c03ef586" category="list-text"><block ref="7e27d458c48634cbeeb76bb6c03ef586" category="inline-link-rx"></block></block>
+  <block id="c5aa111a744149d5d8422337efad453c" category="list-text"><block ref="c5aa111a744149d5d8422337efad453c" category="inline-link-rx"></block></block>
+  <block id="125e13d6ba5a126106e983c6449547d5" category="paragraph">特定のタスクには、特定のコンソール ユーザー ロールが必要です。<block ref="b8bf795c21c8bcdf6af09fd1f4de58b8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d479e9150d1722df7f13bfdb7b76a9cc" category="list-text"><block ref="d479e9150d1722df7f13bfdb7b76a9cc" category="inline-link-macro-rx"></block></block>
+  <block id="6cf086fd7e27f5587a9831d78af8c5b6" category="paragraph">コンソール エージェントがまだない場合は作成します。見る<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>、<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> 、 または<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="1d9503a33ebe4a2fef4b7e15b1c066cd" category="paragraph">また、<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。</block>
+  <block id="6b9d8db86615c626426dac3240a23cd9" category="paragraph">コンソール エージェントがまだない場合は、クラウド プロバイダーにコンソール エージェントを作成します。見る<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>または<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block>、 または<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。<block ref="92d08814b1d84d2ad7da2f290b48da3c" category="inline-link-rx"></block>ただし、今すぐ設定する必要がある場合もあります。</block>
+  <block id="db78195627af3608024c56bc521f4e79" category="paragraph">また、<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>ネットワークまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
+  <block id="7bf578ebca82bd39e9c3d25054af4c2e" category="paragraph">ご覧のとおり、状況によっては<block ref="435c5800eb6a11448025dffd7c93a30f" category="inline-link-rx"></block>。</block>
+  <block id="bb3d4632f65d269a14bed66aafbadc3f" category="paragraph"><block ref="7686ee2eb49af977f9d11ac7d13abc66" category="inline-link-rx"></block> 。</block>
+  <block id="8ace43f907c71d8be7768e59cf9e21dc" category="cell">\https://api.console.netapp.com</block>
+  <block id="fc431d400bfe4f5cd23f193718cbb07c" category="cell">\https://support.compliance.api.console.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/</block>
+  <block id="1736780e6be3d8cb864da13d98fbbf4b" category="cell">\https://support.compliance.api.console.netapp.com/</block>
+  <block id="4f6e5ae613a1ebcc913b95582f6cd2aa" category="list-text"><block ref="4f6e5ae613a1ebcc913b95582f6cd2aa" category="inline-link-macro-rx"></block></block>
+  <block id="f538295cd1adab58523d81b009d10460" category="list-text"><block ref="f538295cd1adab58523d81b009d10460" category="inline-link-macro-rx"></block></block>
+  <block id="8eb3d18173b33d5c81835381167ed653" category="list-text"><block ref="8eb3d18173b33d5c81835381167ed653" category="inline-link-macro-rx"></block></block>
+  <block id="c14a362c422dbada4ffb5cf8f2f83feb" category="paragraph">AWS および AWS GovCloud のデプロイメントには、追加の受信および送信セキュリティ グループ ルールが必要です。見る<block ref="3bba4dcb538282ad7d41fffdcefa8502" category="inline-link-rx"></block>詳細については。</block>
+  <block id="982c80d8c5eaafdc8e310bc40e63651a" category="paragraph">Azure および Azure Government の展開には、追加の受信および送信セキュリティ グループ ルールが必要です。見る<block ref="f5e2689734fd64ad5e48acbcc4fcc6c5" category="inline-link-rx"></block>詳細については。</block>
+  <block id="82b59f9fa0af81567f72b50790f4f629" category="paragraph">コンソールエージェントがまだない場合は、<block ref="cfd99dbf08b2644a2b80f4083628d19f" category="inline-link-rx"></block>ネットワーク内の Linux ホスト上、またはクラウド内の Linux ホスト上。</block>
+  <block id="a494fc63ddfda2d86d031918323821d3" category="paragraph">クラウド プロバイダーを使用してコンソール エージェントを作成することもできます。見る<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>、<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> 、 または<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="4cafc02a81b4bd1b606dfca8df731420" category="paragraph">Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。<block ref="a15e4a30c99c44d85395e2a410c9f061" category="inline-link-rx"></block>ただし、今すぐ設定する必要がある場合もあります。</block>
+  <block id="4e19f66e9518a806557a0e193973e8f0" category="paragraph">クラウドプロバイダー環境で作成するには、<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> 、<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> 、 または<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="e0f0b073962fc9f4e2df84e02be7fc03" category="paragraph">また、<block ref="cfd99dbf08b2644a2b80f4083628d19f" category="inline-link-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
+  <block id="cf1c2eb5ef84d0e534bfcb7fd49d58c8" category="admonition">現在、Data Classification は、ソフトウェアがオンプレミスにインストールされている場合、S3 バケット、 Azure NetApp Files、または FSx for ONTAPをスキャンできません。このような場合には、クラウドに別のコンソールエージェントとデータ分類のインスタンスを展開し、<block ref="9d6566a6106fb12cad30cba472097329" category="inline-link-rx"></block>さまざまなデータ ソース用。</block>
+  <block id="16104e610aa1b9ce4fe67763f74712e0" category="paragraph">スキャンするAzure NetApp FilesシステムがNetAppコンソールにシステムとしてまだ登録されていない場合は、<block ref="feb1b46dea58df1c0d569dc99576840c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f7410ef3e853c36f59921100798c91bc" category="paragraph">{アスタリスク} データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block>それから<block ref="f9b15840f1680c5742db35b8488b732c" category="inline-link-macro-rx"></block>。+ コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block> 。</block>
+  <block id="faf8844abf71745359231ca0c3b68035" category="paragraph">あなたはできる<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
+  <block id="da43836db702b2bca882af8c4b45817c" category="paragraph">クラウドプロバイダー環境でコンソールエージェントを作成するには、<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> 、<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> 、 または<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="d44ef64485a900b8277b565be86f96cb" category="paragraph">BlueXP classificationは、インターネット アクセスがないサイト (プライベート モード) およびインターネットからの送信アクセスが制限されているサイト (制限モード) でも完全にサポートされるようになりました。<block ref="c6001acb646c8f6ca2a96471682d570a" category="inline-link-macro-rx"></block> 。</block>
 </blocks>

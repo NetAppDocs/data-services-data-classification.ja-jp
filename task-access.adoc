@@ -16,10 +16,10 @@ NetAppコンソールからNetAppデータ分類にアクセスできます。
 
 コンソールにサインインするには、 NetAppサポート サイトの認証情報を使用するか、電子メールとパスワードを使用してNetAppコンソール ログインにサインアップすることができます。link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["コンソールへのログインについて詳しくは"^] 。
 
-特定のタスクには、特定のコンソール ユーザー ロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+特定のタスクには、特定のコンソール ユーザー ロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 .開始する前に
-* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コンソール エージェントを追加する必要があります。"^]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソール エージェントを追加する必要があります。"^]
 * link:task-deploy-cloud-compliance.html["どのデータ分類展開スタイルがワークロードに適しているかを理解します。"]
 
 

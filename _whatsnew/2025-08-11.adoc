@@ -11,7 +11,7 @@
 .監査ページでのスキャンイベントの分析情報が強化されました
 監査ページでは、 BlueXP classificationのスキャン イベントに関する強化された分析がサポートされるようになりました。監査ページには、システムのスキャンが開始された日時、システムのステータス、および問題が表示されるようになりました。共有とシステムのステータスはマッピング スキャンでのみ使用できます。
 
-監査ページの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["NetAppコンソールの操作を監視する"^] 。
+監査ページの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["NetAppコンソールの操作を監視する"^] 。
 
 .RHEL 9.6 のサポート
 このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。

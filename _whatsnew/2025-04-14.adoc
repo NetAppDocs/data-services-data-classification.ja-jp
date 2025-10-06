@@ -14,4 +14,4 @@ BlueXP classificationは、作業環境の一括操作をサポートします�
 .調査レポートをローカルにダウンロードする
 BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用でき、最初の 10,000 行のデータのみが表示されます。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["BlueXP classificationを使用して組織内に保存されているデータを調査します"] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#create-the-data-investigation-report["BlueXP classificationを使用して組織内に保存されているデータを調査します"] 。

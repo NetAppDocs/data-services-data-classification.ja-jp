@@ -173,7 +173,7 @@ IMPORTANT: BlueXPプライベート モード (レガシーBlueXPインターフ
 
 データ分類では、ファイル名、権限、作成時間、最終アクセス、最終変更などのメタデータを取得します。これには、データ調査の詳細ページとデータ調査レポートに表示されるすべてのメタデータが含まれます。
 
-データ分類では、個人情報 (PII) や機密個人情報 (SPII) など、さまざまな種類のプライベート データを識別できます。個人データの詳細については、 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["データ分類がスキャンする個人データのカテゴリ"] 。
+データ分類では、個人情報 (PII) や機密個人情報 (SPII) など、さまざまな種類のプライベート データを識別できます。個人データの詳細については、xref:reference-private-data-categories.html[データ分類がスキャンする個人データのカテゴリ] 。
 
 
 
@@ -245,7 +245,7 @@ NetApp は機密データにアクセスできず、UI に表示しません。�
 * オンプレミスのONTAPシステムの場合: コンソール エージェントはオンプレミスです。
 
 
-これらの場所にデータがある場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコンソールエージェント"^] 。
+これらの場所にデータがある場合は、 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコンソールエージェント"^] 。
 
 
 

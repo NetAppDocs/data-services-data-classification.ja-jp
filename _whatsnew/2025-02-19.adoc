@@ -20,9 +20,9 @@
 
 優先権は 1 回限り付与されます。マッピング データの自動再スキャンはデフォルトの順序で実行されます。
 
-優先順位はlink:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["マッピングのみのスキャン"^]; マップスキャンや分類スキャンには使用できません。
+優先順位はlink:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["マッピングのみのスキャン"^]; マップスキャンや分類スキャンには使用できません。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンを優先する"^] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["スキャンを優先する"^] 。
 
 .すべてのスキャンを再試行する
 BlueXP classificationは、失敗したすべてのスキャンを一括して再試行する機能をサポートしています。
@@ -36,4 +36,4 @@ BlueXP classificationは、失敗したすべてのスキャンを一括して�
 
 
 .分類モデルの精度向上
-機械学習モデルの精度はlink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["定義済みカテゴリ"]11%向上しました。
+機械学習モデルの精度はlink:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["定義済みカテゴリ"]11%向上しました。

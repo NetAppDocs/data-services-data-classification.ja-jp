@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。+ コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。

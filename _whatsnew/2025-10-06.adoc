@@ -14,17 +14,25 @@ BlueXP は、データ インフラストラクチャの管理における役割
 
 NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
 
-変更内容の詳細については、 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetAppコンソールのリリースノート"] 。
 
-.アクション（プレビュー）
-データ分類では、調査ページでのアクションがサポートされるようになりました。データ分類からファイルをコピー、移動、削除できます。
+.強化された調査エクスペリエンス
+新しい検索可能なフィルター、値ごとの結果数、主要な調査結果をまとめたリアルタイムの分析情報、カスタマイズ可能な列とスライド式の詳細ペインを備えた更新された結果テーブルを使用して、データをより速く見つけて理解できます。
 
-.ファイルのタグ付けのサポート（プレビュー）
-データ分類では、個々のファイルのタグ付けがサポートされるようになりました。ファイル タグを使用すると、データを識別およびフィルター処理するために使用できる特定のファイルのカスタム識別子を作成できます。タグを使用すると、データ調査で特定の品質を識別したり、タグの結果に基づいて保存されたクエリやポリシーを作成したりできます。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["データを調査する"] 。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["ファイルのメタデータを表示"] 。
+.新しいガバナンスとコンプライアンスのダッシュボード
+直感的なウィジェット、より鮮明なビジュアル、改善された読み込みパフォーマンスにより、重要な洞察をより早く得ることができます。詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["データに関するガバナンス情報を確認する"]そしてlink:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["データに関するコンプライアンス情報を表示する"]。
 
 .保存されたクエリのポリシー（プレビュー）
-保存された検索の名前が保存されたクエリに変更されました。保存したクエリを実用的なポリシーに変換することもできます。保存したクエリ結果に基づいて、データを削除したり、電子メール通知を送信したりすることができます。
+データ分類により、条件付きアクションによるガバナンスを自動化できるようになりました。自動削除を含む保持ルールを作成し、定期的な電子メール通知を設定できます。これらはすべて、更新された保存済みクエリ ページから管理されます。
 
 詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["ポリシーを作成"] 。
+
+.アクション（プレビュー）
+調査ページから直接制御し、ファイルを個別または一括で削除、移動、コピー、タグ付けして、効率的なデータ管理と修復を実現します。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["データを調査する"] 。
+
+.Google Cloud NetApp Volumesのサポート
+Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。  NetAppコンソールからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。

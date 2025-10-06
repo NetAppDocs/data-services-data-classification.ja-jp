@@ -20,7 +20,7 @@ Azure NetApp FilesのNetApp Data Classification を開始するには、いく�
 
 == スキャンするAzure NetApp Filesシステムを検出します
 
-スキャンするAzure NetApp FilesシステムがNetAppコンソールにシステムとしてまだ登録されていない場合は、link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["システムページに追加します"^] 。
+スキャンするAzure NetApp FilesシステムがNetAppコンソールにシステムとしてまだ登録されていない場合は、link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["システムページに追加します"^] 。
 
 
 

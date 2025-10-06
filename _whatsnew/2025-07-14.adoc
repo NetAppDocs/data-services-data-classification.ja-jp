@@ -11,9 +11,9 @@
 .スキャン対象ファイル共有を追加するワークフローの改善
 ファイル共有グループにファイル共有を追加するワークフローが簡素化されました。このプロセスでは、認証タイプ (Kerberos または NTLM) に基づいて CIFS プロトコルのサポートも区別されるようになりました。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-scanning-file-shares.html["ファイル共有をスキャンする"] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-file-shares.html["ファイル共有をスキャンする"] 。
 
 .拡張ファイル所有者情報
 調査タブでキャプチャされたファイルのファイル所有者に関する詳細情報を表示できるようになりました。 [調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directory が稼働している作業環境でのみ使用できます。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["組織内に保存されているデータを調査する"] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["組織内に保存されているデータを調査する"] 。
