@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-classification.html 
 keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, bluexp, bluexp classification, netapp console 
-summary: Data Classification は、企業のオンプレミスおよびクラウド データ ソースをスキャンしてデータをマッピングおよび分類し、個人情報を識別するNetAppコンソールのデータ ガバナンス サービスです。これにより、セキュリティとコンプライアンスのリスクが軽減され、ストレージ コストが削減され、データ移行プロジェクトが支援されます。 
+summary: Data Classification は、企業のオンプレミスおよびクラウド データ ソースをスキャンしてデータをマッピングおよび分類し、個人情報を識別するNetApp Consoleのデータ ガバナンス サービスです。これにより、セキュリティとコンプライアンスのリスクが軽減され、ストレージ コストが削減され、データ移行プロジェクトが支援されます。 
 ---
-= NetAppデータ分類について学ぶ
+= NetApp Data Classificationについて学ぶ
 :allow-uri-read: 
 :no-hardbreaks: 
 :nofooter: 
@@ -14,22 +14,22 @@ summary: Data Classification は、企業のオンプレミスおよびクラウ
 
 
 [role="lead"]
-NetApp Data Classification は、 NetAppコンソールのデータ ガバナンス サービスであり、企業のオンプレミスおよびクラウド データ ソースをスキャンしてデータをマッピングおよび分類し、個人情報を識別します。これにより、セキュリティとコンプライアンスのリスクが軽減され、ストレージ コストが削減され、データ移行プロジェクトが支援されます。
+NetApp Data Classification は、 NetApp Consoleのデータ ガバナンス サービスであり、企業のオンプレミスおよびクラウド データ ソースをスキャンしてデータをマッピングおよび分類し、個人情報を識別します。これにより、セキュリティとコンプライアンスのリスクが軽減され、ストレージ コストが削減され、データ移行プロジェクトが支援されます。
 
 
-IMPORTANT: バージョン 1.31 以降、データ分類はNetAppコンソール内のコア機能として利用できます。追加料金はかかりません。分類ライセンスやサブスクリプションは必要ありません。  + 旧バージョン 1.30 以前を使用している場合は、サブスクリプションの有効期限が切れるまでそのバージョンを利用できます。
+IMPORTANT: バージョン 1.31 以降、データ分類はNetApp Console内のコア機能として利用できます。追加料金はかかりません。分類ライセンスやサブスクリプションは必要ありません。  + 旧バージョン 1.30 以前を使用している場合は、サブスクリプションの有効期限が切れるまでそのバージョンを利用できます。
 
 
 
-== NetAppコンソール
+== NetApp Console
 
-データ分類はNetAppコンソールからアクセスできます。
+データ分類には、NetApp Consoleからアクセスできます。
 
-NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
+NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
 
-NetAppコンソールの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
+NetApp Consoleの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
 
-詳細はこちらlink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetAppコンソール"^]。
+詳細はこちらlink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"^]。
 
 
 
@@ -56,7 +56,7 @@ link:https://www.netapp.com/data-services/classification/["データ分類のユ
 * __Policies__ を使用すると、新しいセキュリティ問題が自動的に検出され、セキュリティ スタッフがすぐに対処できるようになります。
 
 
-.ストレージ使用量の最適化
+.ストレージ使用量を最適化する
 データ分類は、ストレージの総所有コスト (TCO) の削減に役立つツールを提供します。データ分類を使用すると次のことができます。
 
 * 重複データやビジネスに関係のないデータを識別して、ストレージ効率を向上させます。
@@ -147,7 +147,7 @@ TIP: データ分類は継続的にデータをスキャンするため、イン
 
 *異なるインスタンスタイプにデプロイ*
 
-インスタンス タイプについては、次の仕様を確認してください。
+インスタンス タイプの次の仕様を確認してください。
 
 [cols="18,31,51"]
 |===
@@ -184,7 +184,7 @@ image:diagram_cloud_compliance_scan.png["クラウド プロバイダーで実�
 ボリューム レベルまたはデータベース スキーマ レベルでスキャンを有効または無効にすることができます。
 
 
-NOTE: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。+ コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+NOTE: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
 
 
 

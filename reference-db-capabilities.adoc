@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-db-capabilities.html 
 keywords: database actions, database filters, supported, unsupported 
-summary: データベース スキーマをスキャンするときに、 NetApp Data Classification では使用できない機能がいくつかあります。 
+summary: データベース スキーマをスキャンするときに、 NetApp Data Classificationでは使用できない機能がいくつかあります。 
 ---
-= NetApp Data Classification でサポートされているデータベース機能とサポートされていないデータベース機能
+= NetApp Data Classificationでサポートされているデータベース機能とサポートされていないデータベース機能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: データベース スキーマをスキャンするときに、 NetApp
 
 
 [role="lead"]
-データベース スキーマをスキャンするときに、 NetApp Data Classification では使用できない機能がいくつかあります。以下のリストを参照してください。
+データベース スキーマをスキャンするときに、 NetApp Data Classificationでは使用できない機能がいくつかあります。以下のリストを参照してください。
 
 データベーススキーマをデータ分類に追加してスキャンすることができますlink:task-scanning-databases.html["ここで説明されているように"^]。
 

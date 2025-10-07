@@ -57,4 +57,4 @@
 BlueXP分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。
 
 .バグ修正
-Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。  BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。
+Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。

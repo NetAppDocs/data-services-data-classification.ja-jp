@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: BlueXP classificationの新機能について学びます。 
 ---
-= NetAppデータ分類の新機能
+= NetApp Data Classificationの新機能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: BlueXP classificationの新機能について学びます。
 
 
 [role="lead"]
-NetApp Data Classification の新機能について説明します。
+NetApp Data Classificationの新機能について説明します。
 
 
 
@@ -24,15 +24,15 @@ NetApp Data Classification の新機能について説明します。
 
 === バージョン1.47
 
-.BlueXP classificationはNetAppデータ分類になりました
+.BlueXP classificationはNetApp Data Classificationになりました
 BlueXP classificationがNetApp Data Classification に変更されました。名前の変更に加えて、ユーザー インターフェイスも強化されました。
 
-.BlueXPはNetAppコンソールになりました
+.BlueXPはNetApp Consoleになりました
 BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。
 
-NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
+NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
 
-変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Consoleのリリースノート"] 。
 
 .強化された調査エクスペリエンス
 新しい検索可能なフィルター、値ごとの結果数、主要な調査結果をまとめたリアルタイムの分析情報、カスタマイズ可能な列とスライド式の詳細ペインを備えた更新された結果テーブルを使用して、データをより速く見つけて理解できます。
@@ -53,7 +53,7 @@ NetAppコンソールは、オンプレミスとクラウド環境全体にわ�
 詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["データを調査する"] 。
 
 .Google Cloud NetApp Volumesのサポート
-Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。  NetAppコンソールからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。
+Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。NetApp ConsoleからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。
 
 
 
@@ -68,7 +68,7 @@ Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサ�
 .監査ページでのスキャンイベントの分析情報が強化されました
 監査ページでは、 BlueXP classificationのスキャン イベントに関する強化された分析がサポートされるようになりました。監査ページには、システムのスキャンが開始された日時、システムのステータス、および問題が表示されるようになりました。共有とシステムのステータスはマッピング スキャンでのみ使用できます。
 
-監査ページの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["NetAppコンソールの操作を監視する"^] 。
+監査ページの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["NetApp Consoleの操作を監視する"^] 。
 
 .RHEL 9.6 のサポート
 このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。
@@ -91,7 +91,7 @@ Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサ�
 詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-file-shares.html["ファイル共有をスキャンする"] 。
 
 .拡張ファイル所有者情報
-調査タブでキャプチャされたファイルのファイル所有者に関する詳細情報を表示できるようになりました。 [調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directory が稼働している作業環境でのみ使用できます。
+調査タブでキャプチャされたファイルのファイル所有者に関する詳細情報を表示できるようになりました。[調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directory が稼働している作業環境でのみ使用できます。
 
 詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["組織内に保存されているデータを調査する"] 。
 
@@ -154,7 +154,7 @@ Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサ�
 BlueXP分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。
 
 .バグ修正
-Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。  BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。
+Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。
 
 
 
@@ -212,7 +212,7 @@ StorageGRIDスキャンが失敗し、調査ページのフィルター オプ�
 BlueXP classificationは、作業環境の一括操作をサポートします。作業環境において、マッピング スキャンを有効にするか、マップと分類スキャンを有効にするか、スキャンを無効にするか、ボリューム全体にカスタム構成を作成するかを選択できます。個々のボリュームを選択した場合は、一括選択が上書きされます。一括操作を実行するには、[**構成**] ページに移動して選択を行います。
 
 .調査レポートをローカルにダウンロードする
-BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用でき、最初の 10,000 行のデータのみが表示されます。
+BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用可能になり、最初の 10,000 行のデータのみが表示されます。
 
 詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#create-the-data-investigation-report["BlueXP classificationを使用して組織内に保存されているデータを調査します"] 。
 
@@ -249,7 +249,7 @@ BlueXP classificationは、ボリューム上の初期マッピングおよび�
 .マッピングのみのスキャンを優先する
 マッピングのみのスキャンを実行する場合、最も重要なスキャンを優先できます。この機能は、作業環境が多数あり、優先度の高いスキャンが最初に完了するようにしたい場合に役立ちます。
 
-デフォルトでは、スキャンは開始された順序に基づいてキューに入れられます。スキャンを優先順位付けする機能を使用すると、スキャンをキューの先頭に移動できます。複数のスキャンを優先できます。優先順位は先入れ先出しの順序で指定されます。つまり、最初に優先順位を指定したスキャンがキューの先頭に移動し、2 番目に優先順位を指定したスキャンはキューの 2 番目になり、以下同様に続きます。
+デフォルトでは、スキャンは開始された順序に基づいてキューに入れられます。スキャンを優先順位付けする機能を使用すると、スキャンをキューの先頭に移動できます。複数のスキャンを優先できます。優先順位は先入先出順で指定されます。つまり、最初に優先順位を指定したスキャンがキューの先頭に移動し、2 番目に優先順位を指定したスキャンはキューの 2 番目になり、以下同様に続きます。
 
 優先権は 1 回限り付与されます。マッピング データの自動再スキャンはデフォルトの順序で実行されます。
 
@@ -359,10 +359,10 @@ BlueXP classificationは、失敗したすべてのスキャンを一括して�
 
 === バージョン1.35
 
-.StorageGRIDデータをスキャンする
+.StorageGRIDデータをスキャン
 BlueXP classificationは、 StorageGRID内のデータのスキャンをサポートします。
 
-詳細については、link:task-scanning-storagegrid.html["StorageGRIDデータをスキャンする"] 。
+詳細については、link:task-scanning-storagegrid.html["StorageGRIDデータをスキャン"] 。
 
 
 
@@ -390,7 +390,7 @@ BlueXP classificationは、 Microsoft Azure および Google Cloud Platform (GCP
 .Ubuntuをサポート
 このリリースは、Ubuntu 24.04 Linux プラットフォームをサポートしています。
 
-.マッピングスキャンはメタデータを収集する
+.マッピングスキャンはメタデータを収集します
 次のメタデータはマッピング スキャン中にファイルから抽出され、ガバナンス、コンプライアンス、調査のダッシュボードに表示されます。
 
 * 労働環境
@@ -434,10 +434,10 @@ BlueXP classificationは、 Microsoft Azure および Google Cloud Platform (GCP
 === バージョン1.31
 
 .分類はBlueXPのコアサービスとして利用可能
-BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。この新しいバージョンでは、 BlueXP classification機能をNetAppストレージ システムのスキャンに重点的に取り組んでいるため、一部の従来の機能は、以前にライセンスを支払った顧客のみが利用できるようになります。これらのレガシー機能の使用は、有料契約の終了日に達すると無効になります。
+BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。この新しいバージョンでは、 BlueXP classification機能をNetAppストレージ システムのスキャンに重点的に使用しているため、一部の従来の機能は、以前にライセンスを支払った顧客のみが利用できるようになります。これらのレガシー機能の使用は、有料契約の終了日に達すると無効になります。
 
 
-NOTE: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。+ コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+NOTE: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
 
 
 
@@ -463,7 +463,7 @@ NOTE: データ分類では、スキャンできるデータの量に制限は�
 セカンダリ スキャナー ノードでのスキャン パフォーマンスが向上しました。スキャンに追加の処理能力が必要な場合は、スキャナー ノードを追加できます。詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるホストにBlueXP classificationをインストールする"] 。
 
 .自動アップグレード
-インターネットにアクセスできるシステムにBlueXP classificationを展開した場合、システムは自動的にアップグレードされます。以前は、最後のユーザー アクティビティから特定の時間が経過した後にアップグレードが実行されていました。このリリースでは、現地時間が午前 1 時から午前 5 時の間であれば、 BlueXP classificationは自動的にアップグレードされます。現地時間がこれらの時間外の場合、最後のユーザーアクティビティから特定の時間が経過した後にアップグレードが行われます。詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにインストールする"] 。
+インターネットにアクセスできるシステムにBlueXP classificationを展開した場合、システムは自動的にアップグレードされます。以前は、最後のユーザーアクティビティから特定の時間が経過した後にアップグレードが実行されていました。このリリースでは、現地時間が午前 1 時から午前 5 時の間であれば、 BlueXP classificationが自動的にアップグレードされます。現地時間がこれらの時間外の場合、最後のユーザーアクティビティから特定の時間が経過した後にアップグレードが行われます。詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにインストールする"] 。
 
 インターネットにアクセスせずにBlueXP classificationを展開した場合は、手動でアップグレードする必要があります。詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["インターネットにアクセスできない Linux ホストにBlueXP classificationをインストールする"] 。
 
@@ -703,7 +703,7 @@ BlueXP classificationには、しばらくの間、将来のスキャンでBlueX
 === バージョン1.19
 
 .機密データを含むファイルと過度に許可されているファイルのチャートを表示する機能
-ガバナンス ダッシュボードに、機密データ (機密データと機密個人データの両方を含む) を含むファイルと過度に許可されているファイルのヒートマップを提供する新しい [機密データと幅広い権限] 領域が追加されました。これにより、機密データにリスクがある可能性がある場所を確認するのに役立ちます。 https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["詳細情報"] 。
+ガバナンス ダッシュボードに、機密データ (機密データと機密個人データの両方を含む) を含むファイルと過度に許可されているファイルのヒートマップを提供する新しい [機密データと幅広いアクセス許可] 領域が追加されました。これにより、機密データにリスクがある可能性がある場所を確認するのに役立ちます。 https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["詳細情報"] 。
 
 .データ調査ページで3つの新しいフィルターが利用可能になりました
 データ調査ページに表示される結果を絞り込むための新しいフィルターが利用可能になりました。
@@ -716,4 +716,4 @@ BlueXP classificationには、しばらくの間、将来のスキャンでBlueX
 https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["データを調査するために使用できるすべてのフィルターのリストを表示します"] 。
 
 .BlueXP classificationは日本のマイナンバーを識別できる
-BlueXP classificationは、日本の個人番号 (マイナンバーとも呼ばれます) を含むファイルを識別して分類できます。これには個人マイナンバーと法人マイナンバーの両方が含まれます。 https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["BlueXP classificationがあなたのデータ内で識別できるすべての個人データの種類を確認します"] 。
+BlueXP classificationは、日本の個人番号 (マイナンバーとも呼ばれます) を含むファイルを識別して分類できます。これには、個人および法人のマイナンバーの両方が含まれます。 https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["BlueXP classificationがあなたのデータ内で識別できるすべての個人データの種類を確認します"] 。

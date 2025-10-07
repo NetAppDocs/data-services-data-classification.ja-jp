@@ -155,6 +155,6 @@ data_providers:
 
 == 現在の除外リストを表示する
 
-内容は `data_provider.yaml`実行後に実際にコミットされたものと異なる設定ファイルを作成する `update_data_providers_from_config_file.sh`スクリプト。データ分類スキャンから除外したディレクトリの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer_configuration/data_providers」から次のコマンドを実行します。
+内容は `data_provider.yaml`設定ファイルは、実行後に実際にコミットされたものと異なる可能性があります。 `update_data_providers_from_config_file.sh`スクリプト。データ分類スキャンから除外したディレクトリの現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer_configuration/data_providers」から次のコマンドを実行します。
 
  get_data_providers_configuration.sh

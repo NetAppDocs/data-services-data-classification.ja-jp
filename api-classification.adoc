@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: api-classification.html 
 keywords: api, rest, authorization, data classification, data sense, swagger 
-summary: Web UI を通じて利用できるNetAppデータ分類機能は、API を通じても利用できます。 
+summary: Web UI を通じて利用できるNetApp Data Classification機能は、API を通じても利用できます。 
 ---
-= NetAppデータ分類 API
+= NetApp Data ClassificationAPI
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Web UI を通じて利用できるNetAppデータ分類機能は、API 
 
 
 [role="lead"]
-Web UI を通じて利用できるNetAppデータ分類機能は、REST API を通じても利用できます。
+Web UI を通じて利用できるNetApp Data Classification機能は、REST API を通じても利用できます。
 
 データ分類内には、UI のタブに対応する 4 つのカテゴリが定義されています。
 
@@ -60,7 +60,7 @@ API は安全で、UI と同じ認証方法を使用します。認証に関す�
 
 Swagger にアクセスするには、データ分類インスタンスの IP アドレスが必要です。クラウド展開の場合は、パブリック IP アドレスを使用します。次に、このエンドポイントにアクセスする必要があります。
 
-\https://<分類_ip>/documentation
+\https://<分類IP>/documentation
 
 
 

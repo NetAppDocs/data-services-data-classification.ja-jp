@@ -20,7 +20,7 @@ Linux ホストにNetApp Data Classification を手動でインストールす�
 
 
 
-== はじめる
+== はじめに
 
 以下のタスクを実行します。
 
@@ -37,7 +37,7 @@ Linux ホストにNetApp Data Classification を手動でインストールす�
 
 Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ただし、コンソール エージェントなしで前提条件スクリプトを実行することは可能です。
 
-あなたはできる https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
+あなたはできる https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスで Data Classification をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
 
 クラウドプロバイダー環境でコンソールエージェントを作成するには、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^] 、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
 
@@ -108,7 +108,7 @@ Data Classification をインストールして使用する前に、コンソー
 *** Ubuntu 24.04 (データ分類バージョン 1.23 以上が必要)
 
 
-** 次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、Data Classification バージョン 1.30 以上が必要です。
+** 次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、データ分類バージョン 1.30 以上が必要です。
 +
 *** Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、および 9.6。
 
@@ -163,7 +163,7 @@ firewall-cmd --permanent --add-port=4789/udp
 
 
 
-== データ分類からのインターネットへのアウトバウンドアクセスを有効にする
+== データ分類からのアウトバウンドインターネットアクセスを有効にする
 
 データ分類には、アウトバウンドのインターネット アクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネット アクセスにプロキシ サーバーを使用している場合は、データ分類インスタンスに次のエンドポイントに接続するための送信インターネット アクセスがあることを確認してください。
 
@@ -187,7 +187,7 @@ TIP: このセクションは、インターネットに接続できないサイ
 | \https://support.compliance.api.console.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
 
 
-| \https://github.com/docker \https://download.docker.com | docker インストールの前提条件となるパッケージを提供します。 
+| \https://github.com/docker \https://download.docker.com | docker インストールの前提条件パッケージを提供します。 
 
 
 | \http://packages.ubuntu.com/ \http://archive.ubuntu.com | Ubuntu インストールの前提条件となるパッケージを提供します。 
@@ -240,7 +240,7 @@ chmod +x standalone-pre-requisite-tester-v1.25.0
  ./standalone-pre-requisite-tester-v1.25.0 <--darksite>
 ----
 +
-インターネットにアクセスできないホストでスクリプトを実行する場合にのみ、オプション「--darksite」を追加します。ホストがインターネットに接続されていない場合、特定の前提条件テストはスキップされます。
+インターネットにアクセスできないホストでスクリプトを実行する場合にのみ、オプション "--darksite" を追加します。ホストがインターネットに接続されていない場合、特定の前提条件テストはスキップされます。
 
 . スクリプトは、データ分類ホスト マシンの IP アドレスの入力を求めます。
 +

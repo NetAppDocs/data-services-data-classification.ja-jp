@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: Azure NetApp Filesのデータ分類を開始するには、いくつかの手順を完了します。 
 ---
-= NetApp Data Classification を使用してAzure NetApp Filesボリュームをスキャンする
+= NetApp Data Classificationを使用してAzure NetApp Filesボリュームをスキャンする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Azure NetApp Filesのデータ分類を開始するには、いくつ�
 
 
 [role="lead"]
-Azure NetApp FilesのNetApp Data Classification を開始するには、いくつかの手順を完了します。
+Azure NetApp FilesのNetApp Data Classificationを開始するには、いくつかの手順を完了します。
 
 
 
 == スキャンするAzure NetApp Filesシステムを検出します
 
-スキャンするAzure NetApp FilesシステムがNetAppコンソールにシステムとしてまだ登録されていない場合は、link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["システムページに追加します"^] 。
+スキャンするAzure NetApp FilesシステムがNetApp Consoleにシステムとしてまだ登録されていない場合は、link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["システムページに追加します"^] 。
 
 
 
@@ -66,7 +66,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["データ分類インス�
 
 == データ分類がボリュームにアクセスできることを確認する
 
-ネットワーク、セキュリティ グループ、エクスポート ポリシーをチェックして、データ分類がボリュームにアクセスできることを確認します。  CIFS ボリュームにアクセスできるようにするには、データ分類に CIFS 資格情報を提供する必要があります。
+ネットワーク、セキュリティ グループ、エクスポート ポリシーをチェックして、データ分類がボリュームにアクセスできることを確認します。  CIFS ボリュームにアクセスできるようにするには、Data Classification に CIFS 資格情報を提供する必要があります。
 
 
 NOTE: Azure NetApp Filesの場合、データ分類ではコンソールと同じリージョン内のボリュームのみをスキャンできます。

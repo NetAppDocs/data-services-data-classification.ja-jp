@@ -6,15 +6,15 @@
 
 === バージョン1.47
 
-.BlueXP classificationはNetAppデータ分類になりました
+.BlueXP classificationはNetApp Data Classificationになりました
 BlueXP classificationがNetApp Data Classification に変更されました。名前の変更に加えて、ユーザー インターフェイスも強化されました。
 
-.BlueXPはNetAppコンソールになりました
+.BlueXPはNetApp Consoleになりました
 BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。
 
-NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
+NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
 
-変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Consoleのリリースノート"] 。
 
 .強化された調査エクスペリエンス
 新しい検索可能なフィルター、値ごとの結果数、主要な調査結果をまとめたリアルタイムの分析情報、カスタマイズ可能な列とスライド式の詳細ペインを備えた更新された結果テーブルを使用して、データをより速く見つけて理解できます。
@@ -35,4 +35,4 @@ NetAppコンソールは、オンプレミスとクラウド環境全体にわ�
 詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["データを調査する"] 。
 
 .Google Cloud NetApp Volumesのサポート
-Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。  NetAppコンソールからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。
+Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。NetApp ConsoleからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-overview.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
-summary: ニーズを満たすNetApp Data Classification の展開を計画します。 
+summary: ニーズを満たすNetApp Data Classificationの展開を計画します。 
 ---
-= どのNetApp Data Classification 展開を使用する必要がありますか?
+= どのNetApp Data Classification展開を使用する必要がありますか?
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

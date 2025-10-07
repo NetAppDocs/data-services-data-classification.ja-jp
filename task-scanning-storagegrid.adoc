@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-storagegrid.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
-summary: いくつかの手順を完了すると、 NetApp Data Classification を使用してStorageGRID内のデータを直接スキャンし始めることができます。 
+summary: いくつかの手順を完了すると、 NetApp Data Classificationを使用してStorageGRID内のデータを直接スキャンし始めることができます。 
 ---
 = NetApp Data ClassificationでStorageGRIDデータをスキャン
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: いくつかの手順を完了すると、 NetApp Data Classification �
 
 
 [role="lead"]
-いくつかの手順を完了すると、 NetApp Data Classification を使用してStorageGRID内のデータを直接スキャンし始めることができます。
+いくつかの手順を完了すると、 NetApp Data Classificationを使用してStorageGRID内のデータを直接スキャンし始めることができます。
 
 
 

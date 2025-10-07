@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-active-directory.html 
 keywords: active directory, ad, data sense, cloud data sense 
-summary: グローバル Active Directory をNetApp Data Classification と統合して、ファイル所有者やファイルにアクセスできるユーザーとグループに関する Data Classification のレポート結果を強化できます。 
+summary: グローバル Active Directory をNetApp Data Classificationと統合して、ファイル所有者やファイルにアクセスできるユーザーとグループに関する Data Classification のレポート結果を強化できます。 
 ---
 = Active Directory とNetApp Data Classification を統合
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: グローバル Active Directory をNetApp Data Classification と統�
 
 
 [role="lead"]
-グローバル Active Directory をNetApp Data Classification と統合して、ファイル所有者やファイルにアクセスできるユーザーとグループに関する Data Classification のレポート結果を強化できます。
+グローバル Active Directory をNetApp Data Classificationと統合して、ファイル所有者やファイルにアクセスできるユーザーとグループに関する Data Classification のレポート結果を強化できます。
 
 特定のデータ ソース (以下にリスト) を設定する場合、データ分類で CIFS ボリュームをスキャンするには、Active Directory の資格情報を入力する必要があります。この統合により、データ分類では、それらのデータ ソースに存在するデータのファイル所有者と権限の詳細が提供されます。これらのデータ ソースに入力された Active Directory は、ここで入力するグローバル Active Directory 資格情報とは異なる場合があります。データ分類では、統合されたすべての Active Directory でユーザーと権限の詳細を検索します。
 
@@ -35,7 +35,7 @@ NOTE: ローカル ユーザーの SID および不明なドメインの SID は
 
 == サポートされているデータソース
 
-Active Directory と Data Classification の統合により、次のデータ ソース内のデータを識別できます。
+Active Directory とデータ分類の統合により、次のデータ ソース内のデータを識別できます。
 
 * オンプレミスのONTAPシステム
 * Cloud Volumes ONTAP

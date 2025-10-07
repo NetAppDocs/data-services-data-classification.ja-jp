@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-databases.html 
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
-summary: NetApp Data Classification を使用してデータベース スキーマのスキャンを開始するには、いくつかの手順を実行します。 
+summary: NetApp Data Classificationを使用してデータベース スキーマのスキャンを開始するには、いくつかの手順を実行します。 
 ---
 = NetApp Data Classificationでデータベーススキーマをスキャンする
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp Data Classification を使用してデータベース スキー�
 
 
 [role="lead"]
-NetApp Data Classification を使用してデータベース スキーマのスキャンを開始するには、いくつかの手順を実行します。
+NetApp Data Classificationを使用してデータベース スキーマのスキャンを開始するには、いくつかの手順を実行します。
 
 
 

@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, data sense, classification, scan shares 
 summary: 既知の制限事項では、このリリースの製品ではサポートされていない機能、または正しく相互運用されない機能が特定されます。これらの制限事項をよく確認してください。 
 ---
-= NetApp Data Classification の既知の制限
+= NetApp Data Classificationの既知の制限
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

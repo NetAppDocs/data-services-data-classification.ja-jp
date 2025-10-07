@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: NetAppデータ分類ドキュメント
+  title: NetApp Data Classificationドキュメント
   summary: NetApp Data Classificaiton を使用すると、組織のハイブリッド マルチクラウド全体のデータをスキャンして分類できます。データ分類では、AI
     駆動型の自然言語処理 (NLP) を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速化を実現します。
   keywords: bluexp, data classification, cloud data sense, data sense, compliance,
@@ -50,9 +50,9 @@ indexpage:
       url: task-generating-compliance-reports.html
   - title: ブログとコミュニティ
     links:
-    - title: NetAppコンソール
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: NetAppデータサービス
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: NetAppコミュニティ
       url: https://community.netapp.com/

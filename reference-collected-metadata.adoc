@@ -4,7 +4,7 @@ permalink: reference-collected-metadata.html
 keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
 summary: データ分類は、データ ソースおよびシステムからのデータの分類スキャンを実行するときに、特定のメタデータを収集します。データ分類では、データを分類するために必要なメタデータのほとんどにアクセスできますが、必要なデータにアクセスできないソースもいくつかあります。 
 ---
-= NetApp Data Classification のデータソースから収集されたメタデータ
+= NetApp Data Classificationのデータソースから収集されたメタデータ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

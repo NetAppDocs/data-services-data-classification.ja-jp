@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
-summary: NetApp Data Classification をクラウドに導入するには、いくつかの手順を実行します。  NetAppコンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。 
+summary: NetApp Data Classification をクラウドに導入するには、いくつかの手順を実行します。  NetApp Consoleは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。 
 ---
-= NetAppコンソールを使用してクラウドにNetApp Data Classificationを導入する
+= NetApp Consoleを使用してクラウドにNetApp Data Classificationを導入する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp Data Classification をクラウドに導入するには、い�
 
 
 [role="lead"]
-NetAppコンソールを使用して、 NetApp Data Classification をクラウドに導入できます。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。
+NetApp Consoleを使用して、クラウドにNetApp Data Classification を導入できます。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。
 
 また、link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにデータ分類をインストールする"] 。このタイプのインストールは、オンプレミスにあるデータ分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
 
@@ -63,7 +63,7 @@ NetAppコンソールを使用して、 NetApp Data Classification をクラウ�
 ご覧のとおり、状況によっては https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#multiple-connectors["複数のコンソールエージェント"]。
 
 
-TIP: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。+ コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+TIP: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
 
 
 
@@ -79,7 +79,7 @@ https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-mode.h
 
 クラウドにデータ分類を展開する前に、次の前提条件を確認して、サポートされている構成があることを確認してください。クラウドにデータ分類を展開すると、コンソール エージェントと同じサブネットに配置されます。
 
-データ分類からのインターネットへのアウトバウンドアクセスを有効にする:: データ分類には、アウトバウンドのインターネット アクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネット アクセスにプロキシ サーバーを使用している場合は、データ分類インスタンスに次のエンドポイントに接続するための送信インターネット アクセスがあることを確認してください。プロキシは非透過である必要があります。透過プロキシは現在サポートされていません。
+データ分類からのアウトバウンドインターネットアクセスを有効にする:: データ分類には、アウトバウンドのインターネット アクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネット アクセスにプロキシ サーバーを使用している場合は、データ分類インスタンスに次のエンドポイントに接続するための送信インターネット アクセスがあることを確認してください。プロキシは非透過である必要があります。透過プロキシは現在サポートされていません。
 +
 --
 データ分類を AWS、Azure、GCP のいずれに展開するかに応じて、以下の適切な表を確認してください。
@@ -204,7 +204,7 @@ vCPU 制限の詳細については、次のリンクを参照してください
 +
 image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
 
-. [インストール] ページで、[デプロイ] > [デプロイ] を選択し、「大」インスタンス サイズを使用してクラウド デプロイ ウィザードを起動します。
+. _インストール_ ページで、*デプロイ > デプロイ* を選択して、「大」インスタンス サイズを使用し、クラウド デプロイ ウィザードを起動します。
 . ウィザードは、展開手順を実行する際の進行状況を表示します。入力が必要な場合、または問題が発生した場合には、プロンプトが表示されます。
 . インスタンスがデプロイされ、データ分類がインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
 
@@ -218,7 +218,7 @@ image:screenshot-deploy-classification.png["データ分類を有効にするボ
 image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
 
 . *デプロイ* を選択して、クラウド デプロイ ウィザードを起動します。
-. ウィザードは、展開手順の実行中に進行状況を表示します。問題が発生すると停止し、入力を求められます。
+. ウィザードは、展開手順を実行する際の進行状況を表示します。問題が発生すると停止し、入力を求められます。
 . インスタンスがデプロイされ、データ分類がインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
 
 
@@ -232,7 +232,7 @@ image:screenshot-deploy-classification.png["データ分類を有効にするボ
 image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
 
 . *デプロイ* を選択して、クラウド デプロイ ウィザードを起動します。
-. ウィザードは、展開手順の実行中に進行状況を表示します。問題が発生すると停止し、入力を求められます。
+. ウィザードは、展開手順を実行する際の進行状況を表示します。問題が発生すると停止し、入力を求められます。
 . インスタンスがデプロイされ、データ分類がインストールされたら、[*構成に進む*] を選択して [_構成_] ページに移動します。
 
 

@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, notifications, saved query, tags, data sense, edit query 
 summary: 保存されたクエリは、一般的に要求されるコンプライアンス クエリの調査ページで検索結果を提供するカスタム フィルターです。データ分類では、一般的なリクエストに基づいてデフォルトの保存済みクエリのセットが提供され、独自のクエリを作成することもできます。 
 ---
-= NetApp Data Classification で保存したクエリを管理する
+= NetApp Data Classificationで保存したクエリを管理する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -30,7 +30,7 @@ image:screenshot_compliance_highlights_tab.png["データ分類ダッシュボ�
 
 調査ページに保存したクエリの結果を表示するには、image:button-gallery-options.gif["詳細ボタン"]特定の検索のボタンをクリックし、[結果の調査] を選択します。
 
-image:screenshot_compliance_highlights_investigate.png["保存されたクエリ タブから特定の検索の結果を調査する を選択したスクリーンショット。"]
+image:screenshot_compliance_highlights_investigate.png["[保存されたクエリ] タブから特定の検索の [結果の調査] を選択するスクリーンショット。"]
 
 
 

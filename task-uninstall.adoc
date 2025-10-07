@@ -4,7 +4,7 @@ permalink: task-uninstall.html
 keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
 summary: 問題のトラブルシューティングを行うため、またはホストからソフトウェアを完全に削除するために、データ分類ソフトウェアをアンインストールすることができます。インスタンスを削除すると、インデックス付けされたデータが存在する関連ディスクも削除されます。データ分類によってスキャンされたすべての情報は永久に削除されます。 
 ---
-= NetApp Data Classification をアンインストールする
+= NetApp Data Classificationをアンインストールする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 問題のトラブルシューティングを行うため、または�
 
 
 [role="lead"]
-問題のトラブルシューティングを行ったり、ホストからソフトウェアを完全に削除したりするために、 NetApp Data Classification をアンインストールすることができます。インスタンスを削除すると、インデックス付けされたデータが存在する関連ディスクも削除されるため、データ分類によってスキャンされたすべての情報が完全に削除されます。
+問題のトラブルシューティングを行ったり、ホストからソフトウェアを完全に削除したりするために、 NetApp Data Classificationをアンインストールすることができます。インスタンスを削除すると、インデックス付けされたデータが存在する関連ディスクも削除されるため、データ分類によってスキャンされたすべての情報が完全に削除されます。
 
 使用する必要がある手順は、データ分類をクラウドに展開したか、オンプレミス ホストに展開したかによって異なります。
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-fsx.html 
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
-summary: NetApp Data Classification を使用してAmazon FSx for ONTAPボリュームのスキャンを開始するには、いくつかの手順を実行します。 
+summary: NetApp Data Classificationを使用してAmazon FSx for ONTAPボリュームのスキャンを開始するには、いくつかの手順を実行します。 
 ---
-= NetApp Data Classification を使用してAmazon FSx for ONTAPボリュームをスキャンする
+= NetApp Data Classificationを使用してAmazon FSx for ONTAPボリュームをスキャンする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp Data Classification を使用してAmazon FSx for ONTAPボリュ
 
 
 [role="lead"]
-NetApp Data Classification を使用してAmazon FSx for ONTAPボリュームのスキャンを開始するには、いくつかの手順を実行します。
+NetApp Data Classificationを使用してAmazon FSx for ONTAPボリュームのスキャンを開始するには、いくつかの手順を実行します。
 
 
 
@@ -57,7 +57,7 @@ Data Classification は、AWS のコンソールエージェントおよびス�
 
 FSx for ONTAPボリュームのデータ分類を有効にすることができます。
 
-. NetAppコンソールから、*ガバナンス > 分類* を選択します。
+. NetApp Consoleから、*ガバナンス > 分類*を選択します。
 . データ分類メニューから、*構成*を選択します。
 +
 image:screenshot_fsx_scanning_activate.png["データ分類インスタンスをデプロイした直後の [構成] タブのスクリーンショット。"]
