@@ -42,14 +42,16 @@ sidebar:
       entries:
       - title: データソースの概要をスキャンする
         url: "/task-scanning-overview.html"
-      - title: Azure NetApp Files
-        url: "/task-scanning-anf.html"
       - title: Amazon FSx for ONTAP
         url: "/task-scanning-fsx.html"
+      - title: Azure NetApp Files
+        url: "/task-scanning-anf.html"
       - title: Cloud Volumes ONTAPとオンプレミスONTAP
         url: "/task-getting-started-compliance.html"
       - title: データベーススキーマ
         url: "/task-scanning-databases.html"
+      - title: Google Cloud NetApp Volumes
+        url: "/task-scan-google-cloud.html"
       - title: ファイル共有
         url: "/task-scanning-file-shares.html"
       - title: StorageGRID

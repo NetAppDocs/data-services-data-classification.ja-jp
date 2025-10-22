@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task-scanning-anf.html 
-keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
-summary: Azure NetApp Filesのデータ分類を開始するには、いくつかの手順を完了します。 
+permalink: task-scan-google-cloud.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, google cloud, google cloud netapp volumes 
+summary: コンプライアンスとガバナンスの標準を維持するために、 Google Cloud NetApp Volumesシステムをスキャンします。 
 ---
-= NetApp Data Classificationを使用してAzure NetApp Filesボリュームをスキャンする
+= NetApp Data Classificationを使用してGoogle Cloud NetApp Volumesをスキャンする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Azure NetApp Filesのデータ分類を開始するには、いくつ�
 
 
 [role="lead"]
-Azure NetApp FilesのNetApp Data Classificationを開始するには、いくつかの手順を完了します。
+NetApp Data Classification は、システムとしてGoogle Cloud NetApp Volumes をサポートします。  Google Cloud NetApp Volumesシステムをスキャンする方法を学びます。
 
 
 
-== スキャンするAzure NetApp Filesシステムを検出します
+== スキャンするGoogle Cloud NetApp Volumesシステムを検出します
 
-スキャンするAzure NetApp FilesシステムがNetApp Consoleにシステムとしてまだ存在しない場合は、link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["システムページに追加します"^] 。
+スキャンしたいGoogle Cloud NetApp VolumesシステムがNetApp Consoleにシステムとしてまだ登録されていない場合は、link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["システムページに追加する"^] 。
 
 
 
@@ -28,25 +28,22 @@ Azure NetApp FilesのNetApp Data Classificationを開始するには、いくつ
 
 link:task-deploy-cloud-compliance.html["データ分類を展開する"^]インスタンスがまだデプロイされていない場合。
 
-Azure NetApp Filesボリュームをスキャンするときは、データ分類をクラウドにデプロイする必要があり、スキャンするボリュームと同じリージョンにデプロイする必要があります。
+Google Cloud NetApp Volumesをスキャンするときは、データ分類をクラウドにデプロイする必要があり、スキャンするボリュームと同じリージョンにデプロイする必要があります。
 
-*注:* Azure NetApp Filesボリュームをスキャンする場合、オンプレミスの場所でのデータ分類の展開は現在サポートされていません。
+*注:* Google Cloud NetApp Volumesをスキャンする場合、オンプレミスの場所でのデータ分類の展開は現在サポートされていません。
 
 
 
 == システムでデータ分類を有効にする
 
-Azure NetApp Filesボリュームでデータ分類を有効にすることができます。
+Google Cloud NetApp Volumesシステムでデータ分類を有効にすることができます。
 
 . データ分類メニューから、*構成*を選択します。
-+
-image:screenshot_cloud_compliance_anf_scan_config.png["データ分類インスタンスをデプロイした直後の [構成] タブのスクリーンショット。"]
-
 . 各システム内のボリュームをスキャンする方法を選択します。link:concept-classification.html#whats-the-difference-between-mapping-and-classification-scans["マッピングと分類スキャンについて学ぶ"]：
 +
 ** すべてのボリュームをマップするには、「*すべてのボリュームをマップ*」を選択します。
 ** すべてのボリュームをマップして分類するには、[*すべてのボリュームをマップして分類*] を選択します。
-** 各ボリュームのスキャンをカスタマイズするには、[*または各ボリュームのスキャン タイプを選択*] を選択し、マップするボリューム、またはマップして分類するボリュームを選択します。
+** 各ボリュームのスキャンをカスタマイズするには、[*または各ボリュームのスキャン タイプを選択*] を選択し、マップおよび/または分類するボリュームを選択します。
 +
 見る<<ボリュームのコンプライアンススキャンを有効または無効にする,ボリュームのコンプライアンススキャンを有効または無効にする>>詳細については。
 
@@ -56,23 +53,23 @@ image:screenshot_cloud_compliance_anf_scan_config.png["データ分類インス�
 
 
 .結果
-データ分類は、システムで選択したボリュームのスキャンを開始します。データ分類が初期スキャンを完了するとすぐに、コンプライアンス ダッシュボードで結果を確認できます。かかる時間はデータの量によって異なり、数分または数時間かかる場合があります。**構成** メニューに移動し、**システム構成** を選択すると、初期スキャンの進行状況を追跡できます。データ分類では、スキャンごとに進行状況バーが表示されます。進行状況バーにマウスを移動すると、ボリューム内のファイルの合計数に対するスキャンされたファイルの数が表示されます。
+データ分類は、システムで選択したボリュームのスキャンを開始します。データ分類が初期スキャンを完了するとすぐに、コンプライアンス ダッシュボードで結果を確認できます。かかる時間はデータの量によって異なり、数分から数時間かかります。初期スキャンの進行状況は、[**構成**] メニューの [**システム構成**] セクションで追跡できます。データ分類では、スキャンごとに進行状況バーが表示されます。進行状況バーにマウスを移動すると、ボリューム内のファイルの合計数に対するスキャンされたファイルの数を確認することもできます。
 
 * デフォルトでは、データ分類に CIFS での属性書き込み権限または NFS での書き込み権限がない場合、データ分類は「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のファイルをスキャンしません。最終アクセス時刻がリセットされても構わない場合は、「*またはボリュームごとにスキャン タイプを選択*」を選択します。表示されるページには、権限に関係なくデータ分類がボリュームをスキャンするように有効にできる設定があります。
-* データ分類では、ボリューム下の 1 つのファイル共有のみをスキャンします。ボリューム内に複数の共有がある場合は、他の共有を共有グループとして個別にスキャンする必要があります。link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["データ分類の制限について学ぶ"^] 。
+* データ分類では、ボリューム下の 1 つのファイル共有のみをスキャンします。ボリューム内に複数の共有がある場合は、他の共有を共有グループとして個別にスキャンする必要があります。link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["データ分類の制限について学ぶ"^]。
 
 
 
 
 == データ分類がボリュームにアクセスできることを確認する
 
-ネットワーク、セキュリティ グループ、エクスポート ポリシーをチェックして、データ分類がボリュームにアクセスできることを確認します。  CIFS ボリュームにアクセスできるようにするには、Data Classification に CIFS 資格情報を提供する必要があります。
+ネットワーク、セキュリティ グループ、エクスポート ポリシーを確認して、データ分類がボリュームにアクセスできることを確認します。  CIFS ボリュームの場合、データ分類に CIFS 資格情報を提供する必要があります。
 
 
-NOTE: Azure NetApp Filesの場合、データ分類ではコンソールと同じリージョン内のボリュームのみをスキャンできます。
+NOTE: Google Cloud NetApp Volumesの場合、データ分類ではコンソールと同じリージョン内のボリュームのみをスキャンできます。
 
 .チェックリスト
-* データ分類インスタンスと、 Azure NetApp Filesのボリュームを含む各ネットワークとの間にネットワーク接続があることを確認します。
+* データ分類インスタンスと、 Google Cloud NetApp Volumesのボリュームを含む各ネットワークとの間にネットワーク接続があることを確認します。
 * データ分類インスタンスに対して次のポートが開いていることを確認します。
 +
 ** NFS の場合 - ポート 111 および 2049。
@@ -87,7 +84,7 @@ NOTE: Azure NetApp Filesの場合、データ分類ではコンソールと同�
 +
 .. CIFS (SMB) を使用している場合は、Active Directory の資格情報が正しいことを確認してください。各システムについて、「*CIFS 資格情報の編集*」を選択し、データ分類がシステム上の CIFS ボリュームにアクセスするために必要なユーザー名とパスワードを入力します。
 +
-資格情報は読み取り専用にすることができます。管理者の資格情報を提供することで、データ分類は昇格された権限を必要とするすべてのデータを読み取ることができるようになります。資格情報は、データ分類インスタンスに保存されます。
+資格情報は読み取り専用にすることができますが、管理者の資格情報を提供することで、データ分類は昇格された権限を必要とするすべてのデータを読み取ることができるようになります。資格情報は、データ分類インスタンスに保存されます。
 
 +
 データ分類スキャンによってファイルの「最終アクセス時刻」が変更されないようにしたい場合は、ユーザーに CIFS での属性書き込み権限または NFS での書き込み権限を与えることをお勧めします。可能であれば、Active Directory ユーザーを、すべてのファイルへの権限を持つ組織内の親グループの一部として構成します。
@@ -100,7 +97,7 @@ image:screenshot_cifs_status.gif["構成ページと、CIFS 認証情報が正�
 
 
 
-. [構成] ページで [詳細の表示] を選択して、各 CIFS ボリュームと NFS ボリュームのステータスを確認します。必要に応じて、ネットワーク接続の問題などのエラーを修正します。
+. [構成] ページで [詳細の表示] を選択し、各 CIFS ボリュームと NFS ボリュームのステータスを確認し、エラーを修正します。
 
 
 
