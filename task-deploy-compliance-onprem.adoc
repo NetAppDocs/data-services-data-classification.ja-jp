@@ -219,7 +219,7 @@ NOTE: データ分類ホスト システムの IP アドレスは、インスト
 | \https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | ソフトウェア イメージ、マニフェスト、テンプレートへのアクセスを提供し、ログとメトリックを送信します。 
 
 
-| \https://support.compliance.api.console.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
+| \https://support.compliance.api.bluexp.netapp.com/ | NetApp が監査レコードからデータをストリーミングできるようにします。 
 
 
 | \https://github.com/docker \https://download.docker.com | docker インストールの前提条件パッケージを提供します。 
