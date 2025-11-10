@@ -162,7 +162,6 @@
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">BlueXP classificationを使用して組織内に保存されているデータを調査します</block>
   <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">詳細については、以下を参照してください。 <block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> 。</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">バージョン1.43</block>
-  <block id="bb4c36ac9f10bc64e16bd125cb997dcd" category="paragraph">このデータ分類リリースには以下が含まれます。</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">分類スキャンの優先順位付け</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">データ分類では、マッピングのみのスキャンに加えて、マップと分類のスキャンを優先順位付けする機能がサポートされており、最初に完了するスキャンを選択できます。マップと分類スキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンを優先することを選択した場合、マッピングスキャンと分類スキャンの両方が優先されます。</block>
   <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">詳細については、以下を参照してください。 <block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> 。</block>
@@ -1735,8 +1734,6 @@
   <block id="293d9f51d90274c3eb6f28b88bdf5b95" category="list-text">ユーザーまたはグループの名前を選択して調査ページを更新し、そのユーザーまたはグループがアクセスできるすべてのファイルとディレクトリを表示できるようにします。</block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">ストレージシステム内の重複ファイルをチェックする</block>
   <block id="d353221e429d4e01e167115856394ba7" category="paragraph">ストレージ システムに重複したファイルが保存されているかどうかを確認できます。これは、ストレージスペースを節約できる領域を特定する場合に便利です。また、特定の権限や機密情報を持つ特定のファイルが、ストレージ システム内で不必要に重複しないようにすることも重要です。</block>
-  <block id="6c8f43fb3633672815a9819858118a4c" category="paragraph">1 MB 以上、または個人情報や機密性の高い個人情報を含むすべてのファイル (データベースは除く) が比較され、重複がないか確認されます。</block>
-  <block id="1767c0592d0d28cdc0d9d1cd49e52537" category="paragraph">データ分類では、ハッシュ テクノロジを使用して重複ファイルを判別します。いずれかのファイルに別のファイルと同じハッシュ コードがある場合、ファイル名が異なっていても、ファイルが完全な複製であることが 100% 確実です。</block>
   <block id="54a7c4785d3d9e01ac8323dfbb334a4b" category="list-text">フィルター ペインで、「ファイル サイズ」と「重複」(「重複あり」) を選択して、環境内で重複している特定のサイズ範囲のファイルを確認します。</block>
   <block id="4cf8fbbd65dba65137f55960d10a2882" category="list-text">オプションで、重複ファイルのリストをダウンロードしてストレージ管理者に送信し、削除できるファイルがあるかどうかを管理者が判断できるようにします。</block>
   <block id="3d860adc4ff3b65fee4d550f4bf11f96" category="list-text">必要に応じて、重複ファイルを削除、タグ付け、または移動することもできます。アクションを実行するファイルを選択し、適切なアクションを選択します。</block>
@@ -1803,7 +1800,6 @@
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">スキャン構成ページの「DB サーバーの削除」ボタンのスクリーンショット。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5776459fdb4aaf699684c46e41832a8" category="list-text">確認ダイアログから*共有グループの削除*を選択します。</block>
-  <block id="032990a2d529d70fdd578fbef47579da" category="summary">NetApp Data Classificationでは、各システムおよびデータ ソースでデータがスキャンされる方法を管理できます。変更は「リポジトリ」ベースで行うことができます。つまり、スキャンするデータ ソースの種類に応じて、ボリューム、バケット、共有、スキーマ、ユーザーなどごとに変更を加えることができます。</block>
   <block id="de10ad3938875667137fa1bd63542e62" category="doc">リポジトリのNetApp Data Classificationスキャン設定を変更する</block>
   <block id="161ac81baea8064d1337229d7ba5864f" category="paragraph">各システムおよびデータ ソースでデータがスキャンされる方法を管理できます。変更は「リポジトリ」ベースで行うことができます。つまり、スキャンするデータ ソースの種類に応じて、ボリューム、スキーマ、ユーザーなどごとに変更を加えることができます。</block>
   <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">マッピングスキャンまたはマッピング＆分類スキャン</block>
@@ -1811,12 +1807,10 @@
   <block id="8f737a8c409b235d7a43941682f2a548" category="section-title">リポジトリのスキャンステータスを表示する</block>
   <block id="4fc4ab7968a59d858d5c460fb64f3f3c" category="paragraph">NetApp Data Classificationがスキャンしている個々のリポジトリ (ボリューム、バケットなど) を、システムおよびデータ ソースごとに表示できます。また、いくつが「マップ」され、いくつが「分類」されたかを確認することもできます。すべてのデータに対して完全な AI 識別が実行されるため、分類には時間がかかります。</block>
   <block id="e415c7da5280de793049e6b59816274d" category="paragraph">各作業環境のスキャンステータスは、構成ページで確認できます。</block>
-  <block id="209f3dabc722accc7b4db77a133ef209" category="list-text">*初期化中* (水色の点): マップまたは分類構成がアクティブ化されています。これは、「保留中のキュー」ステータスを開始する前に数秒間表示されます。</block>
   <block id="fbbc6bcf9c53aaad4b5476065f315bb1" category="list-text">*保留中のキュー* (オレンジ色の点): スキャン タスクはスキャン キューにリストされるのを待機しています。</block>
   <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">*キューに追加* (オレンジ色の点): タスクがスキャン キューに正常に追加されました。システムは、キュー内の順番が来ると、ボリュームのマッピングまたは分類を開始します。</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*実行中* (緑のドット): キューにあったスキャン タスクが、選択したストレージ リポジトリでアクティブに進行中です。</block>
   <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">*完了* (緑の点): ストレージ リポジトリのスキャンが完了しました。</block>
-  <block id="da30b4408b5e1540ac02763204c943ad" category="list-text">*一時停止* (灰色の点): スキャンを一時停止するために「一時停止」オプションを選択しました。ボリュームの変化はシステムには表示されませんが、スキャンされたインサイトは引き続き表示されます。</block>
   <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">*エラー* (赤い点): 問題が発生したため、スキャンを完了できません。アクションを完了する必要がある場合は、「必要なアクション」列の下のツールチップにエラーが表示されます。それ以外の場合、システムは「エラー」ステータスを表示し、回復を試みます。終了するとステータスが変わります。</block>
   <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">*スキャンしていません*: ボリューム構成で「オフ」が選択されており、システムはボリュームをスキャンしていません。</block>
   <block id="ae3859b6bf604c1664d2e6f3cb311c7f" category="inline-image-macro">システムの構成ボタンを選択する方法を示したスクリーンショット。</block>
@@ -1825,7 +1819,6 @@
   <block id="c794003b8b71c52d57b2d4a1adc1e35c" category="list-text">「スキャン構成」ページで、すべてのリポジトリのスキャン設定を表示します。</block>
   <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">バケットがスキャンされているかどうか、および現在のスキャン ステータスを示すスクリーンショット。</block>
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c6eaacb9399946d9d6cd4ced08320bf" category="list-text">_マッピング ステータス_ 列のグラフにカーソルを合わせると、各リポジトリ (この例ではバケット) でマッピングまたは分類が残っているファイルの数が表示されます。</block>
   <block id="0e7c3262eaa1e23e978644965f5cfcad" category="section-title">リポジトリのスキャンの種類を変更する</block>
   <block id="af0f4aea5a591706300708a645397bc4" category="paragraph">システム内のマッピングのみのスキャン、またはマッピングと分類のスキャンは、いつでも [構成] ページから開始または停止できます。マッピングのみのスキャンからマッピングと分類のスキャンに、またはその逆に変更することもできます。</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">データベースをマッピングのみのスキャンに設定することはできません。データベース スキャンはオフまたはオンにすることができます。オンはマップと分類と同じです。</block>
@@ -1842,8 +1835,6 @@
   <block id="fbadcaa7267ae823837aff45d0dd7135" category="paragraph">コンプライアンスを監視する必要がなくなった場合は、リポジトリ (ボリュームなど) のスキャンを停止できます。これを行うには、スキャンを「オフ」にします。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除され、データのスキャンに対する課金が停止されます。</block>
   <block id="565a8976f79d6c76ecebff0fff08e98a" category="list-text">スキャン構成ページで *オフ* を選択して、特定のバケットのスキャンを停止します。</block>
   <block id="3ea62d70182e6d0c238badaaf224dff9" category="section-title">リポジトリのスキャンを一時停止して再開する</block>
-  <block id="7445e229a53051f98f4c5bb878a24db4" category="paragraph">特定のコンテンツのスキャンを一時的に停止したい場合は、リポジトリのスキャンを「一時停止」することができます。スキャンを一時停止すると、データ分類はリポジトリの変更や追加について今後スキャンを実行しませんが、現在の結果はすべてシステムに引き続き表示されます。スキャンを一時停止しても、データがまだ存在するため、スキャンされたデータに対する課金は停止されません。</block>
-  <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">いつでもスキャンを「再開」できます。</block>
   <block id="5ad3e303fff11348579be9fa7186a3bf" category="inline-image-macro">アクションアイコン</block>
   <block id="ceb02fa059b59b1ab250e24b23e83492" category="list-text">スキャン設定ページで、アクションを選択します。<block ref="9599256bd913e17dd34fce684015b2f9" category="inline-image-macro-rx" type="image"></block>アイコン。</block>
   <block id="d7530ec47cb0f60bf26bff38cfcd4f1f" category="list-text">ボリュームのスキャンを一時停止するには「*一時停止*」を選択し、一時停止していたボリュームのスキャンを再開するには「*再開*」を選択します。</block>
@@ -1862,8 +1853,6 @@
   <block id="f3bf83f2c7aadc341ac1678567775abc" category="list-text">すべてのボリュームをマップするには、「*すべてのボリュームをマップ*」を選択します。</block>
   <block id="c854572c2f5a5368403f0ee57aa1bb29" category="list-text">すべてのボリュームをマップして分類するには、[*すべてのボリュームをマップして分類*] を選択します。</block>
   <block id="9071a661cd1f2da138650405c0f6579b" category="list-text">各ボリュームのスキャンをカスタマイズするには、[*または各ボリュームのスキャン タイプを選択*] を選択し、マップおよび/または分類するボリュームを選択します。</block>
-  <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">ボリュームのコンプライアンススキャンを有効または無効にする</block>
-  <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">見る<block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block>詳細については。</block>
   <block id="fcb8c9e04be809b808c3a4762413c376" category="list-text">確認ダイアログボックスで*承認*を選択します。</block>
   <block id="4a4bd4695f7ed79b6d5b23795d88275f" category="list-text">デフォルトでは、データ分類に CIFS での属性書き込み権限または NFS での書き込み権限がない場合、データ分類は「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のファイルをスキャンしません。最終アクセス時刻がリセットされても構わない場合は、「*またはボリュームごとにスキャン タイプを選択*」を選択します。表示されるページには、権限に関係なくデータ分類がボリュームをスキャンするように有効にできる設定があります。</block>
   <block id="2c0b9fc0f9659fa0f71a4337b2fc2043" category="inline-link-macro">データ分類の制限について学ぶ</block>
@@ -2610,4 +2599,23 @@
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">StorageGRIDバケットのスキャンを有効または無効にする</block>
   <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/</block>
   <block id="a326c778205842f816c52ca7e63cae5d" category="cell">\https://support.compliance.api.bluexp.netapp.com/</block>
+  <block id="649b850f0bca668f5279a8b29028973a" category="paragraph">このBlueXP分類リリースには以下が含まれます。</block>
+  <block id="73bb8d1c85014ba6981a002bd9fc9364" category="doc">バージョン1.48</block>
+  <block id="d34f29080dba1970a613ab39b7166d0c" category="paragraph">この Data Classification リリースには、バグ修正、セキュリティの改善、パフォーマンスの強化が含まれています。</block>
+  <block id="8905ad2fb9f028e6bd28666015b4b50a" category="paragraph-title">スキャンの進行状況の明確化を強化</block>
+  <block id="206c07a2ed5644be711186a00b2c6ae2" category="paragraph">スキャン構成には、スキャン完了に関する改善された分析情報が含まれるようになりました。以前は、スキャンの進行中にのみ進行状況バーが表示されていました。スキャンが正常に完了したことを確認できるように、完了後も進行状況バーが表示されるようになりました。マップおよびスキャンされたファイルの数を表示することもできます。</block>
+  <block id="dc9fb8f25cdf758c060f4782f41b0b0f" category="paragraph">スキャン設定の詳細については、 <block ref="19cf1405cd38e956788f418f2be34a68" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb3cd7064baa457b68c9e6f4bc37005a" category="paragraph">データ分類では、次の場合にすべてのファイル (データベースを除く) の重複を比較します。</block>
+  <block id="0ca96e556827c0f5e25df8d0643f52ed" category="list-text">1 MB以上</block>
+  <block id="618a117288f96069f1cdbf0f4bded643" category="list-text">または個人情報や機密性の高い個人情報が含まれている</block>
+  <block id="4e1bd09c39656dc2fa486f909e1674e7" category="paragraph">データ分類では、ハッシュ テクノロジを使用して重複ファイルを判別します。いずれかのファイルに別のファイルと同じハッシュ コードがある場合、ファイル名が異なっていてもファイルは完全に重複しています。</block>
+  <block id="b747cc8e0f2203370a4d444fcd5f79d5" category="summary">NetApp Data Classificationでシステムのスキャン設定を変更する方法を学びます。</block>
+  <block id="e27531ce5aac82b10b93cae589814bb8" category="list-text">*初期化中* (水色の点): マップまたは分類構成がアクティブ化されています。これは、「保留中のキュー」ステータスに移行する前に短時間表示されます。</block>
+  <block id="fc0e8f9e94436c57e95a54ba5403b593" category="list-text">*一時停止* (灰色の点): スキャンを一時停止しました。ボリュームの変化はシステムには表示されませんが、スキャンされたインサイトは引き続き利用できます。</block>
+  <block id="2b275cce14d9fa4c2f7c2b688661866a" category="list-text">スキャン中に、[マッピング ステータス] 列の進行状況バーにカーソルを合わせると、そのリポジトリにマッピングまたは分類されるキュー内のファイルの数が表示されます。</block>
+  <block id="97b34fd1037fad45811be37e77cc8ee3" category="paragraph">特定のコンテンツのスキャンを一時的に停止したい場合は、リポジトリのスキャンを「一時停止」することができます。スキャンを一時停止すると、データ分類はリポジトリの変更や追加について今後スキャンを実行しません。現在のすべてのスキャン結果は、データ分類で引き続きアクセスできます。</block>
+  <block id="dafb48c379602976f883f38decad477b" category="paragraph">スキャンを一時停止しても、データはまだシステム上に残っているため、課金は発生しません。</block>
+  <block id="76d0e11c30b5dcbca92c93eb0f33daec" category="paragraph">いつでもスキャンを再開できます。</block>
+  <block id="e018b56ef561ad538d1aca1d6fae6b6c" category="paragraph">見る<block ref="15dceb3fb9d388923f206ab616cd56a9" category="inline-xref-macro-rx"></block>詳細については。</block>
+  <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
 </blocks>
