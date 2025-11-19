@@ -26,10 +26,10 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]コンソールエージェントを作成する
 [role="quick-margin-para"]
-コンソール エージェントがまだない場合は作成します。見る https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^]、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^] 、 または https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。
+コンソール エージェントがまだない場合は作成します。見るlink:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWSでコンソールエージェントを作成する"^]、link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azureでコンソールエージェントを作成する"^] 、 またはlink:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP でコンソール エージェントを作成する"^]。
 
 [role="quick-margin-para"]
-また、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。
+また、link:https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]前提条件
 [role="quick-margin-para"]
@@ -43,7 +43,7 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 
 == コンソールエージェントを作成する
 
-コンソール エージェントがまだない場合は、クラウド プロバイダーにコンソール エージェントを作成します。見る https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azureでコンソールエージェントを作成する"^]、 または https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-a-connector-is-required["コンソール機能にはコンソールエージェントが必要です"]ただし、今すぐ設定する必要がある場合もあります。
+コンソール エージェントがまだない場合は、クラウド プロバイダーにコンソール エージェントを作成します。見る https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azureでコンソールエージェントを作成する"^]、 または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["コンソール機能にはコンソールエージェントが必要です"]ただし、今すぐ設定する必要がある場合もあります。
 
 特定のクラウド プロバイダーにデプロイされたコンソール エージェントを使用する必要があるシナリオがいくつかあります。
 
@@ -58,9 +58,9 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 
 これらのクラウド コンソール エージェントのいずれかを使用すると、オンプレミスのONTAPシステム、 NetAppファイル共有、およびデータベースをスキャンできます。
 
-また、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワークまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
+また、 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["オンプレミスにコンソールエージェントをインストールする"^]ネットワークまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。
 
-ご覧のとおり、状況によっては https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#multiple-connectors["複数のコンソールエージェント"]。
+使用する必要がある状況があるかもしれません https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#multiple-systems-and-agents["複数のコンソールエージェント"^]。
 
 
 TIP: データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
@@ -71,7 +71,7 @@ TIP: データ分類では、スキャンできるデータの量に制限はあ
 
 データ分類は、コンソール エージェントが政府リージョン (AWS GovCloud、Azure Gov、または Azure DoD) にデプロイされている場合にサポートされます。この方法で展開する場合、データ分類には次の制限があります。
 
-https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-mode.html["政府地域におけるコンソールエージェントの導入に関する詳細情報"^] 。
+link:https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-mode.html["政府地域におけるコンソールエージェントの導入について学習します"^]。
 
 
 
@@ -179,9 +179,9 @@ vCPUの制限を確認する:: クラウド プロバイダーの vCPU 制限に
 --
 vCPU 制限の詳細については、次のリンクを参照してください。
 
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS ドキュメント: Amazon EC2 サービスクォータ"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure ドキュメント: 仮想マシンの vCPU クォータ"^]
-* https://cloud.google.com/compute/quotas["Google Cloud ドキュメント: リソース割り当て"^]
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS ドキュメント: Amazon EC2 サービスクォータ"^]
+* link:https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure ドキュメント: 仮想マシンの vCPU クォータ"^]
+* link:https://docs.cloud.google.com/docs/quotas/view-manage["Google Cloud ドキュメント: リソース割り当て"^]
 
 
 --
