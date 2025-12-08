@@ -78,6 +78,8 @@ sidebar:
       url: "/task-managing-repo-scanning.html"
     - title: コンプライアンスレポートを生成する
       url: "/task-generating-compliance-reports.html"
+    - title: システムの健全性を監視する
+      url: "/task-health-monitor.html"
   - title: データ分類の管理
     entries:
     - title: ディレクトリをスキャンから除外する

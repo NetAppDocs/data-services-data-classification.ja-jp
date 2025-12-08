@@ -2618,4 +2618,36 @@
   <block id="f918c4aee73951e03ee5c0a40ad23d9e" category="list-text"><block ref="f918c4aee73951e03ee5c0a40ad23d9e" category="inline-link-macro-rx"></block></block>
   <block id="d642b544681a16a1135a35722647009f" category="list-text"><block ref="d642b544681a16a1135a35722647009f" category="inline-link-macro-rx"></block></block>
   <block id="7a1e3b83c1962dc960f34e0a588fe7c6" category="list-text"><block ref="7a1e3b83c1962dc960f34e0a588fe7c6" category="inline-link-macro-rx"></block></block>
+  <block id="6a6493990827c82055e808631b52c236" category="doc">バージョン1.49</block>
+  <block id="640602402999fbf572de482a35f449bc" category="paragraph">この Data Classification リリースには、バグ修正と次の更新が含まれています。</block>
+  <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">ヘルスモニタリングダッシュボードで指標とパフォーマンスを監視する</block>
+  <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">データ分類では、ヘルス モニタリング ダッシュボードが提供されるようになり、リソースのリアルタイム モニタリングと、メモリ使用量、ディスク使用量、ディスク使用率などの分析情報が提供されます。ヘルス モニタリング ダッシュボードから得られる分析情報を活用することで、展開のインフラストラクチャを確認し、ストレージとパフォーマンスを最適化するための分析情報を得ることができます。</block>
+  <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">データ分類の健全性を監視する</block>
+  <block id="699330677c1a0f32d795bf5b4ef62c06" category="paragraph">詳細については、 <block ref="47a26f0a929ccc455d276fcbc1329665" category="inline-link-macro-rx"></block>。</block>
+  <block id="bf17c0b6bb3350440ee2a9bb4f2c9d89" category="paragraph-title">読み込みパフォーマンスの向上</block>
+  <block id="b6a3c9ea2c8f586e05010be520e7c46c" category="paragraph">データ分類のすべてのページの読み込みパフォーマンスが向上し、より効率的なユーザー エクスペリエンスが実現しました。</block>
+  <block id="c7a647b1e9f70e39870907a0d37fc861" category="summary">データ分類は、使用状況と利用率に関する分析情報を提供し、パフォーマンスの最適化と問題の修復に役立ちます。</block>
+  <block id="c208094b8f607967357f585bbb210ee8" category="doc">NetApp Data Classificationの健全性を監視する</block>
+  <block id="55378ce4db7316dfb9237beedafacea5" category="paragraph">NetApp Data Classification Health Monitor ダッシュボードは、パフォーマンスのリアルタイム監視と分析情報を提供します。ヘルス モニターは、データ分類インフラストラクチャ、システムの健全性、使用状況メトリック、使用率データに関する情報を取得し、問題を特定して修復できるようにします。</block>
+  <block id="74284c840f1a46105287599aeeb36666" category="section-title">ヘルスモニターの洞察</block>
+  <block id="99c8a52d112bc64ea49b7c3ae9466bb1" category="paragraph">ヘルス モニター ダッシュボードには、4 つのカテゴリで情報が表示されます。</block>
+  <block id="31d69bd302c379e8dd3809d44fd66b0b" category="list-text">**インフラストラクチャの状態**</block>
+  <block id="224bc922db3535905d796b83072bab9e" category="paragraph">バージョンの状態、システムの安定性、展開の種類、マシンのスケールなどの情報を表示します。</block>
+  <block id="6cf6002236ce4335abed24751f5b76ab" category="list-text">**問題のあるコンテナ**</block>
+  <block id="36dc167dffd8c19c769e418537d40622" category="paragraph">問題のあるコンテナ フィールドを確認して、頻繁に停止または再起動されるコンテナに関する情報を取得します。この情報を使用して、特定のコンテナーを調査します。</block>
+  <block id="fecbcd93350c62d4fa51da76bf1a71d1" category="list-text">**システム情報**</block>
+  <block id="56c4481830e251a9c86a214c55e28f89" category="paragraph">システム情報パネルには、パブリックおよびプライベート IP アドレス、ホスト名、オペレーティング システム、コンソール バージョン、コンソール ID など、 NetApp Consoleとデータ分類に関する重要な情報が記録されます。</block>
+  <block id="daf2396a7df11bb386f6f0b6e764d25d" category="list-text">**使用と活用**</block>
+  <block id="c0da9201fe0226c2cfae194eb58f075e" category="paragraph">CPU 使用率、ディスク使用率、ディスク使用率、メモリ使用率を確認します。これらの値は、ストレージ単位 (GB) または合計使用量のパーセンテージで表示されます。いずれかのフィールドに警告が表示された場合は、情報と修復の推奨事項については警告を選択してください。</block>
+  <block id="0e5df83893e08f2ce609d5d98a243034" category="section-title">ヘルスモニターダッシュボードにアクセスする</block>
+  <block id="e56e80fd2d4ecf280907b94ef6dc65d3" category="list-text">データ分類で、**構成** を選択します。</block>
+  <block id="0ba19edf70d40c73c09b6ece96976c62" category="list-text">**構成** の見出しの下で、**データ分類ヘルスモニター** を選択します。</block>
+  <block id="9849eb5259dead598d64015da2440d80" category="list-text">ヘルスモニターダッシュボードでは、次のことができます。</block>
+  <block id="1e89a4779f111b1b55332c656e31c873" category="list-text">使用状況と利用状況を確認します。使用状況または使用率のメトリックに警告が表示される場合は、問題を解決するための推奨事項の警告を選択してください。</block>
+  <block id="1f3e983d3d3718d5420e82cddb623f74" category="list-text">グラフを切り替えると、CPU 使用率、ディスク使用率、ディスク使用率、メモリ使用率が表示されます。x 軸を変更して、コンテンツを時間単位 (6、12、または 24) または日単位 (2、7、または 14) で表示できます。</block>
+  <block id="741cc455cec02a51740c82ff294658cd" category="list-text">最新のデータ メトリックを表示するには、ダッシュボードを更新します。</block>
+  <block id="323f5d636a1eaba87aab3adcb85ff2db" category="inline-image-macro">ヘルスモニターダッシュボードのスクリーンショット</block>
+  <block id="6ece59dbc8c65f220411ec2ce290cfd6" category="paragraph"><block ref="6ece59dbc8c65f220411ec2ce290cfd6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
+  <block id="3b02682cee7334412169a53934571445" category="sidebar">システムの健全性を監視する</block>
 </blocks>
