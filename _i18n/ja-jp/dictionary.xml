@@ -6,7 +6,6 @@
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">別のデータ分類インスタンスをデプロイする</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">複数のコンソールエージェントを操作する</block>
   <block id="813ae9f2c1d0f0f27d01eeab67dcb1d7" category="paragraph">データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block>それから<block ref="b84ff2addee2a287f168d097865dda36" category="inline-link-macro-rx"></block>。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block> 。</block>
-  <block id="c459d0d5027551c8ad596d2701837012" category="list-text">データ分類は、他のアプリケーションと共有されているホストではサポートされません。ホストは専用ホストである必要があります。</block>
   <block id="14246e64b6cc314c499299b0f4808cdb" category="list-text">オンプレミスでホスト システムを構築する場合、データ分類スキャンを実行する予定のデータセットのサイズに応じて、これらのシステム サイズから選択できます。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">システムサイズ</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
@@ -2167,7 +2166,6 @@
   <block id="1be13928b8bb7dda39b97e766c497b4e" category="summary">Linux ホストに Data Classification を手動でインストールする前に、ホスト上でスクリプトを実行して、Data Classification をインストールするための前提条件がすべて満たされていることを確認できます。このスクリプトは、ネットワーク内の Linux ホストまたはクラウド内の Linux ホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに存在することもできます。</block>
   <block id="16b2ab7371415f7c5eda355d2064fce6" category="doc">LinuxホストがNetApp Data Classificationをインストールする準備ができていることを確認します</block>
   <block id="1cd2484a5f2f38d921ddaabe75696063" category="paragraph">Linux ホストにNetApp Data Classification を手動でインストールする前に、オプションでホスト上でスクリプトを実行し、Data Classification をインストールするための前提条件がすべて満たされていることを確認します。このスクリプトは、ネットワーク内の Linux ホストまたはクラウド内の Linux ホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイト (_ダーク サイト_) に存在することもできます。</block>
-  <block id="d415bef0d68feb20309fa2927304dc79" category="paragraph">また、データ分類インストール スクリプトの一部である前提条件テスト スクリプトもあります。ここで説明するスクリプトは、データ分類インストール スクリプトの実行とは独立して Linux ホストを検証したいユーザー向けに特別に設計されています。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">はじめに</block>
   <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">以下のタスクを実行します。</block>
   <block id="241053df5606e0d439be4d3e91d4224b" category="list-text">必要に応じて、コンソール エージェントがまだインストールされていない場合はインストールします。コンソール エージェントがインストールされていなくてもテスト スクリプトを実行できますが、スクリプトはコンソール エージェントとデータ分類ホスト マシン間の接続をチェックするため、コンソール エージェントを使用することをお勧めします。</block>
@@ -2176,11 +2174,7 @@
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">すべてのシステムで必要なすべてのポートが有効になっていることを確認します。</block>
   <block id="638dfa4dd42c802c871ad02b969b48ab" category="list-text">前提条件テスト スクリプトをダウンロードして実行します。</block>
   <block id="e9baee2a4f78225d19d9d1c38a6df205" category="paragraph">Data Classification をインストールして使用する前に、コンソール エージェントが必要です。ただし、コンソール エージェントなしで前提条件スクリプトを実行することは可能です。</block>
-  <block id="faf8844abf71745359231ca0c3b68035" category="paragraph">あなたはできる<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。オンプレミスで Data Classification をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
-  <block id="da43836db702b2bca882af8c4b45817c" category="paragraph">クラウドプロバイダー環境でコンソールエージェントを作成するには、<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> 、<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> 、 または<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
-  <block id="e6527c2694cae7b14a8260e681318eb1" category="paragraph">前提条件スクリプトを実行するときは、コンソール エージェント システムの IP アドレスまたはホスト名が必要になります。オンプレミスでコンソール エージェントをインストールした場合は、この情報が得られます。コンソール エージェントがクラウドに展開されている場合は、コンソールからこの情報を確認できます。ヘルプ アイコンを選択し、次に *サポート*、*コンソール エージェント* を選択します。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">ホストの要件を確認する</block>
-  <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。</block>
   <block id="2e7d217490cca9f4436994c93bba3bd5" category="paragraph">追加のデータ分類ホストをスキャナー ノードとして使用することを計画している場合 (分散モデル)、この時点で次のルールをプライマリ システムに追加します。</block>
   <block id="810dff52416162c2f79a643152a575ba" category="admonition">このセクションは、インターネットに接続できないサイトにインストールされたホスト システムでは必要ありません。</block>
   <block id="2c9810189a9662217559e6c599b47a67" category="cell">8080 (TCP)、443 (TCP)、および 80。9000</block>
@@ -2650,4 +2644,13 @@
   <block id="6ece59dbc8c65f220411ec2ce290cfd6" category="paragraph"><block ref="6ece59dbc8c65f220411ec2ce290cfd6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">システムの健全性を監視する</block>
+  <block id="199728aa05786f9f41b3140d025353e2" category="list-text">データ分類は専用ホスト上で実行する必要があります。ホストは、他のアプリケーションやウイルス対策などのサードパーティ製ソフトウェアと共有することはできません。</block>
+  <block id="cc2f809338aeb90513fd5d335abc18b2" category="paragraph">データ分類インストール スクリプトには、環境が要件を満たしていることを確認するためのテスト スクリプトが含まれています。インストール スクリプトを実行する前に、このスクリプトを個別に実行して、Linux ホストの準備状況を確認できます。</block>
+  <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">あなたはできる <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。コンソール エージェントがオンプレミスにインストールされている場合は、データ分類をオンプレミスにインストールすることもできます。</block>
+  <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">クラウド プロバイダー環境でコンソール エージェントを作成するには、以下を参照してください。</block>
+  <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
+  <block id="a3ac13f6218d44f6f15beadc4d86502e" category="list-text"><block ref="a3ac13f6218d44f6f15beadc4d86502e" category="inline-link-rx"></block></block>
+  <block id="99472e84d7b0a6bdf69b082286217650" category="list-text"><block ref="99472e84d7b0a6bdf69b082286217650" category="inline-link-rx"></block></block>
+  <block id="6c1aa195a9abc1b402b9f2ded0d68124" category="paragraph">前提条件スクリプトを実行するときは、コンソール エージェント システムの IP アドレスまたはホスト名が必要です。オンプレミスでコンソール エージェントをインストールした場合は、この情報が得られます。コンソール エージェントがクラウドに展開されている場合は、コンソールからこの情報を確認できます。ヘルプ アイコンを選択してから [サポート] を選択し、[エージェントと監査] セクションで [エージェントに移動] を選択します。</block>
+  <block id="7a49d8bea04f537bdd8b9c0dadc345aa" category="paragraph">データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、およびソフトウェア要件を満たすホスト上で実行する必要があります。</block>
 </blocks>
