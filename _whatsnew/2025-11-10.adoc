@@ -11,4 +11,4 @@
 .スキャンの進行状況の明確化を強化
 スキャン構成には、スキャン完了に関する改善された分析情報が含まれるようになりました。以前は、スキャンの進行中にのみ進行状況バーが表示されていました。スキャンが正常に完了したことを確認できるように、完了後も進行状況バーが表示されるようになりました。マップおよびスキャンされたファイルの数を表示することもできます。
 
-スキャン設定の詳細については、 link:task-managing-repo-scanning.html#view-the-scan-status-for-your-repositories["リポジトリのNetApp Data Classificationスキャン設定を変更する"^]。
+スキャン設定の詳細については、 link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#view-the-scan-status-for-your-repositories["リポジトリのNetApp Data Classificationスキャン設定を変更する"^]。

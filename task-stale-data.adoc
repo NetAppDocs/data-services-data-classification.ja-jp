@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-stale-data.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: NetApp Data Classificationの古いデータの定義をカスタマイズして、レポートが組織のニーズに一致するようにします。 
+---
+= NetApp Data Classificationで古いデータ定義をカスタマイズする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification は古いデータを識別し、節約の機会とガバナンスのリスクを特定するのに役立ちます。古いデータの定義は組織のコンテキストによって異なる可能性があるため、データ分類で古いデータを定義する方法をカスタマイズできます。
+
+古いデータは、_最終アクセス_ または _最終変更_ された日時に基づいて定義できます。選択できる期間は 6 か月前から 10 年前までです。
+
+デフォルトでは、データが最後に変更されてから 3 年前であれば古いデータとみなされます。
+
+.古いデータを定義する
+. ランサムウェア耐性で、[**構成**] を選択します。
+. 構成ページで、**古いデータ定義** の見出しまでスクロールします。
+. **ファイル プロパティ** ドロップダウン メニューで、*最終アクセス* または *最終変更* に基づいて古いデータを定義するかどうかを選択します。
+. 古いデータ定義の期間を選択します。
++
+image:stale-data.png["古いデータ定義オプションのスクリーンショット"]
+
+. **保存**を選択します。
+

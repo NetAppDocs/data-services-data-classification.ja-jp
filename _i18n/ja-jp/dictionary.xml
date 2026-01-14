@@ -6,7 +6,6 @@
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">別のデータ分類インスタンスをデプロイする</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">複数のコンソールエージェントを操作する</block>
   <block id="813ae9f2c1d0f0f27d01eeab67dcb1d7" category="paragraph">データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block>それから<block ref="b84ff2addee2a287f168d097865dda36" category="inline-link-macro-rx"></block>。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block> 。</block>
-  <block id="14246e64b6cc314c499299b0f4808cdb" category="list-text">オンプレミスでホスト システムを構築する場合、データ分類スキャンを実行する予定のデータセットのサイズに応じて、これらのシステム サイズから選択できます。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">システムサイズ</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
   <block id="05289cee10f1f9057410b216de0d7e36" category="cell">RAM（スワップメモリを無効にする必要があります）</block>
@@ -32,7 +31,6 @@
   <block id="e7d3c98d4730560139776bd99350f7c9" category="list-text">*GCP マシンタイプ*:「n2-standard-16」。<block ref="0560993eb8cc456f0c5f18a57a7d0f71" category="inline-link-macro-rx"></block> 。</block>
   <block id="114b40cee02180a916d6e0a652f1300d" category="list-text">*UNIX フォルダ権限*: 次の最低限の UNIX 権限が必要です。</block>
   <block id="b0f2b97dc5d2b76b26e040408bb1d8af" category="cell">フォルダ</block>
-  <block id="9dc48a158dad20b2148d68f6a5863b5e" category="cell">最低限の権限</block>
   <block id="d42b9c57d24cf5db3bd8d332dc35437f" category="cell">/tmp</block>
   <block id="f1e98237c93c0717db2bfa4c6177762f" category="cell"><block ref="4d0e8b4926781b53ee3d95354f5c8bb5" prefix="" category="inline-code"></block></block>
   <block id="68ab1268abb7e5f5688810968df97d6b" category="cell">/opt</block>
@@ -50,7 +48,6 @@
   <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">ホスト システムで Advanced Vector Extensions (AVX2) を有効にする必要があります。</block>
   <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">*Red Hat サブスクリプション管理*: ホストは Red Hat サブスクリプション管理に登録されている必要があります。登録されていない場合、システムはリポジトリにアクセスできず、インストール中に必要なサードパーティ製ソフトウェアを更新できません。</block>
   <block id="c925667b183375955ce7e62c22a4acdf" category="list-text">*追加ソフトウェア*: Data Classification をインストールする前に、ホストに次のソフトウェアをインストールする必要があります。</block>
-  <block id="2a2958e5280a05650587dc8d454a5f8d" category="list-text">使用している OS に応じて、次のいずれかのコンテナ エンジンをインストールする必要があります。</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">インストール手順を見る</block>
   <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engine バージョン 19.3.1 以上。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block> 。</block>
   <block id="1e61042bc6437e79f5a1cc09c86acd1a" category="list-text">Podman バージョン 4 以上。  Podmanをインストールするには、次のように入力します。<block ref="9305f04686d4e3dadce4d1e9e77d9d71" prefix="(" category="inline-code"></block> ）。</block>
@@ -1031,7 +1028,6 @@
   <block id="fdc70de4a3ff53369e5ddb3633c1a655" category="paragraph">_Saving Opportunities_ コンポーネントには、削除したり、より安価なオブジェクト ストレージに階層化したりできるデータが表示されます。 _Saving Opportunities_ のデータは 2 時間ごとに更新されます。データを手動で更新することもできます。</block>
   <block id="07d1846c53b76f00910e641f12d09fd8" category="list-text">データ分類メニューから、*ガバナンス*を選択します。</block>
   <block id="70de9418b6d77c7f4c2d4632b262c0df" category="list-text">ガバナンス ダッシュボードの各節約機会タイル内で、*ストレージの最適化* を選択して、調査ページでフィルター処理された結果を表示します。削除する必要があるデータや、より安価なストレージに移動する必要があるデータを見つけるには、「_Saving Opportunities_」を調べてください。</block>
-  <block id="da7e456f74e6e77de59afc145e42d85d" category="list-text">*古いデータ* - 最後に変更されたのは 3 年以上前です。</block>
   <block id="dc6d9a4419750aae3db17878ffe18e5c" category="inline-link-macro">表示される重複ファイルの種類を確認する</block>
   <block id="5791d2ebf242b348a1cbfa550a356083" category="list-text">*重複ファイル* - スキャンしているデータ ソース内の他の場所に重複しているファイル。<block ref="4f528c73ac5ca4ef85380f36d4dccad7" category="inline-link-macro-rx"></block> 。</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">いずれかのデータ ソースでデータ階層化が実装されている場合、オブジェクト ストレージに既に存在する古いデータは、_古いデータ_ カテゴリで識別できます。</block>
@@ -1125,21 +1121,8 @@
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">特定のファイルの詳細を検索、並べ替え、展開したり、「結果の調査」をクリックしてマスクされた情報を表示したり、ファイル リストをダウンロードしたりして、データを調査します。</block>
   <block id="3265c9e86d312c6ca0f5f0bd0ae3bb17" category="summary">NetApp Data Classification を使用すると、機密情報の検索をカスタマイズし、組織に関連する個別のパターンやキーワードに合わせてサービスをカスタマイズできます。</block>
   <block id="79dfb2dc15cbc8bb59c764a1eeb110a7" category="doc">NetApp Data Classificationでカスタム分類を作成する</block>
-  <block id="e53ce77d74c0a69af874134b7d8f39cf" category="paragraph">NetApp Data Classification を使用すると、機密情報のカスタム検索を作成できます。検索の範囲を正規表現 (regex) に設定できます。</block>
-  <block id="166182078c23275fb3140bd76772894f" category="paragraph">カスタム分類は、マッピングと分類のスキャンでのみ使用でき、マッピングのみのスキャンでは使用できません。この機能は現在プレビュー段階です。</block>
   <block id="b89901231bd925d9935358eec83c9df7" category="list-text">**カスタム分類** タブを選択します。</block>
-  <block id="75397441bf4c14c2afae2e04e7cd5571" category="list-text">**新しい分類子を追加** ボタンを選択します。</block>
-  <block id="2dec625d6c345cf302dbf7d35c450b10" category="list-text">新しい分類子の分類子名と説明を追加します。</block>
-  <block id="46d2a8f57f8272ef959d08642ec54e72" category="list-text">分類子を *個人識別子* または *カテゴリ* として追加することを選択します。</block>
-  <block id="69750659c6ac332ddddc11e18c4ac065" category="inline-image-macro">分類子を追加したスクリーンショット</block>
-  <block id="160081b5f7d9182afb44b790dcb7357e" category="paragraph"><block ref="160081b5f7d9182afb44b790dcb7357e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">*次へ*を選択します。</block>
-  <block id="0290a20bef89a572b708f13b5de6010d" category="list-text">カスタマイズを正規表現として追加するには、[**カスタム正規表現**] を選択し、[**次へ**] を選択します。</block>
-  <block id="ce6c93af63d5a72eb3c15bc99afe14ec" category="inline-image-macro">正規表現を作成するためのダイアログのスクリーンショット。</block>
-  <block id="2fbc1bcaba732168404159c46526458c" category="list-text">データの特定の情報を検出するためのパターンを追加します。入力した構文を確認するには、[**検証**] を選択します。<block ref="931af7ddfc52cb7655deb8b332ab2e24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6d7ee64f46753faf45fb70361a3d7659" category="list-text">カスタム分類を作成するには、[**完了**] を選択します。</block>
   <block id="becce430afb103abe05ad66b3e6cde8a" category="inline-xref-macro">コンプライアンスレポートを生成する</block>
-  <block id="92dbbe7b48f44c4348b9a878f60f182e" category="paragraph">新しいカスタマイズは、次回のスケジュールされたスキャンでキャプチャされます。結果を見るには、<block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block> 。</block>
   <block id="c96a9d84a663911f2a121acca6ddb4ba" category="summary">NetApp Data Classification をクラウドに導入するには、いくつかの手順を実行します。  NetApp Consoleは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。</block>
   <block id="e7d1c98dba976d189ba1f2507302b650" category="doc">NetApp Consoleを使用してクラウドにNetApp Data Classificationを導入する</block>
   <block id="6ce84a46ad99469863f22b588d00cd1b" category="paragraph">NetApp Consoleを使用して、クラウドにNetApp Data Classification を導入できます。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。</block>
@@ -2125,7 +2108,6 @@
   <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">コンソールの右上にあるヘルプ アイコンを選択し、*サポート* を選択します。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページからアカウント ID シリアル番号を見つけます。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「サポート」が最初のオプションとしてリストされている「ヘルプ」メニューのスクリーンショット</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetAppのサポート登録サイト</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">移動先<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>*私は登録済みのNetApp顧客ではありません* を選択します。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールド（赤いアスタリスクが付いているフィールド）に入力します。</block>
@@ -2148,7 +2130,6 @@
   <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">これらの NSS 資格情報は、特定のコンソール アカウント ID に関連付けられています。コンソール組織に属するユーザーは、*サポート &gt; NSS 管理* からこれらの資格情報にアクセスできます。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">顧客レベルのアカウントをお持ちの場合は、1 つ以上の NSS アカウントを追加できます。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナー アカウントまたは再販業者アカウントをお持ちの場合は、1 つ以上の NSS アカウントを追加できますが、顧客レベルのアカウントと一緒に追加することはできません。</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">*NSS管理 &gt; NSSアカウントの追加*を選択します。</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">プロンプトが表示されたら、[続行] を選択して、Microsoft ログイン ページにリダイレクトします。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp は、サポートとライセンスに固有の認証サービスの ID プロバイダーとして Microsoft Entra ID を使用します。</block>
@@ -2160,8 +2141,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">既存の顧客レベルの NSS アカウントがあり、パートナー レベルのアカウントを追加しようとする場合も同様です。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">ログインが成功すると、 NetApp はNSS ユーザー名を保存します。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">3つの水平の点のアイコン</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするよう求められます。これらのアカウントのトークンは 90 日後に期限切れになることに注意してください。これを知らせる通知が投稿されます。</block>
   <block id="1be13928b8bb7dda39b97e766c497b4e" category="summary">Linux ホストに Data Classification を手動でインストールする前に、ホスト上でスクリプトを実行して、Data Classification をインストールするための前提条件がすべて満たされていることを確認できます。このスクリプトは、ネットワーク内の Linux ホストまたはクラウド内の Linux ホストで実行できます。ホストはインターネットに接続することも、インターネットにアクセスできないサイトに存在することもできます。</block>
   <block id="16b2ab7371415f7c5eda355d2064fce6" category="doc">LinuxホストがNetApp Data Classificationをインストールする準備ができていることを確認します</block>
@@ -2588,7 +2567,6 @@
   <block id="d34f29080dba1970a613ab39b7166d0c" category="paragraph">この Data Classification リリースには、バグ修正、セキュリティの改善、パフォーマンスの強化が含まれています。</block>
   <block id="8905ad2fb9f028e6bd28666015b4b50a" category="paragraph-title">スキャンの進行状況の明確化を強化</block>
   <block id="206c07a2ed5644be711186a00b2c6ae2" category="paragraph">スキャン構成には、スキャン完了に関する改善された分析情報が含まれるようになりました。以前は、スキャンの進行中にのみ進行状況バーが表示されていました。スキャンが正常に完了したことを確認できるように、完了後も進行状況バーが表示されるようになりました。マップおよびスキャンされたファイルの数を表示することもできます。</block>
-  <block id="dc9fb8f25cdf758c060f4782f41b0b0f" category="paragraph">スキャン設定の詳細については、 <block ref="19cf1405cd38e956788f418f2be34a68" category="inline-link-macro-rx"></block>。</block>
   <block id="eb3cd7064baa457b68c9e6f4bc37005a" category="paragraph">データ分類では、次の場合にすべてのファイル (データベースを除く) の重複を比較します。</block>
   <block id="0ca96e556827c0f5e25df8d0643f52ed" category="list-text">1 MB以上</block>
   <block id="618a117288f96069f1cdbf0f4bded643" category="list-text">または個人情報や機密性の高い個人情報が含まれている</block>
@@ -2653,4 +2631,95 @@
   <block id="99472e84d7b0a6bdf69b082286217650" category="list-text"><block ref="99472e84d7b0a6bdf69b082286217650" category="inline-link-rx"></block></block>
   <block id="6c1aa195a9abc1b402b9f2ded0d68124" category="paragraph">前提条件スクリプトを実行するときは、コンソール エージェント システムの IP アドレスまたはホスト名が必要です。オンプレミスでコンソール エージェントをインストールした場合は、この情報が得られます。コンソール エージェントがクラウドに展開されている場合は、コンソールからこの情報を確認できます。ヘルプ アイコンを選択してから [サポート] を選択し、[エージェントと監査] セクションで [エージェントに移動] を選択します。</block>
   <block id="7a49d8bea04f537bdd8b9c0dadc345aa" category="paragraph">データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、およびソフトウェア要件を満たすホスト上で実行する必要があります。</block>
+  <block id="dab1073bd81b638476185f7da08c7e72" category="list-text">データ分類でスキャンする予定のデータ セットに合わせてサイズを選択します。</block>
+  <block id="baf6246d7a1f90583599825a4d8818c0" category="cell">最小限の権限</block>
+  <block id="cd3fbf7c4da6e490eec17762a02afcb8" category="list-text">使用している OS に応じて、次のいずれかのコンテナ エンジンをインストールする必要があります。</block>
+  <block id="9f4066a8aad2a422e68c5b69dd9472f8" category="paragraph">スキャン設定の詳細については、 <block ref="26da27bca2c7e859f7f769768b8a4285" category="inline-link-macro-rx"></block>。</block>
+  <block id="a4abecdc1a189db5254898cad3b99a7e" category="doc">バージョン1.50</block>
+  <block id="0bbdca5358fc47c779aaa8d26a52510f" category="paragraph-title">カスタム分類の改善</block>
+  <block id="3d1c64f6b833049963a84f1722911079" category="paragraph">データ分類では、データのカスタム カテゴリの作成がサポートされるようになりました。ファイルをアップロードして、データ分類がデータにカテゴリ マーカーを適用するために使用する AI モデルを微調整できます。すべてのカスタム分類のインターフェースが改善されました。</block>
+  <block id="1ea7cf77170c31be18fc52c7e9649923" category="paragraph">詳細については、 <block ref="c45381d223df5e8e5c4b98a60b8b65d3" category="inline-link-macro-rx"></block>。</block>
+  <block id="3e1e55a16c45f87e5a51189ca804eaf3" category="paragraph-title">カスタムの古いデータ定義</block>
+  <block id="97b36bc8814884dc26bf5a568d08d691" category="paragraph">データ分類では、組織のニーズに合わせて古いデータの定義をカスタマイズできるようになりました。以前は、古いデータは 3 年前に最後に変更されたデータとして定義されていました。現在では、最後にアクセスされた日時、または最後に変更された日時に基づいて古いデータを識別できます。期間は 6 か月前から 10 年前までの範囲です。</block>
+  <block id="493a301aeed6d63ec61fcc12caab7b22" category="inline-link-macro">古いデータ定義をカスタマイズする</block>
+  <block id="14748686f892545cd3b61c5ed2221369" category="paragraph">詳細については、 <block ref="a0a0e231fdda706f469e0c838920ede3" category="inline-link-macro-rx"></block>。</block>
+  <block id="e887aed8f9c3dbecd37e8896d96b6637" category="paragraph-title">パフォーマンスの向上</block>
+  <block id="0106b64c8d04b65e1353d763ca518487" category="paragraph">データ分類、データ マッピング レポート、および調査ページのフィルターのすべてのページの読み込み時間が短縮されました。</block>
+  <block id="ff7b9533f576d72772ad31931f1070c3" category="paragraph-title">調査報告書の所要時間の見積もり</block>
+  <block id="317bcae14c763efc48845c774a224df6" category="paragraph">調査レポートをダウンロードすると、データ分類ではダウンロードが完了するまでの予想時間が表示されるようになりました。</block>
+  <block id="6abf7fab7b752e46fde7722aa48e8370" category="list-text">*古いデータ* - デフォルトでは、データが最後に変更されてから 3 年以上経過している場合、そのデータは古いものと見なされます。[古いデータの定義をカスタマイズ](task-stale-data.html)できます。</block>
+  <block id="c44dcda9842080ca5e1535aa1424097c" category="paragraph">NetApp Data Classification を使用すると、カスタム カテゴリまたは個人識別子を作成して、組織の規制およびコンプライアンス要件に固有のデータを識別できます。</block>
+  <block id="30e06b6620c9e16c96bc86941ba219fa" category="paragraph">データ分類では、カテゴリと個人識別子の 2 種類のカスタム分類子がサポートされています。カスタム カテゴリは、アップロードした一連のファイルに基づいて作成され、データ分類によって組織内の類似データを識別する AI モデルが作成されます (たとえば、健康研究会社では臨床分析カテゴリを作成する場合があります)。カスタム個人識別子は、キーワードリストまたは正規表現 (regex) を使用して作成され、コンプライアンス リスクをもたらす可能性のある組織固有の情報を識別します。</block>
+  <block id="ad1196a8e2ab72278c680e142d978bc4" category="paragraph">すべてのカスタム分類は、カスタム分類ダッシュボードで利用できます。</block>
+  <block id="1ba1b3a444d3d64f9daabf45fb989fd2" category="section-title">カスタム個人識別子を作成する</block>
+  <block id="b4939a2e8d6bd43aaa8bc680f9eae2fb" category="paragraph">データ分類を使用すると、コンテキスト キーワードまたは正規表現を使用してカスタム個人識別子を作成し、組織固有のデータを識別できます。</block>
+  <block id="ffc8a633e652805bd5ef66036dbc527c" category="paragraph-title">キーワードの要件</block>
+  <block id="e795baca6e06f00e94a8ede6d1df02c6" category="paragraph">キーワードリストを使用して個人識別子を作成する場合、リストは次の要件を満たしている必要があります。</block>
+  <block id="dbdc75dca548c0496ce98b34a114fe10" category="list-text">キーワードの入力では大文字と小文字は区別されません。</block>
+  <block id="33cbb77faa9b15f7237792726483de99" category="list-text">キーワードは 3 文字以上である必要があります。3 文字未満の単語は無視されます。</block>
+  <block id="9b2456bacc9d094f1cd53f784d659a37" category="list-text">重複する単語は 1 回だけ追加されます。</block>
+  <block id="b19b7076c7db40a4b28fe26aec9c9b4b" category="list-text">キーワードの合計リストは 500,000 文字を超えることはできません。リストには少なくとも 1 つのキーワードが含まれている必要があります。</block>
+  <block id="cf1e8338b7ca586bb5f08c18c3ae72c2" category="list-text">カスタム分類子を作成するには、[**+ 新しい分類子**] を選択します。</block>
+  <block id="cf7d4d402d28087d21ec9bec73735b5b" category="list-text">*個人識別子*を選択します。必要に応じて、**結果をマスク** を選択して、検出された個人データをマスクします。</block>
+  <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">**次へ**を選択します。</block>
+  <block id="bd4c44c38eaba14b323cbe03eea80fda" category="inline-image-macro">分類子の種類を選択するスクリーンショット。</block>
+  <block id="c27932e7af336b0cc016dbf946dd3dc6" category="paragraph"><block ref="c27932e7af336b0cc016dbf946dd3dc6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="22fa659d0a0e0b67e69dcc66c25fbc92" category="inline-image-macro">キーワードを使用してカスタム分類子を作成するスクリーンショット。</block>
+  <block id="2bdbb2525ac7bacd2b3d7bbcd0882360" category="list-text">キーワードを含む分類子を追加するには、**キーワード** を選択します。キーワードのリストを入力します。各エントリは別々の行に入力します。キーワードが要件に準拠していることを確認します。 <block ref="eadc639f92793e875eac44a06d796796" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8b0a564997abd595267a333d8fe04e4" category="paragraph">分類子を正規表現として追加するには、**正規表現** を選択し、データの特定の情報を検出するためのパターンを追加します。入力した構文を確認するには、[**検証**] を選択します。</block>
+  <block id="cd1c98088a39f34696fe79ebc1562bec" category="inline-image-macro">正規表現を作成するためのダイアログのスクリーンショット。</block>
+  <block id="469301e5e880e425be8c3237a9909f8a" category="paragraph"><block ref="469301e5e880e425be8c3237a9909f8a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="69de7e8ad4204438d509ae28653d0494" category="list-text">必要に応じて、正規表現パターンに一致するサンプル文字列を入力し、[**テスト**] を選択して確認します。</block>
+  <block id="7b94065cc0be228fca6962098693c997" category="list-text">必要に応じて、近接語を追加します。近接単語を追加すると、データ分類では、近接単語が一致する文字列に隣接している場合にのみ正規表現パターンにフラグが付けられます。</block>
+  <block id="e882fe7b3895b8dcc5b7bcf492c3a817" category="list-text">ダッシュボードでカスタム カテゴリを識別するには、**分類子名** と **概要** を入力します。</block>
+  <block id="e945e9a3916160ca29d877b518797840" category="list-text">**[保存]** を選択して、カスタム個人識別子を作成します。</block>
+  <block id="11e3c6d90314baadaf9594e0d711327d" category="paragraph">カスタム個人識別子を作成すると、その結果は次回のスケジュールされたスキャンでキャプチャされます。より早く結果を取得するには、オンデマンドスキャンを実行します。結果を見るには、 <block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ee23f91f9500eeb3cb3e89e705562b0c" category="section-title">カスタムカテゴリを作成する</block>
+  <block id="7376edb702d9f8b9c9ab4cd81594643c" category="paragraph">カスタム カテゴリを使用すると、組織固有のデータを分類できます。カスタム カテゴリは、アップロードしたテキスト ファイルに基づいて作成されます。データ分類では、このテキスト ファイルから AI モデルを作成し、他のファイル内の同様の情報を識別します。</block>
+  <block id="634023398ed1caee657db7fc4eb08979" category="list-title">トレーニングデータ要件</block>
+  <block id="5508b330ba8096375edcddabb69df349" category="list-text">トレーニング データセットには少なくとも 25 個のファイルが含まれている必要があります。最大ファイル数は 1,000 です。</block>
+  <block id="1f0391202e3ca0e262147c4807d1247d" category="list-text">すべてのファイルは、指定したファイル パスに直接配置する必要があります。</block>
+  <block id="1476c5f6234c59512221e8fdd2d77b60" category="list-text">すべてのファイルは 100 バイトより大きくなければなりません。</block>
+  <block id="7764de07beec7179c2ed0242747ba52a" category="list-text">データ分類トレーニング データは、CSV、DOCX、DOC、GZ、JSON、PDF、PPTX、TXT、RTT、XLS、または XLSX のいずれかのファイル タイプである必要があります。サポートされているすべてのファイルタイプを組み合わせてアップロードできます。</block>
+  <block id="a49188ca3667eda075a449f49fa25fda" category="list-text">NetApp Data Classificationで、*カスタム分類*を選択します。</block>
+  <block id="c8f6ab5cc81dd9729dc1fa1107541cc8" category="list-text">*+ 新しい分類子*を選択します。</block>
+  <block id="93b1450efc0df8091ae7ecdd258dd189" category="list-text">分類子の種類として「*カスタム カテゴリ*」を選択し、「**次へ**」をクリックします。</block>
+  <block id="7d52d3b40d52e36a1f4c546542c8d0a3" category="list-text">テキストベースのファイルのコレクションを使用して、カスタム カテゴリのロジックを定義します。*作業アドレス*の IP アドレスを入力し、ドロップダウン メニューから *ボリューム* を選択します。</block>
+  <block id="582dcf1234f91300d5dd559e2b759d04" category="paragraph">トレーニング データが含まれているディレクトリの **ディレクトリ パス** を入力します。</block>
+  <block id="dc6d46e682032130076140b1c6b9f422" category="list-text">ファイルのチェックを実行するには、データ分類の [**ファイルの読み込み**] を選択します。ファイルの概要を確認することができます。そこには、ファイル名、サイズ、タイプ、およびファイルがトレーニングに適していると判断されたかどうかのメモが一覧表示されます。</block>
+  <block id="60d2aee5a316a80a131d402c7cfaa44a" category="inline-image-macro">トレーニング用にアップロードされたファイルの概要を示すスクリーンショット。</block>
+  <block id="6ca27c96af59179d21a409d88cb4139c" category="paragraph"><block ref="6ca27c96af59179d21a409d88cb4139c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="839860ecb593c72a6c18f98bd45565b0" category="list-text">ファイル パスを変更したり、ファイルを再アップロードしたりするには、[**パスの変更**] を選択し、データを入力してファイルを再度ロードします。</block>
+  <block id="78edc8efdc4ac520c8f06ac58e069eac" category="list-text">アップロードしたファイルに問題がなければ、[**次へ**] を選択します。</block>
+  <block id="baacdea09c8bef5361744801ca025b67" category="list-text">**[保存]** を選択してカスタム カテゴリを作成します。</block>
+  <block id="d2edcb6e893e23e45a9b667d3d7f0c9e" category="paragraph">カスタム カテゴリを作成すると、その結果は次回のスケジュールされたスキャンでキャプチャされます。より早く結果を取得するには、手動でスキャンを開始します。</block>
+  <block id="de6c38194e516df4fcb360803e7bc45b" category="section-title">カスタム分類子を編集する</block>
+  <block id="00af115e508e98110cd2d8e399b9ee0d" category="paragraph">個人識別子を作成した後で、そのロジックを変更できます。個人識別子のタイプまたはロジック タイプを変更することはできません。たとえば、カスタム カテゴリをカスタム個人識別子に変更することはできません。また、キーワードベースのカスタム識別子を正規表現ベースのカスタム識別子に変更することもできません。</block>
+  <block id="df302e54bc4bbb3693588fc462ffbeb1" category="list-text">削除したい分類子を特定し、アクションメニューを選択します<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 列の末尾にあります。</block>
+  <block id="7796faadbea75fe3608c9ba1d9f44e44" category="list-text">**ロジックの編集**を選択します。</block>
+  <block id="7453a1c1616bf1348f6f77fc1196c4df" category="list-text">キーワードを変更する場合は、適切なキーワードを追加、削除、または編集します。正規表現を変更する場合は、新しい正規表現を入力して検証します。必要に応じて、近接キーワードを追加します。</block>
+  <block id="b545932772e1164fe11f0b729a00c13f" category="list-text">変更を適用するには、[**保存**] を選択します。</block>
+  <block id="0aba856a8621c76c8747404bef41ae34" category="section-title">カスタム分類子を削除する</block>
+  <block id="cbeceb64fbec50832e1e348746cb5499" category="list-text">削除したい分類子を識別し、アクションメニューを選択します<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 列の末尾にあります。</block>
+  <block id="5eb8d39406f33bac15e75a46db7ad955" category="list-text">**分類子を削除** を選択します。</block>
+  <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">次のステップ</block>
+  <block id="9d0d45f702bd2dff4853a9920dd0f534" category="list-text"><block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block></block>
+  <block id="14e54339fc3ec740d220afd6b1ee35ed" category="summary">NetApp Data Classificationの古いデータの定義をカスタマイズして、レポートが組織のニーズに一致するようにします。</block>
+  <block id="b5a4424f99a791a0f222cc5ae7923d73" category="doc">NetApp Data Classificationで古いデータ定義をカスタマイズする</block>
+  <block id="9c7dd10cb5831cf239a4bc5dedbb332b" category="paragraph">NetApp Data Classification は古いデータを識別し、節約の機会とガバナンスのリスクを特定するのに役立ちます。古いデータの定義は組織のコンテキストによって異なる可能性があるため、データ分類で古いデータを定義する方法をカスタマイズできます。</block>
+  <block id="a19fda4781709630dbfb543922e4d612" category="paragraph">古いデータは、_最終アクセス_ または _最終変更_ された日時に基づいて定義できます。選択できる期間は 6 か月前から 10 年前までです。</block>
+  <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">デフォルトでは、データが最後に変更されてから 3 年前であれば古いデータとみなされます。</block>
+  <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">古いデータを定義する</block>
+  <block id="41c8212e8259ff083fe9cdf357f8a4a6" category="list-text">ランサムウェア耐性で、[**構成**] を選択します。</block>
+  <block id="2d6e84f94b10924500cc07871b84c4bc" category="list-text">構成ページで、**古いデータ定義** の見出しまでスクロールします。</block>
+  <block id="de1a225a67ee04f4d574bda78a6c7680" category="list-text">**ファイル プロパティ** ドロップダウン メニューで、*最終アクセス* または *最終変更* に基づいて古いデータを定義するかどうかを選択します。</block>
+  <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">古いデータ定義の期間を選択します。</block>
+  <block id="62fd673ebe947916da532bb59f514b32" category="inline-image-macro">古いデータ定義オプションのスクリーンショット</block>
+  <block id="7b144ea2005a4117bc235b1bec83f6c5" category="paragraph"><block ref="7b144ea2005a4117bc235b1bec83f6c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">**保存**を選択します。</block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
+  <block id="4a0d328244ebc11cdcdafe7537ab73a0" category="section-title">2026年1月14日</block>
 </blocks>

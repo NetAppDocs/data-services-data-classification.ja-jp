@@ -86,6 +86,8 @@ sidebar:
       url: "/task-exclude-scan-paths.html"
     - title: 既存のグループ ID を「組織に公開」として定義する
       url: "/task-add-group-id-as-open.html"
+    - title: 古いデータを定義する
+      url: "/task-stale-data.html"
     - title: データ分類からデータソースを削除する
       url: "/task-managing-compliance.html"
     - title: アンインストールデータ分類
