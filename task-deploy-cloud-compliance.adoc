@@ -33,7 +33,7 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]前提条件
 [role="quick-margin-para"]
-ご使用の環境が前提条件を満たしていることを確認してください。これには、インスタンスのアウトバウンド インターネット アクセス、ポート 443 経由のコンソール エージェントとデータ分類間の接続などが含まれます。  <<前提条件、完全なリストを参照してください>>。
+お使いの環境が前提条件を満たしていることを確認してください。これには、インスタンスの外向きインターネットアクセス、ConsoleエージェントとData Classification間のポート443での接続などが含まれます。<<前提条件,完全なリストを見る>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]データ分類を展開する
 [role="quick-margin-para"]
