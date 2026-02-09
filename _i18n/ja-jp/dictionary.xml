@@ -586,29 +586,10 @@
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">フィルターの選択肢は次のとおりです。</block>
   <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類 - 最終アクセス時間を戻すことができません」 - 書き込み権限がないため分類されなかったファイルが表示されます。</block>
   <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">「分類され、更新された最終アクセス時刻」 - 分類されたファイルが表示され、データ分類では最終アクセス時刻を元の日付にリセットできませんでした。このフィルターは、*「属性の書き込み」権限がない場合にスキャン*をオンにした環境にのみ関連します。</block>
-  <block id="eacfad7ae9e6aba32bdbef2948b1d628" category="summary">データベース スキーマをスキャンするときに、 NetApp Data Classificationでは使用できない機能がいくつかあります。</block>
-  <block id="e6dbbec80e173d3f91cf2b227477d31c" category="doc">NetApp Data Classificationでサポートされているデータベース機能とサポートされていないデータベース機能</block>
-  <block id="ad52d3616ca8f733ae442a642767c792" category="paragraph">データベース スキーマをスキャンするときに、 NetApp Data Classificationでは使用できない機能がいくつかあります。以下のリストを参照してください。</block>
-  <block id="990222def8053839fd07dd4a3c81e9dc" category="inline-link-macro">ここで説明されているように</block>
-  <block id="69ff49bbb82445d0bebdf7216cb4bd32" category="paragraph">データベーススキーマをデータ分類に追加してスキャンすることができます<block ref="32350e7a1f032d301549bb941192cdc0" category="inline-link-macro-rx"></block>。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">タイプ</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">説明</block>
-  <block id="a71f76c3256e4c206a4841d8eb0fed35" category="cell">SQLサーバ</block>
-  <block id="35686630aa3baddc18c904374e570233" category="cell">アマゾンRDS</block>
-  <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">アクション</block>
-  <block id="d779bee8155408e2ad4426f42de462a9" category="cell">保存したクエリを作成する</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
-  <block id="c101058e7ea21bbbf2a5ac893088e90b" category="cell">Tag</block>
-  <block id="773ecc684d98231f8f23773727622446" category="cell">割り当て先</block>
-  <block id="cd6ae20e52d83f601c5fa12b66f0f6d0" category="cell">再スキャン</block>
-  <block id="9dd4e461268c8034f5c8564e155c67a6" category="cell">x</block>
-  <block id="f2a6c498fb90ee345d997f888fce3b18" category="cell">削除</block>
-  <block id="6bc362dbf494c61ea117fe3c71ca48a5" category="cell">動く</block>
-  <block id="5fb63579fc981698f97d55bfecb213ea" category="cell">コピー</block>
-  <block id="b021df6aac4654c454f46c77646e745f" category="cell">ラベル</block>
-  <block id="f3f43e30c8c7d78c6ac0173515e57a00" category="cell">フィルター</block>
   <block id="59f5223754fb9750ccf313de64e06099" category="cell">保存されたクエリ</block>
-  <block id="e80df5ee03a17fe47c471debd1cb6a7b" category="cell">スキャン分析ステータス</block>
   <block id="f5cd54184b354671d5c99cf48104cc07" category="cell">システムタイプ</block>
   <block id="a45da96d0bf6575970f2d27af22be28a" category="cell">システム</block>
   <block id="8e1608d6951087912c426bcb53d12280" category="cell">ストレージリポジトリ</block>
@@ -621,8 +602,6 @@
   <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="cell">発見された時間</block>
   <block id="189f63f277cd73395561651753563065" category="cell">タグ</block>
   <block id="3e9f09095e53d4aa46d296b9c32b7be4" category="cell">スキャン分析イベント</block>
-  <block id="7c2647ff45382a42029e7a109ef1b4c5" category="cell">ファイル/ディレクトリパス</block>
-  <block id="c24fd35c406c9694e3bee288f8825b5c" category="cell">権限フィルター</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">識別子の数</block>
   <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="cell">ディレクトリタイプ</block>
   <block id="2fb58660fd44cbdef76a54519a9a9737" category="cell">作成時間</block>
@@ -2044,10 +2023,6 @@
   <block id="fb8a04662bc42d13ae8a2d1bddbc05b3" category="cell">ステータスは常に「限られた洞察」です</block>
   <block id="29344a3c58cf84dcf0144a3627f021d1" category="cell">ファイルハッシュ</block>
   <block id="4df26807127a67f2d98166e4384eea07" category="cell">ユーザー/グループの権限</block>
-  <block id="ba3e4178a9b73e03e42aae6548738221" category="section-title">データ分類はどのくらい速くデータをスキャンしますか</block>
-  <block id="9ece336caf3d2b843dafc984e27b323e" category="paragraph">スキャン速度は、ネットワーク遅延、ディスク遅延、ネットワーク帯域幅、環境サイズ、ファイル配布サイズの影響を受けます。</block>
-  <block id="fd09538b9e640fbf352f46c0fa44b064" category="list-text">マッピングのみのスキャンを実行する場合、データ分類では 1 日あたり 100 ～ 150 TiB のデータがスキャンされます。</block>
-  <block id="7df1c51c08a7ab21455acfcdd0b1cfe4" category="list-text">マップと分類スキャンを実行する場合、データ分類では 1 日あたり 15 ～ 40 TiB のデータがスキャンされます。</block>
   <block id="fa9ebe7c0c0614d0f74c794a58db2fad" category="summary">いくつかの手順を完了すると、 NetApp Data Classificationを使用してStorageGRID内のデータを直接スキャンし始めることができます。</block>
   <block id="6638c5bc122a9b4e0222774a95a04fd5" category="doc">NetApp Data ClassificationでStorageGRIDデータをスキャン</block>
   <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">StorageGRIDの要件を確認する</block>
@@ -2688,7 +2663,6 @@
   <block id="dc6d46e682032130076140b1c6b9f422" category="list-text">ファイルのチェックを実行するには、データ分類の [**ファイルの読み込み**] を選択します。ファイルの概要を確認することができます。そこには、ファイル名、サイズ、タイプ、およびファイルがトレーニングに適していると判断されたかどうかのメモが一覧表示されます。</block>
   <block id="60d2aee5a316a80a131d402c7cfaa44a" category="inline-image-macro">トレーニング用にアップロードされたファイルの概要を示すスクリーンショット。</block>
   <block id="6ca27c96af59179d21a409d88cb4139c" category="paragraph"><block ref="6ca27c96af59179d21a409d88cb4139c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="839860ecb593c72a6c18f98bd45565b0" category="list-text">ファイル パスを変更したり、ファイルを再アップロードしたりするには、[**パスの変更**] を選択し、データを入力してファイルを再度ロードします。</block>
   <block id="78edc8efdc4ac520c8f06ac58e069eac" category="list-text">アップロードしたファイルに問題がなければ、[**次へ**] を選択します。</block>
   <block id="baacdea09c8bef5361744801ca025b67" category="list-text">**[保存]** を選択してカスタム カテゴリを作成します。</block>
   <block id="d2edcb6e893e23e45a9b667d3d7f0c9e" category="paragraph">カスタム カテゴリを作成すると、その結果は次回のスケジュールされたスキャンでキャプチャされます。より早く結果を取得するには、手動でスキャンを開始します。</block>
@@ -2722,4 +2696,17 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="4a0d328244ebc11cdcdafe7537ab73a0" category="section-title">2026年1月14日</block>
   <block id="0683badfe3a5feea962602495f98c990" category="paragraph">お使いの環境が前提条件を満たしていることを確認してください。これには、インスタンスの外向きインターネットアクセス、ConsoleエージェントとData Classification間のポート443での接続などが含まれます。<block ref="c513c1ef65e57d26fcca4062f05d2f7b" category="inline-xref-macro-rx"></block>.</block>
+  <block id="9f8adb7ebffc39f306c40ef2d6a377b1" category="paragraph-title">Amazon FSxN for ONTAP から直接 NetApp Console キャンバスでデータ分類を有効化</block>
+  <block id="880dc0b44905babcfa6685da86ba8117" category="paragraph">NetApp Console キャンバスから直接 ONTAP システム用の Amazon FSxN を有効にできるようになり、FSxN システムの Data Classification をより迅速に起動できるようになりました。</block>
+  <block id="dd8a2d3b3415c2980790a672dff3757f" category="inline-link-macro">Amazon FSxN for ONTAPボリュームをスキャン</block>
+  <block id="db8b5cff328cee1f4914855b931bae02" category="paragraph">Amazon FSxN for ONTAPでData Classificationを使用する方法の詳細については、<block ref="48a47292b9e31aff1079bbdaa3cd4739" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="3ee3e594e3bac0471e4cda35acc3588a" category="paragraph-title">調査ディレクトリのエクスポート制限の増加</block>
+  <block id="45f99b8f539f37cc0379b65d3ddafbbf" category="paragraph">調査ダッシュボードからディレクトリに関する調査レポートをエクスポートするときに、10,000 行を含めることができるようになりました。以前の 5,000 行の制限からのこの増加は、データ ガバナンスとコンプライアンスのより大規模な調査をサポートします。</block>
+  <block id="e733aab9ce2fc5320fbdd563cba5e12b" category="paragraph">詳細については、<block ref="d8b3109a5818cc0f43ade4650ffede11" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="80f498ef50d7bad5da9acf441b502c0f" category="paragraph-title">コピーと移動の制限の引き上げ</block>
+  <block id="401f234e1c84943381dd951c39f2ce3c" category="paragraph">ファイルをコピーまたは移動する場合、以前の制限である 50 MB から増加し、最大 250 MB のファイルを移動できるようになりました。</block>
+  <block id="244d30ed7d7da13b1f80f1fa008af700" category="paragraph-title">低解像度画面の表示の改善</block>
+  <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification では、低解像度の画面での表示パフォーマンスが向上し、ユーザー エクスペリエンスが向上しました。</block>
+  <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">データ分類では、データ トレーニングの推定完了時間が表示されます。..ファイル パスを変更したり、ファイルを再アップロードしたりするには、[**パスの変更**] を選択し、データを入力してファイルを再度ロードします。</block>
+  <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026年2月9日</block>
 </blocks>
