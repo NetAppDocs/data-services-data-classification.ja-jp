@@ -2709,4 +2709,5 @@
   <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification では、低解像度の画面での表示パフォーマンスが向上し、ユーザー エクスペリエンスが向上しました。</block>
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">データ分類では、データ トレーニングの推定完了時間が表示されます。..ファイル パスを変更したり、ファイルを再アップロードしたりするには、[**パスの変更**] を選択し、データを入力してファイルを再度ロードします。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026年2月9日</block>
+  <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">バージョン1.51</block>
 </blocks>
