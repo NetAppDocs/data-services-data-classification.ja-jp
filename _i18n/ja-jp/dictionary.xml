@@ -54,8 +54,6 @@
   <block id="1d7787fe4a7264402153a51d8513414f" category="list-text">Python バージョン 3.6 以上。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block> 。</block>
   <block id="af6e943c488994655555d1536c5ae303" category="list-text">*NTP に関する考慮事項*: NetApp、データ分類システムをネットワーク タイム プロトコル (NTP) サービスを使用するように構成することを推奨しています。データ分類システムとコンソール エージェント システムの間で時刻を同期する必要があります。</block>
   <block id="408fd119f07cf5e6a0967b9f94eb5f93" category="admonition">この情報は、旧バージョン 1.30 以前にのみ関連します。</block>
-  <block id="42e7ba7061f6a314504fc5939b6ee874" category="inline-link-macro">BlueXPプライベートモードの PDF ドキュメント</block>
-  <block id="e8c16b093f75565bedc28ce42c18387b" category="admonition">BlueXPプライベート モード (レガシーBlueXPインターフェイス) は通常、インターネット接続がなく、AWS Secret Cloud、AWS Top Secret Cloud、Azure IL6 などの安全なクラウド領域があるオンプレミス環境で使用されます。NetApp は、従来のBlueXPインターフェースを使用してこれらの環境を引き続きサポートします。従来のBlueXPインターフェースのプライベートモードのドキュメントについては、<block ref="ff61a6d02866e89b5c3ca85de9a7ba21" category="inline-link-macro-rx"></block> 。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">調査ページでのデータのフィルタリング</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">「調査」タブで、使用するフィルターを選択して検索を定義します。見る<block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block>詳細については。</block>
@@ -2710,4 +2708,80 @@
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">データ分類では、データ トレーニングの推定完了時間が表示されます。..ファイル パスを変更したり、ファイルを再アップロードしたりするには、[**パスの変更**] を選択し、データを入力してファイルを再度ロードします。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026年2月9日</block>
   <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">バージョン1.51</block>
+  <block id="58c2f245ba9fee2040b80ea19d9ccd7c" category="inline-link-macro">Console エージェントと Data Classification のさまざまな導入モードについて説明します</block>
+  <block id="9da1ffd588a2b7dde94c64757653a38a" category="paragraph"><block ref="cb90c21a9c44c9ac5d86b04e8dfb0fb3" category="inline-link-macro-rx"></block>。</block>
+  <block id="3883c68756cb61eec195bb6e108336ba" category="inline-link-macro">インターネットにアクセスできるオンプレミスサイトにData Classificationを導入します</block>
+  <block id="aff289904c75641e7044ceeb9e922006" category="paragraph">また、<block ref="9d4e9d68c29b6863b7c77f4a02e40d14" category="inline-link-macro-rx"></block>こともできます。</block>
+  <block id="eb7c0a54a684e3bfabc7abd5ff6851ad" category="paragraph">プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもあります）でインストールされた場合、Data Classificationは、オンプレミスサイトにローカルに存在するデータソースからのデータのみをスキャンできます。現時点では、Data Classificationは次の*ローカル*データソースをスキャンできます：</block>
+  <block id="318a375199576f5d44d9caad0d810341" category="paragraph">現在、Data Classificationがプライベートモードで展開されている場合、Cloud Volumes ONTAP、Azure NetApp Files、またはFSx for ONTAPアカウントのスキャンはサポートされていません。</block>
+  <block id="15626ba7e1a3568f27f269f3c7356d0d" category="paragraph">ほとんどのデータ分類機能は、インターネットにアクセスできないサイトに展開された場合でも機能します。ただし、インターネット アクセスを必要とする特定の機能はサポートされていません。例：</block>
+  <block id="0a960471aa53e0935822c357979bce1b" category="list-text">異なるユーザー（Account AdminやCompliance Viewerなど）のConsoleロールの設定</block>
+  <block id="75a75ad5f9d6f3eada3bc2d376a1af49" category="list-text">NetApp Copy and Syncを使用したソースファイルのコピーと同期</block>
+  <block id="f73f7a9ba36beea1c62f635c6b80bf33" category="list-text">コンソールからの自動ソフトウェアアップグレード</block>
+  <block id="5d985fa2e25b1e5f64c61d3b949a0115" category="inline-link-macro">データ分類リリースノート</block>
+  <block id="1a243a611907b55cac593a5bf6f0a9ec" category="inline-link">Console エージェントをアップグレードする</block>
+  <block id="fdb6099e006d1e34e0980a93da741897" category="inline-xref">データ分類ソフトウェアをアップグレードする</block>
+  <block id="3e4fd25a05e07b0252f31d30edcacd17" category="paragraph">Console エージェントと Data Classification の両方で、新しい機能を有効にするには定期的な手動アップグレードが必要です。Data Classification UI ページの下部に Data Classification バージョンが表示されます。<block ref="579336e4b6257d4241fed022ac54ce8d" category="inline-link-macro-rx"></block>を確認して、各リリースの新機能とそれらの機能が必要かどうかを確認します。その後、以下の手順に従って<block ref="e2b645201e21346aaf6e5246ac969b73" category="inline-link-rx"></block>および<block ref="c988b03c9911268b8d73909a35d7a951" category="inline-xref-macro-rx"></block>を実行できます。</block>
+  <block id="1650bbddb7d8507c1c48c3366a8f1877" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Console エージェントをインストールする</block>
+  <block id="391fba57e5d1e9f418e7be128128ea0a" category="inline-link">Console エージェントを導入する</block>
+  <block id="0a096664cfec97158e212b2370589415" category="paragraph">プライベートモードで Console エージェントをまだインストールしていない場合は、<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block>今すぐ Linux ホストにインストールしてください。</block>
+  <block id="d865ed11a69cb30e8cfd495464fbf2af" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> データ分類の前提条件を確認する</block>
+  <block id="c809d3c5d7781a451f25cc2cfea66167" category="paragraph">Linuxシステムが<block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>を満たしていること、必要なソフトウェアがすべてインストールされていること、およびオフライン環境が必要な<block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>を満たしていることを確認してください。</block>
+  <block id="a036c0c3c25c9be40fc8f6846935a644" category="paragraph">NetApp Support Site からデータ分類ソフトウェアをダウンロードし、使用する予定の Linux ホストにインストーラーファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従ってデータ分類インスタンスをデプロイします。</block>
+  <block id="0306d61e47aa894322ab0c0132696cc8" category="section-title">コンソールエージェントをインストールする</block>
+  <block id="3a55e7058305278fe68706cba0a3bcf2" category="paragraph">プライベートモードでConsoleエージェントをまだインストールしていない場合は、<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block>オフラインサイトのLinuxホスト上に配置します。</block>
+  <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">データ分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。</block>
+  <block id="277cf494e8db0b6717cad837b1ae46e3" category="section-title">コンソールとデータ分類の前提条件を確認する</block>
+  <block id="7ea1d38180704ea0da1ac54272bbf3cd" category="paragraph">Data Classification を導入する前に、次の前提条件を確認して、サポートされている構成があることを確認してください。</block>
+  <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetAppが提供するポリシー</block>
+  <block id="984960560a67fda46a9e523e19133979" category="list-text">コンソール エージェントに、リソースをデプロイし、データ分類インスタンスのセキュリティ グループを作成する権限があることを確認します。最新のコンソール権限は<block ref="4a2a6e11988d010a6d440ccfbc05a8f0" category="inline-link-rx"></block>で確認できます。</block>
+  <block id="424a3327e4edb51b035f659615bb187a" category="list-text">Data Classification を実行し続けることができることを確認します。データを継続的にスキャンするには、 Data Classification インスタンスをオンのままにしておく必要があります。</block>
+  <block id="aa820f4f486defc502ac08744211a752" category="list-text">Data Classification への Web ブラウザー接続を確認します。Data Classification を有効にした後、ユーザーが Data Classification インスタンスに接続しているホストから Console インターフェイスにアクセスすることを確認します。</block>
+  <block id="8bb88fba13168905c7855c431cd09c9f" category="paragraph">データ分類インスタンスは、インデックス付けされたデータが他のユーザーにアクセスできないようにするためにプライベートIPアドレスを使用します。そのため、コンソールにアクセスするために使用するWebブラウザは、そのプライベートIPアドレスに接続している必要があります。この接続は、データ分類インスタンスと同じネットワーク内にあるホストから実行できます。</block>
+  <block id="d2f4e7f4455a3bda8ed865e3c82c3eb1" category="cell">8080 (TCP)、6000 (TCP)、443 (TCP)、および 80。9000</block>
+  <block id="4e1dc023343a2a554657f8105534c56b" category="paragraph">コンソールエージェントのセキュリティグループは、ポート6000および443を介したData Classificationインスタンスとの間の受信トラフィックと送信トラフィックを許可する必要があります。</block>
+  <block id="c27c7c9e13ebf822684f5bfbf5405964" category="list-text">Data Classification BYOL ライセンスがダークサイトで機能するには、ポート 6000 が必要です。</block>
+  <block id="4d6eacf6dc1b83a9aab9191bb6c9f622" category="list-text">コンソールでインストールの進行状況を確認できるように、ポート 8080 を開いておく必要があります。</block>
+  <block id="87669b3f9ce07d9d9a218ff72c43f046" category="list-text">Linux ホストでファイアウォールが使用されている場合、Ubuntu サーバー内の内部プロセスにはポート 9000 が必要です。</block>
+  <block id="ad57c3c7748d514ebd8d5bfa23591db0" category="list-text">Console エージェントホストは、ポート 443 経由の送信 HTTPS アクセスを許可する必要があります。Console エージェントがクラウド内にある場合、すべての送信通信は定義済みのセキュリティグループによって許可されます。</block>
+  <block id="aac02b39ecdb82865aa9de6a6ad6795a" category="paragraph">Data Classificationには、各Cloud Volumes ONTAPサブネットまたはオンプレミスONTAPシステムへのネットワーク接続が必要です。Cloud Volumes ONTAPのセキュリティグループは、Data Classificationインスタンスからの受信接続を許可する必要があります。</block>
+  <block id="c29fe88a82cdd613769957d60ae7e623" category="cell">Linux ホストでファイアウォールが使用されている場合</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
+  <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu サーバー内の内部プロセスに必要です。</block>
+  <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">オンプレミス Linux ホストに Data Classification をインストールします</block>
+  <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">通常の構成では、ソフトウェアを単一のホストシステムにインストールします。</block>
+  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">インターネットにアクセスできないオンプレミスに導入された単一のData Classificationインスタンスを使用する際にスキャンできるデータソースの場所を示す図。</block>
+  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">オフライン環境の単一のオンプレミスホストに Data Classification ソフトウェアをインストールする場合は、次の手順に従ってください。</block>
+  <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">2 つの前提条件ソフトウェアパッケージ（Docker Engine または Podman 、および Python 3 ）がインストールされていることを確認します。</block>
+  <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">オフライン環境が必要な<block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>を満たしていることを確認します。</block>
+  <block id="528e2987caf60ebcefa62783e2e3b8d0" category="list-text">インターネットに接続されたシステムで、<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>からData Classificationソフトウェアをダウンロードします。選択するファイルの名前は*DataSense-offline-bundle-&lt;version&gt;.tar.gz*です。</block>
+  <block id="e441d0b06845e470533ecf90d990663b" category="list-text">プライベート モードで使用する予定の Linux ホストにインストーラー バンドルをコピーします。</block>
+  <block id="1eecc2fcccd4fcb3cadd8bec3044d3bb" category="list-text">ホスト マシン上でインストーラー バンドルを解凍します。例：</block>
+  <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">これにより、必要なソフトウェアと実際のインストールファイル *cc_onprem_installer.tar.gz* が抽出されます。</block>
+  <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">ホスト マシン上でインストール ファイルを解凍します。例：</block>
+  <block id="83c94a9afb163137cc4dc79b7e321458" category="list-text">Data Classification から、 * Deploy Classification On-Premises or Cloud * を選択します。</block>
+  <block id="e220ba16e07da8175a8f22c929583d56" category="list-text">*Deploy* を選択してオンプレミスのインストールを開始します。</block>
+  <block id="2f556d8d5b92bf21939b1165b4292afa" category="list-text">_オンプレミスでのデータ分類の展開_ ダイアログが表示されます。提供されたコマンドをコピーします（例：<block ref="4041549bf21d4c7bed0bfcbf52842063" prefix=" " category="inline-code"></block>）を作成し、テキスト ファイルに貼り付けて、後で使用することもできます。次に、*閉じる* を選択してダイアログを閉じます。</block>
+  <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">インストーラは、インストールを正常に実行するためにシステムとネットワークの要件が満たされているかどうかを確認する事前チェックを実行します。</block>
+  <block id="04b2719843afa330fd4278f18f551cc0" category="list-text">手順 8 でコピーした情報を貼り付けます：<block ref="f2d89fd6adc07cc741bd63dae759c280" prefix=" " category="inline-code"></block></block>
+  <block id="6b0aea6c68ef96dbcfc3127ea709758f" category="cell">あるいは、必要なホスト パラメータを指定して、コマンド全体を事前に作成することもできます：<block ref="30e6510f8ccbe93aadbdbce29e25b293" prefix=" " category="inline-code"></block></block>
+  <block id="18a676ba121b0c5c7d029a5de11e6384" category="list-text">_ds_host_ = Data Classification システムの IP アドレスまたはホスト名。</block>
+  <block id="352f10906200e3b1eb42fca6da3bfc6b" category="paragraph">ホスト マシンと Console エージェント インスタンスの間にポート 8080 経由の接続がある場合は、［Data Classification］タブにインストールの進行状況が表示されます。</block>
+  <block id="5d0d87e9be98aaab11076c1b64d38cc3" category="inline-link-macro">オンプレミス ONTAP クラスタ</block>
+  <block id="e61ce3062cb76770658896b778ad06cd" category="inline-link-macro">データベース</block>
+  <block id="c3cea28bb90c637f494d5021dcebdf2d" category="paragraph">設定ページから、スキャンするローカル<block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block>と<block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block>を選択できます。</block>
+  <block id="6adc855444e112822971d3dccee13c7b" category="section-title">Data Classification ソフトウェアのアップグレード</block>
+  <block id="2ef1c095f065f6ed9362c577ebcb41cb" category="paragraph">Data Classification ソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアと機能を使用していることを確認する習慣を身に付ける必要があります。アップグレードを自動的に実行するためのインターネット接続がないため、Data Classification ソフトウェアを手動でアップグレードする必要があります。</block>
+  <block id="973193922b08bb6c1c48f6d2010a3301" category="inline-link">Console エージェントのアップグレード手順を参照してください</block>
+  <block id="88dab43991705d2e0e32366a7843e5f2" category="list-text">コンソール エージェント ソフトウェアを最新バージョンにアップグレードすることをお勧めします<block ref="2c60b4905c63d330707c3e9f7f760258" category="inline-link-rx"></block>。</block>
+  <block id="5ead123fde96a881f3ea4402d8f3c081" category="list-text">Data Classification バージョン 1.24 以降では、将来のソフトウェアバージョンへのアップグレードを実行できます。</block>
+  <block id="a8574915570cec928037dd09f4725d64" category="paragraph">Data Classification ソフトウェアが 1.24 より前のバージョンを実行している場合、一度にアップグレードできるメジャーバージョンは 1 つだけです。たとえば、バージョン 1.21.x がインストールされている場合は、1.22.x にのみアップグレードできます。いくつかのメジャーバージョンが古い場合は、ソフトウェアを複数回アップグレードする必要があります。</block>
+  <block id="47e841a0bdc25a397d4ba68d0a98f168" category="list-text">ダーク サイトで Data Classification がインストールされている Linux ホストにソフトウェア バンドルをコピーします。</block>
+  <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">ホスト マシン上でソフトウェア バンドルを解凍します。例：</block>
+  <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">これにより、インストールファイル *cc_onprem_installer.tar.gz* が抽出されます。</block>
+  <block id="cdc2b03f6ffa90a892ff07e03233975d" category="paragraph">これにより、アップグレードスクリプト *start_darksite_upgrade.sh* と必要なサードパーティソフトウェアが抽出されます。</block>
+  <block id="85455891651214d50e704a4b3e9dde66" category="list-text">ホスト マシンでアップグレード スクリプトを実行します。例：</block>
+  <block id="fe3ff1241868ed00f70bff14bc52b03f" category="paragraph">ホスト上のData Classificationソフトウェアがアップグレードされます。更新には5～10分ほどかかる場合があります。</block>
+  <block id="49b552306f6783aaacb171a8b657cff7" category="paragraph">データ分類 UI ページの下部にあるバージョンを確認することで、ソフトウェアが更新されたことを確認できます。</block>
 </blocks>

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, bluexp, data sense, get started, web browser connectivity, cloud compliance access, privacy, linux, ubuntu, compliance, on-premises, dark site, upgrade, private mode, docker, podman, rhel, bluexp classification, classification, install, cloud data sense, linux host 
+keywords: cloud compliance, data sense, get started, web browser connectivity, cloud compliance access, privacy, linux, ubuntu, compliance, on-premises, dark site, upgrade, private mode, docker, podman, rhel, bluexp classification, classification, install, cloud data sense, linux host 
 summary: 'インターネットにアクセスできないオンプレミス サイトの Linux ホストにNetApp Data Classification をインストールするには、いくつかの手順を実行します (「プライベート モード」とも呼ばれます)。このタイプのインストールは、安全なサイトに最適です。' 
 ---
 = インターネットにアクセスできない Linux ホストにNetApp Data Classificationをインストールする
@@ -16,5 +16,377 @@ summary: 'インターネットにアクセスできないオンプレミス サ
 [role="lead"]
 インターネットにアクセスできないオンプレミス サイトの Linux ホストにNetApp Data Classification をインストールすることを、_プライベート モード_ と呼びます。インストール スクリプトを使用するこのタイプのインストールでは、 NetApp ConsoleSaaS レイヤーに接続できません。
 
+link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Console エージェントと Data Classification のさまざまな導入モードについて説明します"^]。
 
-IMPORTANT: BlueXPプライベート モード (レガシーBlueXPインターフェイス) は通常、インターネット接続がなく、AWS Secret Cloud、AWS Top Secret Cloud、Azure IL6 などの安全なクラウド領域があるオンプレミス環境で使用されます。NetApp は、従来のBlueXPインターフェースを使用してこれらの環境を引き続きサポートします。従来のBlueXPインターフェースのプライベートモードのドキュメントについては、link:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXPプライベートモードの PDF ドキュメント"^] 。
+また、link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスサイトにData Classificationを導入します"]こともできます。
+
+データ分類のインストール スクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから始まります。前提条件がすべて満たされている場合は、インストールが開始されます。データ分類のインストールの実行とは別に前提条件を検証したい場合は、前提条件のみをテストする別のソフトウェア パッケージをダウンロードできます。link:task-test-linux-system.html["Linuxホストがデータ分類をインストールする準備ができているかどうかを確認する方法をご覧ください"] 。
+
+
+
+== サポートされているデータソース
+
+プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもあります）でインストールされた場合、Data Classificationは、オンプレミスサイトにローカルに存在するデータソースからのデータのみをスキャンできます。現時点では、Data Classificationは次の*ローカル*データソースをスキャンできます：
+
+* オンプレミスのONTAPシステム
+* データベーススキーマ
+
+
+現在、Data Classificationがプライベートモードで展開されている場合、Cloud Volumes ONTAP、Azure NetApp Files、またはFSx for ONTAPアカウントのスキャンはサポートされていません。
+
+
+
+== 制限事項
+
+ほとんどのデータ分類機能は、インターネットにアクセスできないサイトに展開された場合でも機能します。ただし、インターネット アクセスを必要とする特定の機能はサポートされていません。例：
+
+* 異なるユーザー（Account AdminやCompliance Viewerなど）のConsoleロールの設定
+* NetApp Copy and Syncを使用したソースファイルのコピーと同期
+* コンソールからの自動ソフトウェアアップグレード
++
+Console エージェントと Data Classification の両方で、新しい機能を有効にするには定期的な手動アップグレードが必要です。Data Classification UI ページの下部に Data Classification バージョンが表示されます。link:whats-new.html["データ分類リリースノート"]を確認して、各リリースの新機能とそれらの機能が必要かどうかを確認します。その後、以下の手順に従って https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["Console エージェントをアップグレードする"^]および<<Data Classification ソフトウェアのアップグレード,データ分類ソフトウェアをアップグレードする>>を実行できます。
+
+
+
+
+
+== クイック スタート
+
+以下の手順に従ってすぐに開始するか、残りのセクションまでスクロールして詳細を確認してください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"] Console エージェントをインストールする
+[role="quick-margin-para"]
+プライベートモードで Console エージェントをまだインストールしていない場合は、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-private-mode.html["Console エージェントを導入する"^]今すぐ Linux ホストにインストールしてください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"] データ分類の前提条件を確認する
+[role="quick-margin-para"]
+Linuxシステムが<<Linuxホストシステムを準備する,ホスト要件>>を満たしていること、必要なソフトウェアがすべてインストールされていること、およびオフライン環境が必要な<<コンソールとデータ分類の前提条件を確認する,権限と接続性>>を満たしていることを確認してください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]データ分類をダウンロードして展開する
+[role="quick-margin-para"]
+NetApp Support Site からデータ分類ソフトウェアをダウンロードし、使用する予定の Linux ホストにインストーラーファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従ってデータ分類インスタンスをデプロイします。
+
+
+
+== コンソールエージェントをインストールする
+
+プライベートモードでConsoleエージェントをまだインストールしていない場合は、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-private-mode.html["Console エージェントを導入する"^]オフラインサイトのLinuxホスト上に配置します。
+
+
+
+== Linuxホストシステムを準備する
+
+データ分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。
+
+* データ分類は専用ホスト上で実行する必要があります。ホストは、他のアプリケーションやウイルス対策などのサードパーティ製ソフトウェアと共有することはできません。
+* データ分類でスキャンする予定のデータ セットに合わせてサイズを選択します。
++
+[cols="17,17,27,31"]
+|===
+| システムサイズ | CPU | RAM（スワップメモリを無効にする必要があります） | ディスク 
+
+
+| *特大* | CPU×32 | 128GBのRAM  a| 
+** / に 1 TiB SSD、または /opt に 100 GiB 利用可能
+** /var/lib/docker で 895 GiB が利用可能
+** /tmp に 5 GiB
+** *Podman の場合、/var/tmp に 30 GB*
+
+
+
+
+| *大きい* | CPU×16 | 64GBのRAM  a| 
+** / に 500 GiB SSD、または /opt に 100 GiB 利用可能
+** /var/lib/docker または Podman /var/lib/containers で 400 GiB が利用可能
+** /tmp に 5 GiB
+** *Podman の場合、/var/tmp に 30 GB*
+
+
+|===
+* データ分類インストール用にクラウドにコンピューティング インスタンスをデプロイする場合は、上記の「大規模」システム要件を満たすシステムを使用することをお勧めします。
++
+** *Amazon Elastic Compute Cloud (Amazon EC2) インスタンスタイプ*:「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを見る"^] 。
+** *Azure VM サイズ*:「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを見る"^] 。
+** *GCP マシンタイプ*:「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["その他の GCP インスタンスタイプを見る"^] 。
+
+
+* *UNIX フォルダ権限*: 次の最低限の UNIX 権限が必要です。
++
+[cols="25,25"]
+|===
+| フォルダ | 最小限の権限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /usr/lib/systemd/システム | `rwxr-xr-x` 
+|===
+* *オペレーティング·システム*：
++
+** 次のオペレーティング システムでは、Docker コンテナ エンジンを使用する必要があります。
++
+*** Red Hat Enterprise Linux バージョン 7.8 および 7.9
+*** Ubuntu 22.04 (データ分類バージョン 1.23 以上が必要)
+*** Ubuntu 24.04 (データ分類バージョン 1.23 以上が必要)
+
+
+** 次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、データ分類バージョン 1.30 以上が必要です。
++
+*** Red Hat Enterprise Linux バージョン 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、および 9.6。
+
+
+** ホスト システムで Advanced Vector Extensions (AVX2) を有効にする必要があります。
+
+
+* *Red Hat サブスクリプション管理*: ホストは Red Hat サブスクリプション管理に登録されている必要があります。登録されていない場合、システムはリポジトリにアクセスできず、インストール中に必要なサードパーティ製ソフトウェアを更新できません。
+* *追加ソフトウェア*: Data Classification をインストールする前に、ホストに次のソフトウェアをインストールする必要があります。
++
+** 使用している OS に応じて、次のいずれかのコンテナ エンジンをインストールする必要があります。
++
+*** Docker Engine バージョン 19.3.1 以上。 https://docs.docker.com/engine/install/["インストール手順を見る"^] 。
+*** Podman バージョン 4 以上。  Podmanをインストールするには、次のように入力します。(`sudo yum install podman netavark -y` ）。
+
+
+
+
+
+
+* Python バージョン 3.6 以上。 https://www.python.org/downloads/["インストール手順を見る"^] 。
++
+** *NTP に関する考慮事項*: NetApp、データ分類システムをネットワーク タイム プロトコル (NTP) サービスを使用するように構成することを推奨しています。データ分類システムとコンソール エージェント システムの間で時刻を同期する必要があります。
+
+
+
+
+* *Firewalldの考慮事項*: 使用を計画している場合 `firewalld`、データ分類をインストールする前に有効にすることをお勧めします。設定するには次のコマンドを実行します `firewalld`データ分類と互換性があるように:
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+有効化または更新するたびにDockerまたはPodmanを再起動する必要があることに注意してください。 `firewalld`設定。
+
+
+
+
+TIP: データ分類ホスト システムの IP アドレスは、インストール後に変更することはできません。
+
+
+
+== コンソールとデータ分類の前提条件を確認する
+
+Data Classification を導入する前に、次の前提条件を確認して、サポートされている構成があることを確認してください。
+
+* コンソール エージェントに、リソースをデプロイし、データ分類インスタンスのセキュリティ グループを作成する権限があることを確認します。最新のコンソール権限は https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["NetAppが提供するポリシー"^]で確認できます。
+* Data Classification を実行し続けることができることを確認します。データを継続的にスキャンするには、 Data Classification インスタンスをオンのままにしておく必要があります。
+* Data Classification への Web ブラウザー接続を確認します。Data Classification を有効にした後、ユーザーが Data Classification インスタンスに接続しているホストから Console インターフェイスにアクセスすることを確認します。
++
+データ分類インスタンスは、インデックス付けされたデータが他のユーザーにアクセスできないようにするためにプライベートIPアドレスを使用します。そのため、コンソールにアクセスするために使用するWebブラウザは、そのプライベートIPアドレスに接続している必要があります。この接続は、データ分類インスタンスと同じネットワーク内にあるホストから実行できます。
+
+
+
+
+
+== 必要なポートがすべて有効になっていることを確認します
+
+コンソール エージェント、データ分類、Active Directory、およびデータ ソース間の通信に必要なすべてのポートが開いていることを確認する必要があります。
+
+[cols="25,25,50"]
+|===
+| 接続タイプ | ポート | 説明 
+
+
+| コンソールエージェント <> データ分類 | 8080 (TCP)、6000 (TCP)、443 (TCP)、および 80。9000  a| 
+コンソールエージェントのセキュリティグループは、ポート6000および443を介したData Classificationインスタンスとの間の受信トラフィックと送信トラフィックを許可する必要があります。
+
+* Data Classification BYOL ライセンスがダークサイトで機能するには、ポート 6000 が必要です。
+* コンソールでインストールの進行状況を確認できるように、ポート 8080 を開いておく必要があります。
+* Linux ホストでファイアウォールが使用されている場合、Ubuntu サーバー内の内部プロセスにはポート 9000 が必要です。
+
+
+
+
+| コンソールエージェント <> ONTAPクラスタ (NAS) | 443（TCP）  a| 
+コンソールは、HTTPS を使用してONTAPクラスターを検出します。カスタム ファイアウォール ポリシーを使用する場合は、次の要件を満たす必要があります。
+
+* Console エージェントホストは、ポート 443 経由の送信 HTTPS アクセスを許可する必要があります。Console エージェントがクラウド内にある場合、すべての送信通信は定義済みのセキュリティグループによって許可されます。
+* ONTAPクラスタは、ポート 443 経由の着信 HTTPS アクセスを許可する必要があります。デフォルトの「mgmt」ファイアウォール ポリシーでは、すべての IP アドレスからの受信 HTTPS アクセスが許可されます。このデフォルト ポリシーを変更した場合、または独自のファイアウォール ポリシーを作成した場合は、HTTPS プロトコルをそのポリシーに関連付け、コンソール エージェント ホストからのアクセスを有効にする必要があります。
+
+
+
+
+| データ分類 <> ONTAPクラスタ  a| 
+* NFSの場合 - 111 (TCP\UDP) および 2049 (TCP\UDP)
+* CIFSの場合 - 139（TCP\UDP）および445（TCP\UDP）
+
+ a| 
+Data Classificationには、各Cloud Volumes ONTAPサブネットまたはオンプレミスONTAPシステムへのネットワーク接続が必要です。Cloud Volumes ONTAPのセキュリティグループは、Data Classificationインスタンスからの受信接続を許可する必要があります。
+
+次のポートがデータ分類インスタンスに対して開いていることを確認します。
+
+* NFSの場合 - 111と2049
+* CIFSの場合 - 139および445
+
+
+NFS ボリュームのエクスポート ポリシーでは、データ分類インスタンスからのアクセスを許可する必要があります。
+
+
+
+| データ分類 <> Active Directory | 389 (TCP & UDP)、636 (TCP)、3268 (TCP)、および 3269 (TCP)  a| 
+社内のユーザー用に Active Directory がすでに設定されている必要があります。さらに、データ分類では、CIFS ボリュームをスキャンするために Active Directory 資格情報が必要です。
+
+Active Directory の情報が必要です:
+
+* DNSサーバーのIPアドレス、または複数のIPアドレス
+* サーバーのユーザー名とパスワード
+* ドメイン名（アクティブディレクトリ名）
+* セキュアLDAP（LDAPS）を使用しているかどうか
+* LDAP サーバー ポート (通常、LDAP の場合は 389、セキュア LDAP の場合は 636)
+
+
+
+
+| Linux ホストでファイアウォールが使用されている場合 | 9000 | Ubuntu サーバー内の内部プロセスに必要です。 
+|===
+
+
+== オンプレミス Linux ホストに Data Classification をインストールします
+
+通常の構成では、ソフトウェアを単一のホストシステムにインストールします。
+
+image:diagram_deploy_onprem_single_host_no_internet.png["インターネットにアクセスできないオンプレミスに導入された単一のData Classificationインスタンスを使用する際にスキャンできるデータソースの場所を示す図。"]
+
+オフライン環境の単一のオンプレミスホストに Data Classification ソフトウェアをインストールする場合は、次の手順に従ってください。
+
+Data Classification をインストールすると、すべてのインストール アクティビティがログに記録されることに注意してください。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。それは、 `/opt/netapp/install_logs/` 。
+
+.開始する前に
+* Linuxシステムが<<Linuxホストシステムを準備する,ホスト要件>>。
+* 2 つの前提条件ソフトウェアパッケージ（Docker Engine または Podman 、および Python 3 ）がインストールされていることを確認します。
+* Linux システムでルート権限を持っていることを確認してください。
+* オフライン環境が必要な<<コンソールとデータ分類の前提条件を確認する,権限と接続性>>を満たしていることを確認します。
+
+
+.手順
+. インターネットに接続されたシステムで、 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からData Classificationソフトウェアをダウンロードします。選択するファイルの名前は*DataSense-offline-bundle-<version>.tar.gz*です。
+. プライベート モードで使用する予定の Linux ホストにインストーラー バンドルをコピーします。
+. ホスト マシン上でインストーラー バンドルを解凍します。例：
++
+[source, cli]
+----
+tar -xzf DataSense-offline-bundle-v1.25.0.tar.gz
+----
++
+これにより、必要なソフトウェアと実際のインストールファイル *cc_onprem_installer.tar.gz* が抽出されます。
+
+. ホスト マシン上でインストール ファイルを解凍します。例：
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer.tar.gz
+----
+. Data Classification から、 * Deploy Classification On-Premises or Cloud * を選択します。
++
+image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
+
+. *Deploy* を選択してオンプレミスのインストールを開始します。
+. _オンプレミスでのデータ分類の展開_ ダイアログが表示されます。提供されたコマンドをコピーします（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`）を作成し、テキスト ファイルに貼り付けて、後で使用することもできます。次に、*閉じる* を選択してダイアログを閉じます。
+. ホスト マシンで、コピーしたコマンドを入力して一連のプロンプトに従うか、必要なすべてのパラメーターを含む完全なコマンドをコマンド ライン引数として指定することもできます。
++
+インストーラは、インストールを正常に実行するためにシステムとネットワークの要件が満たされているかどうかを確認する事前チェックを実行します。
+
++
+[cols="50a,50"]
+|===
+| プロンプトに従ってパラメータを入力します。 | 完全なコマンドを入力します。 
+
+
+ a| 
+.. 手順 8 でコピーした情報を貼り付けます：
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --darksite`
+.. コンソール エージェント システムからアクセスできるように、データ分類ホスト マシンの IP アドレスまたはホスト名を入力します。
+.. データ分類システムからアクセスできるように、コンソール エージェント ホスト マシンの IP アドレスまたはホスト名を入力します。
+
+| あるいは、必要なホスト パラメータを指定して、コマンド全体を事前に作成することもできます：
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> --no-proxy --darksite` 
+|===
++
+変数値:
+
++
+** _account_id_ = NetAppアカウント ID
+** _client_id_ = コンソールエージェントのクライアントID（クライアントIDに「clients」というサフィックスがない場合は追加します）
+** _user_token_ = JWTユーザーアクセストークン
+** _ds_host_ = Data Classification システムの IP アドレスまたはホスト名。
+** _cm_host_ = コンソール エージェント システムの IP アドレスまたはホスト名。
+
+
+
+
+.結果
+Data Classification インストーラーは、パッケージをインストールし、インストールを登録し、Data Classification をインストールします。インストールには10〜20分かかります。
+
+ホスト マシンと Console エージェント インスタンスの間にポート 8080 経由の接続がある場合は、［Data Classification］タブにインストールの進行状況が表示されます。
+
+.次は何？
+設定ページから、スキャンするローカルlink:task-getting-started-compliance.html["オンプレミス ONTAP クラスタ"]とlink:task-scanning-databases.html["データベース"]を選択できます。
+
+
+
+== Data Classification ソフトウェアのアップグレード
+
+Data Classification ソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアと機能を使用していることを確認する習慣を身に付ける必要があります。アップグレードを自動的に実行するためのインターネット接続がないため、Data Classification ソフトウェアを手動でアップグレードする必要があります。
+
+.開始する前に
+* コンソール エージェント ソフトウェアを最新バージョンにアップグレードすることをお勧めします https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["Console エージェントのアップグレード手順を参照してください"^]。
+* Data Classification バージョン 1.24 以降では、将来のソフトウェアバージョンへのアップグレードを実行できます。
++
+Data Classification ソフトウェアが 1.24 より前のバージョンを実行している場合、一度にアップグレードできるメジャーバージョンは 1 つだけです。たとえば、バージョン 1.21.x がインストールされている場合は、1.22.x にのみアップグレードできます。いくつかのメジャーバージョンが古い場合は、ソフトウェアを複数回アップグレードする必要があります。
+
+
+
+.手順
+. インターネットに接続されたシステムで、 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からData Classificationソフトウェアをダウンロードします。選択するファイルの名前は*DataSense-offline-bundle-<version>.tar.gz*です。
+. ダーク サイトで Data Classification がインストールされている Linux ホストにソフトウェア バンドルをコピーします。
+. ホスト マシン上でソフトウェア バンドルを解凍します。例：
++
+[source, cli]
+----
+tar -xvf DataSense-offline-bundle-v1.25.0.tar.gz
+----
++
+これにより、インストールファイル *cc_onprem_installer.tar.gz* が抽出されます。
+
+. ホスト マシン上でインストール ファイルを解凍します。例：
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer.tar.gz
+----
++
+これにより、アップグレードスクリプト *start_darksite_upgrade.sh* と必要なサードパーティソフトウェアが抽出されます。
+
+. ホスト マシンでアップグレード スクリプトを実行します。例：
++
+[source, cli]
+----
+start_darksite_upgrade.sh
+----
+
+
+.結果
+ホスト上のData Classificationソフトウェアがアップグレードされます。更新には5～10分ほどかかる場合があります。
+
+データ分類 UI ページの下部にあるバージョンを確認することで、ソフトウェアが更新されたことを確認できます。
