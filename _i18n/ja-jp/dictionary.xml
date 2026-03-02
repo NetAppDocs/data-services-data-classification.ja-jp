@@ -150,7 +150,6 @@
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">バージョン1.42</block>
   <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">このBlueXP classificationリリースには以下が含まれます。</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">作業環境の一括スキャン</block>
-  <block id="530bfca85ebf27593e2eac002245d941" category="paragraph">BlueXP classificationは、作業環境の一括操作をサポートします。作業環境において、マッピング スキャンを有効にするか、マップと分類スキャンを有効にするか、スキャンを無効にするか、ボリューム全体にカスタム構成を作成するかを選択できます。個々のボリュームを選択した場合は、一括選択が上書きされます。一括操作を実行するには、[**構成**] ページに移動して選択を行います。</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">調査レポートをローカルにダウンロードする</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用可能になり、最初の 10,000 行のデータのみが表示されます。</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">BlueXP classificationを使用して組織内に保存されているデータを調査します</block>
@@ -270,7 +269,6 @@
   <block id="567ead09d16d940fef8acf1a3c2c193f" category="inline-link-macro">REST API ドキュメント</block>
   <block id="d0e3c0b1617fba7e035a47001abbc7c1" category="paragraph">API は安全で、UI と同じ認証方法を使用します。認証に関する情報は、<block ref="bbdacd4f187c413013ce0d7ecba5c48f" category="inline-link-macro-rx"></block> 。</block>
   <block id="6bb2320a7f7d5e941653039f26a38ad9" category="section-title">Swagger APIリファレンスへのアクセス</block>
-  <block id="888780bfecc282aba4e5f15e11e6820e" category="paragraph">Swagger にアクセスするには、データ分類インスタンスの IP アドレスが必要です。クラウド展開の場合は、パブリック IP アドレスを使用します。次に、このエンドポイントにアクセスする必要があります。</block>
   <block id="49ef162b6621f970581074315940ec6c" category="paragraph">\https://&lt;分類IP&gt;/documentation</block>
   <block id="b62dbbecd6533f9627427d34160e7d75" category="section-title">APIの使用例</block>
   <block id="b7fd2e4068e2c6cc68317c7892c5290c" category="paragraph">次の例は、ファイルをコピーするための API 呼び出しを示しています。</block>
@@ -1004,7 +1002,6 @@
   <block id="cd44aff9043f042044d20fa9200a9168" category="section-title">節約の機会を確認する</block>
   <block id="fdc70de4a3ff53369e5ddb3633c1a655" category="paragraph">_Saving Opportunities_ コンポーネントには、削除したり、より安価なオブジェクト ストレージに階層化したりできるデータが表示されます。 _Saving Opportunities_ のデータは 2 時間ごとに更新されます。データを手動で更新することもできます。</block>
   <block id="07d1846c53b76f00910e641f12d09fd8" category="list-text">データ分類メニューから、*ガバナンス*を選択します。</block>
-  <block id="70de9418b6d77c7f4c2d4632b262c0df" category="list-text">ガバナンス ダッシュボードの各節約機会タイル内で、*ストレージの最適化* を選択して、調査ページでフィルター処理された結果を表示します。削除する必要があるデータや、より安価なストレージに移動する必要があるデータを見つけるには、「_Saving Opportunities_」を調べてください。</block>
   <block id="dc6d9a4419750aae3db17878ffe18e5c" category="inline-link-macro">表示される重複ファイルの種類を確認する</block>
   <block id="5791d2ebf242b348a1cbfa550a356083" category="list-text">*重複ファイル* - スキャンしているデータ ソース内の他の場所に重複しているファイル。<block ref="4f528c73ac5ca4ef85380f36d4dccad7" category="inline-link-macro-rx"></block> 。</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">いずれかのデータ ソースでデータ階層化が実装されている場合、オブジェクト ストレージに既に存在する古いデータは、_古いデータ_ カテゴリで識別できます。</block>
@@ -1962,7 +1959,6 @@
   <block id="adcb3e6ce7bf6f310cc7c150d73e39d4" category="admonition">Active Directory の資格情報は最初の CIFS DP ボリュームのストレージ VM にのみ登録されるため、その SVM 上のすべての DP ボリュームがスキャンされます。他の SVM に存在するボリュームには Active Directory 資格情報が登録されていないため、それらの DP ボリュームはスキャンされません。</block>
   <block id="c9432a4b3ef8c50667dceb6a027d5680" category="summary">NetApp Data Classificationを使用してデータ ソースをスキャンします。</block>
   <block id="7eaeb503df6e9fb630a0111ac9c034f2" category="doc">NetApp Data Classificationでデータソースをスキャン</block>
-  <block id="687ce8e05e4f5d157be5f8738db8aa34" category="paragraph">NetApp Data Classification は、選択したリポジトリ内のデータ (ボリューム、データベース スキーマ、またはその他のユーザー データ) をスキャンして、個人データや機密データを識別します。次に、データ分類により組織のデータがマッピングされ、各ファイルが分類され、データ内の定義済みパターンが識別されます。スキャンの結果は、個人情報、機密個人情報、データ カテゴリ、およびファイル タイプのインデックスです。</block>
   <block id="b40a529e19b349b56269e632043e4fe8" category="paragraph">ボリューム レベルまたはデータベース スキーマ レベルでスキャンを有効または無効にすることができます。</block>
   <block id="646bc7d1943891ea9ee0b55f37b428e2" category="list-text">**マッピングのみのスキャン** は、データの概要のみを提供し、選択されたデータ ソースに対して実行されます。マッピングのみのスキャンでは、ファイルにアクセスして内部のデータを確認する必要がないため、マップおよび分類スキャンよりも時間がかかりません。最初にこれを実行して研究領域を特定し、次にそれらの領域に対してマップと分類のスキャンを実行することをお勧めします。</block>
   <block id="a6555d8888ac95f7925f179ea7e8d4a8" category="paragraph">以下の表にいくつかの違いを示します。</block>
@@ -2784,4 +2780,8 @@
   <block id="85455891651214d50e704a4b3e9dde66" category="list-text">ホスト マシンでアップグレード スクリプトを実行します。例：</block>
   <block id="fe3ff1241868ed00f70bff14bc52b03f" category="paragraph">ホスト上のData Classificationソフトウェアがアップグレードされます。更新には5～10分ほどかかる場合があります。</block>
   <block id="49b552306f6783aaacb171a8b657cff7" category="paragraph">データ分類 UI ページの下部にあるバージョンを確認することで、ソフトウェアが更新されたことを確認できます。</block>
+  <block id="cba92860b6fdcba3c2c5e8085cf4c2b9" category="paragraph">BlueXP classificationは作業環境の一括操作をサポートします。作業環境において、マッピング スキャンを有効にするか、マップと分類スキャンを有効にするか、スキャンを無効にするか、ボリューム全体にカスタム構成を作成するかを選択できます。個々のボリュームを選択した場合は、一括選択が上書きされます。一括操作を実行するには、**構成**ページに移動して選択を行います。</block>
+  <block id="c360e0cba3ce8612a20efd7da0fa5d7a" category="paragraph">Swagger にアクセスするには、Data Classification インスタンスの IP アドレスが必要です。クラウド展開の場合は、パブリック IP アドレスを使用します。次に、このエンドポイントにアクセスする必要があります：</block>
+  <block id="421d31e2b03d6dcfd776134e6cc90fb8" category="list-text">ガバナンス ダッシュボードの各節約機会タイル内で、*ストレージの最適化* を選択して、調査ページでフィルター処理された結果を表示します。削除する必要があるデータや、より安価なストレージに移動する必要があるデータを見つけるには、_Saving Opportunities_ を調べてください。</block>
+  <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classificationは、選択したリポジトリ（ボリューム、データベーススキーマ、またはその他のユーザーデータ）内のデータをスキャンし、個人情報や機密データを特定します。Data Classificationはその後、組織のデータをマッピングし、各ファイルを分類し、データ内のあらかじめ定義されたパターンを識別します。スキャンの結果として、個人情報、機微な個人情報、データカテゴリ、ファイルタイプのインデックスが作成されます。</block>
 </blocks>
