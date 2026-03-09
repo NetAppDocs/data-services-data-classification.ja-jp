@@ -2796,4 +2796,6 @@
   <block id="9478b45dce4de73855a8e0b13720f895" category="paragraph">データ分類では透過プロキシ構成がサポートされるようになり、プロキシまたは制限されたネットワーク環境でのスムーズな展開が可能になります。</block>
   <block id="89f7afc8a9b178d4b4346f224d8bffc7" category="paragraph">制限された環境での展開の詳細については、<block ref="6804ab8e5e77245509e3dc550ef5b67d" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
+  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">インターネットにアクセスできないオンプレミスに導入された単一のData Classificationインスタンスを使用する際にスキャンできるデータソースの場所を示す図。</block>
+  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
