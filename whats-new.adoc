@@ -18,6 +18,34 @@ NetApp Data Classificationの新機能について説明します。
 
 
 
+== 2026年3月9日
+
+
+
+=== バージョン1.52
+
+.リソースの検証
+信頼性を確保するために、Data Classificationでは、スキャン、レポート生成、およびアクション全体で使用可能なメモリとディスクリソースを検証するようになりました。メモリ使用量が95%を超えるか、ディスク容量が6 GBを下回ると、Data Classificationは自動的に操作を一時停止します。リソースが十分になると、操作が再開されます。
+
+システムリソースを監視するには、link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["データ分類の健全性を監視する"^]を参照してください。
+
+.コピーと移動の制限の引き上げ
+CIFS 宛先のコピーおよび移動機能がサポートされるようになりました。両方のアクションのファイルあたりのサイズ制限は、以前の 50 MB から 1 GB に増加しました。両方のアクションの操作制限は 1 TB または 500 万ファイルに増加しました。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["データを調査する"^]を参照してください。
+
+.Active Directory統合構成権限
+Data Classification における Active Directory（AD）統合設定の変更は、管理者に制限されるようになりました。閲覧者は AD 設定を変更できなくなりました。
+
+分類閲覧者の役割の詳細については、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html#data-service-roles["データサービスロール"^]を参照してください。
+
+.透過プロキシのサポート
+データ分類では透過プロキシ構成がサポートされるようになり、プロキシまたは制限されたネットワーク環境でのスムーズな展開が可能になります。
+
+制限された環境での展開の詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["インターネットにアクセスできない Linux ホストにNetApp Data Classificationをインストールする"^]を参照してください。
+
+
+
 == 2026年2月9日
 
 
@@ -83,7 +111,7 @@ Data Classification では、低解像度の画面での表示パフォーマン
 .ヘルスモニタリングダッシュボードで指標とパフォーマンスを監視する
 データ分類では、ヘルス モニタリング ダッシュボードが提供されるようになり、リソースのリアルタイム モニタリングと、メモリ使用量、ディスク使用量、ディスク使用率などの分析情報が提供されます。ヘルス モニタリング ダッシュボードから得られる分析情報を活用することで、展開のインフラストラクチャを確認し、ストレージとパフォーマンスを最適化するための分析情報を得ることができます。
 
-詳細については、 link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["データ分類の健全性を監視する"]。
+詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["データ分類の健全性を監視する"^]を参照してください。
 
 .読み込みパフォーマンスの向上
 データ分類のすべてのページの読み込みパフォーマンスが向上し、より効率的なユーザー エクスペリエンスが実現しました。

@@ -266,8 +266,6 @@ Active Directory の情報が必要です:
 
 通常の構成では、ソフトウェアを単一のホストシステムにインストールします。
 
-image:diagram_deploy_onprem_single_host_no_internet.png["インターネットにアクセスできないオンプレミスに導入された単一のData Classificationインスタンスを使用する際にスキャンできるデータソースの場所を示す図。"]
-
 オフライン環境の単一のオンプレミスホストに Data Classification ソフトウェアをインストールする場合は、次の手順に従ってください。
 
 Data Classification をインストールすると、すべてのインストール アクティビティがログに記録されることに注意してください。インストール中に問題が発生した場合は、インストール監査ログの内容を表示できます。それは、 `/opt/netapp/install_logs/` 。
