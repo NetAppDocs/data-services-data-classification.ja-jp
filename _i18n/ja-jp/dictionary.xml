@@ -409,7 +409,6 @@
   <block id="3d2322c36c5c8998bf0183ca389aa7b6" category="inline-link-macro">データ分類が接続するエンドポイントについて学習する</block>
   <block id="a889fab695578c45f1fd5da621fa33f8" category="paragraph">厳しいネットワーク要件がある場合、<block ref="a9a9ec7bd20cc97c95a6363402756430" category="inline-link-macro-rx"></block> 。</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">質問に対する簡単な回答を探している場合は、この FAQ が役立ちます。</block>
-  <block id="9a3ee97d85ced5069aaaa9aa9840a547" category="doc">NetApp Data Classificationに関するよくある質問</block>
   <block id="91d5470ff0de1d64ddb0c8c3bef0b246" category="section-title">NetApp Data Classification</block>
   <block id="46e8d23cf6731fff45d8d2f8b0904245" category="paragraph">次の質問は、データ分類に関する一般的な理解を提供します。</block>
   <block id="5c96bb1e94b5c40e2b4c67e86da9035b" category="section-title">データ分類はどのように機能しますか?</block>
@@ -2798,4 +2797,5 @@
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
   <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">インターネットにアクセスできないオンプレミスに導入された単一のData Classificationインスタンスを使用する際にスキャンできるデータソースの場所を示す図。</block>
   <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e70d49c282a7c52a8996f7a8357c7524" category="doc">NetApp Data Classificationに関するよくある質問</block>
 </blocks>

@@ -70,7 +70,7 @@ NetApp Data Classificationは、選択したリポジトリ（ボリューム、
 | 他のレポートを実行する機能 | はい | いいえ 
 
 
-| ファイルのメタデータを表示する機能** | いいえ | はい 
+| ファイルのメタデータを表示する機能** | はい | はい 
 |===
 {アスタリスク} データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
 
