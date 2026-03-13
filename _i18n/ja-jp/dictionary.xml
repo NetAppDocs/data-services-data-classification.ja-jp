@@ -664,7 +664,6 @@
   <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">最終アクセスタイムスタンプ</block>
   <block id="766aa8e7cd2a6b2b085c6107a7da9b88" category="paragraph">データ分類がディレクトリのスキャンを実行すると、そのスキャンはディレクトリの **最終アクセス** フィールドに影響します。  **最終アクセス** フィールドを表示すると、そのメタデータにはスキャンの日時またはユーザーがディレクトリに最後にアクセスした時刻が反映されます。</block>
   <block id="e96a6a2be46b8b1357ec2a787a1d1300" category="summary">ログ ファイルにアクセスしたり、構成ファイルを編集したりするために、 NetApp Data Classificationシステムにログインする必要がある場合があります。</block>
-  <block id="3bdd1ff20ed6998a7cc8219fdca4e271" category="doc">NetApp Data Classificationシステムにログインする</block>
   <block id="3ce6ca22e847cbd536ba7c715301377a" category="paragraph">ログ ファイルにアクセスしたり、構成ファイルを編集したりするには、 NetApp Data Classificationシステムにログインする必要があります。</block>
   <block id="2b5271618e7493a8c77e7b4639d819b8" category="paragraph">Data Classification がオンプレミスの Linux マシンまたはクラウドに展開した Linux マシンにインストールされている場合は、構成ファイルとスクリプトに直接アクセスできます。</block>
   <block id="b432bef38adffbc05fc1ceb150787a02" category="paragraph">Data Classification をクラウドにデプロイする場合は、Data Classification インスタンスに SSH で接続する必要があります。ユーザー名とパスワードを入力するか、コンソール エージェントのインストール時に指定した SSH キーを使用して、システムに SSH 接続します。  SSH コマンドは次のとおりです。</block>
@@ -1569,7 +1568,6 @@
   <block id="0079344bb0661607100d432cde92e6a5" category="list-text">[構成] ページで [構成] を選択し、各 CIFS ボリュームと NFS ボリュームのステータスを確認し、エラーを修正します。</block>
   <block id="e90444baa59788bd6471cf703b12a16e" category="summary">データ調査ページで詳細を表示することで、組織のデータを調査できます。ガバナンス ダッシュボードを確認した後、ここで調査を続けることができます。</block>
   <block id="4c257f0482d661d1986f92f057e1c581" category="doc">NetApp Data Classificationを使用して組織内に保存されているデータを調査します</block>
-  <block id="7ce237dbe0011dccdc7c96c7be17d6ec" category="paragraph">データ調査ダッシュボードには、データに関するファイルおよびディレクトリ レベルの分析情報が表示され、結果を並べ替えたりフィルター処理したりできます。データ調査ページでは、ファイルとディレクトリのメタデータと権限に関する詳細情報が表示され、重複したファイルも識別されます。ファイル、ディレクトリ、データベース レベルの分析情報を活用することで、組織のコンプライアンスを向上させ、ストレージ スペースを節約するためのアクションを実行できます。データ調査ページでは、ファイルの移動、コピー、削除もサポートされています。</block>
   <block id="8d6bb2090f1e71e8cabff59cd97a6f5f" category="admonition">調査ページから洞察を得るには、データ ソースに対して完全な分類スキャンを実行する必要があります。マッピングのみのスキャンが行われたデータ ソースでは、ファイル レベルの詳細は表示されません。</block>
   <block id="adbc89b69fed239a539f916b53592ab9" category="section-title">データ調査構造</block>
   <block id="7fc46b0c25bc13694774a84c4a0f5b4b" category="paragraph">データ調査ページでは、データが 3 つのタブに分類されます。</block>
@@ -2429,7 +2427,6 @@
   <block id="a1b1318193a35f78be2416bedbe04261" category="sidebar">データに関するガバナンスの詳細を表示する</block>
   <block id="056f094fced7be2185f9f1e21b455e6b" category="sidebar">データに関するコンプライアンスの詳細を表示する</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="sidebar">個人データのカテゴリ</block>
-  <block id="d208d030068b6bbb840e4e251deaf193" category="sidebar">カスタムスキャンを作成する</block>
   <block id="bd3668f2876c07e4375041fda913dc31" category="sidebar">保存したクエリを管理する</block>
   <block id="91cace02ed792be8683fda1544dfb32c" category="sidebar">スキャン設定を変更する</block>
   <block id="2a79af6160ec8fbec237f8058c6c9de3" category="sidebar">データ分類の管理</block>
@@ -2797,5 +2794,49 @@
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
   <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">インターネットにアクセスできないオンプレミスに導入された単一のData Classificationインスタンスを使用する際にスキャンできるデータソースの場所を示す図。</block>
   <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e70d49c282a7c52a8996f7a8357c7524" category="doc">NetApp Data Classificationに関するよくある質問</block>
+  <block id="4ccc6bc65ccfbf776471461699df7790" category="inline-link-macro">データのコピー、移動、削除</block>
+  <block id="26f19c45862fe8f967db0b3b7d289ad3" category="paragraph">詳細については、<block ref="151ab796904ad3ebe669fb675d8fec0a" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="ad5b3224be1d6831dcf88a793785b1f1" category="doc">NetApp Data Classificationのよくある質問</block>
+  <block id="621a6cff40fed66e7b90194843eb20fb" category="doc">NetApp Data Classificationに関する法的通知</block>
+  <block id="b231d70c2e9c026262bda45de2cf8e61" category="doc">NetApp Data Classification にログインする</block>
+  <block id="f214292b356953b67175bbd37992066d" category="summary">調査ダッシュボードでデータをフィルタリングした後、非構造化データをコピー、移動、削除することができます。</block>
+  <block id="645af234aa1818d98e8bb6c780fb0e42" category="doc">NetApp Data Classificationを使用したファイルのコピー、移動、削除</block>
+  <block id="4c6b11e5b29f298bdccac50248f21007" category="paragraph">ガバナンスやコスト削減の機会に関するインサイトを提供するだけでなく、NetApp Data Classification では、インベスティゲーションダッシュボードからファイルに対してアクションを実行することも可能です。インベスティゲーションダッシュボードでデータをフィルタリングした後、非構造化データのコピー、移動、削除ができます。これらのアクションを実行することで、たとえばファイルをより安全な場所に移動したり、古いファイルや重複ファイルを削除してコスト削減の機会を生み出したりすることで、コンプライアンスの向上につながります。</block>
+  <block id="558f28628ba8ab4cb8420949524832d3" category="section-title">ファイルをコピーする</block>
+  <block id="e54a222aee96b176f405c4031ff80909" category="paragraph">Data Classificationは、最大1GBまでのファイルのコピーをサポートしています。合計で1TBのデータ、または500万ファイルのいずれか、先に達した方までコピーできます。CIFSまたはNFSの宛先にファイルをコピーできます。コピーしても元のファイルには影響はありません。</block>
+  <block id="37214830ec688e601a722f40084e9795" category="list-text">調査ダッシュボードで、コピーするファイルを選択します。</block>
+  <block id="2d2f00419a0dd0229c58522ea98e71ae" category="list-text">ファイル一覧の上にある **Copy** を選択してください。</block>
+  <block id="b9e9b1bb4d8b072a482f32c6e7d7ff72" category="inline-image-macro">調査ページでのアクションのスクリーンショット</block>
+  <block id="cca60a4ec6a536a71654abbbd1c54e3a" category="paragraph"><block ref="cca60a4ec6a536a71654abbbd1c54e3a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="07f527a3198ae416b045c995367ab422" category="list-text">コピー先のプロトコルを選択してください：**NFS** または **CIFS**。</block>
+  <block id="4885cff36928d8614fad0e3d21b27679" category="list-text">NFSを選択した場合は、スラッシュを使用して宛先パスを入力します。例：<block ref="8ed050b486343bdef7b6adadf5b986b8" prefix=" " category="inline-code"></block>。</block>
+  <block id="6a3331936dcbbbfa4db946e4d0f00e9b" category="paragraph">CIFSを選択した場合は、バックスラッシュを使用して宛先パスを入力します。例：<block ref="52938cbc0a420230679e4ae98bb4a89a" prefix=" " category="inline-code"></block>。また、CIFS共有の**ユーザー名**と**パスワード**を入力してください。</block>
+  <block id="c64976420b21ffb4d1ba97533079e81c" category="inline-image-macro">NFSファイルのコピー機能のスクリーンショット</block>
+  <block id="12ceb039500c1e7536d6a926d04beed0" category="paragraph"><block ref="12ceb039500c1e7536d6a926d04beed0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="005315d0bf05e5d249f46e46e20423d3" category="list-text">**Submit** を選択します。</block>
+  <block id="ed86a97d5bcbda5898269baae37b79f7" category="section-title">ファイルの移動</block>
+  <block id="0ac97eb58eed3141f29d93b87eb4d0b7" category="paragraph">Data Classificationは、最大1 GBまでのファイルの移動をサポートしています。合計で1 TBのデータ、または500万ファイルのいずれか、先に到達した方まで移動できます。ファイルをCIFSまたはNFSの宛先に移動できます。</block>
+  <block id="fbb338a6c6a711b7c940515c513f15de" category="list-text">調査ダッシュボードで、移動したいファイルを選択します。</block>
+  <block id="2066527d248d6275b0ce325ff50ec8fb" category="list-text">ファイル一覧の上にある **Move** を選択してください。</block>
+  <block id="2a993e09d9313401f99dcee0ed7245f9" category="list-text">宛先プロトコルを選択してください：**NFS**または**CIFS**。</block>
+  <block id="1ab5ecdad0b7cf47d71967b3f0e1f51b" category="list-text">必要に応じて、**Leave breadcrumb** を選択すると、ファイルが移動された場所と理由を説明するパンくずリストファイルがソースボリュームに残ります。</block>
+  <block id="465b61ed91de19635de96ea746fcd8dd" category="list-text">**パンくずリストを残す**を選択した場合は、ファイルを移動する理由と、必要に応じて新しい場所を説明するテキストを入力してください。</block>
+  <block id="f7e4b92188f5354ca61e9869df6224cc" category="inline-image-macro">NFSファイルの移動機能のスクリーンショット</block>
+  <block id="9b1a8f320a2c08a8370e356510090979" category="paragraph"><block ref="9b1a8f320a2c08a8370e356510090979" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7afd3db29a42496704a6705958fec121" category="list-text">**アイテムを移動する**を選択します。</block>
+  <block id="19e43848563797a6f937c7895b604754" category="section-title">ファイルを削除する</block>
+  <block id="bf7a8fa340e92f5931d748d2f4929afb" category="paragraph">調査ダッシュボードでデータをフィルタリングして、スペースとコストの節約機会を見つけると、それらのファイルを削除できます。ファイルの削除は、非構造化ファイルのみでサポートされています。</block>
+  <block id="fe3f40b2ceb6ec005d118e22ab125813" category="list-text">調査ダッシュボードで、削除するファイルを選択します。</block>
+  <block id="9f9603fa59f6dd606ff86c8b621cae42" category="list-text">確認ダイアログで「permanently delete」と入力します。</block>
+  <block id="de44f74c0cf208f9b074a847f28871e1" category="list-text">操作を確定するには、**ファイルの削除**を選択してください。</block>
+  <block id="9c213e0d48408ad93cdfc881eb4f22dd" category="inline-image-macro">削除ダイアログのスクリーンショット</block>
+  <block id="d5c79828ec7e224f24ce0c5c7bdfd94a" category="paragraph"><block ref="d5c79828ec7e224f24ce0c5c7bdfd94a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1e91143d215d79313744660e8a25c51" category="inline-link-macro">ファイルの移動、コピー、削除</block>
+  <block id="5f346df67220a8ad49f8534209369421" category="paragraph">データ調査ダッシュボードには、ファイルおよびディレクトリレベルでのデータに関する詳細な情報が表示され、結果を並べ替えたりフィルタリングしたりすることができます。データ調査ページでは、ファイルとディレクトリのメタデータおよびアクセス許可に関する情報に加え、重複ファイルの特定方法も紹介されています。ファイル、ディレクトリ、データベースレベルの情報を活用することで、組織のコンプライアンスを向上させ、ストレージ容量を節約するための対策を講じることができます。データ調査ページは<block ref="53552aaf1401627b381eb7f88c3339dc" category="inline-link-macro-rx"></block>もサポートしています。</block>
+  <block id="f394fbb29081ecb4ff4624bf5701d2c0" category="inline-link-macro">非構造化ファイルのコピー、移動、削除</block>
+  <block id="380916f8eca732c161f7d63bc771658e" category="admonition">データをフィルタリングした後、<block ref="80925d04faafa25188db966788d6cf44" category="inline-link-macro-rx"></block>してコンプライアンスを向上させたり、ストレージを最適化したりできます。</block>
+  <block id="a05935ba37500bcaabc75b8fac4a4d69" category="inline-link-macro">調査ダッシュボードからデータをコピー、移動、削除する</block>
+  <block id="dccdd7229b11ad459b3b6fd7edf24186" category="list-text"><block ref="dccdd7229b11ad459b3b6fd7edf24186" category="inline-link-macro-rx"></block></block>
+  <block id="5b077e4667590c350e8809dec7c16b8f" category="sidebar">Linuxホストの準備状況を確認してください</block>
+  <block id="44c26efa4311ed85b7e12474f8bd2eaf" category="sidebar">データソースを削除する</block>
 </blocks>

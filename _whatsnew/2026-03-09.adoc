@@ -14,7 +14,7 @@
 .コピーと移動の制限の引き上げ
 CIFS 宛先のコピーおよび移動機能がサポートされるようになりました。両方のアクションのファイルあたりのサイズ制限は、以前の 50 MB から 1 GB に増加しました。両方のアクションの操作制限は 1 TB または 500 万ファイルに増加しました。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["データを調査する"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-copy-move.html["データのコピー、移動、削除"^]を参照してください。
 
 .Active Directory統合構成権限
 Data Classification における Active Directory（AD）統合設定の変更は、管理者に制限されるようになりました。閲覧者は AD 設定を変更できなくなりました。

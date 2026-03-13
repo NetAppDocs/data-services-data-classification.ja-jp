@@ -4,7 +4,7 @@ permalink: reference-log-in-to-instance.html
 keywords: log in, data sense, classification 
 summary: ログ ファイルにアクセスしたり、構成ファイルを編集したりするために、 NetApp Data Classificationシステムにログインする必要がある場合があります。 
 ---
-= NetApp Data Classificationシステムにログインする
+= NetApp Data Classification にログインする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
