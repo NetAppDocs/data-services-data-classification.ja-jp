@@ -965,7 +965,6 @@
   <block id="ca3e2e8380ad6cedd810ec4fc49fa9e7" category="paragraph">Active Directory 統合の値を変更する必要がある場合は、[*編集*] ボタンをクリックして変更を加えます。</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">詳細ボタン</block>
   <block id="59cb665cd7462a904eefb54d13262d58" category="paragraph">統合を削除するには、<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>ボタンをクリックし、[Active Directory を削除] をクリックします。</block>
-  <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">NFS ファイル共有内のファイルまたはフォルダーにグループ ID が添付されると、ファイルまたはフォルダーの権限（組織に公開されているかどうかなど）が定義されます。一部のグループ ID (GID) が最初に「組織に公開」権限レベルで設定されていない場合は、その権限を GID に追加して、その GID が添付されているすべてのファイルとフォルダーが「組織に公開」されているとみなされるようにすることができます。</block>
   <block id="fdb7ec2123850e91ea909a1c5335e442" category="doc">NetApp Data Classificationで組織に公開されている追加のグループIDを定義します。</block>
   <block id="b838209e951016249a0803fc3f2aabb9" category="paragraph">グループ ID (GID) が NFS ファイル共有内のファイルまたはフォルダーに関連付けられると、そのファイルまたはフォルダーのアクセス許可 (組織に公開されているかどうかなど) が定義されます。一部の GID が最初に「組織に公開」権限レベルで設定されていない場合は、その権限を GID に追加して、その GID が添付されているすべてのファイルとフォルダーが「組織に公開」されているとみなされるようにすることができます。</block>
   <block id="bd4a9628c6b0a95d8b9d51e8beb243af" category="paragraph">この変更を行った後、 NetApp Data Classificationによってファイルとフォルダが再スキャンされると、これらのグループ ID が添付されているすべてのファイルとフォルダの [調査の詳細] ページにこの権限が表示され、ファイル権限を表示するレポートにも表示されます。</block>
@@ -2842,4 +2841,7 @@
   <block id="05ae2f7ed42f24ad34227986da264aae" category="paragraph-title">RHEL 9.7のサポート</block>
   <block id="3864a6ab3937a10a6f13bfa0f593150c" category="paragraph">データ分類に、ダークサイトへの展開を含む手動によるオンプレミスインストール用の Red Hat Enterprise Linux v9.7 が追加されました。</block>
   <block id="900e4148b2c0433fc2c6d0435cf489cd" category="paragraph">以下のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、Data Classificationバージョン1.30以上が必要です（Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、9.6、および9.7）。</block>
+  <block id="9011586cd2cbb8095aa94a58c4af72fd" category="doc">バージョン1.53</block>
+  <block id="0afc92b0bdc2ed57893a82b6cc2587d3" category="summary">NFSファイル共有内のファイルやフォルダにグループIDが関連付けられると、そのファイルやフォルダのアクセス許可が定義されます。グループIDのアクセス許可レベルが「組織に公開」に設定されていない場合は、そのアクセス許可をGIDに追加することで、そのGIDが関連付けられているファイルやフォルダが「組織に公開」されているとみなされるようになります。</block>
+  <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026年4月13日</block>
 </blocks>

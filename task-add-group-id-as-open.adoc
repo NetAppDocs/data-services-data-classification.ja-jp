@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-add-group-id-as-open.html 
 keywords: permissions, open to organization, file access 
-summary: 'NFS ファイル共有内のファイルまたはフォルダーにグループ ID が添付されると、ファイルまたはフォルダーの権限（組織に公開されているかどうかなど）が定義されます。一部のグループ ID (GID) が最初に「組織に公開」権限レベルで設定されていない場合は、その権限を GID に追加して、その GID が添付されているすべてのファイルとフォルダーが「組織に公開」されているとみなされるようにすることができます。' 
+summary: NFSファイル共有内のファイルやフォルダにグループIDが関連付けられると、そのファイルやフォルダのアクセス許可が定義されます。グループIDのアクセス許可レベルが「組織に公開」に設定されていない場合は、そのアクセス許可をGIDに追加することで、そのGIDが関連付けられているファイルやフォルダが「組織に公開」されているとみなされるようになります。 
 ---
 = NetApp Data Classificationで組織に公開されている追加のグループIDを定義します。
 :hardbreaks:
