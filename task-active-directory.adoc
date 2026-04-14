@@ -4,7 +4,7 @@ permalink: task-active-directory.html
 keywords: active directory, ad, data sense, cloud data sense 
 summary: グローバル Active Directory をNetApp Data Classificationと統合して、ファイル所有者やファイルにアクセスできるユーザーとグループに関する Data Classification のレポート結果を強化できます。 
 ---
-= Active Directory とNetApp Data Classification を統合
+= Active DirectoryをNetApp Data Classificationと統合する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
