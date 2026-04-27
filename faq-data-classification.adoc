@@ -276,7 +276,7 @@ NetApp Consoleを使用すると、オンプレミス、クラウド、ハイブ
 
 いつlink:task-deploy-cloud-compliance.html["クラウドに展開"]:
 
-* AWS では、データ分類は 500 GiB GP2 ディスクを備えた m6i.4xlarge インスタンスで実行されます。デプロイ時により小さいインスタンス タイプを選択できます。
+* AWSでは、Data Classificationは500 GiB GP2ディスクを搭載したm6i.4xlargeインスタンス上で実行されます。
 * Azure では、データ分類は 500 GiB のディスクを備えた Standard_D16s_v3 VM 上で実行されます。
 * GCP では、データ分類は 500 GiB の標準永続ディスクを備えた n2-standard-16 VM 上で実行されます。
 
