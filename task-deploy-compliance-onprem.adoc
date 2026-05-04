@@ -20,6 +20,9 @@ summary: ネットワーク内のLinuxホスト、またはインターネット
 
 データ分類のインストール スクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから始まります。前提条件がすべて満たされている場合は、インストールが開始されます。データ分類のインストールの実行とは別に前提条件を検証したい場合は、前提条件のみをテストする別のソフトウェア パッケージをダウンロードできます。link:task-test-linux-system.html["Linuxホストがデータ分類をインストールする準備ができているかどうかを確認する方法をご覧ください"] 。
 
+
+TIP: オンプレミスの VMware vSphere 環境では、Data Classification は簡素化されたlink:task-deploy-ova.html["OVAを使用した導入"]をサポートします。
+
 社内の Linux ホストへの一般的なインストールには、次のコンポーネントと接続が含まれます。
 
 image:diagram_deploy_onprem_overview.png["必要なコンソールとネットワーク コンポーネント、および関連する接続の図。"]
@@ -321,7 +324,7 @@ Data Classification をインストールすると、すべてのインストー
 
 
 .手順
-. データ分類ソフトウェアを以下からダウンロードしてください。 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^] 。選択するファイルの名前は *DATASENSE-INSTALLER-<version>.tar.gz* です。
+.  https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からData Classificationソフトウェアをダウンロードします。*DATASENSE-INSTALLER-<version>.tar.gz*という名前のファイルを選択します。
 . 使用する予定のLinuxホストにインストーラファイルをコピーします（ `scp`または他の方法）。
 . ホスト マシン上でインストーラ ファイルを解凍します。例:
 +
@@ -384,5 +387,9 @@ Data Classification インストーラーは、パッケージをインストー
 
 ホスト マシンとコンソール エージェント インスタンスの間にポート 8080 経由の接続がある場合は、コンソールの [データ分類] タブにインストールの進行状況が表示されます。
 
-.次は何？
-構成ページから、スキャンするデータ ソースを選択できます。
+
+
+== 次のステップ
+
+* link:task-scanning-overview.html["データソースのスキャンを設定する"]
+

@@ -36,6 +36,8 @@ sidebar:
         url: "/task-deploy-cloud-compliance.html"
       - title: インターネットにアクセスできる Linux ホストにインストールする
         url: "/task-deploy-compliance-onprem.html"
+      - title: OVAを使用したオンプレミスへのインストール
+        url: "/task-deploy-ova.html"
       - title: インターネットにアクセスできないオンプレミスの Linux ホストにインストールする
         url: "/task-deploy-compliance-dark-site.html"
       - title: Linuxホストの準備状況を確認してください

@@ -18,7 +18,8 @@ summary: 'インターネットにアクセスできないオンプレミス サ
 
 link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Console エージェントと Data Classification のさまざまな導入モードについて説明します"^]。
 
-また、link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスサイトにData Classificationを導入します"]こともできます。
+
+TIP: オンプレミスの VMware vSphere 環境では、Data Classification は簡素化されたlink:task-deploy-ova.html["OVAを使用した導入"]をサポートします。
 
 データ分類のインストール スクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから始まります。前提条件がすべて満たされている場合は、インストールが開始されます。データ分類のインストールの実行とは別に前提条件を検証したい場合は、前提条件のみをテストする別のソフトウェア パッケージをダウンロードできます。link:task-test-linux-system.html["Linuxホストがデータ分類をインストールする準備ができているかどうかを確認する方法をご覧ください"] 。
 
@@ -390,3 +391,10 @@ start_darksite_upgrade.sh
 ホスト上のData Classificationソフトウェアがアップグレードされます。更新には5～10分ほどかかる場合があります。
 
 データ分類 UI ページの下部にあるバージョンを確認することで、ソフトウェアが更新されたことを確認できます。
+
+
+
+== 次のステップ
+
+* link:task-scanning-overview.html["データソースのスキャンを設定する"]
+

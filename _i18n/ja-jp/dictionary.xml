@@ -67,11 +67,9 @@
   <block id="672224b23e2b17f35b0d4bf8aa4f1c43" category="inline-image-macro">保存されたクエリを構成して保存する方法を示したスクリーンショット。</block>
   <block id="47a922638f32c230008676e9ffb143c9" category="paragraph"><block ref="47a922638f32c230008676e9ffb143c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02d6fe4579b4d035f1741bff636a2bf4" category="paragraph">検索またはポリシーを作成したら、[**保存したクエリ**] タブで表示できます。</block>
-  <block id="2808185c0a48de3cd5dcc0d92f453531" category="doc">バージョン1.35</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="paragraph-title">StorageGRIDデータをスキャン</block>
   <block id="3c857514c210414567713ffec9077aff" category="paragraph">BlueXP classificationは、 StorageGRID内のデータのスキャンをサポートします。</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">詳細については、<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block> 。</block>
-  <block id="5413a43995a4a97a249b7b24fbf3e785" category="doc">バージョン1.36</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="paragraph-title">RHEL 9.4 のサポート</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v9.4 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、9.0、9.1、9.2、9.3、および 9.4。</block>
@@ -79,7 +77,6 @@
   <block id="ff7cd37eefd2efb9fa7f8feccf820e44" category="paragraph">詳細はこちら<block ref="7abbc5be80bdd5f0d4a0233853932b40" category="inline-link-rx"></block>。</block>
   <block id="7062dd46798946172bc9078744756dfc" category="paragraph-title">スキャンパフォーマンスの向上</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">このリリースでは、スキャン パフォーマンスが向上しました。</block>
-  <block id="c1922490c576eff789b323f98c667589" category="doc">バージョン1.37</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">このBlueXP classificationリリースには、次の更新が含まれています。</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="paragraph-title">RHEL 8.10 のサポート</block>
   <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v8.10 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。</block>
@@ -88,9 +85,7 @@
   <block id="ed86b5b4b59dfed3be7d90507a982e16" category="paragraph">詳細はこちら<block ref="8a553bdd7b5187af06654af7127bede8" category="inline-link-rx"></block>。</block>
   <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">NFS v4.1 のサポート</block>
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">このリリースでは、以前サポートされていたバージョンに加えて、NFS v4.1 のサポートも提供されます。</block>
-  <block id="5ae300808387123005a76abbd5a99f46" category="doc">バージョン1.38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">このBlueXP classificationリリースには、一般的な改善とバグ修正が含まれています。</block>
-  <block id="0a401367ec8a2cd84bb197e6d12c99af" category="doc">バージョン1.39</block>
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">このBlueXP classificationリリースでは、データ調査レポートのエクスポート プロセスが更新されます。このエクスポートの更新は、データの追加分析を実行したり、データで追加の視覚化を作成したり、データ調査の結果を他のユーザーと共有したりするのに役立ちます。</block>
   <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">以前は、データ調査レポートのエクスポートは 10,000 行に制限されていました。このリリースでは、制限が解除され、すべてのデータをエクスポートできるようになりました。この変更により、データ調査レポートからより多くのデータをエクスポートできるようになり、データ分析の柔軟性が向上します。</block>
   <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">作業環境、ボリューム、保存先フォルダー、JSON または CSV 形式を選択できます。エクスポートされたファイル名には、データがいつエクスポートされたかを識別するのに役立つタイムスタンプが含まれます。</block>
@@ -141,19 +136,15 @@
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">分類モデルの精度向上</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">定義済みカテゴリ</block>
   <block id="3c83d9ffa8db579e805de307f057c519" category="paragraph">機械学習モデルの精度は<block ref="4258f204d4b8f149538aa226ed3589d3" category="inline-link-macro-rx"></block>11%向上しました。</block>
-  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">バージョン1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">このBlueXP classificationリリースには、一般的な改善とバグ修正が含まれています。また、次のものも含まれます:</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">スキャンステータス</block>
   <block id="6a5c0bfd72f9b6c51f4f17f0d32a0bf5" category="paragraph">BlueXP classificationは、ボリューム上の初期マッピングおよび分類スキャンの進行状況をリアルタイムで追跡します。個別のプログレッシブ バーでマッピング スキャンと分類スキャンが追跡され、スキャンされたファイルの合計数の割合が表示されます。進行状況バーにマウスを移動すると、スキャンされたファイルの数とファイルの合計数を表示することもできます。スキャンのステータスを追跡すると、スキャンの進行状況に関するより深い分析情報が得られ、スキャンをより適切に計画し、リソースの割り当てを把握できるようになります。</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">スキャンのステータスを表示するには、 BlueXP classificationの **構成** に移動し、**作業環境構成** を選択します。各ボリュームごとに進行状況が一行で表示されます。</block>
-  <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">バージョン1.42</block>
-  <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">このBlueXP classificationリリースには以下が含まれます。</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">作業環境の一括スキャン</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">調査レポートをローカルにダウンロードする</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP classificationでは、データ調査レポートをローカルにダウンロードしてブラウザーで表示する機能がサポートされています。ローカル オプションを選択した場合、データ調査は CSV 形式でのみ利用可能になり、最初の 10,000 行のデータのみが表示されます。</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">BlueXP classificationを使用して組織内に保存されているデータを調査します</block>
   <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">詳細については、以下を参照してください。 <block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> 。</block>
-  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">バージョン1.43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">分類スキャンの優先順位付け</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">データ分類では、マッピングのみのスキャンに加えて、マップと分類のスキャンを優先順位付けする機能がサポートされており、最初に完了するスキャンを選択できます。マップと分類スキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンを優先することを選択した場合、マッピングスキャンと分類スキャンの両方が優先されます。</block>
   <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">詳細については、以下を参照してください。 <block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> 。</block>
@@ -169,8 +160,6 @@
   <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-link-macro">**保存された検索**</block>
   <block id="7d05e5a22d1961e95b7be92d35164378" category="paragraph">**ポリシー**タブの名前が変更されました<block ref="8d1bca00b0b16766f87fd78ec3ac185e" category="inline-link-macro-rx"></block>。機能に変更はありません。</block>
   <block id="2e2e722b53fe801ed6bcd1713f8325ac" category="paragraph-title">スキャンイベントを監査ページに送信する</block>
-  <block id="0d01ca23121427aff206ecc678cb7af3" category="inline-link-macro">NetAppコンソール監査ページ</block>
-  <block id="0fddd3e20389e20ca1c63de5412406ae" category="paragraph">データ分類は、分類イベント（スキャンの開始時と終了時）を<block ref="3dcf10816a01bda1b4320932f26d59f3" category="inline-link-macro-rx"></block>。</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">セキュリティアップデート</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Keras パッケージが更新され、脆弱性 (BDSA-2025-0107 および BDSA-2025-1984) が軽減されました。</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Docker コンテナの構成が更新されました。コンテナは、生のネットワーク パケットを作成するためにホストのネットワーク インターフェイスにアクセスできなくなります。このアップデートでは、不要なアクセスを減らすことで、潜在的なセキュリティ リスクを軽減します。</block>
@@ -178,7 +167,6 @@
   <block id="38942def5d8bae857c7eab12e7216c36" category="paragraph">RAM 使用量を削減し、データ分類の全体的なパフォーマンスを向上させるために、コード強化が実装されました。</block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="paragraph-title">バグ修正</block>
   <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">StorageGRIDスキャンが失敗し、調査ページのフィルター オプションが読み込まれず、大量の評価でデータ検出評価がダウンロードされないというバグが修正されました。</block>
-  <block id="1c4322a2b157ac1326426ebdbd680c74" category="doc">バージョン1.44</block>
   <block id="c7ea7ba68a180dd7fffb65d260820bdf" category="paragraph-title">ガバナンスダッシュボードの更新時間の改善</block>
   <block id="4a225b50559fc3e5c91e7a224bca4f82" category="paragraph">ガバナンス ダッシュボードの個々のコンポーネントの更新時間が改善されました。次の表は、各コンポーネントの更新頻度を示しています。</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">コンポーネント</block>
@@ -203,8 +191,6 @@
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">パフォーマンスとセキュリティの改善</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">BlueXP分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。</block>
-  <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="doc">バージョン1.45</block>
-  <block id="8321b9867214f5caa9d5a37197549cfb" category="paragraph">このBlueXP classificationリリースには、リソース使用率を最適化するコード変更が含まれており、次のようになります。</block>
   <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">スキャン対象ファイル共有を追加するワークフローの改善</block>
   <block id="7363f98210e80281886d9b88b644899c" category="paragraph">ファイル共有グループにファイル共有を追加するワークフローが簡素化されました。このプロセスでは、認証タイプ (Kerberos または NTLM) に基づいて CIFS プロトコルのサポートも区別されるようになりました。</block>
   <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-link-macro">ファイル共有をスキャンする</block>
@@ -213,15 +199,12 @@
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">調査タブでキャプチャされたファイルのファイル所有者に関する詳細情報を表示できるようになりました。[調査] タブでファイルのメタデータを表示するときは、ファイルの所有者を見つけて [**詳細を表示**] を選択し、ユーザー名、メール アドレス、SAM アカウント名を表示します。このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directory が稼働している作業環境でのみ使用できます。</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">組織内に保存されているデータを調査する</block>
   <block id="726bb63ef50725c7e3c4766906388acd" category="paragraph">詳細については、以下を参照してください。 <block ref="26029df2267a3a60cd67c1340e62ae48" category="inline-link-macro-rx"></block> 。</block>
-  <block id="7a4e65e1bd3f1685ea059c893a13cb58" category="doc">バージョン1.46</block>
-  <block id="98f52421b10c8b076970cd9d4bc2932c" category="paragraph">このデータ分類リリースには、バグ修正と次の更新が含まれています。</block>
   <block id="2c3661dfa2b24a2bf7320699cd536d69" category="paragraph-title">監査ページでのスキャンイベントの分析情報が強化されました</block>
   <block id="56693a88c5f83646349fbcd49bc5c045" category="paragraph">監査ページでは、 BlueXP classificationのスキャン イベントに関する強化された分析がサポートされるようになりました。監査ページには、システムのスキャンが開始された日時、システムのステータス、および問題が表示されるようになりました。共有とシステムのステータスはマッピング スキャンでのみ使用できます。</block>
   <block id="00b752fcc4ff0f02c4a53ddfe7ca85f1" category="inline-link-macro">NetApp Consoleの操作を監視する</block>
   <block id="2602ef05ceb5e5b51fe554db44e59c2c" category="paragraph">監査ページの詳細については、以下を参照してください。<block ref="33e0fa7818f83bbe32f6e9c2e830952c" category="inline-link-macro-rx"></block> 。</block>
   <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">RHEL 9.6 のサポート</block>
   <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。</block>
-  <block id="ffc4cf2b04c0381567893ed4b4045ccf" category="doc">バージョン1.47</block>
   <block id="6f36bf9a9811b172de79706eb4020697" category="paragraph-title">BlueXP classificationはNetApp Data Classificationになりました</block>
   <block id="5aac44f6ff056f1c6c2f526f52fa4c03" category="paragraph">BlueXP classificationがNetApp Data Classification に変更されました。名前の変更に加えて、ユーザー インターフェイスも強化されました。</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="paragraph-title">BlueXPはNetApp Consoleになりました</block>
@@ -601,8 +584,6 @@
   <block id="763275034b3bde5ad4f0fb074a35e741" category="cell">重複</block>
   <block id="b30d2f4e379d4d1d15b42fb01207e52c" category="summary">データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。クラウドでデータ分類を展開する場合は、完全な機能を実現するために「大規模」な特性を持つシステムを使用することをお勧めします。</block>
   <block id="abf286473c09b28744e63e974cf9988b" category="doc">サポートされているNetApp Data Classificationインスタンスタイプ</block>
-  <block id="6daeedd88ba8cb7688391f66dd283257" category="paragraph">NetApp Data Classificationソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。クラウドでデータ分類を展開する場合は、完全な機能を実現するために「大規模」特性を持つシステムを使用することをお勧めします。</block>
-  <block id="31bcdb40fe40bdf5535d17bbb6b1231c" category="paragraph">次の表で、「デフォルト」とマークされているシステムが、Data Classification をインストールするリージョンで使用できない場合は、表の次のシステムが展開されます。</block>
   <block id="c050baa4e510e3ce3e02b5da38a1c517" category="section-title">AWSインスタンスタイプ</block>
   <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="cell">インスタンスタイプ</block>
   <block id="9b751021fe03877034959f96cd4215c8" category="cell">32 個の CPU、128 GB の RAM、1 TiB の gp3 SSD</block>
@@ -1263,7 +1244,6 @@
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">権限と接続性</block>
   <block id="6bbd76aed7b9a40fed8eed718cd10a57" category="list-text">オフライン環境が要件を満たしていることを確認する<block ref="95ceef71f2a9d15ceaa6dd17e75c1dd0" category="inline-xref-macro-rx"></block>。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetAppサポート サイト</block>
-  <block id="c9a87a7f951d4e7d4680cb07a4c60b9f" category="list-text">データ分類ソフトウェアを以下からダウンロードしてください。<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block> 。選択するファイルの名前は *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz* です。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">使用する予定のLinuxホストにインストーラファイルをコピーします（<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block>または他の方法）。</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">ホスト マシン上でインストーラ ファイルを解凍します。例:</block>
   <block id="f74ff5e319b8679db4cb8aab068461b0" category="list-text">コンソールで、*ガバナンス &gt; 分類*を選択します。</block>
@@ -1294,17 +1274,12 @@
   <block id="d4c51b5a828be356e15e6075078acbf3" category="paragraph">Data Classification インストーラーは、パッケージをインストールし、インストールを登録し、Data Classification をインストールします。インストールには10〜20分かかります。</block>
   <block id="055e0d252fbbc82a23ab2191fb431592" category="paragraph">ホスト マシンとコンソール エージェント インスタンスの間にポート 8080 経由の接続がある場合は、コンソールの [データ分類] タブにインストールの進行状況が表示されます。</block>
   <block id="0f6783da8066ed936cd9826db896cc6b" category="summary">ニーズを満たすNetApp Data Classificationの展開を計画します。</block>
-  <block id="8a627e808de2c30fa43886f0bdb6620c" category="paragraph">NetApp Data Classification はさまざまな方法で導入できます。どの方法がニーズに合っているかを学びます。</block>
-  <block id="6598d8c3ced0847c96a82744bde57ec0" category="paragraph">データ分類は次の方法で展開できます。</block>
   <block id="a7955816207c66ef93518de3b208c0d2" category="inline-link-macro">コンソールを使用してクラウドにデプロイする</block>
   <block id="61e7b2134b2bd5446d16fd5d98582544" category="list-text"><block ref="718e5bf832b7dc2d474175d5c8eba439" category="inline-link-macro-rx"></block> 。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="inline-link-macro">インターネットにアクセスできる Linux ホストにインストールする</block>
   <block id="08858c16551aba16c4305089845b505e" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block> 。インターネットにアクセスできるネットワーク内の Linux ホスト、またはクラウド内の Linux ホストに Data Classification をインストールします。このタイプのインストールは、オンプレミスにあるデータ分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、必須ではありません。</block>
   <block id="5be81ee840734d5fff39d8fb451e87de" category="inline-link-macro">インターネットにアクセスできないオンプレミス サイトの Linux ホストにインストールする</block>
   <block id="53732c49c909038650b435483c435d88" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>_プライベート モード_ とも呼ばれます。インストール スクリプトを使用するこのタイプのインストールでは、コンソール SaaS レイヤーへの接続はありません。</block>
-  <block id="967c2f231d9eedd4e80f0b4308527637" category="paragraph">インターネットにアクセスできる Linux ホストへのインストールと、インターネットにアクセスできない Linux ホストへのオンプレミス インストールの両方で、インストール スクリプトが使用されます。スクリプトは、システムと環境が前提条件を満たしているかどうかを確認することから始まります。前提条件が満たされている場合は、インストールが開始されます。データ分類のインストールを実行せずに前提条件を検証したい場合は、前提条件のみをテストする別のソフトウェア パッケージをダウンロードできます。</block>
-  <block id="5163ac50e7f6c9b31163f15317256ad2" category="inline-link-macro">Linuxホストがデータ分類をインストールする準備ができていることを確認します</block>
-  <block id="0864d0b8a39fc12ae74c4773b2a77ebb" category="paragraph">。 <block ref="52b086fa7b78412e3e0a859256e795c9" category="inline-link-macro-rx"></block> 。</block>
   <block id="e1e216bf40960616935ca16f6eb23050" category="summary">NetApp Data Classification で特定のデータ ソース ディレクトリにあるデータのスキャンを除外する場合は、これらのディレクトリ名を構成ファイルに追加できます。この変更を適用すると、データ分類エンジンはこれらのディレクトリ内のスキャン データを除外します。</block>
   <block id="24559753da5c8b45ef15b1ad5d8f01de" category="doc">NetApp Data Classificationスキャンから特定のディレクトリを除外する</block>
   <block id="7d9aed9048d0f40617358d6c89d937c2" category="paragraph">NetApp Data Classification で特定のディレクトリをスキャンから除外する場合は、これらのディレクトリ名を構成ファイルに追加できます。この変更を適用すると、データ分類エンジンはそれらのディレクトリをスキャンから除外します。</block>
@@ -2192,14 +2167,12 @@
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
   <block id="d7cf77b2e56bc33512915804de4711b6" category="section-title">2024年8月5日</block>
-  <block id="3b506912c9fbc6e924c90fcd67f9e81d" category="section-title">バージョン1.34</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">このBlueXP classificationリリースには、次の更新が含まれています。</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="paragraph-title">CentOSからUbuntuへの変更</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP classificationは、 Microsoft Azure および Google Cloud Platform (GCP) 向けの Linux オペレーティング システムを CentOS 7.9 から Ubuntu 22.04 に更新しました。</block>
   <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">インターネットにアクセスできる Linux ホストにインストールし、Linux ホスト システムを準備します。</block>
   <block id="6a69f78db41581cfd7a75502f076641e" category="paragraph">展開の詳細については、<block ref="bff73d8b740f372e10ebba82fd5cc0db" category="inline-link-rx"></block> 。</block>
   <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">2024年7月1日</block>
-  <block id="29ca6f4adc7aee37872328bb347b7543" category="section-title">バージョン1.33</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="paragraph-title">Ubuntuをサポート</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">このリリースは、Ubuntu 24.04 Linux プラットフォームをサポートしています。</block>
   <block id="b83927d03444ee961e834ea1c3b0581b" category="paragraph-title">マッピングスキャンはメタデータを収集します</block>
@@ -2211,17 +2184,14 @@
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link-macro">マッピングスキャンと分類スキャンの違いは何ですか？</block>
   <block id="5ea8b091093d54a8d17a734f5a2613d1" category="paragraph">詳細については、 <block ref="1f8ed6e5fe2de61322f9de0ebb8b7505" category="inline-link-macro-rx"></block> 。</block>
   <block id="e4aecca06323b10cc72f8605553dacea" category="section-title">2024年6月5日</block>
-  <block id="decdab3311a7d521fe764d5d580ddd35" category="section-title">バージョン1.32</block>
   <block id="7910c8307cac3d62eca8ac0d42301b38" category="paragraph-title">構成ページの新しいマッピングステータス列</block>
   <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">このリリースでは、構成ページに新しいマッピング ステータス列が表示されるようになりました。新しい列は、マッピングが実行中か、キューに入れられているか、一時停止中かなどを識別するのに役立ちます。</block>
   <block id="6195c7a1534de8abb0c4706e15d24a3c" category="inline-link">スキャン設定を変更する</block>
   <block id="1f206e2cb955d5e4de5225f30ab20ee9" category="paragraph">ステータスの説明については、<block ref="d5d0647f1bb783c2ee28e91247e20822" category="inline-link-rx"></block> 。</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
-  <block id="362a66c8caf141f86c11be1e2f936c77" category="section-title">バージョン1.31</block>
   <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="paragraph-title">分類はBlueXPのコアサービスとして利用可能</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classificationは、コネクタごとに最大 500 TiB のスキャン データに対して、追加料金なしでBlueXP内のコア機能として利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。この新しいバージョンでは、 BlueXP classification機能をNetAppストレージ システムのスキャンに重点的に使用しているため、一部の従来の機能は、以前にライセンスを支払った顧客のみが利用できるようになります。これらのレガシー機能の使用は、有料契約の終了日に達すると無効になります。</block>
   <block id="9c0269454c5c35ffc377aed6baf6d638" category="section-title">2024年4月1日</block>
-  <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">バージョン1.30</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="paragraph-title">RHEL v8.8 および v9.3 BlueXP classificationのサポートが追加されました</block>
   <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">このリリースでは、Docker エンジンではなく Podman を必要とする、以前サポートされていた 9.x に加えて、Red Hat Enterprise Linux v8.8 および v9.3 のサポートも提供されます。これは、 BlueXP classificationの手動オンプレミス インストールに適用されます。</block>
   <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">次のオペレーティング システムでは、Podman コンテナー エンジンを使用する必要があり、 BlueXP classificationバージョン 1.30 以上が必要です: Red Hat Enterprise Linux バージョン 8.8、9.0、9.1、9.2、および 9.3。</block>
@@ -2235,7 +2205,6 @@
   <block id="f943db85a7c2edd799890ddb18f29cab" category="inline-link">インターネットにアクセスできない Linux ホストにBlueXP classificationをインストールする</block>
   <block id="51113453f591a14d5c9aa29ed4c673ee" category="paragraph">インターネットにアクセスせずにBlueXP classificationを展開した場合は、手動でアップグレードする必要があります。詳細については、<block ref="99892e361f57f56d51a62e67f9505dc2" category="inline-link-rx"></block> 。</block>
   <block id="b8a98fcc40c83e855fb31eabe2a4360d" category="section-title">2024年3月4日</block>
-  <block id="512d4a337ec357edd106a616e83b1a1f" category="section-title">バージョン1.29</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="paragraph-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">BlueXP classificationで特定のデータ ソース ディレクトリにあるスキャン データを除外する場合は、 BlueXP classificationが処理する構成ファイルにこれらのディレクトリ名を追加できます。この機能により、不要なディレクトリのスキャンや、誤った個人データ結果が返されるディレクトリのスキャンを回避できます。</block>
   <block id="4f7f682e1cf9bdb2a99803b608a4cba1" category="paragraph"><block ref="e9b412144eab992a1669232ef41dc93d" category="inline-link-rx"></block> 。</block>
@@ -2243,29 +2212,20 @@
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">2 億 5,000 万を超えるファイルをスキャンするためにBlueXP classificationが必要な場合は、クラウド展開またはオンプレミス インストールで特大インスタンスを使用できます。このタイプのシステムは最大 5 億個のファイルをスキャンできます。</block>
   <block id="21945ea03234b0d3124095ee6fd8427b" category="paragraph"><block ref="6ace692244f983096552c0b273619a12" category="inline-link-rx"></block> 。</block>
   <block id="c630754f942c555264fff115d6b5e9b2" category="section-title">2024年1月10日</block>
-  <block id="536149161458a7a77ae5b72258f34e48" category="section-title">バージョン1.27</block>
   <block id="fe2063e5676e0308022c99eb2466140c" category="paragraph-title">調査ページの結果には、アイテムの合計数に加えて合計サイズが表示されます。</block>
   <block id="6cff48344cb111c0fcdb424ba18c6bcf" category="paragraph">調査ページのフィルタリングされた結果には、ファイルの合計数に加えて、アイテムの合計サイズが表示されます。これは、ファイルを移動したり、削除したりする場合などに役立ちます。</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="paragraph-title">追加のグループIDを「組織に公開」として設定する</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link-macro">追加のグループIDを「組織に公開」として追加する</block>
   <block id="73b91e38353381a5358557fef0936ca8" category="paragraph">グループが最初にその権限で設定されていなかった場合、NFS 内のグループ ID をBlueXP classificationから直接「組織に公開」として設定できるようになりました。これらのグループ ID が添付されているファイルとフォルダーは、調査の詳細ページで「組織に公開」として表示されます。方法を見る<block ref="3412c0c43e6acc979ac67717176325f7" category="inline-link-macro-rx"></block>。</block>
   <block id="3500d4b863ccad6f25298c3ab1519e74" category="section-title">2023年12月14日</block>
-  <block id="552c9ad11d5dffc1189fa270ca015445" category="section-title">バージョン1.26.6</block>
-  <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">このリリースにはいくつかのマイナーな機能強化が含まれています。</block>
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">このリリースでは、次のオプションも削除されました。</block>
-  <block id="cfb92709c6d193fc86ee41b349cbe288" category="list-text">ディレクトリ調査中は、ディレクトリ別に個人識別情報 (PII) データの数を計算するオプションは使用できません。。 <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block> 。</block>
   <block id="544cac1ecf4d7d5eb4b8b563c0d90c5a" category="section-title">2023年11月6日</block>
-  <block id="0778a32085af8830c408efb93cb7239f" category="section-title">バージョン1.26.3</block>
   <block id="e25bae53fb1951841531279fa78ee63a" category="paragraph">このリリースでは以下の問題が修正されました</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">ダッシュボードでシステムによってスキャンされたファイルの数を表示する際の不一致を修正しました。</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることにより、スキャン動作が改善されました。</block>
   <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">2023年10月4日</block>
-  <block id="a7dfa38887a337aec315ca23d79dc622" category="section-title">バージョン1.26</block>
   <block id="74246010013353726bd9ff99866fa7d4" category="paragraph-title">RHEL バージョン 9 でのBlueXP classificationのオンプレミス インストールのサポート</block>
-  <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linux バージョン 8 および 9 は、 BlueXP classificationのインストールに必要な Docker エンジンをサポートしていません。コンテナ インフラストラクチャとして Podman バージョン 4 以上を使用して、RHEL 9.0、9.1、9.2 へのBlueXP classificationのインストールをサポートするようになりました。ご使用の環境で最新バージョンの RHEL を使用する必要がある場合は、Podman を使用するときにBlueXP classification(バージョン 1.26 以上) をインストールできるようになりました。</block>
-  <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">現時点では、RHEL 9.x を使用する場合、ダーク サイトのインストールまたは分散スキャン環境 (マスター スキャナー ノードとリモート スキャナー ノードを使用) はサポートされていません。</block>
   <block id="b9d5019337501d72be4adcf007f7d84c" category="section-title">2023年9月5日</block>
-  <block id="3f1982a78707e6a0e0433cad5b5a037d" category="section-title">バージョン1.25</block>
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="paragraph-title">小規模および中規模の展開は一時的に利用できません</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">AWS でBlueXP classificationのインスタンスをデプロイする場合、*デプロイ &gt; 構成* を選択して小規模または中規模のインスタンスを選択するオプションは現時点では使用できません。*[デプロイ] &gt; [デプロイ]* を選択すると、大きなインスタンス サイズを使用してインスタンスをデプロイできます。</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="paragraph-title">調査結果ページから最大10万件のアイテムにタグを適用します</block>
@@ -2273,7 +2233,6 @@
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="paragraph-title">最小ファイルサイズが 1 MB の重複ファイルを識別します</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXP classificationは、ファイルが 50 MB 以上の場合にのみ重複ファイルを識別します。1 MB から始まる重複ファイルを識別できるようになりました。調査ページのフィルター「ファイル サイズ」と「重複」を使用すると、環境内で重複している特定のサイズのファイルを確認できます。</block>
   <block id="deac043b98b13aa9a1a0d041a820ee2c" category="section-title">2023年7月17日</block>
-  <block id="314ecd7c1da8864532628a8aa4a6c85b" category="section-title">バージョン1.24</block>
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="paragraph-title">BlueXP classificationにより、ドイツの個人データの2つの新しいタイプが特定されました</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXP classificationでは、次の種類のデータを含むファイルを識別して分類できます。</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link-macro">BlueXP classificationがあなたのデータ内で識別できるすべての個人データの種類を確認します</block>
@@ -2288,7 +2247,6 @@
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link-macro">BlueXP classificationAPIの詳細</block>
   <block id="31fcc22988d07002d58b5a25a50056c4" category="paragraph"><block ref="ad3b8a781fb3bfe4825e830a10bd8f59" category="inline-link-macro-rx"></block> 。</block>
   <block id="40d3210136139f5fa0cdf31aed565820" category="section-title">2023年6月6日</block>
-  <block id="5a78709b3e68f78b25a72a31cfcaa8f0" category="section-title">バージョン1.23</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="paragraph-title">データ主体名の検索時に日本語がサポートされるようになりました</block>
   <block id="3a3337f232548d40f54052862077499b" category="inline-link-macro">データ主体アクセス要求レポート</block>
   <block id="931c126009c96d8f8ce9770df003478d" category="inline-link-macro">データ調査ページの「データ主体」フィルター</block>
@@ -2303,7 +2261,6 @@
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="paragraph-title">Data Sense BYOLライセンスがダークサイトでサポートされるようになりました</block>
   <block id="164199ecac7ab88714ff0c68b5fb98f0" category="paragraph">ライセンスが少なくなると通知が届くように、Data Sense BYOL ライセンスをダーク サイトのBlueXP digital walletにアップロードできるようになりました。</block>
   <block id="70c95406986fbb3626df1a393daf99ce" category="section-title">2023年4月3日</block>
-  <block id="288d139ea0d21561e65bec74c2f7c646" category="section-title">バージョン1.22</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="paragraph-title">新しいデータ検出評価レポート</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">データ検出評価レポートの生成方法と使用方法をご覧ください</block>
   <block id="9669b178481453beb0e2edf206fb5692" category="paragraph">データ検出評価レポートでは、スキャンされた環境の高レベルの分析が提供され、システムの検出結果が強調表示され、懸念される領域と潜在的な修復手順が示されます。このレポートの目的は、データ セットのデータ ガバナンスの懸念、データ セキュリティの露出、およびデータ コンプライアンスのギャップについての認識を高めることです。<block ref="9aee3318dd7918d722246357cd8063ac" category="inline-link-rx"></block> 。</block>
@@ -2314,10 +2271,8 @@
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">LinuxホストがBlueXP classificationをインストールする準備ができているかどうかを確認する方法をご覧ください</block>
   <block id="4ea787a4759c0904647bf00934108410" category="paragraph">BlueXP classificationインストールの実行とは別に、Linux システムがすべての前提条件を満たしていることを確認したい場合は、前提条件のみをテストする別のスクリプトをダウンロードできます。<block ref="5e1d943ca6af2f5a9cb8f87395f318ef" category="inline-link-rx"></block> 。</block>
   <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">2023年3月7日</block>
-  <block id="321553493f3e3f76105c5f5c5633b4c1" category="section-title">バージョン1.21</block>
   <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="paragraph-title">BlueXP classificationUIから独自のカスタムカテゴリを追加できる新機能</block>
   <block id="3e55ef3a5ecc1c61843dac319870a00a" category="paragraph">BlueXP classificationでは、独自のカスタム カテゴリを追加できるようになりました。これにより、 BlueXP classificationはそれらのカテゴリに適合するファイルを識別します。  BlueXP classificationには多くの<block ref="5836292d8632cade998e14bbf16972f4" category="inline-link-rx"></block>この機能を使用すると、カスタム カテゴリを追加して、組織固有の情報がデータ内のどこにあるかを識別することができます。</block>
-  <block id="bca8069b731ea966c03da0cea318f9d1" category="paragraph-title">BlueXP classificationUIからカスタムキーワードを追加できるようになりました</block>
   <block id="c9383e3b8d4c0ef8e217c6982644630b" category="paragraph">BlueXP classificationには、しばらくの間、将来のスキャンでBlueXP classificationが識別するカスタム キーワードを追加する機能がありました。ただし、キーワードを追加するには、 BlueXP classificationLinux ホストにログインし、コマンド ライン インターフェイスを使用する必要がありました。このリリースでは、カスタム キーワードを追加する機能がBlueXP classificationUI に組み込まれ、これらのキーワードの追加と編集が非常に簡単になりました。</block>
   <block id="7e5ec3b51659d16db2e72438a8ca680a" category="paragraph-title">「最終アクセス時間」が変更された場合、 BlueXP classificationでファイルをスキャンしないようにする機能</block>
   <block id="f9bee7a7e545f0d95664d3ccaa7b7151" category="paragraph">デフォルトでは、 BlueXP classificationに適切な「書き込み」権限がない場合、 BlueXP classificationは「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のファイルをスキャンしません。ただし、ファイルの最終アクセス時刻が元の時刻にリセットされても問題がない場合は、構成ページでこの動作を上書きして、 BlueXP classificationが権限に関係なくボリュームをスキャンするようにすることができます。</block>
@@ -2333,7 +2288,6 @@
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">インターネットにアクセスできないサイト (ダークサイト) 用のBlueXP classificationインストーラーは、インストールを正常に実行するために必要なシステムとネットワークの要件が満たされているかどうかを確認するための事前チェックを実行するようになりました。</block>
   <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">インストール監査ログファイルは保存され、次の場所に書き込まれます。<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block> 。</block>
   <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">2023年2月5日</block>
-  <block id="4d892f9a0cb70711d12ffb41d4d77d8b" category="section-title">バージョン1.20</block>
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="paragraph-title">ポリシーベースの通知メールを任意のメールアドレスに送信する機能</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">BlueXP classificationの以前のバージョンでは、特定の重要なポリシーが結果を返すときに、アカウント内のBlueXPユーザーに電子メールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、 BlueXPアカウントに登録されていない他のユーザー (最大 20 件の電子メール アドレス) に電子メール アラートを送信できるようになりました。</block>
   <block id="01111213f34b03537871696a29c018fa" category="inline-link">ポリシー結果に基づいてメールアラートを送信する方法の詳細</block>
@@ -2343,12 +2297,10 @@
   <block id="7a726788f7018e2e33cf2248365cb342" category="paragraph-title">BlueXP classificationを使用して1500万個のファイルを移動する能力</block>
   <block id="21aa7ff00797b2159931293ba0196475" category="paragraph">以前は、 BlueXP classificationによって最大 100,000 個のソース ファイルを任意の NFS 共有に移動できました。一度に最大 1500 万個のファイルを移動できるようになりました。</block>
   <block id="e25a297a27416e76c1a8e01af56d07ed" category="paragraph-title">SharePoint Online ファイルにアクセスできるユーザーの数を確認する機能</block>
-  <block id="6e0f24b07c077e6e557a1d0fac76b6c1" category="paragraph">「アクセス権を持つユーザーの数」フィルターは、SharePoint Online リポジトリに保存されているファイルをサポートするようになりました。以前は、CIFS 共有上のファイルのみがサポートされていました。現時点では、アクティブ ディレクトリ ベースではない SharePoint グループはこのフィルターではカウントされないことに注意してください。</block>
   <block id="cab6c5a0928827eecbe652fb21944075" category="paragraph-title">アクションステータスパネルに新しい「部分的成功」ステータスが追加されました</block>
   <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">アクションステータスパネルの表示方法を確認する</block>
   <block id="f936ab7640aaf50ac88f9f70993bd303" category="paragraph">新しい「部分的な成功」ステータスは、 BlueXP classificationアクションが完了し、一部の項目は失敗し、一部の項目は成功したことを示します (たとえば、100 個のファイルを移動または削除する場合)。さらに、「完了」ステータスの名前が「成功」に変更されました。以前は、「完了」ステータスに成功したアクションと失敗したアクションがリストされることがありました。ここで、「成功」ステータスは、すべてのアイテムに対するすべてのアクションが成功したことを意味します。<block ref="75a8438a4d837357264f215af439f18c" category="inline-link-rx"></block> 。</block>
   <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">2023年1月9日</block>
-  <block id="58080b77f4121259ffde5ce32650fff6" category="section-title">バージョン1.19</block>
   <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="paragraph-title">機密データを含むファイルと過度に許可されているファイルのチャートを表示する機能</block>
   <block id="fbe297fe9bdb2184be0e67e56d41549d" category="paragraph">ガバナンス ダッシュボードに、機密データ (機密データと機密個人データの両方を含む) を含むファイルと過度に許可されているファイルのヒートマップを提供する新しい [機密データと幅広いアクセス許可] 領域が追加されました。これにより、機密データにリスクがある可能性がある場所を確認するのに役立ちます。<block ref="b6419b51c73e0c028146cb926b306794" category="inline-link-rx"></block> 。</block>
   <block id="738f7059231d5fe5c1e22879f52682fd" category="paragraph-title">データ調査ページで3つの新しいフィルターが利用可能になりました</block>
@@ -2501,8 +2453,6 @@
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">StorageGRIDバケットのスキャンを有効または無効にする</block>
   <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/</block>
   <block id="a326c778205842f816c52ca7e63cae5d" category="cell">\https://support.compliance.api.bluexp.netapp.com/</block>
-  <block id="649b850f0bca668f5279a8b29028973a" category="paragraph">このBlueXP分類リリースには以下が含まれます。</block>
-  <block id="73bb8d1c85014ba6981a002bd9fc9364" category="doc">バージョン1.48</block>
   <block id="d34f29080dba1970a613ab39b7166d0c" category="paragraph">この Data Classification リリースには、バグ修正、セキュリティの改善、パフォーマンスの強化が含まれています。</block>
   <block id="8905ad2fb9f028e6bd28666015b4b50a" category="paragraph-title">スキャンの進行状況の明確化を強化</block>
   <block id="206c07a2ed5644be711186a00b2c6ae2" category="paragraph">スキャン構成には、スキャン完了に関する改善された分析情報が含まれるようになりました。以前は、スキャンの進行中にのみ進行状況バーが表示されていました。スキャンが正常に完了したことを確認できるように、完了後も進行状況バーが表示されるようになりました。マップおよびスキャンされたファイルの数を表示することもできます。</block>
@@ -2529,8 +2479,6 @@
   <block id="f918c4aee73951e03ee5c0a40ad23d9e" category="list-text"><block ref="f918c4aee73951e03ee5c0a40ad23d9e" category="inline-link-macro-rx"></block></block>
   <block id="d642b544681a16a1135a35722647009f" category="list-text"><block ref="d642b544681a16a1135a35722647009f" category="inline-link-macro-rx"></block></block>
   <block id="7a1e3b83c1962dc960f34e0a588fe7c6" category="list-text"><block ref="7a1e3b83c1962dc960f34e0a588fe7c6" category="inline-link-macro-rx"></block></block>
-  <block id="6a6493990827c82055e808631b52c236" category="doc">バージョン1.49</block>
-  <block id="640602402999fbf572de482a35f449bc" category="paragraph">この Data Classification リリースには、バグ修正と次の更新が含まれています。</block>
   <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">ヘルスモニタリングダッシュボードで指標とパフォーマンスを監視する</block>
   <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">データ分類では、ヘルス モニタリング ダッシュボードが提供されるようになり、リソースのリアルタイム モニタリングと、メモリ使用量、ディスク使用量、ディスク使用率などの分析情報が提供されます。ヘルス モニタリング ダッシュボードから得られる分析情報を活用することで、展開のインフラストラクチャを確認し、ストレージとパフォーマンスを最適化するための分析情報を得ることができます。</block>
   <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">データ分類の健全性を監視する</block>
@@ -2573,7 +2521,6 @@
   <block id="baf6246d7a1f90583599825a4d8818c0" category="cell">最小限の権限</block>
   <block id="cd3fbf7c4da6e490eec17762a02afcb8" category="list-text">使用している OS に応じて、次のいずれかのコンテナ エンジンをインストールする必要があります。</block>
   <block id="9f4066a8aad2a422e68c5b69dd9472f8" category="paragraph">スキャン設定の詳細については、 <block ref="26da27bca2c7e859f7f769768b8a4285" category="inline-link-macro-rx"></block>。</block>
-  <block id="a4abecdc1a189db5254898cad3b99a7e" category="doc">バージョン1.50</block>
   <block id="0bbdca5358fc47c779aaa8d26a52510f" category="paragraph-title">カスタム分類の改善</block>
   <block id="3d1c64f6b833049963a84f1722911079" category="paragraph">データ分類では、データのカスタム カテゴリの作成がサポートされるようになりました。ファイルをアップロードして、データ分類がデータにカテゴリ マーカーを適用するために使用する AI モデルを微調整できます。すべてのカスタム分類のインターフェースが改善されました。</block>
   <block id="1ea7cf77170c31be18fc52c7e9649923" category="paragraph">詳細については、 <block ref="c45381d223df5e8e5c4b98a60b8b65d3" category="inline-link-macro-rx"></block>。</block>
@@ -2673,11 +2620,8 @@
   <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification では、低解像度の画面での表示パフォーマンスが向上し、ユーザー エクスペリエンスが向上しました。</block>
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">データ分類では、データ トレーニングの推定完了時間が表示されます。..ファイル パスを変更したり、ファイルを再アップロードしたりするには、[**パスの変更**] を選択し、データを入力してファイルを再度ロードします。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026年2月9日</block>
-  <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">バージョン1.51</block>
   <block id="58c2f245ba9fee2040b80ea19d9ccd7c" category="inline-link-macro">Console エージェントと Data Classification のさまざまな導入モードについて説明します</block>
   <block id="9da1ffd588a2b7dde94c64757653a38a" category="paragraph"><block ref="cb90c21a9c44c9ac5d86b04e8dfb0fb3" category="inline-link-macro-rx"></block>。</block>
-  <block id="3883c68756cb61eec195bb6e108336ba" category="inline-link-macro">インターネットにアクセスできるオンプレミスサイトにData Classificationを導入します</block>
-  <block id="aff289904c75641e7044ceeb9e922006" category="paragraph">また、<block ref="9d4e9d68c29b6863b7c77f4a02e40d14" category="inline-link-macro-rx"></block>こともできます。</block>
   <block id="eb7c0a54a684e3bfabc7abd5ff6851ad" category="paragraph">プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもあります）でインストールされた場合、Data Classificationは、オンプレミスサイトにローカルに存在するデータソースからのデータのみをスキャンできます。現時点では、Data Classificationは次の*ローカル*データソースをスキャンできます：</block>
   <block id="318a375199576f5d44d9caad0d810341" category="paragraph">現在、Data Classificationがプライベートモードで展開されている場合、Cloud Volumes ONTAP、Azure NetApp Files、またはFSx for ONTAPアカウントのスキャンはサポートされていません。</block>
   <block id="15626ba7e1a3568f27f269f3c7356d0d" category="paragraph">ほとんどのデータ分類機能は、インターネットにアクセスできないサイトに展開された場合でも機能します。ただし、インターネット アクセスを必要とする特定の機能はサポートされていません。例：</block>
@@ -2754,7 +2698,6 @@
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classificationは、選択したリポジトリ（ボリューム、データベーススキーマ、またはその他のユーザーデータ）内のデータをスキャンし、個人情報や機密データを特定します。Data Classificationはその後、組織のデータをマッピングし、各ファイルを分類し、データ内のあらかじめ定義されたパターンを識別します。スキャンの結果として、個人情報、機微な個人情報、データカテゴリ、ファイルタイプのインデックスが作成されます。</block>
   <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">詳細については、<block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="59ff8a6991a0f51816a1d27ab0590821" category="paragraph-title">コピーと移動の制限の引き上げ</block>
-  <block id="5db4431afc8c4647c29360449ee80225" category="doc">バージョン1.52</block>
   <block id="1cc9fa7904bbb11e4569869878e58bbb" category="paragraph-title">リソースの検証</block>
   <block id="19458db6dfda018080434d803401d712" category="paragraph">信頼性を確保するために、Data Classificationでは、スキャン、レポート生成、およびアクション全体で使用可能なメモリとディスクリソースを検証するようになりました。メモリ使用量が95%を超えるか、ディスク容量が6 GBを下回ると、Data Classificationは自動的に操作を一時停止します。リソースが十分になると、操作が再開されます。</block>
   <block id="0c246fa8aa5b9bb6f56169910551448c" category="paragraph">システムリソースを監視するには、<block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -2818,7 +2761,6 @@
   <block id="05ae2f7ed42f24ad34227986da264aae" category="paragraph-title">RHEL 9.7のサポート</block>
   <block id="3864a6ab3937a10a6f13bfa0f593150c" category="paragraph">データ分類に、ダークサイトへの展開を含む手動によるオンプレミスインストール用の Red Hat Enterprise Linux v9.7 が追加されました。</block>
   <block id="900e4148b2c0433fc2c6d0435cf489cd" category="paragraph">以下のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、Data Classificationバージョン1.30以上が必要です（Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、9.6、および9.7）。</block>
-  <block id="9011586cd2cbb8095aa94a58c4af72fd" category="doc">バージョン1.53</block>
   <block id="0afc92b0bdc2ed57893a82b6cc2587d3" category="summary">NFSファイル共有内のファイルやフォルダにグループIDが関連付けられると、そのファイルやフォルダのアクセス許可が定義されます。グループIDのアクセス許可レベルが「組織に公開」に設定されていない場合は、そのアクセス許可をGIDに追加することで、そのGIDが関連付けられているファイルやフォルダが「組織に公開」されているとみなされるようになります。</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026年4月13日</block>
   <block id="4282eab95027b5795f33f16206ffbe95" category="doc">Active DirectoryをNetApp Data Classificationと統合する</block>
@@ -2835,4 +2777,110 @@
   <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">NetApp Data Classificationでスキャン設定を変更する</block>
   <block id="d45f223b29c54a03c611d6faaae58cf9" category="list-text">AWS では、データ分類は<block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block>500 GiB の GP2 ディスクで実行されます。オペレーティングシステムイメージは Amazon Linux 2 です。</block>
   <block id="5d8b6e341fd15d744bee3c27b7ca8a68" category="list-text">AWSでは、Data Classificationは500 GiB GP2ディスクを搭載したm6i.4xlargeインスタンス上で実行されます。</block>
+  <block id="1c009e201a68e95941fe981e5fdfa016" category="inline-link-macro">OVAを使用した導入</block>
+  <block id="697a620593a003d9900b7aa00be1acc6" category="admonition">オンプレミスの VMware vSphere 環境では、Data Classification は簡素化された<block ref="3d59e70993d210c9da20a35410c0aa19" category="inline-link-macro-rx"></block>をサポートします。</block>
+  <block id="e4c84482ee4555ae482d96b91322224c" category="doc">全般的な改善</block>
+  <block id="3f468d12d8f20d8c9b0af0175d719e8d" category="inline-link-macro">NetApp Console監査ページ</block>
+  <block id="67e15c1e2a08f0a8a8953cf75a2f512f" category="paragraph">Data Classificationは、分類イベント（スキャンが開始されたときと終了したとき）を<block ref="6d2f9072000bb7a11bdbf2bb5389f581" category="inline-link-macro-rx"></block>に送信することをサポートしています。</block>
+  <block id="e51a6de645bb52eeb7e8ef9b3c883b16" category="doc">リソース利用の最適化</block>
+  <block id="220726f631dfe5a4dfdc0d65472b98dc" category="paragraph">このBlueXP分類リリースには、リソース利用を最適化するコード変更が含まれています。</block>
+  <block id="d939a4c3efbccb14bb6a8b8ec450f62d" category="doc">OVAを使用したData Classificationの導入</block>
+  <block id="c58a3e421744f0b78f692f20d074d1f6" category="paragraph">NetApp Data Classificationは、VMware Open Virtual Appliance（OVA）を使用した導入をサポートするようになり、オンプレミスのVMware vSphere環境向けに簡素化された導入戦略を提供します。</block>
+  <block id="1a4ea23de9d17b2e28a82a012795f402" category="paragraph">詳細については、<block ref="671ddfd34f6defdc139134bff6f63dc9" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="8744e3889336c440e17e4a85c0573d80" category="paragraph">NetApp Data Classificationソフトウェアは、特定のオペレーティングシステム要件、RAM要件、およびソフトウェア要件を満たすホスト上で動作する必要があります。クラウド上でData Classificationを導入する場合、最大限の機能を発揮させるためには、「大規模」な特性を持つシステムのご利用をお勧めします。</block>
+  <block id="da49eae2f2697eebbdfcb923e399ee06" category="paragraph">以下の表において、「default」とマークされたシステムがData Classificationをインストールするリージョンで利用できない場合、表に記載されている次のインスタンスタイプがデプロイされます。</block>
+  <block id="6b9707300ae2253b20a1508cdef29b86" category="inline-link-macro">データソースのスキャンを設定する</block>
+  <block id="32c268474be77292e0a04f91871ff5ae" category="list-text"><block ref="32c268474be77292e0a04f91871ff5ae" category="inline-link-macro-rx"></block></block>
+  <block id="37bdabd730f5e2aa9c95ca046c4a528d" category="list-text"><block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>からData Classificationソフトウェアをダウンロードします。*DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*という名前のファイルを選択します。</block>
+  <block id="3990c3483164e3d71f7feb035dcc5d2e" category="summary">NetApp Data Classificationは、Open Virtual Appliance（OVA）を使用したオンプレミスvSphere環境への導入をサポートします。OVA導入方式は、事前検証済みのNetApp管理環境を提供し、導入を簡素化します。</block>
+  <block id="d9a33ab3030c9b5fd7a102e28aba7be3" category="doc">VMware Open Virtual Appliance を使用した NetApp Data Classification の導入</block>
+  <block id="a130e61bd4b704e7fe34c433d0d11621" category="paragraph">NetApp Data Classificationは、VMware Open Virtual Appliance（OVA）を使用した導入をサポートしており、オンプレミスのVMware vSphere環境でData Classificationをインストールして実行するための管理パッケージを提供します。OVA導入方式は、事前検証済みのNetApp管理環境を提供し、導入を簡素化します。</block>
+  <block id="3aa8474d5b875cbd9fa36a9b295450c1" category="paragraph">この方法は、VMware ベースの新規導入に推奨されます。</block>
+  <block id="86b7d468352815e2bd2fcebcf1707ed0" category="paragraph">OVAファイルを使用してData Classificationをインストールする前に、以下のものが必要です：</block>
+  <block id="e6c02e5ccba91b0f8a2da6080936e5f5" category="list-text">VMware vSphere 環境</block>
+  <block id="afe34e38b29b496b8d140d1b05f7639b" category="list-text">アプライアンスに割り当てられた静的IPv4アドレス</block>
+  <block id="c2536178d417593ff00b31c3acd23ffa" category="list-text">ターゲットネットワークから到達可能なDNSサーバー</block>
+  <block id="784e3265e48a6bd157680a38d46c8c55" category="list-text">アプライアンスへのSSHアクセスが有効になっています</block>
+  <block id="5d0a8cdc6b9b55fd93ed84e6766e7b28" category="inline-link-macro">NetApp Support Site のクレデンシャル</block>
+  <block id="91ea08e1aa2323f4b4da558f043fb414" category="list-text"><block ref="b753d64a45d12e5e34df2907367d09a4" category="inline-link-macro-rx"></block>インストーラーをダウンロードするには</block>
+  <block id="8cbae09146721faac95bceac9bf5fca3" category="section-title">VMware vSphereにOVAをデプロイする</block>
+  <block id="bd7ce254f37b2c00eb5eb9946bcf0759" category="list-text"><block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block>からOVAファイルをダウンロードします。環境に適したOVAアプライアンスを選択します：</block>
+  <block id="ddde1efaada34040cfccceaa34f9b3bb" category="cell">OVAアプライアンス</block>
+  <block id="df623f3b0eca686aa70011889478c1b4" category="cell">本番環境のサイズ</block>
+  <block id="638fea7f650cbb9f4eddd66ce254fdd1" category="cell">ファイルスキャンの制限</block>
+  <block id="bccd9f0f398a2a4a23d2ef929e4a1645" category="cell"><block ref="c634ef6b6a6b888ef1b1a2d326622ee7" prefix="" category="inline-code"></block></block>
+  <block id="0e836ac8fea63f0e7d0ea76786c3a146" category="cell">標準的な本番環境ワークロード：16 CPU、64 GB RAM、500 GB ディスク</block>
+  <block id="6977457ec4d43a18ebcc0cc12a5b4785" category="cell">2億5000万ファイル</block>
+  <block id="8958a7a71bfe0f4a5a40d760f7e3c2f6" category="cell"><block ref="8cd39dc4f7544e158d7ef1dfbc5c4070" prefix="" category="inline-code"></block></block>
+  <block id="c758b0781d6f7df6c0ae256696eddbf2" category="cell">大規模な本番環境ワークロード：32 CPU、128 GB RAM、1 TB ディスク</block>
+  <block id="d5f0912c122421def604836efc37e147" category="cell">5億ファイル</block>
+  <block id="39da8715f80fcb97588e0413c8d421b1" category="list-text">vSphere クライアントを入力します。対象のクラスターまたはホストを右クリックし、*Deploy OVF Template* &gt; *Create VM from OVA* を選択します。</block>
+  <block id="a86160c84f70e41fb0b3c1ec91660a92" category="list-text">ステップ1でダウンロードしたOVAファイルをアップロードします。</block>
+  <block id="ea42daee36ca14f2930377ea9c60593a" category="list-text">*VM名*、ターゲットとなるデータセンター、ホストまたはクラスタ、およびデータストアを指定します。</block>
+  <block id="0a9aa37d2e353e096772c5f826a07f7f" category="list-text">NetAppエンドユーザー使用許諾契約書に同意します。</block>
+  <block id="78eef3c0aadecdde92b4cfc4c1ddf5e4" category="list-text">テンプレートをカスタマイズします。次の情報を指定する必要があります：</block>
+  <block id="d472e2787bc8d836e087cb5b10e9f80d" category="list-text">**ホスト名** - アプライアンスの名前</block>
+  <block id="cfec9ea037ba23cf959f507a91a6497f" category="list-text">**IPv4 アドレス** - 管理インターフェイスの静的 IPv4 アドレス</block>
+  <block id="cfc470d8c64abd61f35d1cc9e9831f55" category="list-text">**IPv4サブネットマスク** - 例：255.255.255.0</block>
+  <block id="dae24545ba4e62bae20bcbcedf0477c0" category="list-text">**IPv4ゲートウェイアドレス** - デフォルトゲートウェイ</block>
+  <block id="55545e079a19ab0aaa2eb447088557fa" category="list-text">**プライマリDNS** - 必須のDNSリゾルバ</block>
+  <block id="398fb85648fe3bf7b1c3132bc43c8da7" category="paragraph">オプションで、**セカンダリ DNS** と、カンマ区切りのリストとして、**検索ドメイン**（例：<block ref="edddc6841b263ff64dd234136625ea9e" prefix=" " category="inline-code"></block>）と **NTP サーバー**を追加します。</block>
+  <block id="3971f79ba20dd9eea1c77eb7bcab0566" category="list-text">デフォルトのLinuxユーザーの*Admin password*を設定してください。</block>
+  <block id="4f46c0ee9f477b4fe1294d2fa8dcdd5b" category="admonition">パスワードは、rootアクセス、SSHアクセス、およびシステム管理に使用されます。パスワードは安全な場所に保管してください。</block>
+  <block id="e70561faa323b2a08c3f90b258d6f1c6" category="list-text">概要を確認してください。デプロイするには *完了* を選択してください。</block>
+  <block id="2c6b86d7e99472d3dc260c2363c69efa" category="list-text">デプロイが完了したら、VMの電源をオンにします。</block>
+  <block id="7020b99b4452945edfa566eb18678316" category="section-title">Data Classificationをインストールする</block>
+  <block id="f1cbf08f5744cd499f0689de8053c832" category="list-text"><block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block>からData Classificationソフトウェアをダウンロードします。</block>
+  <block id="6cac65ee9c5b85cb06427233e5bdb208" category="paragraph">*DATASENSE-INSTALLER-&lt;version&gt;.tar.gz* という名前のファイルを選択します。</block>
+  <block id="4d4bda9c294a00ba7df9db822f19e797" category="list-text">*Deploy Classification* を選択します。</block>
+  <block id="d9f71f47f93d634da4ff095ee023a20e" category="list-text">管理者ユーザーを使用して、SSH経由でOVAアプライアンスに接続します。</block>
+  <block id="b49d72dce505eca7dd3d8a331d97211c" category="list-text">生成したインストールコマンドを実行してインストールを完了し、システムを組織に登録してください。</block>
+  <block id="2e64cc6066537ce6e812349f63c7e206" category="paragraph">NetApp Data Classificationは、さまざまな方法で導入できます。利用可能な方法を確認して、ニーズに最適な方法を選択してください。</block>
+  <block id="30dabb33051152f55606045c5b5163f8" category="section-title">オンプレミスインストールスクリプト</block>
+  <block id="c0dd91183d065fa262aad92cd66f17bf" category="paragraph">インターネットアクセスのある Linux ホストへのインストールとインターネット接続のないオンプレミス Linux ホストへのインストールの両方で、インストールスクリプトを使用します。スクリプトはまず、システムと環境が前提条件を満たしているかどうかを確認することから始まります。前提条件が満たされていれば、インストールが開始されます。</block>
+  <block id="4fabfbf691d67364aed0fc8d0476cd38" category="inline-link-macro">LinuxホストがData Classificationをインストールする準備ができていることを確認してください。</block>
+  <block id="4ad6bc72849add23a7cdca295638a87d" category="paragraph">Linuxの準備状況を確認するための専用ソフトウェアパッケージが用意されています。検証パッケージを実行するには、<block ref="a3ff8db6958b78e3d36fc9bc3fcfe254" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="e0b0747cd573746d9f139faffc729dd5" category="section-title">2026年5月4日</block>
+  <block id="c4bc4e2f20f342faa62434be75cb6ee5" category="paragraph">*バージョン1.53*</block>
+  <block id="8411d6925cd29126d060394c08a4b4ca" category="paragraph">*バージョン1.52*</block>
+  <block id="65a0258fc15834bf0f84ceaa52ada501" category="paragraph">*バージョン1.51*</block>
+  <block id="e4b498cddaa444d57c01009b2102f55f" category="paragraph">*バージョン 1.50*</block>
+  <block id="52aa7e45dc7f5ea8286631265ac1d36a" category="paragraph">*バージョン 1.49*</block>
+  <block id="26baa7b8a763c4e09d054abaf87bb6d0" category="paragraph">*バージョン 1.48*</block>
+  <block id="595d74539f06331485866d3131f447e8" category="paragraph">*バージョン 1.47*</block>
+  <block id="63baf28a815c716ed6e2c417cb4153b2" category="paragraph">*バージョン 1.46*</block>
+  <block id="1964d7d03dd19e55e353230a6f62b06e" category="paragraph">*バージョン 1.45*</block>
+  <block id="465901fde75bcfcdda96ed356aeeeb4f" category="paragraph">*バージョン 1.44*</block>
+  <block id="cb92087f3524d242231728663d9503b5" category="paragraph">*バージョン1.43*</block>
+  <block id="58a9fe63f3060056d06ba740aca954b8" category="paragraph">*バージョン1.42*</block>
+  <block id="0a2f2aba3f1b44682b1d94613a92546b" category="paragraph">*バージョン 1.41*</block>
+  <block id="cf478480279bce16082112f00be7df7f" category="paragraph">*バージョン1.40*</block>
+  <block id="a624a704a460cabdb133c0962d0885ed" category="paragraph">*バージョン 1.37*</block>
+  <block id="f469240780f7eff6330e02b5675d0a08" category="paragraph">*バージョン 1.38*</block>
+  <block id="a2db02c48e35b7dca1db16acecb190ff" category="paragraph">*バージョン1.36*</block>
+  <block id="ea2391a5ddbbca135950f9d480a5981a" category="paragraph">*バージョン1.35*</block>
+  <block id="0e6051493f71317da4f2c7bba8dcfc97" category="paragraph">*バージョン 1.34*</block>
+  <block id="9a3351da91753729c142405fec71d541" category="paragraph">*バージョン1.33*</block>
+  <block id="d8caf3d67521b52888bb50b0449d77f4" category="paragraph">*バージョン 1.32*</block>
+  <block id="413b3a9cddb127f6a98a38a39992639c" category="paragraph">*バージョン 1.31*</block>
+  <block id="3362688f791418f4ba8e7d0c8a358d74" category="paragraph">*バージョン 1.30*</block>
+  <block id="731530c0d12c82e27cfc130ae6c93804" category="paragraph">*バージョン1.29*</block>
+  <block id="f67d7fa2a44e36da02cec0e1e856d491" category="paragraph">*バージョン1.27*</block>
+  <block id="2c5b015f9b8d6e1cf0b8425cd79ccef1" category="paragraph">*バージョン1.26.6*</block>
+  <block id="663fe31afd754e14edf62c0eeb43e3be" category="paragraph">今回のリリースには、軽微な機能強化が含まれています。</block>
+  <block id="cbb4d57c029ce27c745cadc11326ef01" category="list-text">ディレクトリ調査中は、ディレクトリごとに個人識別情報（PII）データの数を計算するオプションは利用できません。<block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="a91d543e35a44a40abde8539454a3147" category="paragraph">*バージョン1.26.3*</block>
+  <block id="dccefd0e401840dd90d719ff48e73421" category="paragraph">*バージョン 1.26*</block>
+  <block id="20a38ed7220ae3d563acc7f546d6a38c" category="paragraph">Red Hat Enterprise Linux バージョン 8 および 9 は、以前 BlueXP 分類のインストールに必要だった Docker エンジンをサポートしていません。BlueXP 分類は、コンテナインフラストラクチャとして Podman バージョン 4 以降を使用することで、RHEL 9.0、9.1、および 9.2 へのインストールをサポートするようになりました。お使いの環境で最新バージョンの RHEL を使用する必要がある場合は、Podman を使用して BlueXP 分類（バージョン 1.26 以降）をインストールできます。</block>
+  <block id="d47937e1bfcfc34aadafaf94f878be50" category="paragraph">現在、RHEL 9.x を使用する場合、Data Classification はダークサイトへのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）をサポートしていません。</block>
+  <block id="507beb19670add8ef909c6b465d2113f" category="paragraph">*バージョン 1.25*</block>
+  <block id="ff9507aa8ec2a4d65e0197283a0ffb4a" category="paragraph">*バージョン 1.24*</block>
+  <block id="9f35e0bca6f0baf4185ddc2208bc9831" category="paragraph">*バージョン1.23*</block>
+  <block id="cc6a6fa01e9d6665a252d1f7ee507f10" category="paragraph">*バージョン 1.22*</block>
+  <block id="fcbfa613263a39c01238f29970301729" category="paragraph">*バージョン 1.21*</block>
+  <block id="8dff06822fe979f3c3274cc5f8c4b91a" category="section-title">BlueXP分類UIからカスタムキーワードを追加する</block>
+  <block id="5dd86e37bb688c2bd8d740a853836c5b" category="paragraph">*バージョン 1.20*</block>
+  <block id="ea618accf4845a405569f1ffa72274f5" category="paragraph">「アクセス権を持つユーザー数」フィルターは、SharePoint Onlineリポジトリに保存されているファイルをサポートするようになりました。以前は、CIFS共有上のファイルのみがサポートされていました。SharePointグループのうち、Active Directoryベースではないものは、現時点ではこのフィルターの対象外です。</block>
+  <block id="fd472c68167f5fc3fdb653a650f9fd55" category="paragraph">*バージョン 1.19*</block>
+  <block id="2c6be179dba321b242cbe88c550f1815" category="sidebar">OVAを使用したオンプレミスへのインストール</block>
 </blocks>

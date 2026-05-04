@@ -1,0 +1,11 @@
+= OVAを使用したData Classificationの導入
+:allow-uri-read: 
+
+
+
+
+=== OVAを使用したData Classificationの導入
+
+NetApp Data Classificationは、VMware Open Virtual Appliance（OVA）を使用した導入をサポートするようになり、オンプレミスのVMware vSphere環境向けに簡素化された導入戦略を提供します。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-ova.html["OVAを使用したData Classificationの導入"^]を参照してください。

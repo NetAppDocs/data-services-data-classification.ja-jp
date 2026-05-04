@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-ova.html 
+keywords: deploy, install, vmware, ova, open virtual appliance 
+summary: NetApp Data Classificationは、Open Virtual Appliance（OVA）を使用したオンプレミスvSphere環境への導入をサポートします。OVA導入方式は、事前検証済みのNetApp管理環境を提供し、導入を簡素化します。 
+---
+= VMware Open Virtual Appliance を使用した NetApp Data Classification の導入
+:allow-uri-read: 
+:no-hardbreaks: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classificationは、VMware Open Virtual Appliance（OVA）を使用した導入をサポートしており、オンプレミスのVMware vSphere環境でData Classificationをインストールして実行するための管理パッケージを提供します。OVA導入方式は、事前検証済みのNetApp管理環境を提供し、導入を簡素化します。
+
+この方法は、VMware ベースの新規導入に推奨されます。
+
+
+
+== 前提条件
+
+OVAファイルを使用してData Classificationをインストールする前に、以下のものが必要です：
+
+* VMware vSphere 環境
+* アプライアンスに割り当てられた静的IPv4アドレス
+* ターゲットネットワークから到達可能なDNSサーバー
+* アプライアンスへのSSHアクセスが有効になっています
+* link:https://mysupport.netapp.com/site/user/registration["NetApp Support Site のクレデンシャル"]インストーラーをダウンロードするには
+
+
+
+
+== VMware vSphereにOVAをデプロイする
+
+. link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からOVAファイルをダウンロードします。環境に適したOVAアプライアンスを選択します：
++
+|===
+| OVAアプライアンス | 本番環境のサイズ | ファイルスキャンの制限 
+
+
+| `DataClassification-<version>-L.ova` | 標準的な本番環境ワークロード：16 CPU、64 GB RAM、500 GB ディスク | 2億5000万ファイル 
+
+
+| `DataClassification-<version>-XL.ova` | 大規模な本番環境ワークロード：32 CPU、128 GB RAM、1 TB ディスク | 5億ファイル 
+|===
+. vSphere クライアントを入力します。対象のクラスターまたはホストを右クリックし、*Deploy OVF Template* > *Create VM from OVA* を選択します。
+. ステップ1でダウンロードしたOVAファイルをアップロードします。
+. *VM名*、ターゲットとなるデータセンター、ホストまたはクラスタ、およびデータストアを指定します。
+. NetAppエンドユーザー使用許諾契約書に同意します。
+. テンプレートをカスタマイズします。次の情報を指定する必要があります：
++
+** **ホスト名** - アプライアンスの名前
+** **IPv4 アドレス** - 管理インターフェイスの静的 IPv4 アドレス
+** **IPv4サブネットマスク** - 例：255.255.255.0
+** **IPv4ゲートウェイアドレス** - デフォルトゲートウェイ
+** **プライマリDNS** - 必須のDNSリゾルバ
++
+オプションで、**セカンダリ DNS** と、カンマ区切りのリストとして、**検索ドメイン**（例： `corp.local,lab.local`）と **NTP サーバー**を追加します。
+
+
+
+. デフォルトのLinuxユーザーの*Admin password*を設定してください。
++
+
+NOTE: パスワードは、rootアクセス、SSHアクセス、およびシステム管理に使用されます。パスワードは安全な場所に保管してください。
+
+. 概要を確認してください。デプロイするには *完了* を選択してください。
+. デプロイが完了したら、VMの電源をオンにします。
+
+
+
+
+== Data Classificationをインストールする
+
+. link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からData Classificationソフトウェアをダウンロードします。
++
+*DATASENSE-INSTALLER-<version>.tar.gz* という名前のファイルを選択します。
+
+. コンソールで、*ガバナンス > 分類*を選択します。
+. *Deploy Classification* を選択します。
++
+image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
+
+. クラウドで準備したインスタンスにデータ分類をインストールするか、オンプレミスで準備したインスタンスにデータ分類をインストールするかに応じて、適切な *デプロイ* オプションを選択してデータ分類のインストールを開始します。
+. _オンプレミスでのデータ分類の展開_ ダイアログが表示されます。提供されたコマンドをコピーします（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` ) を作成し、テキスト ファイルに貼り付けて、後で使用することもできます。次に、[閉じる] を選択してダイアログを閉じます。
+. 管理者ユーザーを使用して、SSH経由でOVAアプライアンスに接続します。
+. 生成したインストールコマンドを実行してインストールを完了し、システムを組織に登録してください。
+
+
+
+
+== 次のステップ
+
+* link:task-scanning-overview.html["データソースのスキャンを設定する"]
+

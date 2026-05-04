@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+TIP: オンプレミスの VMware vSphere 環境では、Data Classification は簡素化されたlink:task-deploy-ova.html["OVAを使用した導入"]をサポートします。

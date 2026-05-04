@@ -1,32 +1,43 @@
-= バージョン1.52
+= リソースの検証
 :allow-uri-read: 
 
 
 
 
-=== バージョン1.52
+=== リソースの検証
 
-.リソースの検証
 信頼性を確保するために、Data Classificationでは、スキャン、レポート生成、およびアクション全体で使用可能なメモリとディスクリソースを検証するようになりました。メモリ使用量が95%を超えるか、ディスク容量が6 GBを下回ると、Data Classificationは自動的に操作を一時停止します。リソースが十分になると、操作が再開されます。
 
 システムリソースを監視するには、link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["データ分類の健全性を監視する"^]を参照してください。
 
-.コピーと移動の制限の引き上げ
+
+
+=== コピーと移動の制限の引き上げ
+
 CIFS 宛先のコピーおよび移動機能がサポートされるようになりました。両方のアクションのファイルあたりのサイズ制限は、以前の 50 MB から 1 GB に増加しました。両方のアクションの操作制限は 1 TB または 500 万ファイルに増加しました。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-copy-move.html["データのコピー、移動、削除"^]を参照してください。
 
-.Active Directory統合構成権限
+
+
+=== Active Directory統合構成権限
+
 Data Classification における Active Directory（AD）統合設定の変更は、管理者に制限されるようになりました。閲覧者は AD 設定を変更できなくなりました。
 
 分類閲覧者の役割の詳細については、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html#data-service-roles["データサービスロール"^]を参照してください。
 
-.RHEL 9.7のサポート
+
+
+=== RHEL 9.7のサポート
+
 データ分類に、ダークサイトへの展開を含む手動によるオンプレミスインストール用の Red Hat Enterprise Linux v9.7 が追加されました。
 
 以下のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、Data Classificationバージョン1.30以上が必要です（Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、9.6、および9.7）。
 
-.透過プロキシのサポート
+
+
+=== 透過プロキシのサポート
+
 データ分類では透過プロキシ構成がサポートされるようになり、プロキシまたは制限されたネットワーク環境でのスムーズな展開が可能になります。
 
 制限された環境での展開の詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["インターネットにアクセスできない Linux ホストにNetApp Data Classificationをインストールする"^]を参照してください。
