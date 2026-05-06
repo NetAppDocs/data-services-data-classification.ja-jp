@@ -478,7 +478,6 @@
   <block id="705900ff5dfc71b7fab21e0a2b91555c" category="section-title">コンソールエージェントとは何ですか?</block>
   <block id="cec155912a2ab722f7c2cf854b71ac8c" category="paragraph">コンソール エージェントは、クラウド アカウント内またはオンプレミスのコンピューティング インスタンスで実行されるソフトウェアであり、 NetApp Consoleがクラウド リソースを安全に管理できるようにします。データ分類を使用するには、コンソール エージェントを展開する必要があります。</block>
   <block id="315a4734119ef2ab25e03ee01718971d" category="section-title">コンソール エージェントはどこにインストールする必要がありますか?</block>
-  <block id="e843321c8bae82c4d6f4061b3f93bf39" category="paragraph">データをスキャンする場合、 NetApp Consoleエージェントを次の場所にインストールする必要があります。</block>
   <block id="07bffd39dd72da3f20260b9a6907adc1" category="list-text">AWS のCloud Volumes ONTAPまたはAmazon FSx for ONTAPの場合: コンソールエージェントは AWS にあります。</block>
   <block id="288ed4c5031b1ff115f43b30ece3261f" category="list-text">Azure またはAzure NetApp FilesのCloud Volumes ONTAPの場合: コンソール エージェントは Azure にあります。</block>
   <block id="bcdb2f393c3c29bc329a8b2e81ff4d7b" category="list-text">GCP のCloud Volumes ONTAPの場合: コンソール エージェントは GCP にあります。</block>
@@ -891,7 +890,6 @@
   <block id="04e7e9631c93eec889b2ab99b5143465" category="section-title">Active Directoryサーバーに接続する</block>
   <block id="2870ffcb03b7e55be580adce9e49dedc" category="paragraph">データ分類を展開し、データ ソースのスキャンを有効にしたら、データ分類を Active Directory と統合できます。  Active Directory には、DNS サーバー IP アドレスまたは LDAP サーバー IP アドレスを使用してアクセスできます。</block>
   <block id="9d553dac60477ef9e0919509b66ec352" category="paragraph">Active Directory の資格情報は読み取り専用にすることができますが、管理者の資格情報を提供することで、データ分類は昇格された権限を必要とするすべてのデータを読み取ることができるようになります。資格情報は、データ分類インスタンスに保存されます。</block>
-  <block id="1b27da1c6c8ab8d350478de2c14a8b2a" category="paragraph">CIFS ボリューム/ファイル共有の場合、ファイルの「最終アクセス時刻」がデータ分類分類スキャンによって変更されていないことを確認するには、ユーザーに属性の書き込み権限が必要です。可能であれば、Active Directory で構成されたユーザーを、すべてのファイルへの権限を持つ組織内の親グループの一部にすることをお勧めします。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">要件</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">社内のユーザー用に Active Directory がすでに設定されている必要があります。</block>
   <block id="6fcd963bedffc4e92b9378afcac66a5a" category="list-text">Active Directory の情報が必要です:</block>
@@ -2312,7 +2310,6 @@
   <block id="303c6c3b9289ea073f455b6be5394610" category="paragraph"><block ref="a4a7f22b048c40ec69122e1f7c39cfdb" category="inline-link-rx"></block> 。</block>
   <block id="4b273eb22f0e890dce8d8a73dba2425e" category="paragraph-title">BlueXP classificationは日本のマイナンバーを識別できる</block>
   <block id="b614eb1e8ba4ff347cc77ea1b9148636" category="paragraph">BlueXP classificationは、日本の個人番号 (マイナンバーとも呼ばれます) を含むファイルを識別して分類できます。これには、個人および法人のマイナンバーの両方が含まれます。<block ref="c29cfbce54672755b7557a8e95ef0ae4" category="inline-link-rx"></block> 。</block>
-  <block id="7acae0ba2f29c1b7556d813227ddd12d" category="sidebar">NetApp Data Classificaiton を使用すると、組織のハイブリッド マルチクラウド全体のデータをスキャンして分類できます。データ分類では、AI 駆動型の自然言語処理 (NLP) を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速化を実現します。</block>
   <block id="e6d9434fa5832019fb3968212fe539d4" category="sidebar">NetApp Data Classificationドキュメント</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">始めましょう</block>
   <block id="06e283ee316863d38f0fea16ba5785cc" category="sidebar">データ分類について学ぶ</block>
@@ -2509,7 +2506,6 @@
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">システムの健全性を監視する</block>
   <block id="199728aa05786f9f41b3140d025353e2" category="list-text">データ分類は専用ホスト上で実行する必要があります。ホストは、他のアプリケーションやウイルス対策などのサードパーティ製ソフトウェアと共有することはできません。</block>
-  <block id="cc2f809338aeb90513fd5d335abc18b2" category="paragraph">データ分類インストール スクリプトには、環境が要件を満たしていることを確認するためのテスト スクリプトが含まれています。インストール スクリプトを実行する前に、このスクリプトを個別に実行して、Linux ホストの準備状況を確認できます。</block>
   <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">あなたはできる <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。コンソール エージェントがオンプレミスにインストールされている場合は、データ分類をオンプレミスにインストールすることもできます。</block>
   <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">クラウド プロバイダー環境でコンソール エージェントを作成するには、以下を参照してください。</block>
   <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
@@ -2883,4 +2879,8 @@
   <block id="ea618accf4845a405569f1ffa72274f5" category="paragraph">「アクセス権を持つユーザー数」フィルターは、SharePoint Onlineリポジトリに保存されているファイルをサポートするようになりました。以前は、CIFS共有上のファイルのみがサポートされていました。SharePointグループのうち、Active Directoryベースではないものは、現時点ではこのフィルターの対象外です。</block>
   <block id="fd472c68167f5fc3fdb653a650f9fd55" category="paragraph">*バージョン 1.19*</block>
   <block id="2c6be179dba321b242cbe88c550f1815" category="sidebar">OVAを使用したオンプレミスへのインストール</block>
+  <block id="2ec24b538cd35ccc98148dea4e4a3985" category="paragraph">データをスキャンする際、NetApp Console エージェントは、以下の場所にインストールする必要があります：</block>
+  <block id="ef6714f5aeceef76c2ac34e1adaeefa3" category="paragraph">CIFSボリューム/ファイル共有の場合、NetApp Data Classificationスキャンによってファイルの「最終アクセス時刻」が変更されないようにするには、ユーザーに属性書き込み権限が必要です。可能であれば、Active Directoryで設定したユーザーを、組織内のすべてのファイルへのアクセス権限を持つ親グループに所属させることをお勧めします。</block>
+  <block id="e4f6181944f0dc7535179eb25f2c38b5" category="paragraph">Data Classification のインストールスクリプトには、環境が要件を満たしていることを確認するためのテストスクリプトが含まれています。インストールスクリプトを実行する前に、このスクリプトを個別に実行して、Linux ホストの準備状況を確認できます。</block>
+  <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classificationを使用すると、組織のハイブリッドマルチクラウド全体でデータをスキャンして分類できます。Data Classificationは、コンテキストに応じたデータ分析と分類にAI主導の自然言語処理（NLP）を利用し、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の迅速化を実現するための実用的なインサイトをデータから提供します。</block>
 </blocks>
