@@ -1,0 +1,19 @@
+= 設定ページの改善
+:allow-uri-read: 
+
+
+
+
+=== 設定ページの改善
+
+データ分類機能は、設定ページを更新・改善し、設定やシステムの管理、スキャンの有効化、システム状態の監視などをより使いやすくしました。新しい設定ページでは、既存の機能をより使いやすい形式で提供するだけでなく、システムを種類、エラー状態、スキャン状態によってフィルタリングする機能も追加されています。新しいページには、接続されているシステムの概要と、アクティブなスキャンおよび設定済みのスキャンの概要も表示されます。
+
+link:https://youtu.be/_8YJ3KyZ7nI["ビデオによるウォークスルー"^]を確認します。詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-overview.html["データ分類を使用してデータソースをスキャン"^]を参照してください。
+
+
+
+=== OVAを使用したData Classificationの導入
+
+NetApp Data Classificationは、VMware Open Virtual Appliance（OVA）を使用した導入をサポートするようになり、オンプレミスのVMware vSphere環境向けに簡素化された導入戦略を提供します。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-ova.html["OVAを使用したData Classificationの導入"^]を参照してください。

@@ -24,7 +24,7 @@ summary: グローバル Active Directory をNetApp Data Classificationと統合
 +
 また、ファイル所有者の詳細情報（アカウント名、メール アドレス、SAM アカウント名）を表示したり、そのユーザーが所有するアイテムを表示したりすることもできます。
 
-* 見ることができますlink:task-investigate-data.html["完全なファイル権限"]「すべての権限を表示」ボタンをクリックすると、各ファイルとディレクトリに対して権限が表示されます。
+* 「すべてのアクセス許可を表示」ボタンを選択すると、各ファイルとディレクトリのlink:task-investigate-data.html["完全なファイル権限"]を確認できます。
 * の中でlink:task-controlling-governance-data.html["ガバナンスダッシュボード"]、Open Permissions パネルにデータに関するより詳細な情報が表示されます。
 
 
@@ -37,10 +37,10 @@ NOTE: ローカル ユーザーの SID および不明なドメインの SID は
 
 Active Directory とデータ分類の統合により、次のデータ ソース内のデータを識別できます。
 
-* オンプレミスのONTAPシステム
-* Cloud Volumes ONTAP
 * Azure NetApp Files
+* Cloud Volumes ONTAP
 * ONTAP向け FSx
+* オンプレミスのONTAPシステム
 
 
 
@@ -91,22 +91,15 @@ LDAPサーバーのIPアドレス、または複数のIPアドレス
 
 
 .手順
-. データ分類構成ページで、*Active Directory の追加*をクリックします。
-+
-image:screenshot_compliance_integrate_active_directory.png["Active Directory サーバーをデータ分類に追加するためのボタンをクリックするスクリーンショット。"]
-
-. 「Active Directory への接続」ダイアログで、Active Directory の詳細を入力し、「接続」をクリックします。
+. データ分類で、**構成** を選択します。
+. **設定**タブに切り替えます。
+. Active Directory の見出しで、**追加**を選択します。
+. Active Directoryへの接続ダイアログで、Active Directoryの詳細を入力し、*接続*を選択します。
 +
 必要に応じて、「*IP を追加*」を選択して複数の IP アドレスを追加できます。
 
 +
-image:screenshot_compliance_active_directory_dialog.png["データ分類と統合する Active Directory を定義するダイアログのスクリーンショット。"]
-
-+
 データ分類は Active Directory に統合され、構成ページに新しいセクションが追加されます。
-
-+
-image:screenshot_compliance_active_directory_added.png["データ分類に統合された新しい Active Directory を示すスクリーンショット。"]
 
 
 
@@ -114,6 +107,6 @@ image:screenshot_compliance_active_directory_added.png["データ分類に統合
 
 == Active Directory統合を管理する
 
-Active Directory 統合の値を変更する必要がある場合は、[*編集*] ボタンをクリックして変更を加えます。
+Active Directory統合で値を変更する必要がある場合は、Data ClassificationでActive Directory設定を更新する必要があります。Data Classificationの**Configuration**メニューに戻り、設定タブに切り替えて変更を行ってください。
 
-統合を削除するには、image:button-gallery-options.gif["詳細ボタン"]ボタンをクリックし、[Active Directory を削除] をクリックします。
+Active Directory の下にある **削除** ボタンを選択することで、統合を削除することもできます。

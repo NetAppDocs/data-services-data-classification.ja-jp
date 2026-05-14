@@ -45,8 +45,5 @@ TIP: システムを選択するときに、[サービス] パネルからシス
 
 .手順
 . _Configuration_ページから、image:button-gallery-options.gif["詳細ボタン"]ファイル共有グループの行にあるボタンをクリックし、*ファイル共有グループの削除*をクリックします。
-+
-image:screenshot_compliance_remove_db.png["スキャン構成ページの「DB サーバーの削除」ボタンのスクリーンショット。"]
-
 . 確認ダイアログから*共有グループの削除*を選択します。
 

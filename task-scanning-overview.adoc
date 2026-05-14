@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-overview.html 
-keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, mapping-only scans, map and classify, map & classify 
+keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, map-only scans, map and classify, full 
 summary: NetApp Data Classificationを使用してデータ ソースをスキャンします。 
 ---
 = NetApp Data Classificationでデータソースをスキャン
@@ -22,19 +22,22 @@ NetApp Data Classificationは、選択したリポジトリ（ボリューム、
 
 
 
-== マッピングスキャンと分類スキャンの違いは何ですか？
+== スキャンタイプを理解する
 
 データ分類では、次の 2 種類のスキャンを実行できます。
 
-* **マッピングのみのスキャン** は、データの概要のみを提供し、選択されたデータ ソースに対して実行されます。マッピングのみのスキャンでは、ファイルにアクセスして内部のデータを確認する必要がないため、マップおよび分類スキャンよりも時間がかかりません。最初にこれを実行して研究領域を特定し、次にそれらの領域に対してマップと分類のスキャンを実行することをお勧めします。
-* **マップと分類スキャン** は、データの詳細なスキャンを提供します。
+* **マップのみのスキャン**では、データの概要のみが提供され、選択されたデータソースに対して実行されます。マップのみのスキャンは、ファイルにアクセスして内部のデータを確認しないため、フルスキャンよりも時間がかかりません。
+* **フルスキャン**は、データの詳細なスキャンを提供します。フルスキャンには、マッピングスキャンとファイル内のデータの分類が含まれます。
 
 
-以下の表にいくつかの違いを示します。
+
+TIP: マップのみのスキャンを実行すると、データの概要を把握し、フルスキャンを実行する特定の領域を特定するのに役立ちます。
+
+表を確認して、マップのみのスキャンとフルスキャンでどのような情報が表示されるかを確認してください。
 
 [cols="47,18,18"]
 |===
-| 特徴 | スキャンをマップして分類する | マッピングのみのスキャン 
+| 特徴 | フルスキャン | マップのみのスキャン 
 
 
 | スキャン速度 | 遅い | 速い 
@@ -72,22 +75,22 @@ NetApp Data Classificationは、選択したリポジトリ（ボリューム、
 
 | ファイルのメタデータを表示する機能** | はい | はい 
 |===
-{アスタリスク} データ分類では、スキャンできるデータの量に制限はありません。各コンソール エージェントは、500 TiB のデータのスキャンと表示をサポートします。500TiB以上のデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]それからlink:task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。 + コンソール UI には、単一のコネクタからのデータが表示されます。複数のコンソールエージェントからデータを表示するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^] 。
+{asterisk}Data Classificationは、スキャンするデータ量に制限を設けません。各Consoleエージェントは、500 TiBまでのデータのスキャンと表示をサポートします。500 TiBを超えるデータをスキャンするには、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["別のコンソールエージェントをインストールする"^]次にlink:task-deploy-overview.html["別のデータ分類インスタンスをデプロイする"]。+ Console UIには、単一のコネクタからのデータが表示されます。複数のConsoleエージェントからのデータの表示に関するヒントについては、link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["複数のコンソールエージェントを操作する"^]を参照してください。
 
 {アスタリスク}{アスタリスク} マッピング スキャン中にファイルから次のメタデータが抽出されます。
 
-* システム
-* システムタイプ
-* ストレージリポジトリ
+* ファイル発見時刻
+* ファイルの最終アクセス日時
+* ファイルの最終更新日時
 * ファイル タイプ
-* 使用済み容量
-* ファイル数
 * ファイル サイズ
 * ファイル作成
-* ファイルの最終アクセス
-* ファイルの最終更新日時
-* ファイル発見時刻
+* ファイル数
 * 権限の抽出
+* ストレージリポジトリ
+* システム
+* システムタイプ
+* 使用済み容量
 
 
 .ガバナンス ダッシュボードの違い:
@@ -95,7 +98,7 @@ NetApp Data Classificationは、選択したリポジトリ（ボリューム、
 ====
 [cols="40,25,25"]
 |===
-| 特徴 | マップと分類 | マップ 
+| 特徴 | フルスキャン | マップのみのスキャン 
 
 
 | 古いデータ | はい | はい 
@@ -145,7 +148,7 @@ NetApp Data Classificationは、選択したリポジトリ（ボリューム、
 ====
 [cols="40,25,25"]
 |===
-| 特徴 | マップと分類 | マップ 
+| 特徴 | フルスキャン | マップのみのスキャン 
 
 
 | 個人情報 | はい | いいえ 
@@ -168,7 +171,7 @@ NetApp Data Classificationは、選択したリポジトリ（ボリューム、
 ====
 [cols="40,25,25"]
 |===
-| 特徴 | マップと分類 | マップ 
+| 特徴 | フルスキャン | マップのみのスキャン 
 
 
 | 保存されたクエリ | はい | はい 
