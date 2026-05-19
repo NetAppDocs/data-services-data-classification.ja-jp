@@ -436,7 +436,6 @@
   <block id="7a86e1b46f8a8bc6d38b11447af57092" category="list-text">*データ マッピング スキャン (マッピングのみのスキャン)*: データ分類ではメタデータのみをスキャンします。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速なスコープ設定、非常に大規模な資産、優先順位付けに役立ちます。データ マッピングはメタデータに基づいており、高速スキャンと見なされます。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">高速スキャンの後、データ マッピング レポートを生成できます。このレポートは、企業のデータ ソースに保存されているデータの概要であり、リソースの使用率、移行、バックアップ、セキュリティ、コンプライアンス プロセスに関する意思決定に役立ちます。</block>
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">完全スキャン後には、データ調査ページでのデータの表示と絞り込み、ファイル内の名前の検索、ソース ファイルのコピー、移動、削除など、データに適用できる追加のデータ分類機能が多数あります。</block>
-  <block id="8f6adf4dbf6fab8e9a0fa95709bc6780" category="paragraph">データ分類では、ファイル名、権限、作成時間、最終アクセス、最終変更などのメタデータを取得します。これには、データ調査の詳細ページとデータ調査レポートに表示されるすべてのメタデータが含まれます。</block>
   <block id="b8ede2d0f0baf0dbbcd6b1caa3c24a82" category="inline-xref-macro">データ分類がスキャンする個人データのカテゴリ</block>
   <block id="0a2a2726fa4f033804e23ae8e734f53d" category="paragraph">データ分類では、個人情報 (PII) や機密個人情報 (SPII) など、さまざまな種類のプライベート データを識別できます。個人データの詳細については、<block ref="99786247576d4194bfb6afa2ffe45770" category="inline-xref-macro-rx"></block> 。</block>
   <block id="cc6c818a7ff4844f95f831b7fea5d028" category="section-title">データ分類情報を特定のユーザーに制限できますか?</block>
@@ -958,7 +957,6 @@
   <block id="5cb140d3eff23c8e0c3f2d43f10a7dbb" category="cell">すべてのシステム: 各システムのファイル数と使用容量を一覧表示します。単一システムの場合: 最も多くの容量を使用しているファイルを一覧表示します。</block>
   <block id="6a0fd0952390e8ad81d681946aa5dcab" category="cell">ファイルが作成された日時、最後に変更された日時、最後にアクセスされた日時を示す 3 つのチャートとグラフを提供します。特定の日付範囲に基づいて、ファイルの数と使用容量を一覧表示します。</block>
   <block id="02d0f0696835f69cefa2384249b76fd7" category="cell">システム内の特定のサイズ範囲内に存在するファイルの数を一覧表示します。</block>
-  <block id="43bdc51d30bd77ef382a419cb3655312" category="list-text">レポート タイルで、*完全なデータ マッピングの概要レポート*を選択します。</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">データ マッピング レポートを起動する方法を示すガバナンス ダッシュボードのスクリーンショット。</block>
   <block id="a1fe048fbf4d3c352f8807ca8e61a815" category="paragraph"><block ref="a1fe048fbf4d3c352f8807ca8e61a815" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6406cf838275117ab30c7dd6e659bb2b" category="paragraph">データ分類では、必要に応じて確認したり他のグループに送信したりできる PDF レポートが生成されます。</block>
@@ -1659,7 +1657,6 @@
   <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">*キューに追加* (オレンジ色の点): タスクがスキャン キューに正常に追加されました。システムは、キュー内の順番が来ると、ボリュームのマッピングまたは分類を開始します。</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*実行中* (緑のドット): キューにあったスキャン タスクが、選択したストレージ リポジトリでアクティブに進行中です。</block>
   <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">*完了* (緑の点): ストレージ リポジトリのスキャンが完了しました。</block>
-  <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">*エラー* (赤い点): 問題が発生したため、スキャンを完了できません。アクションを完了する必要がある場合は、「必要なアクション」列の下のツールチップにエラーが表示されます。それ以外の場合、システムは「エラー」ステータスを表示し、回復を試みます。終了するとステータスが変わります。</block>
   <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">*スキャンしていません*: ボリューム構成で「オフ」が選択されており、システムはボリュームをスキャンしていません。</block>
   <block id="ae3859b6bf604c1664d2e6f3cb311c7f" category="inline-image-macro">システムの構成ボタンを選択する方法を示したスクリーンショット。</block>
   <block id="4e66daf871fdc1f576f2af568e8fb4c4" category="paragraph"><block ref="4e66daf871fdc1f576f2af568e8fb4c4" category="inline-image-macro-rx" type="image"></block></block>
@@ -2343,7 +2340,6 @@
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="71a65ebb3dc98cbee7a35c227b17a9d2" category="paragraph">コンソール エージェントがまだない場合は作成します。見る<block ref="d5bd3e4518f2136cfa2b600a07183cdd" category="inline-link-macro-rx"></block>、<block ref="8ebe3bab1eaa1107c63d6c8e11f3037a" category="inline-link-macro-rx"></block> 、 または<block ref="289d689c55d02ef047cce8b209e7a21e" category="inline-link-macro-rx"></block>。</block>
   <block id="546e9d6a80a7f338dcca2f303d981d2a" category="paragraph">また、<block ref="9335525199017a57f50f3ba5f9c0cf66" category="inline-link-macro-rx"></block>ネットワーク内の Linux ホストまたはクラウド内の Linux ホスト上。</block>
-  <block id="3235c8cdd5c8a3cd602a2a8decbafa9f" category="paragraph">コンソール エージェントがまだない場合は、クラウド プロバイダーにコンソール エージェントを作成します。見る<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block>または<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>、 または<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>ただし、今すぐ設定する必要がある場合もあります。</block>
   <block id="b9b4d509fe9e3e77716d45d551ade64d" category="paragraph">また、<block ref="66fb3c1341fae0e6f8743c669eb701a1" category="inline-link-rx"></block>ネットワークまたはクラウド内の Linux ホスト上。オンプレミスでデータ分類をインストールする予定のユーザーの中には、オンプレミスでコンソール エージェントをインストールすることを選択する場合もあります。</block>
   <block id="639d50c4b484797455c51239e20b934e" category="paragraph">使用する必要がある状況があるかもしれません<block ref="b343c1bfd082abc4974fc8258a47d6f6" category="inline-link-rx"></block>。</block>
   <block id="b5a65ac63c30d18f443b0320e2b34254" category="inline-link-macro">政府地域におけるコンソールエージェントの導入について学習します</block>
@@ -2465,7 +2461,6 @@
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">デフォルトでは、データが最後に変更されてから 3 年前であれば古いデータとみなされます。</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">古いデータを定義する</block>
   <block id="41c8212e8259ff083fe9cdf357f8a4a6" category="list-text">ランサムウェア耐性で、[**構成**] を選択します。</block>
-  <block id="de1a225a67ee04f4d574bda78a6c7680" category="list-text">**ファイル プロパティ** ドロップダウン メニューで、*最終アクセス* または *最終変更* に基づいて古いデータを定義するかどうかを選択します。</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">古いデータ定義の期間を選択します。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">**保存**を選択します。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2755,9 +2750,6 @@
   <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classificationを使用すると、組織のハイブリッドマルチクラウド全体でデータをスキャンして分類できます。Data Classificationは、コンテキストに応じたデータ分析と分類にAI主導の自然言語処理（NLP）を利用し、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の迅速化を実現するための実用的なインサイトをデータから提供します。</block>
   <block id="0997d7248674796f4e9772751d9f8905" category="paragraph">設定ページから、いつでも任意のシステムでスキャンを開始または停止できます。また、マップのみのスキャンから、マッピングと分類の両方を含むスキャンに切り替えたり、その逆も可能です。システム内のすべてのボリュームをスキャンすることをお勧めします。</block>
   <block id="b9f4fbd6355c3f44311a98b062b34192" category="paragraph">ページ上部にある*書き込み権限なしでスキャンする*スイッチは、デフォルトでは無効になっています。つまり、Data ClassificationにCIFSでの書き込み属性権限、またはNFSでの書き込み権限がない場合、Data Classificationは「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはファイルをスキャンしません。最終アクセス時刻がリセットされても構わない場合は、スイッチをオンにすると、アクセス権限に関係なくすべてのファイルがスキャンされます。<block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>。</block>
-  <block id="fb3614a6e0ed7682cf436cfe7c5fae5d" category="admonition">システムに追加された新しいボリュームは、見出し領域で *Map* または *Full scan* の設定を行った場合にのみ自動的にスキャンされます。すべてのボリュームの設定が *Custom* または *Off* になっている場合、追加する新しいボリュームごとに手動でスキャンを有効にする必要があります。</block>
-  <block id="d9db1fafb114dbc932e2b11cb164a604" category="list-text">スキャンするシステムを特定します。**Activate scan** を選択します。ドロップダウンで、**Full scan**、**Map only**、または **Manage scans** を選択してシステムメニューを開き、特定のボリュームまたは共有でスキャンを設定します。</block>
-  <block id="b9302979813572e59ebecefdfa33f678" category="paragraph">個々のボリュームのスキャンを有効または無効にするには、リストからボリュームまたは共有を見つけて、ボリューム名の横にある **Map** 、 **Full scan** 、または **Off** を選択します。</block>
   <block id="42ce018d4794bc10a2de7729c1be000e" category="list-text">*マップのみのスキャン*は、データの概要のみを提供します。マッピングは、内部のデータを確認するためにファイルにアクセスしないため、データソースに対して非常に迅速に実行できます。</block>
   <block id="cdd10c18a4e0061a31cb6aef6cce9d9b" category="paragraph">マップのみのスキャンを使用してデータをすばやくスキャンし、より詳細な調査が必要なデータソースを特定し、その後、必要なデータソースまたはボリュームに対してのみマップと分類のスキャンを有効にすると、メリットが得られる場合があります。</block>
   <block id="d3f4fe41f6b9f72067ddd679470cf2f2" category="paragraph">優先順位は、Mapのみのスキャンにのみ割り当てられ、MapとClassifyのスキャンには割り当てられません。</block>
@@ -2853,4 +2845,21 @@
   <block id="c5efbb0c5c86f10e09723fd321118168" category="list-text">ダイアログに「uninstall」と入力して、Data Classification インスタンスを Console エージェントから切断する処理を進めてください。確定するには **Uninstall** を選択してください。</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026年5月11日</block>
   <block id="bbb6c300cb8841042895c9d8861857a2" category="paragraph">*バージョン 1.54*</block>
+  <block id="4c6fc95f3cbd5ec1525e1e6fc454b0a0" category="admonition">システムに追加された新しいボリュームは、すべてのボリュームのスキャンを有効にしている場合にのみ自動的にスキャンされます。特定のボリュームでのみスキャンを有効にしている場合は、新しく追加したボリュームで手動でスキャンを有効にする必要があります。</block>
+  <block id="d8ec5f9e43a5c50ccad1744ea2a31c6e" category="list-text">スキャンするシステムを特定します。**スキャンを有効にする**を選択します。ドロップダウンから、**すべてのボリュームをスキャン：フルスキャン**、**すべてのボリュームをスキャン：マッピングのみ**、または**スキャンの管理**を選択してシステムメニューを開き、特定のボリュームでスキャンを設定します。</block>
+  <block id="a8349eec03103165ecc719d7e32b3318" category="paragraph">個々のボリュームのスキャンを有効または無効にするには、リストから該当するボリュームを選択してください。スキャンタイプの列で、**Map only** または **Full scan** を選択してください。</block>
+  <block id="cf975b28ba57e8d6ba85ec36d74a06c3" category="section-title">コンプライアンス管理者IAMロール</block>
+  <block id="7cd2bb6be419d190aa59909bb89ac3d8" category="paragraph">Data Classificationで、Data Classificationの権限を管理するCompliance adminロールがサポートされるようになりました。Compliance adminロールには、Consoleエージェントやワークスペースなどのリソースへのアクセス権がありません。Compliance adminロールを持つユーザーは、少なくとも他の1つのロールに関連付けられている必要があります。</block>
+  <block id="dc778a1e9a5cca347a8492c869a90dc5" category="paragraph">Data Classificationをインストールする際には、Consoleプラットフォーム管理者ロールまたはCompliance管理者ロールが必要です。</block>
+  <block id="0d1a008033e3d9d27f9dd95b4127ec91" category="paragraph">既存ユーザーの場合は、通常どおりアクセスが継続されます。例えば、フォルダ管理者またはプロジェクト管理者の役割を持つプラットフォームロールは、既存のアクセス権を持っています。</block>
+  <block id="eeeb9dcaeb66c431b51b12eff19105f3" category="inline-link-macro">Data Classification ロール</block>
+  <block id="c105c16486992d9ad71af50fd3100019" category="paragraph">詳細については、<block ref="96736731356e89817dd51fb3ef396df7" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="3b25e99cf35d3d075098a86e0854063e" category="paragraph">データ分類では、ファイル名、権限、作成時刻、最終アクセス、最終変更などのメタデータが取得されます。これには、データ調査の詳細ページおよびデータ調査レポートに表示されるすべてのメタデータが含まれます。</block>
+  <block id="9dda8f9b32e4530c6a33ed3ca126bddd" category="list-text">レポートタイルで、フルデータマッピング概要レポートの見出しにある**ダウンロード**ボタンを選択します。</block>
+  <block id="e963c800edae5dd04e2ad17bb722cbf6" category="paragraph">コンソールエージェントがまだない場合は、クラウド プロバイダでコンソールエージェントを作成します。を参照してください<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block>または<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>、または<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>。ほとんどの場合、データ分類をアクティブ化する前にコンソールエージェントがセットアップされているはずです<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>が、今すぐ設定する必要がある場合もあります。</block>
+  <block id="e4ba5595b199379fdf62976ff9dafe7a" category="list-text">*エラー*（赤い点）：問題が発生したため、スキャンを完了できません。何らかの操作を完了する必要がある場合、エラーはツールチップの「必要な操作」列に表示されます。そうでない場合は、システムは「エラー」状態を表示し、復旧を試みます。処理が完了すると、ステータスが変更されます。</block>
+  <block id="b9ea20ef9eb4c32abc0e2419fb5f8e92" category="paragraph">詳細については、<block ref="5a1aa5110d4426eba46219fc7de6d695" category="inline-xref-macro-rx"></block>を参照してください。</block>
+  <block id="2b038039f3ef8f9ce689f8c48df69b42" category="list-text">**ファイルプロパティ**ドロップダウンメニューで、古いデータを定義する基準を*最終アクセス日時*または*最終更新日時*のどちらにするかを選択します。</block>
+  <block id="b868c7529304443a7b5d84b6c738cde0" category="inline-image-macro">古いデータ定義ウィンドウのスクリーンショット</block>
+  <block id="da2b03a9c6f1e52ca9a910698a9351e1" category="paragraph"><block ref="da2b03a9c6f1e52ca9a910698a9351e1" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

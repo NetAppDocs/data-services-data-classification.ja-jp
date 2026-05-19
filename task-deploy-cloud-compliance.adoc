@@ -43,7 +43,7 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 
 == コンソールエージェントを作成する
 
-コンソール エージェントがまだない場合は、クラウド プロバイダーにコンソール エージェントを作成します。見る https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azureでコンソールエージェントを作成する"^]、 または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、データ分類を有効化する前にコンソールエージェントをセットアップしておく必要があります。 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["コンソール機能にはコンソールエージェントが必要です"]ただし、今すぐ設定する必要がある場合もあります。
+コンソールエージェントがまだない場合は、クラウド プロバイダでコンソールエージェントを作成します。を参照してください https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azureでコンソールエージェントを作成する"^]、または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、データ分類をアクティブ化する前にコンソールエージェントがセットアップされているはずです https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["コンソール機能にはコンソールエージェントが必要です"]が、今すぐ設定する必要がある場合もあります。
 
 特定のクラウド プロバイダーにデプロイされたコンソール エージェントを使用する必要があるシナリオがいくつかあります。
 
