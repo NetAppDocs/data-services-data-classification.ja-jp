@@ -30,7 +30,7 @@
 * データ分類インストール用にクラウドにコンピューティング インスタンスをデプロイする場合は、上記の「大規模」システム要件を満たすシステムを使用することをお勧めします。
 +
 ** *Amazon Elastic Compute Cloud (Amazon EC2) インスタンスタイプ*:「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["その他のAWSインスタンスタイプを見る"^] 。
-** *Azure VM サイズ*:「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを見る"^] 。
+** *Azure VM サイズ*："Standard_D16_v5"。link:reference-instance-types.html#azure-instance-types["その他のAzureインスタンスタイプを見る"^]。
 ** *GCP マシンタイプ*:「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["その他の GCP インスタンスタイプを見る"^] 。
 
 

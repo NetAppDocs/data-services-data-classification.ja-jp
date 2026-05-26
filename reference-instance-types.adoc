@@ -41,10 +41,10 @@ NetApp Data Classificationソフトウェアは、特定のオペレーティン
 | システムサイズ | 仕様 | インスタンスタイプ 
 
 
-| 特大 | 32 個の CPU、128 GB の RAM、OS ディスク (2,048 GiB、最小 250 MB/秒のスループット)、およびデータ ディスク (1 TiB SSD、最小 750 MB/秒のスループット) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["標準_D32_v3"^]（デフォルト） 
+| 特大 | 16 CPU、64 GB RAM、OSディスク（2,048 GiB、最小250 MB/秒スループット）、データディスク（1 TiB SSD、最小750 MB/秒スループット） | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series["Standard_D32s_v5またはStandard_D32_v5"^] 
 
 
-| 大規模 | 16 CPU、64 GB RAM、500 GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["標準_D16s_v3"^]（デフォルト） 
+| 大規模 | 16 CPU、64 GB RAM、500 GiB SSD | link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv5-series?tabs=sizebasic["Standard_D16_v5またはStandard_D16s_v5"^]（デフォルト） 
 |===
 
 
