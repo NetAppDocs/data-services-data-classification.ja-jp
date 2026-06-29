@@ -508,7 +508,6 @@
   <block id="ac504804f226f1152fbc41d9f7d275a8" category="list-text"><block ref="ac504804f226f1152fbc41d9f7d275a8" category="inline-link-macro-rx"></block></block>
   <block id="7d8a62fbff7754d15c3345a4a5a2a42c" category="summary">データ分類は、データ ソースおよびシステムからのデータの分類スキャンを実行するときに、特定のメタデータを収集します。データ分類では、データを分類するために必要なメタデータのほとんどにアクセスできますが、必要なデータにアクセスできないソースもいくつかあります。</block>
   <block id="1a1e0d143649a0ce6e5ef90ccb76c8f6" category="doc">NetApp Data Classificationのデータソースから収集されたメタデータ</block>
-  <block id="3d8ee8eca2b65adc6d121edf7d865b83" category="paragraph">NetApp Data Classification は、データ ソースおよびシステムからのデータの分類スキャンを実行するときに、特定のメタデータを収集します。データ分類では、データを分類するために必要なメタデータのほとんどにアクセスできますが、必要なデータにアクセスできないソースもいくつかあります。</block>
   <block id="f22df8f0b5591e83e42546cc1ff8a3d7" category="cell">*メタデータ*</block>
   <block id="4e7da840816931928beff62cd45584f2" category="cell">*CIFS*</block>
   <block id="b4ccd4984cce17a35c772737cf9415b1" category="cell">*NFS*</block>
@@ -516,8 +515,6 @@
   <block id="7e06380ecab9614af588d8a05ba6d6b0" category="cell">_作成時間_</block>
   <block id="78945de8de090e90045d299651a68a9b" category="cell">利用可能</block>
   <block id="f9b9ab70f8d1cbd522aba5cea3dbb026" category="cell">利用できません（Linuxではサポートされていません）</block>
-  <block id="32e6470f56de0e5ebf534668812bd960" category="cell">_最終アクセス時間_</block>
-  <block id="c843b01ef48f3bd79d5d3521fbfa6125" category="cell">_最終更新日時_</block>
   <block id="06d8b12cf1272ab914790a8734a08c8e" category="cell">*権限*</block>
   <block id="e9349d6c7fc3f860e75fd091e850b861" category="cell">_オープン権限_</block>
   <block id="fbd9c4028bea4c13eb992144e5923bc4" category="cell">「EVERYONE」グループがファイルにアクセスできる場合、そのファイルは「組織に公開」されているとみなされます。</block>
@@ -526,19 +523,10 @@
   <block id="63f19f489bdf8010eb6fc8ee363b3569" category="cell">ユーザーとグループの情報はLDAPから取得されます</block>
   <block id="bcead494d002e9572dc3500b60795eec" category="cell">利用できません (NFS ユーザーは通常、サーバー上でローカルに管理されるため、同じユーザーが各サーバーで異なる UID を持つことができます)</block>
   <block id="97804fec1fa581f14632ae2006d395c1" category="list-text">データ分類では、データベース データ ソースから「最終アクセス時刻」を抽出しません。</block>
-  <block id="2a70f378d1c671653b665ce9f215b15b" category="list-text">古いバージョンの Windows OS (Windows 7 や Windows 8 など) では、システム パフォーマンスに影響を及ぼす可能性があるため、「最終アクセス時刻」属性の収集がデフォルトで無効になっています。この属性が収集されない場合、「最終アクセス時刻」に基づくデータ分類分析に影響が出ます。必要に応じて、これらの古い Windows システムでの最終アクセス時刻の収集を有効にすることができます。</block>
-  <block id="99d97930418935683e2b318283d0dfe1" category="section-title">最終アクセス時間のタイムスタンプ</block>
-  <block id="b01aa3e2f261b8dedf818225ee6c05e4" category="paragraph">データ分類がファイル共有からデータを抽出すると、オペレーティング システムはそれをデータへのアクセスと見なし、それに応じて「最終アクセス時刻」を変更します。スキャン後、データ分類は最終アクセス時刻を元のタイムスタンプに戻そうとします。データ分類に CIFS での属性書き込み権限または NFS での書き込み権限がない場合、システムは最終アクセス時刻を元のタイムスタンプに戻すことができません。  SnapLockが設定されたONTAPボリュームには読み取り専用権限があり、最終アクセス時刻を元のタイムスタンプに戻すこともできません。</block>
-  <block id="8def4976ff143e6a920052542f197505" category="paragraph">デフォルトでは、データ分類にこれらの権限がない場合、データ分類は「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のこれらのファイルをスキャンしません。ただし、ファイルの最終アクセス時刻が元の時刻にリセットされても構わない場合は、構成ページの下部にある *「属性の書き込み」権限がない場合にスキャンする* スイッチを選択して、権限に関係なくデータ分類がボリュームをスキャンするようにすることができます。</block>
-  <block id="beeec568ede723c6cb0a6b3260fb9b8e" category="inline-image-macro">最後のアクセス時刻を元のタイムスタンプに戻すための適切な権限がない場合でも、データ分類でファイルをスキャンできるようにするために使用できるスイッチを示すスクリーンショット。</block>
-  <block id="8484ff18eb18f2927a7a9d7e7eb54cc0" category="paragraph"><block ref="8484ff18eb18f2927a7a9d7e7eb54cc0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41adaaf0716718eecf1f4d48b84b258e" category="paragraph">この機能は、オンプレミスのONTAPシステム、 Cloud Volumes ONTAP、 Azure NetApp Files、 Amazon FSx for NetApp ONTAP管理、およびサードパーティのファイル共有に適用できます。</block>
-  <block id="4de6f989e1e0dd2a243309a397602c7b" category="paragraph">調査ページには、「スキャン分析イベント」というフィルターがあり、これを使用すると、データ分類で最終アクセス時刻を戻せなかったために分類されなかったファイル、またはデータ分類で最終アクセス時刻を戻せなかったにもかかわらず分類されたファイルを表示できます。</block>
   <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">書き込み権限の有無に基づいて、スキャンされたファイルとスキャンされなかったファイルを確認するためのフィルターのスクリーンショット。</block>
   <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">フィルターの選択肢は次のとおりです。</block>
-  <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類 - 最終アクセス時間を戻すことができません」 - 書き込み権限がないため分類されなかったファイルが表示されます。</block>
-  <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">「分類され、更新された最終アクセス時刻」 - 分類されたファイルが表示され、データ分類では最終アクセス時刻を元の日付にリセットできませんでした。このフィルターは、*「属性の書き込み」権限がない場合にスキャン*をオンにした環境にのみ関連します。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">タイプ</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">説明</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
@@ -1671,7 +1659,6 @@
   <block id="244dfe89822bd7a0557bf1e5e9251080" category="paragraph">*注:* Azure NetApp Filesボリュームをスキャンする場合、オンプレミスの場所でのデータ分類の展開は現在サポートされていません。</block>
   <block id="6ff7a146d1b3d9e61301aa10f8f9c71b" category="section-title">システムでデータ分類を有効にする</block>
   <block id="9826224877bd2bc3d70f083a50fff930" category="paragraph">Azure NetApp Filesボリュームでデータ分類を有効にすることができます。</block>
-  <block id="4a4bd4695f7ed79b6d5b23795d88275f" category="list-text">デフォルトでは、データ分類に CIFS での属性書き込み権限または NFS での書き込み権限がない場合、データ分類は「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のファイルをスキャンしません。最終アクセス時刻がリセットされても構わない場合は、「*またはボリュームごとにスキャン タイプを選択*」を選択します。表示されるページには、権限に関係なくデータ分類がボリュームをスキャンするように有効にできる設定があります。</block>
   <block id="2c0b9fc0f9659fa0f71a4337b2fc2043" category="inline-link-macro">データ分類の制限について学ぶ</block>
   <block id="fcc492b009ae46bdb956c856d82562f9" category="list-text">データ分類では、ボリューム下の 1 つのファイル共有のみをスキャンします。ボリューム内に複数の共有がある場合は、他の共有を共有グループとして個別にスキャンする必要があります。<block ref="951289bfacd7a4614d2fd45503ad30db" category="inline-link-macro-rx"></block> 。</block>
   <block id="a1472fc5022c73ad637eab4b03c664d6" category="paragraph">ネットワーク、セキュリティ グループ、エクスポート ポリシーをチェックして、データ分類がボリュームにアクセスできることを確認します。  CIFS ボリュームにアクセスできるようにするには、Data Classification に CIFS 資格情報を提供する必要があります。</block>
@@ -1727,7 +1714,6 @@
   <block id="0e2e5c53c255da0bcabea3a89da75f8c" category="paragraph">ファイル共有をスキャンするには、まずNetApp Data Classificationでファイル共有グループを作成する必要があります。ファイル共有グループは、オンプレミスまたはクラウドでホストされる NFS または CIFS (SMB) 共有用です。</block>
   <block id="1edfcfd103906c3f301404b4a52918e7" category="admonition">データ分類コア バージョンでは、 NetApp以外のファイル共有からのデータのスキャンはサポートされていません。</block>
   <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">共有は、クラウドやオンプレミスなど、どこにでもホストできます。古いNetApp 7-Mode ストレージ システムの CIFS 共有は、ファイル共有としてスキャンできます。</block>
-  <block id="b134bb9bee5846297eaa45f9c959cd4f" category="list-text">データ分類では、7-Mode システムから権限や「最終アクセス時刻」を抽出できません。</block>
   <block id="f167fbb6464f189d72ddba5508d2a1a2" category="list-text">一部の Linux バージョンと 7-Mode システム上の CIFS 共有の間に既知の問題があるため、NTLM 認証が有効になっている SMBv1 のみを使用するように共有を構成する必要があります。</block>
   <block id="29166e51c9a2f11d6903f8af7b9cec82" category="list-text">データ分類インスタンスと共有の間にはネットワーク接続が必要です。</block>
   <block id="977302dc7d05ad33d9edd0c0bbe5ec07" category="list-text">DFS (分散ファイル システム) 共有を通常の CIFS 共有として追加できます。データ分類では、共有が複数のサーバー/ボリューム上に構築され、単一の CIFS 共有として結合されていることを認識しないため、メッセージが実際には別のサーバー/ボリュームにあるフォルダー/共有の 1 つにのみ適用される場合でも、共有に関するアクセス許可または接続エラーが発生する可能性があります。</block>
@@ -1848,7 +1834,6 @@
   <block id="0fbc5c9a0ab1eecf4064d4ae4ef04fe5" category="cell">HIPAAレポート</block>
   <block id="14167b2f4f95b7ebdb671b9dc719f2b4" category="cell">PCI DSSレポート</block>
   <block id="a8489c9a413df737ca55e133eea56820" category="example-title">調査フィルターの違い:</block>
-  <block id="f1be55e10a484bdeb7e4eae576688474" category="cell">最終アクセス</block>
   <block id="4797f8fb709b9cdf801351bca3181105" category="cell">ファイルディレクトリパス</block>
   <block id="76596c862fd4cd497cf2a3ea36b26c43" category="cell">分類ステータス</block>
   <block id="fb8a04662bc42d13ae8a2d1bddbc05b3" category="cell">ステータスは常に「限られた洞察」です</block>
@@ -2256,7 +2241,6 @@
   <block id="78fec667589f53471f473945289b1df5" category="list-text">非アクティブなデータを特定し、より安価なオブジェクト ストレージに階層化することで、ストレージ コストを節約します。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="f128c1ddd39d7ff58f7de848fcd36c2d" category="inline-link-rx"></block> 。</block>
   <block id="ead4fb59aecd6e825b2032029bb14d83" category="list-text">*カテゴリ*: データ分類は、スキャンしたデータを取得し、それをさまざまな種類のカテゴリに分割します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。<block ref="47725b7d77a9ed7fa3f732d2d0956fde" category="inline-link-macro-rx"></block>。</block>
   <block id="3c17f47784918dfcb6d4bc5ed771d8e0" category="inline-link-macro">データ調査レポートの詳細</block>
-  <block id="802848fafcfe67f4f3f9ecf3f0a85b90" category="paragraph">必要に応じて、これらの結果をレポートにエクスポートして、権限によりスキャンされているファイルとスキャンされていないファイルを確認できます。<block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>。</block>
   <block id="33b4c33e0d5c61070467f208c8da0e6c" category="section-title">データ検出評価レポートを作成する</block>
   <block id="78fcc8f2d90c3a80b48d02edc4a150f6" category="paragraph">データ検出評価レポートでは、スキャンされた環境の高レベルの分析が提供され、懸念事項と潜在的な修復手順が示されます。結果はデータのマッピングと分類の両方に基づいています。このレポートの目的は、データセットの 3 つの重要な側面についての認識を高めることです。</block>
   <block id="4a32c4b09fba1c841da1e2c6f4a5096e" category="list-text">クラウドで準備したインスタンスにデータ分類をインストールするか、オンプレミスで準備したインスタンスにデータ分類をインストールするかに応じて、適切な *デプロイ* オプションを選択してデータ分類のインストールを開始します。</block>
@@ -2743,7 +2727,6 @@
   <block id="e4f6181944f0dc7535179eb25f2c38b5" category="paragraph">Data Classification のインストールスクリプトには、環境が要件を満たしていることを確認するためのテストスクリプトが含まれています。インストールスクリプトを実行する前に、このスクリプトを個別に実行して、Linux ホストの準備状況を確認できます。</block>
   <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classificationを使用すると、組織のハイブリッドマルチクラウド全体でデータをスキャンして分類できます。Data Classificationは、コンテキストに応じたデータ分析と分類にAI主導の自然言語処理（NLP）を利用し、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の迅速化を実現するための実用的なインサイトをデータから提供します。</block>
   <block id="0997d7248674796f4e9772751d9f8905" category="paragraph">設定ページから、いつでも任意のシステムでスキャンを開始または停止できます。また、マップのみのスキャンから、マッピングと分類の両方を含むスキャンに切り替えたり、その逆も可能です。システム内のすべてのボリュームをスキャンすることをお勧めします。</block>
-  <block id="b9f4fbd6355c3f44311a98b062b34192" category="paragraph">ページ上部にある*書き込み権限なしでスキャンする*スイッチは、デフォルトでは無効になっています。つまり、Data ClassificationにCIFSでの書き込み属性権限、またはNFSでの書き込み権限がない場合、Data Classificationは「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはファイルをスキャンしません。最終アクセス時刻がリセットされても構わない場合は、スイッチをオンにすると、アクセス権限に関係なくすべてのファイルがスキャンされます。<block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>。</block>
   <block id="42ce018d4794bc10a2de7729c1be000e" category="list-text">*マップのみのスキャン*は、データの概要のみを提供します。マッピングは、内部のデータを確認するためにファイルにアクセスしないため、データソースに対して非常に迅速に実行できます。</block>
   <block id="cdd10c18a4e0061a31cb6aef6cce9d9b" category="paragraph">マップのみのスキャンを使用してデータをすばやくスキャンし、より詳細な調査が必要なデータソースを特定し、その後、必要なデータソースまたはボリュームに対してのみマップと分類のスキャンを有効にすると、メリットが得られる場合があります。</block>
   <block id="d3f4fe41f6b9f72067ddd679470cf2f2" category="paragraph">優先順位は、Mapのみのスキャンにのみ割り当てられ、MapとClassifyのスキャンには割り当てられません。</block>
@@ -2810,7 +2793,6 @@
   <block id="2d3302176c76aec3fe98cab8969a0c0e" category="list-text">設定ページから、設定するデータベースの *管理* ボタンを選択します。</block>
   <block id="80e0de11f47a35b7ed8a03d17a2fb153" category="list-text">スキャンを有効にするスキーマごとに、*スキャンタイプ*列を選択し、スキャンをオフまたは**フルスキャン**に設定します。</block>
   <block id="8d32c8792fe62b20190091ba24adbda5" category="paragraph"><block ref="8d32c8792fe62b20190091ba24adbda5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="83529dca19d84fa3c8393d751d1499ce" category="admonition">システム概要ページには、デフォルトで無効になっている*書き込み権限なしでスキャン*オプションがあります。つまり、Data ClassificationにCIFSの書き込み属性権限またはNFSの書き込み権限がない場合、Data Classificationは「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはファイルをスキャンしません。+ *書き込み権限なしでスキャン*オプションをオンにすると、スキャンによって最終アクセス時刻がリセットされ、権限に関係なくすべてのファイルがスキャンされます。+ 最終アクセス時刻のタイムスタンプの詳細については、<block ref="efbe79d0ae711b4cfcab53d208f81146" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="2717183da69efedd6362c78212b10c1a" category="list-text">設定ページから、変更するファイル共有グループシステムを見つけて、**管理**を選択します。</block>
   <block id="bb558c437c7399f74ddbfc29cfe6d4b0" category="list-text">設定ページから、変更したいファイル共有グループを探します。**管理**を選択します。</block>
   <block id="91e1b5438eb65d42406ab3c0b884b005" category="list-text">ファイル共有の追加を完了するには、**Save**を選択します。</block>
@@ -2865,4 +2847,23 @@
   <block id="2c230f06afd3e4f3ed09632a70041ab6" category="paragraph">今回のData Classificationのリリースには、セキュリティの改善とパフォーマンスの向上が含まれています。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026年6月8日</block>
   <block id="1dc91751896208f145bedd2bec6c3c49" category="paragraph">*バージョン 1.55*</block>
+  <block id="400d643b71c3364f054f36d1a364b010" category="paragraph">「書き込み権限なしでスキャンする」オプションは、デフォルトでは無効になっています。これは、NetApp Data Classificationに適切な書き込み権限がない場合、NetApp Data Classificationが「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはファイルをスキャンしないことを意味します。システムが最終アクセス時刻の変更を許容できる場合は、このオプションを選択してください。<block ref="916573eea998ab8bbc3e4ef591a53b7d" category="inline-link-macro-rx"></block>。</block>
+  <block id="08d690ae4b804cef391f5252bd5c8790" category="paragraph">NetApp Data Classification は、データソースとシステムをスキャンしながらメタデータを収集します。ほとんどのメタデータは利用可能ですが、一部の属性はすべてのプロトコルで利用できるわけではありません。</block>
+  <block id="248175bb24e6c3f827fdcf2829459c43" category="cell">最終アクセス日時</block>
+  <block id="8bf7825b2500bcd9e4136974d34b441d" category="cell">最終更新日時</block>
+  <block id="f0561a3763aafb48cd008a051f3c7fc9" category="list-text">Windows OSの旧バージョン（例えば、Windows 7やWindows 8）では、システムパフォーマンスに影響を与える可能性があるため、「最終アクセス時刻」属性の収集がデフォルトで無効になっています。この属性が収集されない場合、「最終アクセス時刻」に基づくData Classification分析に影響が出ます。必要に応じて、これらの古いWindowsシステムで最終アクセス時刻の収集を有効にすることができます。</block>
+  <block id="85d5603a6e68c4c44680e10abf168fa3" category="section-title">最終アクセス時刻</block>
+  <block id="6d08aea005b1d5d4f7acfd946936e69f" category="paragraph">NetApp Data Classificationがファイル共有からデータを抽出すると、オペレーティングシステムはそれをアクセスイベントとみなし、「最終アクセス時刻」をそれに応じて更新します。スキャン後、NetApp Data Classificationは最終アクセス時刻を元のタイムスタンプに戻そうと試みます。NetApp Data ClassificationにCIFSでの書き込み属性権限、またはNFSでの書き込み権限がない場合、システムは最終アクセス時刻を元のタイムスタンプに戻すことができません。</block>
+  <block id="fc6dae26cc8f14598d77a643ee9241e1" category="paragraph">デフォルトでは、Data Classification は、元のタイムスタンプを復元するための書き込み権限がないファイルについてはスキャンを行いません。データの最終アクセス時刻が元のタイムスタンプにリセットされなくても問題ない場合は、システム設定ページで*書き込み権限なしでスキャン*を有効にしてください。</block>
+  <block id="735015b572b2dc81aeebb2df9ee39c93" category="inline-image-macro">最終アクセス時刻を元のタイムスタンプに戻すための適切な権限がない場合でも、Data Classification がファイルをスキャンできるようにするために使用できるスイッチを示すスクリーンショット。</block>
+  <block id="7bcb97cafb36c44f084efcbc1c5be830" category="paragraph"><block ref="7bcb97cafb36c44f084efcbc1c5be830" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a7ad8a73e69c5d5f2aa0b3925d314af6" category="admonition">SnapLock で構成された ONTAP ボリュームは読み取り専用権限を持ち、最終アクセス時刻を元のタイムスタンプに戻すこともできません。</block>
+  <block id="fb9e57bde1ebc255f8112f03d368ba3d" category="section-title">スキャン分析イベント</block>
+  <block id="2d7467e91b9232ed23a46789156fd0df" category="paragraph">調査ページには「スキャン分析イベント」というフィルターがあり、NetApp Data Classificationで最終アクセス時刻を元に戻せなかったために分類されなかったファイル、またはNetApp Data Classificationで最終アクセス時刻を元に戻せなかったにもかかわらず分類されたファイルを表示できます。</block>
+  <block id="36e3fa5a59068e8d4e581c88a91ade4e" category="list-text">「分類されていません -- 最終アクセス時刻を元に戻すことができません」 - これは、書き込み権限が不足しているために分類されなかったファイルを示します。</block>
+  <block id="c08d4ba8dd4b618c703259c0efe64f7f" category="list-text">「分類され、最終アクセス時刻が更新されました」 - これは、分類されたファイルのうち、NetApp Data Classificationによって最終アクセス時刻を元の日付にリセットできなかったファイルを示します。このフィルターは、*書き込み権限なしでスキャン*が有効になっている環境でのみ有効です。</block>
+  <block id="cd76351b9e3a96611e6478f208d2a089" category="paragraph">必要に応じて、これらの結果をレポートとしてエクスポートすることで、権限の関係でスキャンされているファイルとスキャンされていないファイルを確認できます。<block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>。</block>
+  <block id="8cdefa787a746da6737b670208407756" category="list-text">デフォルトでは、Data ClassificationにCIFSでの書き込み属性権限、またはNFSでの書き込み権限がない場合、Data Classificationは「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のファイルをスキャンしません。最終アクセス時刻がリセットされても構わない場合は、*または、ボリュームごとにスキャンタイプを選択*を選択してください。表示されたページには、Data Classificationが権限に関係なくボリュームをスキャンできるように有効にできる設定があります。</block>
+  <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">Data Classificationでは、7-Modeシステムからアクセス権限や「最終アクセス時刻」を抽出することはできません。</block>
+  <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">システム概要ページには、「書き込み権限なしでスキャンする」というオプションがありますが、デフォルトでは無効になっています。Data Classification に適切な権限がない場合、Data Classification は「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、ファイルのスキャンは実行されません。+ 「書き込み権限なしでスキャンする」オプションを使用すると、この設定を上書きできます。このオプションの詳細については、<block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
