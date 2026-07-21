@@ -33,6 +33,7 @@ image:diagram_deploy_onprem_cloud_instance.png["必要なコンソールとネ�
 
 
 
+[[quick-start]]
 == クイック スタート
 
 以下の手順に従ってすぐに開始するか、残りのセクションまでスクロールして詳細を確認してください。
@@ -57,6 +58,7 @@ NetAppサポート サイトから Cloud Data Classification ソフトウェア�
 
 
 
+[[create-a-console-agent]]
 == コンソールエージェントを作成する
 
 Data Classification をインストールして使用するには、Console エージェントが必要です。ほとんどの場合、Data Classification をアクティブ化する前に、Console エージェントをセットアップしておく必要があるでしょう。
@@ -81,6 +83,7 @@ Data Classification をインストールするときは、コンソール エ�
 
 
 
+[[prepare-the-linux-host-system]]
 == Linuxホストシステムを準備する
 
 データ分類ソフトウェアは、特定のオペレーティング システム要件、RAM 要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。  Linux ホストはネットワーク内またはクラウド内に配置できます。
@@ -204,6 +207,7 @@ NOTE: データ分類ホスト システムの IP アドレスは、インスト
 
 
 
+[[enable-outbound-internet-access-from-data-classification]]
 == データ分類からのアウトバウンドインターネットアクセスを有効にする
 
 データ分類には、アウトバウンドのインターネット アクセスが必要です。仮想ネットワークまたは物理ネットワークでインターネット アクセスにプロキシ サーバーを使用している場合は、データ分類インスタンスに次のエンドポイントに接続するための送信インターネット アクセスがあることを確認してください。
@@ -232,6 +236,7 @@ NOTE: データ分類ホスト システムの IP アドレスは、インスト
 |===
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 必要なポートがすべて有効になっていることを確認します
 
 コンソール エージェント、データ分類、Active Directory、およびデータ ソース間の通信に必要なすべてのポートが開いていることを確認する必要があります。
@@ -285,6 +290,7 @@ Active Directory の情報が必要です:
 |===
 
 
+[[install-data-classification-on-the-linux-host]]
 == Linuxホストにデータ分類をインストールする
 
 通常の構成では、ソフトウェアを単一のホスト システムにインストールします。<<一般的な構成の単一ホストインストール,ここでその手順をご覧ください>> 。
@@ -300,6 +306,7 @@ NOTE: 現在、データ分類では、ソフトウェアがオンプレミス�
 
 
 
+[[single-host-installation-for-typical-configurations]]
 === 一般的な構成の単一ホストインストール
 
 単一のオンプレミス ホストにデータ分類ソフトウェアをインストールする場合は、要件を確認し、次の手順に従ってください。
@@ -389,6 +396,7 @@ Data Classification インストーラーは、パッケージをインストー
 
 
 
+[[next-steps]]
 == 次のステップ
 
 * link:task-scanning-overview.html["データソースのスキャンを設定する"]

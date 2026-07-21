@@ -20,6 +20,7 @@ NetApp Data Classificationソフトウェアは、特定のオペレーティン
 
 
 
+[[aws-instance-types]]
 == AWSインスタンスタイプ
 
 [cols="20,30,25"]
@@ -34,6 +35,7 @@ NetApp Data Classificationソフトウェアは、特定のオペレーティン
 |===
 
 
+[[azure-instance-types]]
 == Azureインスタンスの種類
 
 [cols="20,30,25"]
@@ -48,6 +50,7 @@ NetApp Data Classificationソフトウェアは、特定のオペレーティン
 |===
 
 
+[[gcp-instance-types]]
 == GCPインスタンスタイプ
 
 [cols="20,30,25"]

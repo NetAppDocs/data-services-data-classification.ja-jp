@@ -33,6 +33,7 @@ NOTE: ローカル ユーザーの SID および不明なドメインの SID は
 
 
 
+[[supported-data-sources]]
 == サポートされているデータソース
 
 Active Directory とデータ分類の統合により、次のデータ ソース内のデータを識別できます。
@@ -45,6 +46,7 @@ Active Directory とデータ分類の統合により、次のデータ ソー�
 
 
 
+[[connect-to-your-active-directory-server]]
 == Active Directoryサーバーに接続する
 
 データ分類を展開し、データ ソースのスキャンを有効にしたら、データ分類を Active Directory と統合できます。  Active Directory には、DNS サーバー IP アドレスまたは LDAP サーバー IP アドレスを使用してアクセスできます。
@@ -105,6 +107,7 @@ LDAPサーバーのIPアドレス、または複数のIPアドレス
 
 
 
+[[manage-your-active-directory-integration]]
 == Active Directory統合を管理する
 
 Active Directory統合で値を変更する必要がある場合は、Data ClassificationでActive Directory設定を更新する必要があります。Data Classificationの**Configuration**メニューに戻り、設定タブに切り替えて変更を行ってください。

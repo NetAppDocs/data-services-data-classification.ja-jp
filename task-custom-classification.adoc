@@ -21,6 +21,7 @@ NetApp Data Classification を使用すると、カスタム カテゴリまた�
 
 
 
+[[create-a-custom-personal-identifier]]
 == カスタム個人識別子を作成する
 
 データ分類を使用すると、コンテキスト キーワードまたは正規表現を使用してカスタム個人識別子を作成し、組織固有のデータを識別できます。
@@ -63,6 +64,7 @@ image:screenshot-create-logic-regex.png["正規表現を作成するためのダ
 
 
 
+[[create-a-custom-category]]
 == カスタムカテゴリを作成する
 
 カスタム カテゴリを使用すると、組織固有のデータを分類できます。カスタム カテゴリは、アップロードしたテキスト ファイルに基づいて作成されます。データ分類では、このテキスト ファイルから AI モデルを作成し、他のファイル内の同様の情報を識別します。
@@ -99,6 +101,7 @@ image:custom-category-file-summary.png["トレーニング用にアップロー�
 
 
 
+[[edit-a-custom-classifier]]
 == カスタム分類子を編集する
 
 個人識別子を作成した後で、そのロジックを変更できます。個人識別子のタイプまたはロジック タイプを変更することはできません。たとえば、カスタム カテゴリをカスタム個人識別子に変更することはできません。また、キーワードベースのカスタム識別子を正規表現ベースのカスタム識別子に変更することもできません。
@@ -113,6 +116,7 @@ image:custom-category-file-summary.png["トレーニング用にアップロー�
 
 
 
+[[delete-a-custom-classifier]]
 == カスタム分類子を削除する
 
 . NetApp Data Classificationで、*カスタム分類*を選択します。
@@ -122,6 +126,7 @@ image:custom-category-file-summary.png["トレーニング用にアップロー�
 
 
 
+[[next-steps]]
 == 次のステップ
 
 * xref:task-generating-compliance-reports.html[コンプライアンスレポートを生成する]

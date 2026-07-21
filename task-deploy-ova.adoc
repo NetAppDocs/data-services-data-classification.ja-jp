@@ -20,6 +20,7 @@ NetApp Data Classificationは、VMware Open Virtual Appliance（OVA）を使用�
 
 
 
+[[prerequisites]]
 == 前提条件
 
 OVAファイルを使用してData Classificationをインストールする前に、以下のものが必要です：
@@ -33,6 +34,7 @@ OVAファイルを使用してData Classificationをインストールする前�
 
 
 
+[[deploy-the-ova-in-vmware-vsphere]]
 == VMware vSphereにOVAをデプロイする
 
 . link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からOVAファイルをダウンロードします。環境に適したOVAアプライアンスを選択します：
@@ -73,6 +75,7 @@ NOTE: パスワードは、rootアクセス、SSHアクセス、およびシス�
 
 
 
+[[install-data-classification]]
 == Data Classificationをインストールする
 
 . link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からData Classificationソフトウェアをダウンロードします。
@@ -92,6 +95,7 @@ image:screenshot-deploy-classification.png["データ分類を有効にするボ
 
 
 
+[[next-steps]]
 == 次のステップ
 
 * link:task-scanning-overview.html["データソースのスキャンを設定する"]

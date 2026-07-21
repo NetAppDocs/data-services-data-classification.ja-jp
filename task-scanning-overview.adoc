@@ -22,6 +22,7 @@ NetApp Data Classificationは、選択したリポジトリ（ボリューム、
 
 
 
+[[understand-scan-types]]
 == スキャンタイプを理解する
 
 データ分類では、次の 2 種類のスキャンを実行できます。

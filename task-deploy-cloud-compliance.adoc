@@ -20,6 +20,7 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 
 
 
+[[quick-start]]
 == クイック スタート
 
 以下の手順に従ってすぐに開始するか、残りのセクションまでスクロールして詳細を確認してください。
@@ -41,6 +42,7 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 
 
 
+[[create-a-console-agent]]
 == コンソールエージェントを作成する
 
 コンソールエージェントがまだない場合は、クラウド プロバイダでコンソールエージェントを作成します。を参照してください https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azureでコンソールエージェントを作成する"^]、または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、データ分類をアクティブ化する前にコンソールエージェントがセットアップされているはずです https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["コンソール機能にはコンソールエージェントが必要です"]が、今すぐ設定する必要がある場合もあります。
@@ -67,6 +69,7 @@ TIP: データ分類では、スキャンできるデータの量に制限はあ
 
 
 
+[[government-region-support]]
 === 政府地域支援
 
 データ分類は、コンソール エージェントが政府リージョン (AWS GovCloud、Azure Gov、または Azure DoD) にデプロイされている場合にサポートされます。この方法で展開する場合、データ分類には次の制限があります。
@@ -75,6 +78,7 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-m
 
 
 
+[[prerequisites]]
 == 前提条件
 
 クラウドにデータ分類を展開する前に、次の前提条件を確認して、サポートされている構成があることを確認してください。クラウドにデータ分類を展開すると、コンソール エージェントと同じサブネットに配置されます。
@@ -189,6 +193,7 @@ vCPU 制限の詳細については、次のリンクを参照してください
 
 
 
+[[deploy-data-classification-in-the-cloud]]
 == クラウドでデータ分類を展開
 
 クラウドにデータ分類のインスタンスをデプロイするには、次の手順に従います。コンソール エージェントはクラウドにインスタンスを展開し、そのインスタンスにデータ分類ソフトウェアをインストールします。

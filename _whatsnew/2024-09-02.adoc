@@ -4,6 +4,7 @@
 
 
 
+[[scan-storagegrid-data]]
 === StorageGRIDデータをスキャン
 
 BlueXP classificationは、 StorageGRID内のデータのスキャンをサポートします。

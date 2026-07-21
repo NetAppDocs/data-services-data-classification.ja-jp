@@ -18,6 +18,7 @@ NetApp Data Classificationを使用してAmazon FSx for ONTAPボリュームを�
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 * データ分類を展開および管理するには、AWS にアクティブなコンソールエージェントが必要です。
@@ -41,6 +42,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS エラ�
 
 
 
+[[deploy-the-data-classification-instance]]
 == データ分類インスタンスをデプロイする
 
 link:task-deploy-cloud-compliance.html["データ分類を展開する"^]インスタンスがまだデプロイされていない場合。
@@ -53,6 +55,7 @@ Data Classification は、AWS のコンソールエージェントおよびス�
 
 
 
+[[enable-data-classification-in-your-systems]]
 == システムでデータ分類を有効にする
 
 FSx for ONTAPボリュームのデータ分類を有効にすることができます。
@@ -82,6 +85,7 @@ Data Classification は、システム内で選択したボリュームのスキ
 ====
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == データ分類がボリュームにアクセスできることを確認する
 
 ネットワーク、セキュリティ グループ、エクスポート ポリシーをチェックして、データ分類がボリュームにアクセスできることを確認します。
@@ -116,6 +120,7 @@ NOTE: FSx for ONTAPの場合、データ分類はコンソールと同じリー�
 
 
 
+[[enable-and-disable-scans-on-volumes]]
 == ボリュームのスキャンを有効または無効にする
 
 設定ページから、いつでも任意のシステムでスキャンを開始または停止できます。また、マップのみのスキャンから、マッピングと分類の両方を含むスキャンに切り替えたり、その逆も可能です。システム内のすべてのボリュームをスキャンすることをお勧めします。
@@ -140,6 +145,7 @@ image:screenshot_volume_compliance_selection.png["個々のボリュームのス
 
 
 
+[[scan-data-protection-volumes]]
 == データ保護ボリュームをスキャンする
 
 デフォルトでは、データ保護 (DP) ボリュームは外部に公開されておらず、データ分類ではアクセスできないため、スキャンされません。これらは、FSx for ONTAPファイル システムからのSnapMirror操作の宛先ボリュームです。

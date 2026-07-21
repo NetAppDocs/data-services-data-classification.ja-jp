@@ -18,6 +18,7 @@ summary: いくつかの手順を完了すると、 NetApp Data Classification�
 
 
 
+[[review-storagegrid-requirements]]
 == StorageGRIDの要件を確認する
 
 データ分類を有効にする前に、次の前提条件を確認して、サポートされている構成があることを確認してください。
@@ -28,6 +29,7 @@ summary: いくつかの手順を完了すると、 NetApp Data Classification�
 
 
 
+[[deploy-the-data-classification-instance]]
 == データ分類インスタンスをデプロイする
 
 インスタンスがまだデプロイされていない場合は、データ分類をデプロイします。
@@ -38,6 +40,7 @@ summary: いくつかの手順を完了すると、 NetApp Data Classification�
 
 
 
+[[add-the-storagegrid-service-to-data-classification]]
 == データ分類にStorageGRIDサービスを追加する
 
 StorageGRIDサービスを追加します。
@@ -62,6 +65,7 @@ StorageGRIDがシステムのリストに追加されます。
 
 
 
+[[enable-and-disable-scans-on-storagegrid-buckets]]
 == StorageGRIDバケットのスキャンを有効または無効にする
 
 StorageGRIDでデータ分類を有効にした後、次のステップはスキャンするバケットを構成することです。データ分類はこれらのバケットを検出し、作成したシステムに表示します。

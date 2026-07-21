@@ -18,12 +18,14 @@ Azure NetApp FilesのNetApp Data Classificationを開始するには、いくつ
 
 
 
+[[discover-the-azure-netapp-files-system-that-you-want-to-scan]]
 == スキャンするAzure NetApp Filesシステムを検出します
 
 スキャンするAzure NetApp FilesシステムがNetApp Consoleにシステムとしてまだ存在しない場合は、link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["システムページに追加します"^] 。
 
 
 
+[[deploy-the-data-classification-instance]]
 == データ分類インスタンスをデプロイする
 
 link:task-deploy-cloud-compliance.html["データ分類を展開する"^]インスタンスがまだデプロイされていない場合。
@@ -34,6 +36,7 @@ Azure NetApp Filesボリュームをスキャンするときは、データ分�
 
 
 
+[[enable-data-classification-in-your-systems]]
 == システムでデータ分類を有効にする
 
 Azure NetApp Filesボリュームでデータ分類を有効にすることができます。
@@ -59,6 +62,7 @@ Azure NetApp Filesボリュームでデータ分類を有効にすることが�
 
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == データ分類がボリュームにアクセスできることを確認する
 
 ネットワーク、セキュリティ グループ、エクスポート ポリシーをチェックして、データ分類がボリュームにアクセスできることを確認します。  CIFS ボリュームにアクセスできるようにするには、Data Classification に CIFS 資格情報を提供する必要があります。
@@ -97,6 +101,7 @@ NOTE: Azure NetApp Filesの場合、データ分類ではコンソールと同�
 
 
 
+[[enable-or-disable-scans-on-volumes]]
 == ボリュームのスキャンを有効または無効にする
 
 設定ページから、いつでも任意のシステムでスキャンを開始または停止できます。また、マップのみのスキャンから、マッピングと分類の両方を含むスキャンに切り替えたり、その逆も可能です。システム内のすべてのボリュームをスキャンすることをお勧めします。

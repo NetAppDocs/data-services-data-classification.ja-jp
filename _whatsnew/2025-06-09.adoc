@@ -4,6 +4,7 @@
 
 
 
+[[improved-update-times-for-the-governance-dashboard]]
 === ガバナンスダッシュボードの更新時間の改善
 
 ガバナンス ダッシュボードの個々のコンポーネントの更新時間が改善されました。次の表は、各コンポーネントの更新頻度を示しています。
@@ -52,12 +53,14 @@
 
 
 
+[[performance-and-security-improvements]]
 === パフォーマンスとセキュリティの改善
 
 BlueXP分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。
 
 
 
+[[bug-fixes]]
 === バグ修正
 
 Redis がアップグレードされ、 BlueXP classificationの信頼性が向上しました。BlueXP classificationでは、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch を使用するようになりました。

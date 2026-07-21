@@ -20,6 +20,7 @@ summary: NetApp Data Classificationでシステムのスキャン設定を変更
 
 
 
+[[view-the-scan-status-for-your-repositories]]
 == リポジトリのスキャンステータスを表示する
 
 NetApp Data Classificationがスキャンしている個々のリポジトリ (ボリューム、バケットなど) を、システムおよびデータ ソースごとに表示できます。また、いくつが「マップ」され、いくつが「分類」されたかを確認することもできます。すべてのデータに対して完全な AI 識別が実行されるため、分類には時間がかかります。
@@ -51,6 +52,7 @@ image:screenshot_compliance_repo_scan_settings.png["バケットがスキャン�
 
 
 
+[[change-the-scan-type]]
 == スキャンタイプを変更する
 
 設定ページから、いつでもシステムのスキャンを開始または停止できます。マッピングのみのスキャンからフルスキャンへ、またはその逆へ切り替えることもできます。
@@ -74,6 +76,7 @@ image:screenshot_compliance_config_button.png["システムの構成ボタンを
 
 
 
+[[prioritize-scans]]
 == スキャンを優先する
 
 最も重要なマップのみのスキャンまたはフルスキャンを優先して、優先度の高いスキャンが最初に完了するようにすることができます。
@@ -90,6 +93,7 @@ image:screenshot_compliance_config_button.png["システムの構成ボタンを
 
 
 
+[[stop-scanning-for-a-repository]]
 == リポジトリのスキャンを停止する
 
 コンプライアンスを監視する必要がなくなった場合は、リポジトリ (ボリュームなど) のスキャンを停止できます。これを行うには、スキャンを「オフ」にします。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除され、データのスキャンに対する課金が停止されます。
@@ -105,6 +109,7 @@ image:screenshot_compliance_config_button.png["システムの構成ボタンを
 
 
 
+[[pause-and-resume-scanning-for-a-repository]]
 == リポジトリのスキャンを一時停止して再開する
 
 スキャンを一時停止すると、データ分類機能はリポジトリへの変更や追加に関する今後のスキャンを実行しなくなります。現在のスキャン結果はすべてデータ分類機能で引き続きアクセス可能です。

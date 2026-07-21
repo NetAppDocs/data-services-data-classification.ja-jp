@@ -21,6 +21,7 @@ NetApp Data Classification Health Monitor ダッシュボードは、パフォ�
 
 
 
+[[health-monitor-insights]]
 == ヘルスモニターの洞察
 
 ヘルス モニター ダッシュボードには、4 つのカテゴリで情報が表示されます。
@@ -45,6 +46,7 @@ CPU 使用率、ディスク使用率、ディスク使用率、メモリ使用�
 
 
 
+[[access-the-health-monitor-dashboard]]
 == ヘルスモニターダッシュボードにアクセスする
 
 . データ分類で、**構成** を選択します。

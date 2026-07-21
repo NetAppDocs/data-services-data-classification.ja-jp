@@ -524,9 +524,6 @@
   <block id="bcead494d002e9572dc3500b60795eec" category="cell">利用できません (NFS ユーザーは通常、サーバー上でローカルに管理されるため、同じユーザーが各サーバーで異なる UID を持つことができます)</block>
   <block id="97804fec1fa581f14632ae2006d395c1" category="list-text">データ分類では、データベース データ ソースから「最終アクセス時刻」を抽出しません。</block>
   <block id="41adaaf0716718eecf1f4d48b84b258e" category="paragraph">この機能は、オンプレミスのONTAPシステム、 Cloud Volumes ONTAP、 Azure NetApp Files、 Amazon FSx for NetApp ONTAP管理、およびサードパーティのファイル共有に適用できます。</block>
-  <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">書き込み権限の有無に基づいて、スキャンされたファイルとスキャンされなかったファイルを確認するためのフィルターのスクリーンショット。</block>
-  <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">フィルターの選択肢は次のとおりです。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">タイプ</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">説明</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
@@ -2240,7 +2237,6 @@
   <block id="0613f78859d4c1ee40ebf4902778200d" category="paragraph">Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。NetApp ConsoleからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。詳細については、 <block ref="ebe8ee8c7142d7ba7fe5b46fcd6a51db" category="inline-link-macro-rx"></block>。</block>
   <block id="78fec667589f53471f473945289b1df5" category="list-text">非アクティブなデータを特定し、より安価なオブジェクト ストレージに階層化することで、ストレージ コストを節約します。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="f128c1ddd39d7ff58f7de848fcd36c2d" category="inline-link-rx"></block> 。</block>
   <block id="ead4fb59aecd6e825b2032029bb14d83" category="list-text">*カテゴリ*: データ分類は、スキャンしたデータを取得し、それをさまざまな種類のカテゴリに分割します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。<block ref="47725b7d77a9ed7fa3f732d2d0956fde" category="inline-link-macro-rx"></block>。</block>
-  <block id="3c17f47784918dfcb6d4bc5ed771d8e0" category="inline-link-macro">データ調査レポートの詳細</block>
   <block id="33b4c33e0d5c61070467f208c8da0e6c" category="section-title">データ検出評価レポートを作成する</block>
   <block id="78fcc8f2d90c3a80b48d02edc4a150f6" category="paragraph">データ検出評価レポートでは、スキャンされた環境の高レベルの分析が提供され、懸念事項と潜在的な修復手順が示されます。結果はデータのマッピングと分類の両方に基づいています。このレポートの目的は、データセットの 3 つの重要な側面についての認識を高めることです。</block>
   <block id="4a32c4b09fba1c841da1e2c6f4a5096e" category="list-text">クラウドで準備したインスタンスにデータ分類をインストールするか、オンプレミスで準備したインスタンスにデータ分類をインストールするかに応じて、適切な *デプロイ* オプションを選択してデータ分類のインストールを開始します。</block>
@@ -2858,12 +2854,8 @@
   <block id="735015b572b2dc81aeebb2df9ee39c93" category="inline-image-macro">最終アクセス時刻を元のタイムスタンプに戻すための適切な権限がない場合でも、Data Classification がファイルをスキャンできるようにするために使用できるスイッチを示すスクリーンショット。</block>
   <block id="7bcb97cafb36c44f084efcbc1c5be830" category="paragraph"><block ref="7bcb97cafb36c44f084efcbc1c5be830" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a7ad8a73e69c5d5f2aa0b3925d314af6" category="admonition">SnapLock で構成された ONTAP ボリュームは読み取り専用権限を持ち、最終アクセス時刻を元のタイムスタンプに戻すこともできません。</block>
-  <block id="fb9e57bde1ebc255f8112f03d368ba3d" category="section-title">スキャン分析イベント</block>
-  <block id="2d7467e91b9232ed23a46789156fd0df" category="paragraph">調査ページには「スキャン分析イベント」というフィルターがあり、NetApp Data Classificationで最終アクセス時刻を元に戻せなかったために分類されなかったファイル、またはNetApp Data Classificationで最終アクセス時刻を元に戻せなかったにもかかわらず分類されたファイルを表示できます。</block>
-  <block id="36e3fa5a59068e8d4e581c88a91ade4e" category="list-text">「分類されていません -- 最終アクセス時刻を元に戻すことができません」 - これは、書き込み権限が不足しているために分類されなかったファイルを示します。</block>
-  <block id="c08d4ba8dd4b618c703259c0efe64f7f" category="list-text">「分類され、最終アクセス時刻が更新されました」 - これは、分類されたファイルのうち、NetApp Data Classificationによって最終アクセス時刻を元の日付にリセットできなかったファイルを示します。このフィルターは、*書き込み権限なしでスキャン*が有効になっている環境でのみ有効です。</block>
-  <block id="cd76351b9e3a96611e6478f208d2a089" category="paragraph">必要に応じて、これらの結果をレポートとしてエクスポートすることで、権限の関係でスキャンされているファイルとスキャンされていないファイルを確認できます。<block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>。</block>
   <block id="8cdefa787a746da6737b670208407756" category="list-text">デフォルトでは、Data ClassificationにCIFSでの書き込み属性権限、またはNFSでの書き込み権限がない場合、Data Classificationは「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、システムはボリューム内のファイルをスキャンしません。最終アクセス時刻がリセットされても構わない場合は、*または、ボリュームごとにスキャンタイプを選択*を選択してください。表示されたページには、Data Classificationが権限に関係なくボリュームをスキャンできるように有効にできる設定があります。</block>
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">Data Classificationでは、7-Modeシステムからアクセス権限や「最終アクセス時刻」を抽出することはできません。</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">システム概要ページには、「書き込み権限なしでスキャンする」というオプションがありますが、デフォルトでは無効になっています。Data Classification に適切な権限がない場合、Data Classification は「最終アクセス時刻」を元のタイムスタンプに戻すことができないため、ファイルのスキャンは実行されません。+ 「書き込み権限なしでスキャンする」オプションを使用すると、この設定を上書きできます。このオプションの詳細については、<block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="308857218552b597ea9cae644ef5a86a" category="admonition">データ分類インストーラーは、UID 4321とGID 4321を予約します。インストールを開始する前に、ホストマシン上でUID 4321とGID 4321が使用されていないことを確認してください。それらが既に使用されている場合、インストールは「invalid user」というエラーメッセージとともに失敗します。</block>
 </blocks>

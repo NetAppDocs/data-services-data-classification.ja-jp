@@ -22,6 +22,7 @@ summary: NFSファイル共有内のファイルやフォルダにグループID
 
 
 
+[[add-the-open-to-organization-permission-to-group-ids]]
 == グループIDに「組織に公開」権限を追加する
 
 このタスクを開始する前に、グループ ID 番号 (GID) が必要です。
@@ -50,6 +51,7 @@ summary: NFSファイル共有内のファイルやフォルダにグループID
 
 
 
+[[view-the-current-list-of-group-ids]]
 == 現在のグループIDのリストを表示する
 
 内容は `data_provider.yaml`設定ファイルは、実行後に実際にコミットされたものと異なる可能性があります。 `update_data_providers_from_config_file.sh`スクリプト。データ分類に追加したグループ ID の現在のリストを表示するには、「/opt/netapp/Datasense/tools/customer_configuration/data_providers」から次のコマンドを実行します。

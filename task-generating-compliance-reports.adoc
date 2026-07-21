@@ -38,6 +38,7 @@ NetApp Data Classification は、組織のデータ プライバシー プログ
 
 
 
+[[select-the-systems-for-reports]]
 == レポートのシステムを選択する
 
 データ分類コンプライアンス ダッシュボードの内容をフィルタリングして、すべてのシステムとデータベース、または特定のシステムのコンプライアンス データを表示できます。
@@ -55,6 +56,7 @@ image:screenshot-report-filter.png["システムのフィルタリングを示�
 
 
 
+[[data-subject-access-request-report]]
 == データ主体アクセス要求レポート
 
 欧州の GDPR などのプライバシー規制では、データ主体 (顧客や従業員など) に個人データにアクセスする権利が付与されます。データ主体がこの情報を要求する場合、これは DSAR (データ主体アクセス要求) と呼ばれます。組織はこれらの要求に対して「不当な遅延なく」、遅くとも受領後 1 か月以内に応答する必要があります。
@@ -104,6 +106,7 @@ NOTE: データ主体の名前を検索する際には、英語、ドイツ語�
 
 
 
+[[health-insurance-portability-and-accountability-act-hipaa-report]]
 == 医療保険の携行性と責任に関する法律（HIPAA）に関する報告書
 
 医療保険の携行性と責任に関する法律 (HIPAA) レポートは、健康情報を含むファイルを識別するのに役立ちます。これは、組織の HIPAA データ プライバシー法の遵守要件を支援するために設計されています。データ分類が探す情報には次のものが含まれます。
@@ -141,6 +144,7 @@ image:screenshot-report-options.png["コンプライアンス ページのレポ
 
 
 
+[[payment-card-industry-data-security-standard-pci-dss-report]]
 == ペイメントカード業界データセキュリティ基準（PCI DSS）レポート
 
 ペイメント カード 業界データ セキュリティ標準 (PCI DSS) レポートは、ファイル全体にわたるクレジットカード情報の分布を識別するのに役立ちます。
@@ -171,6 +175,7 @@ image:screenshot-report-options.png["コンプライアンス ページのレポ
 
 
 
+[[privacy-risk-assessment-report]]
 == プライバシーリスク評価レポート
 
 プライバシー リスク評価レポートでは、GDPR や CCPA などのプライバシー規制の要件に従って、組織のプライバシー リスク状態の概要が提供されます。

@@ -20,6 +20,7 @@ summary: 問題のトラブルシューティングを行うため、または�
 
 
 
+[[uninstall-data-classification-from-a-cloud-provider]]
 == クラウドプロバイダーからデータ分類をアンインストールする
 
 . データ分類から**構成**を選択します。
@@ -32,6 +33,7 @@ summary: 問題のトラブルシューティングを行うため、または�
 
 
 
+[[uninstall-data-classification-from-an-on-premises-deployment]]
 == オンプレミス展開からデータ分類をアンインストールする
 
 . データ分類から**構成**を選択します。

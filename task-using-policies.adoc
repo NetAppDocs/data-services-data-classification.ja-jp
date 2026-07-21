@@ -26,6 +26,7 @@ image:screenshot_compliance_highlights_tab.png["データ分類ダッシュボ�
 
 
 
+[[view-saved-queries-results-in-the-investigation-page]]
 == 調査ページで保存したクエリの結果を表示する
 
 調査ページに保存したクエリの結果を表示するには、image:button-gallery-options.gif["詳細ボタン"]特定の検索のボタンをクリックし、[結果の調査] を選択します。
@@ -34,6 +35,7 @@ image:screenshot_compliance_highlights_investigate.png["[保存されたクエ�
 
 
 
+[[create-saved-queries-and-policies]]
 == 保存されたクエリとポリシーを作成する
 
 組織固有のクエリの結果を提供する独自のカスタム保存クエリを作成できます。検索条件に一致するすべてのファイルとディレクトリ (共有とフォルダー) の結果が返されます。
@@ -61,6 +63,7 @@ image:../media/screenshot_compliance_save_highlight2.png["保存されたクエ�
 
 
 
+[[edit-saved-queries-or-policies]]
 == 保存したクエリまたはポリシーを編集する
 
 保存したクエリの名前と説明を変更できます。クエリをポリシーに変換したり、その逆を行ったりすることもできます。
@@ -81,6 +84,7 @@ image:screenshot-edit-search.png["保存したクエリの編集を示すスク�
 
 
 
+[[delete-saved-queries]]
 == 保存したクエリを削除する
 
 不要になった場合は、保存したカスタムクエリまたはポリシーを削除できます。デフォルトで保存されたクエリは削除できません。
@@ -89,6 +93,7 @@ image:screenshot-edit-search.png["保存したクエリの編集を示すスク�
 
 
 
+[[default-queries]]
 == デフォルトのクエリ
 
 データ分類では、次のシステム定義の検索クエリが提供されます。

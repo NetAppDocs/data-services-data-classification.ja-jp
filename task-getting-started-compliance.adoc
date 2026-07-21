@@ -18,6 +18,7 @@ NetApp Data Classificationを使用してCloud Volumes ONTAPとオンプレミ�
 
 
 
+[[prerequisites]]
 == 前提条件
 
 データ分類を有効にする前に、サポートされている構成があることを確認してください。
@@ -28,6 +29,7 @@ NetApp Data Classificationを使用してCloud Volumes ONTAPとオンプレミ�
 
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == データ分類がボリュームにアクセスできることを確認する
 
 ネットワーク、セキュリティ グループ、エクスポート ポリシーをチェックして、データ分類がボリュームにアクセスできることを確認します。  CIFS ボリュームにアクセスできるようにするには、データ分類に CIFS 資格情報を提供する必要があります。
@@ -58,6 +60,7 @@ NetApp Data Classificationを使用してCloud Volumes ONTAPとオンプレミ�
 
 
 
+[[enable-or-disable-scans-on-volumes]]
 == ボリュームのスキャンを有効または無効にする
 
 設定ページから、いつでも任意のシステムでスキャンを開始または停止できます。また、マップのみのスキャンから、マッピングと分類の両方を含むスキャンに切り替えたり、その逆も可能です。システム内のすべてのボリュームをスキャンすることをお勧めします。

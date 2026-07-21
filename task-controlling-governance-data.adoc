@@ -22,6 +22,7 @@ summary: Data Classificationを使用すると、古いデータ、重複ファ�
 
 
 
+[[review-the-governance-dashboard]]
 == ガバナンスダッシュボードを確認する
 
 ガバナンス ダッシュボードは、ストレージ リソースに保存されているデータに関連する効率を高め、コストを制御できるようにするための情報を提供します。
@@ -38,6 +39,7 @@ image:screenshot_compliance_governance_dashboard.png["データ分類ガバナ�
 
 
 
+[[review-savings-opportunities]]
 === 節約の機会を確認する
 
 _Saving Opportunities_ コンポーネントには、削除したり、より安価なオブジェクト ストレージに階層化したりできるデータが表示されます。 _Saving Opportunities_ のデータは 2 時間ごとに更新されます。データを手動で更新することもできます。
@@ -57,6 +59,7 @@ NOTE: いずれかのデータ ソースでデータ階層化が実装されて�
 
 
 
+[[create-the-data-discovery-assessment-report]]
 == データ検出評価レポートを作成する
 
 データ検出評価レポートでは、スキャンされた環境の高レベルの分析が提供され、懸念事項と潜在的な修復手順が示されます。結果はデータのマッピングと分類の両方に基づいています。このレポートの目的は、データセットの 3 つの重要な側面についての認識を高めることです。
@@ -94,6 +97,7 @@ image:screenshot-compliance-report-buttons.png["データ検出評価レポー�
 
 
 
+[[create-the-data-mapping-overview-report]]
 == データマッピングの概要レポートを作成する
 
 データ マッピングの概要レポートは、企業のデータ ソースに保存されているデータの概要を提供し、移行、バックアップ、セキュリティ、コンプライアンスのプロセスに関する意思決定に役立ちます。レポートでは、すべてのシステムとデータ ソースを要約します。各システムの分析も提供します。
@@ -128,6 +132,7 @@ image:screenshot-compliance-report-buttons.png["データ マッピング レポ
 
 
 
+[[review-the-top-data-repositories-listed-by-data-sensitivity]]
 === データの機密性に基づいてリストされた上位のデータリポジトリを確認する
 
 データ マッピングの概要レポートの「機密レベル別の上位データ リポジトリ」領域には、最も機密性の高い項目を含む上位 4 つのデータ リポジトリ (システムとデータ ソース) が一覧表示されます。各システムの棒グラフは次のように分かれています。
@@ -146,6 +151,7 @@ image:screenshot-compliance-report-buttons.png["データ マッピング レポ
 
 
 
+[[review-sensitive-data-and-wide-permissions]]
 === 機密データと幅広い権限を確認する
 
 ガバナンス ダッシュボードの [機密データと幅広い権限] 領域には、機密データが含まれており、幅広い権限を持つファイルの数が表示されます。表には次の種類の権限が示されています。
@@ -161,6 +167,7 @@ image:screenshot-compliance-report-buttons.png["データ マッピング レポ
 
 
 
+[[review-data-listed-by-types-of-open-permissions]]
 === オープン権限の種類別にリストされたデータを確認する
 
 データ マッピングの概要レポートの [_オープン アクセス許可_] 領域には、スキャン対象のすべてのファイルに存在する各アクセス許可の種類の割合が表示されます。この表には、次の種類の権限が表示されます。
@@ -178,6 +185,7 @@ image:screenshot-compliance-report-buttons.png["データ マッピング レポ
 
 
 
+[[review-the-age-and-size-of-data]]
 === データの古さとサイズを確認する
 
 データ マッピングの概要レポートの _Age_ グラフと _Size_ グラフの項目を調査して、削除する必要があるデータや、より安価なオブジェクト ストレージに階層化する必要があるデータがあるかどうかを確認できます。

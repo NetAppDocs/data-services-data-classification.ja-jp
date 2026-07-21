@@ -25,6 +25,7 @@ TIP: オンプレミスの VMware vSphere 環境では、Data Classification は
 
 
 
+[[supported-data-sources]]
 == サポートされているデータソース
 
 プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもあります）でインストールされた場合、Data Classificationは、オンプレミスサイトにローカルに存在するデータソースからのデータのみをスキャンできます。現時点では、Data Classificationは次の*ローカル*データソースをスキャンできます：
@@ -37,6 +38,7 @@ TIP: オンプレミスの VMware vSphere 環境では、Data Classification は
 
 
 
+[[limitations]]
 == 制限事項
 
 ほとんどのデータ分類機能は、インターネットにアクセスできないサイトに展開された場合でも機能します。ただし、インターネット アクセスを必要とする特定の機能はサポートされていません。例：
@@ -51,6 +53,7 @@ Console エージェントと Data Classification の両方で、新しい機能
 
 
 
+[[quick-start]]
 == クイック スタート
 
 以下の手順に従ってすぐに開始するか、残りのセクションまでスクロールして詳細を確認してください。
@@ -69,12 +72,14 @@ NetApp Support Site からデータ分類ソフトウェアをダウンロード
 
 
 
+[[install-the-console-agent]]
 == コンソールエージェントをインストールする
 
 プライベートモードでConsoleエージェントをまだインストールしていない場合は、 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-private-mode.html["Console エージェントを導入する"^]オフラインサイトのLinuxホスト上に配置します。
 
 
 
+[[prepare-the-linux-host-system]]
 == Linuxホストシステムを準備する
 
 データ分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。
@@ -185,7 +190,11 @@ firewall-cmd --reload
 TIP: データ分類ホスト システムの IP アドレスは、インストール後に変更することはできません。
 
 
+NOTE: データ分類インストーラーは、UID 4321とGID 4321を予約します。インストールを開始する前に、ホストマシン上でUID 4321とGID 4321が使用されていないことを確認してください。それらが既に使用されている場合、インストールは「invalid user」というエラーメッセージとともに失敗します。
 
+
+
+[[verify-console-and-data-classification-prerequisites]]
 == コンソールとデータ分類の前提条件を確認する
 
 Data Classification を導入する前に、次の前提条件を確認して、サポートされている構成があることを確認してください。
@@ -200,6 +209,7 @@ Data Classification を導入する前に、次の前提条件を確認して、
 
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 必要なポートがすべて有効になっていることを確認します
 
 コンソール エージェント、データ分類、Active Directory、およびデータ ソース間の通信に必要なすべてのポートが開いていることを確認する必要があります。
@@ -263,6 +273,7 @@ Active Directory の情報が必要です:
 |===
 
 
+[[install-data-classification-on-the-on-premises-linux-host]]
 == オンプレミス Linux ホストに Data Classification をインストールします
 
 通常の構成では、ソフトウェアを単一のホストシステムにインストールします。
@@ -346,6 +357,7 @@ Data Classification インストーラーは、パッケージをインストー
 
 
 
+[[upgrade-data-classification-software]]
 == Data Classification ソフトウェアのアップグレード
 
 Data Classification ソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして、最新のソフトウェアと機能を使用していることを確認する習慣を身に付ける必要があります。アップグレードを自動的に実行するためのインターネット接続がないため、Data Classification ソフトウェアを手動でアップグレードする必要があります。
@@ -394,6 +406,7 @@ start_darksite_upgrade.sh
 
 
 
+[[next-steps]]
 == 次のステップ
 
 * link:task-scanning-overview.html["データソースのスキャンを設定する"]

@@ -4,6 +4,7 @@
 
 
 
+[[support-for-rhel-9-5]]
 === RHEL 9.5 のサポート
 
 このリリースでは、これまでサポートされていたバージョンに加えて、Red Hat Enterprise Linux v9.5 のサポートも提供されます。これは、ダーク サイトの展開を含む、 BlueXP classificationの手動オンプレミス インストールに適用されます。
@@ -12,6 +13,7 @@
 
 
 
+[[prioritize-map-only-scans]]
 === マップのみのスキャンを優先する
 
 マップのみのスキャンを実行する場合、最も重要なスキャンを優先することができます。この機能は、複数の作業環境があり、優先度の高いスキャンを優先的に完了させたい場合に役立ちます。
@@ -26,6 +28,7 @@
 
 
 
+[[retry-all-scans]]
 === すべてのスキャンを再試行する
 
 BlueXP classificationは、失敗したすべてのスキャンを一括して再試行する機能をサポートしています。
@@ -40,6 +43,7 @@ BlueXP classificationは、失敗したすべてのスキャンを一括して�
 
 
 
+[[improved-categorization-model-accuracy]]
 === 分類モデルの精度向上
 
 機械学習モデルの精度はlink:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["定義済みカテゴリ"]11%向上しました。

@@ -28,6 +28,7 @@ Swagger ドキュメントの API を使用すると、検索、データの集�
 
 
 
+[[overview]]
 == 概要
 
 API を使用すると、次の機能を実行できます。
@@ -56,6 +57,7 @@ API は安全で、UI と同じ認証方法を使用します。認証に関す�
 
 
 
+[[accessing-the-swagger-api-reference]]
 == Swagger APIリファレンスへのアクセス
 
 Swagger にアクセスするには、Data Classification インスタンスの IP アドレスが必要です。クラウド展開の場合は、パブリック IP アドレスを使用します。次に、このエンドポイントにアクセスする必要があります：
@@ -64,6 +66,7 @@ Swagger にアクセスするには、Data Classification インスタンスの 
 
 
 
+[[example-using-the-apis]]
 == APIの使用例
 
 次の例は、ファイルをコピーするための API 呼び出しを示しています。

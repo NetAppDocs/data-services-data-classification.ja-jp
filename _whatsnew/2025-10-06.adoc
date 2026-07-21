@@ -4,12 +4,14 @@
 
 
 
+[[bluexp-classification-is-now-netapp-data-classification]]
 === BlueXP classificationはNetApp Data Classificationになりました
 
 BlueXP classificationがNetApp Data Classification に変更されました。名前の変更に加えて、ユーザー インターフェイスも強化されました。
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXPはNetApp Consoleになりました
 
 BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。
@@ -20,6 +22,7 @@ NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエ
 
 
 
+[[enhanced-investigation-experience]]
 === 強化された調査エクスペリエンス
 
 新しい検索可能なフィルター、値ごとの結果数、主要な調査結果をまとめたリアルタイムの分析情報、カスタマイズ可能な列とスライド式の詳細ペインを備えた更新された結果テーブルを使用して、データをより速く見つけて理解できます。
@@ -28,12 +31,14 @@ NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエ
 
 
 
+[[new-governance-compliance-dashboards]]
 === 新しいガバナンスとコンプライアンスのダッシュボード
 
 直感的なウィジェット、より鮮明なビジュアル、改善された読み込みパフォーマンスにより、重要な洞察をより早く得ることができます。詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["データに関するガバナンス情報を確認する"]そしてlink:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["データに関するコンプライアンス情報を表示する"]。
 
 
 
+[[policies-for-saved-queries-preview]]
 === 保存されたクエリのポリシー（プレビュー）
 
 データ分類により、条件付きアクションによるガバナンスを自動化できるようになりました。自動削除を含む保持ルールを作成し、定期的な電子メール通知を設定できます。これらはすべて、更新された保存済みクエリ ページから管理されます。
@@ -42,6 +47,7 @@ NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエ
 
 
 
+[[actions-preview]]
 === アクション（プレビュー）
 
 調査ページから直接制御し、ファイルを個別または一括で削除、移動、コピー、タグ付けして、効率的なデータ管理と修復を実現します。
@@ -50,6 +56,7 @@ NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエ
 
 
 
+[[support-for-google-cloud-netapp-volumes]]
 === Google Cloud NetApp Volumesのサポート
 
 Data Classification は、 Google Cloud NetApp Volumesでのスキャンをサポートするようになりました。NetApp ConsoleからGoogle Cloud NetApp Volumesを簡単に追加して、シームレスなデータ スキャンと分類を実現します。詳細については、 link:https://docs.netapp.com/us-en/data-services-data-classification/task-scan-google-cloud.html["Google Cloud NetApp Volumesをスキャンする"^]。
