@@ -276,7 +276,7 @@ Active Directory の情報が必要です:
 [[install-data-classification-on-the-on-premises-linux-host]]
 == オンプレミス Linux ホストに Data Classification をインストールします
 
-通常の構成では、ソフトウェアを単一のホストシステムにインストールします。
+ほとんどの場合、Data Classification は単一ホストシステムにインストールします。これはコンソールエージェントと同じ VM ホストではありません。
 
 image:diagram_deploy_onprem_single_host_no_internet.png["インターネットにアクセスできないオンプレミスに導入された単一のData Classificationインスタンスを使用する際にスキャンできるデータソースの場所を示す図。"]
 
