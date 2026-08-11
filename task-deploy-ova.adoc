@@ -82,6 +82,8 @@ NOTE: パスワードは、rootアクセス、SSHアクセス、およびシス�
 +
 *DATASENSE-INSTALLER-<version>.tar.gz* という名前のファイルを選択します。
 
+. インストーラーファイルをVM ホストにコピーします： `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`。
+. ホストマシン上でインストーラーファイルを解凍してください。
 . コンソールで、*ガバナンス > 分類*を選択します。
 . *Deploy Classification* を選択します。
 +

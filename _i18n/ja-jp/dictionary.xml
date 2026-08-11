@@ -2765,15 +2765,10 @@
   <block id="940bf53ea930a1f49efdf8612450ae71" category="paragraph">設定ページから、いつでもシステムのスキャンを開始または停止できます。マッピングのみのスキャンからフルスキャンへ、またはその逆へ切り替えることもできます。</block>
   <block id="5bc17c894fad3cdf1bb9e5fac8a05180" category="admonition">マッピングのみのスキャンはデータベースでは利用できません。データベーススキャンを有効にする場合は、フルスキャンである必要があります。</block>
   <block id="037776b181a112abfd49de7a866dc805" category="list-text">システム内のすべての資産のスキャンタイプを変更するには、そのシステムのアクションメニューを選択し、目的のスキャンタイプに変更します。例えば、ファイル共有グループのスキャンをマッピングのみからフルスキャンに変更するには、*すべての共有をスキャン：フルスキャン*を選択します。</block>
-  <block id="46064a9877da6bfa4380744d6db1acce" category="paragraph">個々のバケット、共有、またはボリュームのスキャンタイプを変更するには、システムの **Manage** ボタンを選択します。</block>
-  <block id="dba31310f2f7258e817e0d9fd2e721b0" category="paragraph">個別のシステム構成で、変更するアセットを選択します。*スキャンタイプ*を選択し、希望のスキャンタイプに変更してください。</block>
   <block id="f02b5e4f3032639c619ae6781449a3a3" category="paragraph">最も重要なマップのみのスキャンまたはフルスキャンを優先して、優先度の高いスキャンが最初に完了するようにすることができます。</block>
-  <block id="c8c6bb7cba8332ae7fc5445397cef54e" category="list-text">スキャンを変更するシステムを見つけて、*管理*を選択します。</block>
-  <block id="7a6865f1d84cffa710d26db8ec40939a" category="list-text">優先順位を付けるリソースを見つけます。アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>オプションを選択し、*スキャンの優先順位付け*を選択します。</block>
   <block id="8af77770cd7de8b2ede4039a459ba79b" category="list-text">システムの*管理*ボタンを選択します。</block>
   <block id="700c3fc14a06a93f4a0f4fd3e14e778c" category="list-text">システム概要画面で、「スキャンタイプ」列を選択してください。スキャンタイプを *Off* に設定してください。</block>
   <block id="5180d0324f8e278f28f5cb5f57d73022" category="paragraph">スキャンを一時停止すると、データ分類機能はリポジトリへの変更や追加に関する今後のスキャンを実行しなくなります。現在のスキャン結果はすべてデータ分類機能で引き続きアクセス可能です。</block>
-  <block id="1da19acf6a744b5b114c182f4f38a0fe" category="list-text">一時停止したいリソースを特定してください。各リソースについて、アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>オプションを選択してから*スキャンを一時停止*を選択してください。</block>
   <block id="4b3336b6ea1c6732cab4f187bbd9a727" category="paragraph">スキャンを再開する場合は、手順を繰り返してから *Resume scan* を選択してください。</block>
   <block id="e5cfb76a40ac59186a4df3570a25b9f9" category="list-text">設定ページで Google Cloud NetApp Volumes システムを探します。</block>
   <block id="334ddcf38a7f7b340edbbfc0330759a9" category="list-text">ボリュームをスキャンする方法を決定します。<block ref="323939a2597e9b17834689d82c0946fb" category="inline-link-macro-rx"></block>。</block>
@@ -2862,4 +2857,17 @@
   <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">マップのみのスキャンを実行すると、データの概要を把握するのに役立ちます。この概要を確認した後、どのデータソースに対してフルスキャンを実行するかを決定できます。</block>
   <block id="054d46968a7383743285f7a0e8b6508c" category="paragraph">ほとんどの場合、Data Classification は単一ホストシステムにインストールします。これはコンソールエージェントと同じ VM ホストではありません。</block>
   <block id="ad54f23b3db54b6c128eb84641ffe234" category="paragraph">ほとんどの場合、データ分類機能は単一ホストシステムにインストールされます。これはコンソールエージェントと同じVMホストではありません。<block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a03ddc03cf03c3c53151794c95579535" category="doc">スキャン管理を強化するアクティブスキャンタブ</block>
+  <block id="a0cea6bf19dc575d443135e2757e9433" category="paragraph">データ分類機能の設定メニューに「アクティブなスキャン」タブが追加され、スキャンの管理がより使いやすくなりました。「アクティブなスキャン」タブには、スキャン対象としてアクティブ化したすべてのボリュームの概要が表示され、使い慣れたフィルターを使用してリソースを並べ替えることができます。このタブは、スキャンの優先順位付け、スキャンの一時停止、エラーの確認を行うための中心的な場所としても機能します。</block>
+  <block id="3a5a93243a84be3819139aaa12091950" category="inline-link-macro">スキャンの管理</block>
+  <block id="4654bf4010ded28801b1ead2622546bd" category="paragraph">詳細については、<block ref="baaf78fc7ed88d18ef7a900963d01435" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="05db99f9bf3fa30a45391861bf68ea89" category="list-text">インストーラーファイルをVM ホストにコピーします：<block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>。</block>
+  <block id="113d759ea479c7065aec91bafa8eea6a" category="list-text">ホストマシン上でインストーラーファイルを解凍してください。</block>
+  <block id="a7ddf9b71123a47ee9a5c6dbd14045c6" category="list-text">個々のバケット、共有、またはボリュームのスキャンタイプを変更するには、**アクティブなスキャン**タブを選択します。変更するリソースを特定するために、適切なフィルターを適用します。</block>
+  <block id="32ac8127b347019da93e705c38cb8c41" category="paragraph">「スキャンタイプ」列で、指定されたリソースを選択し、**マッピングのみ**または**フルスキャン**に変更します。</block>
+  <block id="26a9735f63e866a3d0de3e4e266e7af8" category="list-text">**アクティブなスキャン**タブを選択してください。</block>
+  <block id="ac4eb5f5328036e2cd4e3dbfa971e175" category="list-text">必要に応じて、適切なフィルターを適用して、変更するリソースを特定します。優先するリソースを見つけます。アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>オプションを選択し、「スキャンを優先」を選択します。</block>
+  <block id="687c102bfd5cd4e0df7368ee54670aa2" category="list-text">必要に応じて、適切なフィルターを適用して、変更するリソースを特定します。一時停止するリソースを特定します。各リソースについて、アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>オプションを選択し、「スキャンを一時停止」を選択します。</block>
+  <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026年8月10日</block>
+  <block id="05ad566aec59d2434a4789dad053f408" category="paragraph">*バージョン 1.56*</block>
 </blocks>
