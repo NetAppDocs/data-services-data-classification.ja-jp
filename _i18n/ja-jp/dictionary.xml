@@ -2432,7 +2432,6 @@
   <block id="a19fda4781709630dbfb543922e4d612" category="paragraph">古いデータは、_最終アクセス_ または _最終変更_ された日時に基づいて定義できます。選択できる期間は 6 か月前から 10 年前までです。</block>
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">デフォルトでは、データが最後に変更されてから 3 年前であれば古いデータとみなされます。</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">古いデータを定義する</block>
-  <block id="41c8212e8259ff083fe9cdf357f8a4a6" category="list-text">ランサムウェア耐性で、[**構成**] を選択します。</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">古いデータ定義の期間を選択します。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">**保存**を選択します。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2552,7 +2551,6 @@
   <block id="b231d70c2e9c026262bda45de2cf8e61" category="doc">NetApp Data Classification にログインする</block>
   <block id="f214292b356953b67175bbd37992066d" category="summary">調査ダッシュボードでデータをフィルタリングした後、非構造化データをコピー、移動、削除することができます。</block>
   <block id="645af234aa1818d98e8bb6c780fb0e42" category="doc">NetApp Data Classificationを使用したファイルのコピー、移動、削除</block>
-  <block id="4c6b11e5b29f298bdccac50248f21007" category="paragraph">ガバナンスやコスト削減の機会に関するインサイトを提供するだけでなく、NetApp Data Classification では、インベスティゲーションダッシュボードからファイルに対してアクションを実行することも可能です。インベスティゲーションダッシュボードでデータをフィルタリングした後、非構造化データのコピー、移動、削除ができます。これらのアクションを実行することで、たとえばファイルをより安全な場所に移動したり、古いファイルや重複ファイルを削除してコスト削減の機会を生み出したりすることで、コンプライアンスの向上につながります。</block>
   <block id="558f28628ba8ab4cb8420949524832d3" category="section-title">ファイルをコピーする</block>
   <block id="e54a222aee96b176f405c4031ff80909" category="paragraph">Data Classificationは、最大1GBまでのファイルのコピーをサポートしています。合計で1TBのデータ、または500万ファイルのいずれか、先に達した方までコピーできます。CIFSまたはNFSの宛先にファイルをコピーできます。コピーしても元のファイルには影響はありません。</block>
   <block id="37214830ec688e601a722f40084e9795" category="list-text">調査ダッシュボードで、コピーするファイルを選択します。</block>
@@ -2576,7 +2574,6 @@
   <block id="9b1a8f320a2c08a8370e356510090979" category="paragraph"><block ref="9b1a8f320a2c08a8370e356510090979" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7afd3db29a42496704a6705958fec121" category="list-text">**アイテムを移動する**を選択します。</block>
   <block id="19e43848563797a6f937c7895b604754" category="section-title">ファイルを削除する</block>
-  <block id="bf7a8fa340e92f5931d748d2f4929afb" category="paragraph">調査ダッシュボードでデータをフィルタリングして、スペースとコストの節約機会を見つけると、それらのファイルを削除できます。ファイルの削除は、非構造化ファイルのみでサポートされています。</block>
   <block id="fe3f40b2ceb6ec005d118e22ab125813" category="list-text">調査ダッシュボードで、削除するファイルを選択します。</block>
   <block id="9f9603fa59f6dd606ff86c8b621cae42" category="list-text">確認ダイアログで「permanently delete」と入力します。</block>
   <block id="de44f74c0cf208f9b074a847f28871e1" category="list-text">操作を確定するには、**ファイルの削除**を選択してください。</block>
@@ -2870,4 +2867,6 @@
   <block id="687c102bfd5cd4e0df7368ee54670aa2" category="list-text">必要に応じて、適切なフィルターを適用して、変更するリソースを特定します。一時停止するリソースを特定します。各リソースについて、アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>オプションを選択し、「スキャンを一時停止」を選択します。</block>
   <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026年8月10日</block>
   <block id="05ad566aec59d2434a4789dad053f408" category="paragraph">*バージョン 1.56*</block>
+  <block id="2a6207bf09c73302b5baadda003d21a2" category="paragraph">NetApp Data Classification を使用すると、調査ダッシュボードで検出されたファイルに対して操作を実行できます。データをフィルタリングした後、非構造化データをコピー、移動、削除することで、コンプライアンスを向上させたり（例えば、機密ファイルをより安全な場所に移動したり）、古いファイルや重複ファイルを削除してコストを削減したりできます。</block>
+  <block id="f011267af7448f5cee47e71e75b30301" category="paragraph">調査ダッシュボードでデータをフィルタリングして、スペースとコストの節約機会を見つけた場合、それらのファイルを削除できます。構造化されていないファイルのみ削除できます。</block>
 </blocks>
