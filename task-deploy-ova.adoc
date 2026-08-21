@@ -14,7 +14,7 @@ summary: NetApp Data Classificationは、Open Virtual Appliance（OVA）を使�
 
 
 [role="lead"]
-NetApp Data Classificationは、VMware Open Virtual Appliance（OVA）を使用した導入をサポートしており、オンプレミスのVMware vSphere環境でData Classificationをインストールして実行するための管理パッケージを提供します。OVA導入方式は、事前検証済みのNetApp管理環境を提供し、導入を簡素化します。
+インストールと運用を簡素化する管理パッケージである、事前検証済みのOpen Virtual Appliance（OVA）を使用して、オンプレミスのVMware vSphere環境にNetApp Data Classificationをデプロイします。
 
 この方法は、VMware ベースの新規導入に推奨されます。
 
@@ -48,7 +48,7 @@ OVAファイルを使用してData Classificationをインストールする前�
 
 | `DataClassification-<version>-XL.ova` | 大規模な本番環境ワークロード：32 CPU、128 GB RAM、1 TB ディスク | 5億ファイル 
 |===
-. vSphere クライアントを入力します。対象のクラスターまたはホストを右クリックし、*Deploy OVF Template* > *Create VM from OVA* を選択します。
+. vSphere クライアントを開きます。対象のクラスターまたはホストを右クリックし、「OVF テンプレートのデプロイ」>「OVA から VM を作成」を選択します。
 . ステップ1でダウンロードしたOVAファイルをアップロードします。
 . *VM名*、ターゲットとなるデータセンター、ホストまたはクラスタ、およびデータストアを指定します。
 . NetAppエンドユーザー使用許諾契約書に同意します。
@@ -82,16 +82,16 @@ NOTE: パスワードは、rootアクセス、SSHアクセス、およびシス�
 +
 *DATASENSE-INSTALLER-<version>.tar.gz* という名前のファイルを選択します。
 
-. インストーラーファイルをVM ホストにコピーします： `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`。
-. ホストマシン上でインストーラーファイルを解凍してください。
+. VMホスト上でインストーラーアーカイブを展開するには、 `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`を実行します。
+. ホストマシン上でインストーラーアーカイブを展開します。
 . コンソールで、*ガバナンス > 分類*を選択します。
 . *Deploy Classification* を選択します。
 +
 image:screenshot-deploy-classification.png["データ分類を有効にするボタンを選択するスクリーンショット。"]
 
-. クラウドで準備したインスタンスにデータ分類をインストールするか、オンプレミスで準備したインスタンスにデータ分類をインストールするかに応じて、適切な *デプロイ* オプションを選択してデータ分類のインストールを開始します。
-. _オンプレミスでのデータ分類の展開_ ダイアログが表示されます。提供されたコマンドをコピーします（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` ) を作成し、テキスト ファイルに貼り付けて、後で使用することもできます。次に、[閉じる] を選択してダイアログを閉じます。
-. 管理者ユーザーを使用して、SSH経由でOVAアプライアンスに接続します。
+. インスタンスタイプに適した *デプロイ* オプションを選択してください：クラウドまたはオンプレミス。
+. _Deploy Data Classification On Premises_ ダイアログが表示されます。提供されたコマンドをコピーして（例： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`）、後で使用するためにテキストファイルに保存します。*閉じる* を選択してダイアログを閉じます。
+. SSHを使用して、管理者ユーザーとしてOVAアプライアンスに接続します。
 . 生成したインストールコマンドを実行してインストールを完了し、システムを組織に登録してください。
 
 

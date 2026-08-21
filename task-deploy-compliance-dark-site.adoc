@@ -4,7 +4,7 @@ permalink: task-deploy-compliance-dark-site.html
 keywords: cloud compliance, data sense, get started, web browser connectivity, cloud compliance access, privacy, linux, ubuntu, compliance, on-premises, dark site, upgrade, private mode, docker, podman, rhel, bluexp classification, classification, install, cloud data sense, linux host 
 summary: 'インターネットにアクセスできないオンプレミス サイトの Linux ホストにNetApp Data Classification をインストールするには、いくつかの手順を実行します (「プライベート モード」とも呼ばれます)。このタイプのインストールは、安全なサイトに最適です。' 
 ---
-= インターネットにアクセスできない Linux ホストにNetApp Data Classificationをインストールする
+= プライベートモードのLinuxホストに NetApp Data Classification をインストールする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: 'インターネットにアクセスできないオンプレミス サ
 
 
 [role="lead"]
-インターネットにアクセスできないオンプレミス サイトの Linux ホストにNetApp Data Classification をインストールすることを、_プライベート モード_ と呼びます。インストール スクリプトを使用するこのタイプのインストールでは、 NetApp ConsoleSaaS レイヤーに接続できません。
+インターネットアクセスがないオンプレミスサイトの Linux ホストに NetApp Data Classification をインストールするには、_プライベートモード_を使用します。このデプロイではインストールスクリプトを使用し、Data Classification インスタンスを NetApp Console SaaS レイヤーから切断された状態に維持するため、隔離された環境でローカルデータソースをスキャンできます。
 
 link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Console エージェントと Data Classification のさまざまな導入モードについて説明します"^]。
 
 
 TIP: オンプレミスの VMware vSphere 環境では、Data Classification は簡素化されたlink:task-deploy-ova.html["OVAを使用した導入"]をサポートします。
 
-データ分類のインストール スクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認することから始まります。前提条件がすべて満たされている場合は、インストールが開始されます。データ分類のインストールの実行とは別に前提条件を検証したい場合は、前提条件のみをテストする別のソフトウェア パッケージをダウンロードできます。link:task-test-linux-system.html["Linuxホストがデータ分類をインストールする準備ができているかどうかを確認する方法をご覧ください"] 。
+データ分類のインストールスクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認します。前提条件を満たしている場合、インストールが開始されます。データ分類のインストールとは別に前提条件を確認したい場合は、前提条件のみをテストする別のソフトウェアパッケージをダウンロードできます。link:task-test-linux-system.html["Linuxホストがデータ分類をインストールする準備ができているかどうかを確認する方法をご覧ください"]。
 
 
 
@@ -84,7 +84,7 @@ NetApp Support Site からデータ分類ソフトウェアをダウンロード
 
 データ分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。
 
-* データ分類は専用ホスト上で実行する必要があります。ホストは、他のアプリケーションやウイルス対策などのサードパーティ製ソフトウェアと共有することはできません。
+* NetApp Data Classification は専用ホスト上で実行する必要があります。ホストは、他のアプリケーションや、ウイルス対策ソフトなどのサードパーティ製ソフトウェアと共有することはできません。
 * データ分類でスキャンする予定のデータ セットに合わせてサイズを選択します。
 +
 [cols="17,17,27,31"]
@@ -151,7 +151,7 @@ NetApp Support Site からデータ分類ソフトウェアをダウンロード
 ** ホスト システムで Advanced Vector Extensions (AVX2) を有効にする必要があります。
 
 
-* *Red Hat サブスクリプション管理*: ホストは Red Hat サブスクリプション管理に登録されている必要があります。登録されていない場合、システムはリポジトリにアクセスできず、インストール中に必要なサードパーティ製ソフトウェアを更新できません。
+* *Red Hat Subscription Management*：ホストは Red Hat Subscription Management に登録されている必要があります。登録されていない場合、システムはインストール中に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 * *追加ソフトウェア*: Data Classification をインストールする前に、ホストに次のソフトウェアをインストールする必要があります。
 +
 ** 使用している OS に応じて、次のいずれかのコンテナ エンジンをインストールする必要があります。

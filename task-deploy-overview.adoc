@@ -4,7 +4,7 @@ permalink: task-deploy-overview.html
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
 summary: ニーズを満たすNetApp Data Classificationの展開を計画します。 
 ---
-= NetApp Data Classification の導入方法を選択してください
+= NetApp Data Classification の導入方法
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: ニーズを満たすNetApp Data Classificationの展開を計画しま
 
 
 [role="lead"]
-NetApp Data Classificationは、さまざまな方法で導入できます。利用可能な方法を確認して、ニーズに最適な方法を選択してください。
+NetApp Data Classification は、さまざまなネットワークおよび接続要件に対応するため、複数の展開方法をサポートしています。利用可能な方法を確認し、お客様の環境に最適なオプションを選択してください。
 
 * link:task-deploy-cloud-compliance.html["コンソールを使用してクラウドにデプロイする"] 。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。
-* link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにインストールする"] 。インターネットにアクセスできるネットワーク内の Linux ホスト、またはクラウド内の Linux ホストに Data Classification をインストールします。このタイプのインストールは、オンプレミスにあるデータ分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、必須ではありません。
-* link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミス サイトの Linux ホストにインストールする"]_プライベート モード_ とも呼ばれます。インストール スクリプトを使用するこのタイプのインストールでは、コンソール SaaS レイヤーへの接続はありません。
+* link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにインストールする"]。データ分類機能を、ネットワーク内またはクラウド上の Linux ホストにインストールしてください。このオプションは、オンプレミスに配置された Data Classification インスタンスからオンプレミスの ONTAP システムをスキャンする場合に役立つことがありますが、インスタンスをオンプレミスに配置することは必須ではありません。
+* link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミス サイトの Linux ホストにインストールする"]これは_プライベートモード_と呼ばれます。インストールスクリプトを使用するこのタイプのインストールは、Console SaaS レイヤーとの接続がありません。
 
 
 
@@ -29,6 +29,6 @@ TIP: オンプレミスの VMware vSphere 環境では、Data Classification は
 [[on-premises-installation-script]]
 == オンプレミスインストールスクリプト
 
-インターネットアクセスのある Linux ホストへのインストールとインターネット接続のないオンプレミス Linux ホストへのインストールの両方で、インストールスクリプトを使用します。スクリプトはまず、システムと環境が前提条件を満たしているかどうかを確認することから始まります。前提条件が満たされていれば、インストールが開始されます。
+どちらのインストール方法もインストールスクリプトを使用します。このスクリプトは、システムと環境が前提条件を満たしているかどうかを確認します。前提条件を満たしている場合、インストールが開始されます。
 
-Linuxの準備状況を確認するための専用ソフトウェアパッケージが用意されています。検証パッケージを実行するには、link:task-test-linux-system.html["LinuxホストがData Classificationをインストールする準備ができていることを確認してください。"]を参照してください。
+Linuxホストが準備完了かどうかを確認するための専用ソフトウェアパッケージも利用可能です。検証パッケージを実行するには、link:task-test-linux-system.html["LinuxホストがData Classificationをインストールする準備ができていることを確認してください。"]を参照してください。

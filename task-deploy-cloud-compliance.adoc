@@ -16,7 +16,7 @@ summary: NetApp Data Classification をクラウドに導入するには、い�
 [role="lead"]
 NetApp Consoleを使用して、クラウドにNetApp Data Classification を導入できます。コンソールは、コンソール エージェントと同じクラウド プロバイダー ネットワークにデータ分類インスタンスを展開します。
 
-また、link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにデータ分類をインストールする"] 。このタイプのインストールは、オンプレミスにあるデータ分類インスタンスを使用してオンプレミスのONTAPシステムをスキャンする場合に適したオプションですが、必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
+また、link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストにデータ分類をインストールする"]こともできます。オンプレミスに配置された NetApp Data Classification インスタンスを使用してオンプレミス ONTAP システムをスキャンする場合は、このタイプのインストールが適切な選択肢となる場合があります。ただし、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアの動作はまったく同じです。
 
 
 
@@ -45,9 +45,9 @@ NetApp Consoleを使用して、クラウドにNetApp Data Classification を導
 [[create-a-console-agent]]
 == コンソールエージェントを作成する
 
-コンソールエージェントがまだない場合は、クラウド プロバイダでコンソールエージェントを作成します。を参照してください https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azureでコンソールエージェントを作成する"^]、または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、データ分類をアクティブ化する前にコンソールエージェントがセットアップされているはずです https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["コンソール機能にはコンソールエージェントが必要です"]が、今すぐ設定する必要がある場合もあります。
+コンソールエージェントがまだない場合は、クラウド プロバイダでコンソールエージェントを作成してください。参照： https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWSでコンソールエージェントを作成する"^]または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azureでコンソールエージェントを作成する"^]、または https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP でコンソール エージェントを作成する"^]。ほとんどの場合、Data Classification をアクティブ化する前にコンソールエージェントがセットアップされているはずです（ほとんどの https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["コンソール機能にはコンソールエージェントが必要です"]）が、今すぐ設定する必要がある場合もあります。
 
-特定のクラウド プロバイダーにデプロイされたコンソール エージェントを使用する必要があるシナリオがいくつかあります。
+特定のクラウド プロバイダにデプロイされたコンソールエージェントを使用する必要があるシナリオがいくつかあります。
 
 * AWS のCloud Volumes ONTAPまたはAmazon FSx for ONTAPバケット内のデータをスキャンする場合は、AWS のコンソールエージェントを使用します。
 * Azure のCloud Volumes ONTAPまたはAzure NetApp Filesでデータをスキャンする場合は、Azure のコンソール エージェントを使用します。
