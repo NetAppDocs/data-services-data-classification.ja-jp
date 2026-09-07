@@ -358,8 +358,6 @@
   <block id="3d2322c36c5c8998bf0183ca389aa7b6" category="inline-link-macro">データ分類が接続するエンドポイントについて学習する</block>
   <block id="a889fab695578c45f1fd5da621fa33f8" category="paragraph">厳しいネットワーク要件がある場合、<block ref="a9a9ec7bd20cc97c95a6363402756430" category="inline-link-macro-rx"></block> 。</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">質問に対する簡単な回答を探している場合は、この FAQ が役立ちます。</block>
-  <block id="91d5470ff0de1d64ddb0c8c3bef0b246" category="section-title">NetApp Data Classification</block>
-  <block id="46e8d23cf6731fff45d8d2f8b0904245" category="paragraph">次の質問は、データ分類に関する一般的な理解を提供します。</block>
   <block id="5c96bb1e94b5c40e2b4c67e86da9035b" category="section-title">データ分類はどのように機能しますか?</block>
   <block id="69f53784345b32a25fe734a19ae13310" category="inline-link-macro">データ分類の仕組みについて詳しく見る</block>
   <block id="2d1e0aad948d43deac89a802d5bce8f4" category="paragraph"><block ref="1bb3f55ec91d163a1822a0087bd5a3d8" category="inline-link-macro-rx"></block> 。</block>
@@ -381,8 +379,6 @@
   <block id="9be1f335c2ef769a400d78ab0a800b8e" category="paragraph">データ分類には広範な検索機能が用意されており、接続されているすべてのソースから特定のファイルやデータを簡単に検索できます。データ分類により、ユーザーはメタデータが反映するものよりもさらに深く検索できるようになります。これは言語に依存しないサービスであり、ファイルを読み取って、名前や ID などの多数の機密データ タイプを分析することもできます。たとえば、ユーザーは構造化データ ストアと非構造化データ ストアの両方を検索して、企業ポリシーに違反してデータベースからユーザー ファイルに漏洩した可能性のあるデータを見つけることができます。検索は後で使用するために保存することができ、設定された頻度で検索して結果に対してアクションを実行するためのポリシーを作成することもできます。</block>
   <block id="2d31401a32265d70cbeabb4ea0f7860c" category="paragraph">関心のあるファイルが見つかったら、タグ、システム アカウント、バケット、ファイル パス、カテゴリ (分類から)、ファイル サイズ、最終更新日時、アクセス許可の状態、重複、機密レベル、個人データ、ファイル内の機密データの種類、所有者、ファイルの種類、ファイル サイズ、作成時刻、ファイル ハッシュ、データが注意を求める誰かに割り当てられたかどうかなどの特性を一覧表示できます。フィルターを適用して、関係のない特性を除外することができます。</block>
   <block id="68faa01ab5309239b343d2b3e54dc3a4" category="paragraph">データ分類には、適切な権限がある場合にファイルを移動または削除できるようにするロールベースのアクセス制御 (RBAC) も備わっています。適切な権限がない場合、タスクは組織内で適切な権限を持つユーザーに割り当てることができます。</block>
-  <block id="4a7a7a232bedccb0f30f31bc638aaa42" category="section-title">データ分類管理とプライバシー</block>
-  <block id="73fdef145c3e10f36c70c633eb4606e1" category="paragraph">次の質問は、データ分類とプライバシー設定を管理する方法に関する情報を提供します。</block>
   <block id="f9aa497a2851d74385f2e2dda0f1ddcb" category="section-title">データ分類を有効または無効にするにはどうすればよいですか?</block>
   <block id="7d782479a41a3941b57cc7c2b60d318a" category="inline-link-macro">始める方法を学ぶ</block>
   <block id="3d3be971915024b4ad0e60e058739a86" category="paragraph">まず、コンソールまたはオンプレミス システムにデータ分類のインスタンスをデプロイする必要があります。インスタンスが実行されると、[構成] タブまたは特定のシステムを選択して、既存のシステム、データベース、およびその他のデータ ソースでサービスを有効にできます。<block ref="4451df3e03c0287dcccf33a4f12d2a7c" category="inline-link-macro-rx"></block> 。</block>
@@ -395,7 +391,6 @@
   <block id="7d3c06dd12cabb9dbaf2d41b93d148c7" category="section-title">ONTAPボリューム上に存在するスナップショットはスキャンされますか?</block>
   <block id="8e7389a535a5e35114bc4c7ec1932b25" category="paragraph">いいえ。データ分類では、コンテンツがボリューム内のコンテンツと同一であるため、スナップショットはスキャンされません。</block>
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">ONTAPボリュームでデータ階層化を有効にするとどうなりますか?</block>
-  <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">ソースシステムの種類とデータ型</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">次の質問は、スキャンできるストレージの種類と、スキャンされるデータの種類に関するものです。</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">政府地域に展開する場合、何か制限はありますか?</block>
   <block id="4d3be8fd66b76aeec012fb0eaaa79fb9" category="paragraph">データ分類は、コンソール エージェントが政府リージョン (AWS GovCloud、Azure Gov、または Azure DoD) にデプロイされている場合にサポートされます (「制限モード」とも呼ばれます)。</block>
@@ -408,7 +403,6 @@
   <block id="6585b5cb472c233a6aef35c2c6fa7acc" category="paragraph">データ分類では、すべてのファイルをスキャンしてカテゴリとメタデータの分析情報を取得し、ダッシュボードのファイル タイプ セクションにすべてのファイル タイプを表示します。</block>
   <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
   <block id="435a79cd362c0dbb62bbe01a17b51bb0" category="section-title">データ分類ではどのような種類のデータとメタデータをキャプチャしますか?</block>
-  <block id="7a86e1b46f8a8bc6d38b11447af57092" category="list-text">*データ マッピング スキャン (マッピングのみのスキャン)*: データ分類ではメタデータのみをスキャンします。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速なスコープ設定、非常に大規模な資産、優先順位付けに役立ちます。データ マッピングはメタデータに基づいており、高速スキャンと見なされます。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">高速スキャンの後、データ マッピング レポートを生成できます。このレポートは、企業のデータ ソースに保存されているデータの概要であり、リソースの使用率、移行、バックアップ、セキュリティ、コンプライアンス プロセスに関する意思決定に役立ちます。</block>
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">完全スキャン後には、データ調査ページでのデータの表示と絞り込み、ファイル内の名前の検索、ソース ファイルのコピー、移動、削除など、データに適用できる追加のデータ分類機能が多数あります。</block>
   <block id="b8ede2d0f0baf0dbbcd6b1caa3c24a82" category="inline-xref-macro">データ分類がスキャンする個人データのカテゴリ</block>
@@ -424,8 +418,6 @@
   <block id="b25aecb692661c1c8060adf882ed4516" category="paragraph">スキャン結果は、データ分類インスタンス内の Elasticsearch に保存されます。</block>
   <block id="dbe9d1b278184da6355700a9d5f9c0e6" category="section-title">データにはどのようにアクセスしますか?</block>
   <block id="de491652d87ff33197b778d41661662b" category="paragraph">データ分類は、API 呼び出しを通じて Elasticsearch に保存されているデータにアクセスします。このアクセスには認証が必要であり、AES-128 を使用して暗号化されます。  Elasticsearch に直接アクセスするには、ルート アクセスが必要です。</block>
-  <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">ライセンスとコスト</block>
-  <block id="932951e9e5366873284cc30eb367859d" category="paragraph">次の質問は、データ分類を使用するためのライセンスとコストに関するものです。</block>
   <block id="28c3608afa2b72aee07c780935140c02" category="section-title">データ分類にはどれくらいの費用がかかりますか?</block>
   <block id="4072c646e5f8c87741c4ad81ebb2b7fd" category="paragraph">データ分類は、 NetApp Consoleのコア機能です。料金はかかりません。</block>
   <block id="ca49763913aa3fd847f79592e037b62c" category="section-title">コンソールエージェントの展開</block>
@@ -434,7 +426,6 @@
   <block id="cec155912a2ab722f7c2cf854b71ac8c" category="paragraph">コンソール エージェントは、クラウド アカウント内またはオンプレミスのコンピューティング インスタンスで実行されるソフトウェアであり、 NetApp Consoleがクラウド リソースを安全に管理できるようにします。データ分類を使用するには、コンソール エージェントを展開する必要があります。</block>
   <block id="315a4734119ef2ab25e03ee01718971d" category="section-title">コンソール エージェントはどこにインストールする必要がありますか?</block>
   <block id="07bffd39dd72da3f20260b9a6907adc1" category="list-text">AWS のCloud Volumes ONTAPまたはAmazon FSx for ONTAPの場合: コンソールエージェントは AWS にあります。</block>
-  <block id="288ed4c5031b1ff115f43b30ece3261f" category="list-text">Azure またはAzure NetApp FilesのCloud Volumes ONTAPの場合: コンソール エージェントは Azure にあります。</block>
   <block id="bcdb2f393c3c29bc329a8b2e81ff4d7b" category="list-text">GCP のCloud Volumes ONTAPの場合: コンソール エージェントは GCP にあります。</block>
   <block id="5b048c185021991afc29c7cbfc99edd1" category="list-text">オンプレミスのONTAPシステムの場合: コンソール エージェントはオンプレミスです。</block>
   <block id="4499f4b8ecc24cd40dec3cac40d24ffb" category="inline-link">複数のコンソールエージェント</block>
@@ -1772,7 +1763,6 @@
   <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">使用済み容量</block>
   <block id="18de356008c3efffac62590fd7849509" category="list-text">ファイル数</block>
   <block id="50ec28434e3dc1b37a0577b6d3f9bfe6" category="list-text">ファイル作成</block>
-  <block id="cc7296b3deecc7ff6216732368393311" category="list-text">ファイルの最終アクセス</block>
   <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">ファイルの最終更新日時</block>
   <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">ファイル発見時刻</block>
   <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">権限の抽出</block>
@@ -2407,7 +2397,6 @@
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026年2月9日</block>
   <block id="58c2f245ba9fee2040b80ea19d9ccd7c" category="inline-link-macro">Console エージェントと Data Classification のさまざまな導入モードについて説明します</block>
   <block id="9da1ffd588a2b7dde94c64757653a38a" category="paragraph"><block ref="cb90c21a9c44c9ac5d86b04e8dfb0fb3" category="inline-link-macro-rx"></block>。</block>
-  <block id="eb7c0a54a684e3bfabc7abd5ff6851ad" category="paragraph">プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもあります）でインストールされた場合、Data Classificationは、オンプレミスサイトにローカルに存在するデータソースからのデータのみをスキャンできます。現時点では、Data Classificationは次の*ローカル*データソースをスキャンできます：</block>
   <block id="318a375199576f5d44d9caad0d810341" category="paragraph">現在、Data Classificationがプライベートモードで展開されている場合、Cloud Volumes ONTAP、Azure NetApp Files、またはFSx for ONTAPアカウントのスキャンはサポートされていません。</block>
   <block id="15626ba7e1a3568f27f269f3c7356d0d" category="paragraph">ほとんどのデータ分類機能は、インターネットにアクセスできないサイトに展開された場合でも機能します。ただし、インターネット アクセスを必要とする特定の機能はサポートされていません。例：</block>
   <block id="0a960471aa53e0935822c357979bce1b" category="list-text">異なるユーザー（Account AdminやCompliance Viewerなど）のConsoleロールの設定</block>
@@ -2417,13 +2406,11 @@
   <block id="1a243a611907b55cac593a5bf6f0a9ec" category="inline-link">Console エージェントをアップグレードする</block>
   <block id="fdb6099e006d1e34e0980a93da741897" category="inline-xref">データ分類ソフトウェアをアップグレードする</block>
   <block id="3e4fd25a05e07b0252f31d30edcacd17" category="paragraph">Console エージェントと Data Classification の両方で、新しい機能を有効にするには定期的な手動アップグレードが必要です。Data Classification UI ページの下部に Data Classification バージョンが表示されます。<block ref="579336e4b6257d4241fed022ac54ce8d" category="inline-link-macro-rx"></block>を確認して、各リリースの新機能とそれらの機能が必要かどうかを確認します。その後、以下の手順に従って<block ref="e2b645201e21346aaf6e5246ac969b73" category="inline-link-rx"></block>および<block ref="c988b03c9911268b8d73909a35d7a951" category="inline-xref-macro-rx"></block>を実行できます。</block>
-  <block id="1650bbddb7d8507c1c48c3366a8f1877" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Console エージェントをインストールする</block>
   <block id="391fba57e5d1e9f418e7be128128ea0a" category="inline-link">Console エージェントを導入する</block>
   <block id="0a096664cfec97158e212b2370589415" category="paragraph">プライベートモードで Console エージェントをまだインストールしていない場合は、<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block>今すぐ Linux ホストにインストールしてください。</block>
   <block id="d865ed11a69cb30e8cfd495464fbf2af" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> データ分類の前提条件を確認する</block>
   <block id="c809d3c5d7781a451f25cc2cfea66167" category="paragraph">Linuxシステムが<block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>を満たしていること、必要なソフトウェアがすべてインストールされていること、およびオフライン環境が必要な<block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>を満たしていることを確認してください。</block>
   <block id="a036c0c3c25c9be40fc8f6846935a644" category="paragraph">NetApp Support Site からデータ分類ソフトウェアをダウンロードし、使用する予定の Linux ホストにインストーラーファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従ってデータ分類インスタンスをデプロイします。</block>
-  <block id="0306d61e47aa894322ab0c0132696cc8" category="section-title">コンソールエージェントをインストールする</block>
   <block id="3a55e7058305278fe68706cba0a3bcf2" category="paragraph">プライベートモードでConsoleエージェントをまだインストールしていない場合は、<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block>オフラインサイトのLinuxホスト上に配置します。</block>
   <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">データ分類ソフトウェアは、特定のオペレーティングシステム要件、RAM要件、ソフトウェア要件などを満たすホスト上で実行する必要があります。</block>
   <block id="277cf494e8db0b6717cad837b1ae46e3" category="section-title">コンソールとデータ分類の前提条件を確認する</block>
@@ -2679,7 +2666,6 @@
   <block id="5ab7b3af0a0e193e3b83ae51e966dbce" category="inline-link-macro">マッピングスキャンと分類スキャンの違いを理解する</block>
   <block id="02614bcf82c61a4fbe02e60329718d62" category="paragraph">新しいデータソースを初めて追加する際には、マップのみのスキャンを実行するか、フルスキャンを実行するかを選択することもできます。データソースのマッピングは、内部のデータを確認するためにファイルにアクセスする必要がないため、非常に迅速に行うことができます。<block ref="3ab547d3f21adb58594a31c5258e2654" category="inline-link-macro-rx"></block>。</block>
   <block id="0d3599d119195f22defab144ac7686d8" category="paragraph">データ分類機能が、オブジェクトストレージに階層化されたコールドデータを含むボリュームをマップのみのスキャンを使用してスキャンする場合、ローカルディスク上のデータとオブジェクトストレージに階層化されたコールドデータの両方を含む、すべてのデータがスキャンされます。これは、階層化を実装している非NetApp製品にも当てはまります。</block>
-  <block id="9a359b7272907e979fce955c43bd3550" category="list-text">*データ分類ディープスキャン（フルスキャン）*：データ分類は、標準プロトコルと読み取り専用権限を使用して、環境全体でデータをスキャンします。選択されたファイルを開き、機密性の高い業務関連データ、個人情報、およびランサムウェアに関連する問題がないかスキャンします。</block>
   <block id="4029bdbd0165ca9b5362505519c89547" category="list-text">「すべてのアクセス許可を表示」ボタンを選択すると、各ファイルとディレクトリの<block ref="3e9bb1533fcbed587af1c2c23ff12e21" category="inline-link-macro-rx"></block>を確認できます。</block>
   <block id="574b787aab93bac5079f73578cff6c98" category="list-text">**設定**タブに切り替えます。</block>
   <block id="b4352027819780d4fc48b27e58c89b72" category="list-text">Active Directory の見出しで、**追加**を選択します。</block>
@@ -2844,7 +2830,6 @@
   <block id="e7403f206495eaa7a8b4ad8b82d44847" category="paragraph">コンソールエージェントがまだない場合は、クラウド プロバイダでコンソールエージェントを作成してください。参照：<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block>または<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>、または<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>。ほとんどの場合、Data Classification をアクティブ化する前にコンソールエージェントがセットアップされているはずです（ほとんどの<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>）が、今すぐ設定する必要がある場合もあります。</block>
   <block id="2024235cc750e8a78398d856645b6221" category="paragraph">特定のクラウド プロバイダにデプロイされたコンソールエージェントを使用する必要があるシナリオがいくつかあります。</block>
   <block id="8be6fc274612dd95c5c61096d76101f7" category="doc">プライベートモードのLinuxホストに NetApp Data Classification をインストールする</block>
-  <block id="f986d80be616be392eef42e61eaa03f3" category="paragraph">インターネットアクセスがないオンプレミスサイトの Linux ホストに NetApp Data Classification をインストールするには、_プライベートモード_を使用します。このデプロイではインストールスクリプトを使用し、Data Classification インスタンスを NetApp Console SaaS レイヤーから切断された状態に維持するため、隔離された環境でローカルデータソースをスキャンできます。</block>
   <block id="52cc6c5c5119ce23df5222266c788298" category="paragraph">データ分類のインストールスクリプトは、システムと環境が必要な前提条件を満たしているかどうかを確認します。前提条件を満たしている場合、インストールが開始されます。データ分類のインストールとは別に前提条件を確認したい場合は、前提条件のみをテストする別のソフトウェアパッケージをダウンロードできます。<block ref="73a6280d3a4870acf61b76881089c551" category="inline-link-macro-rx"></block>。</block>
   <block id="65f8261465925974e48975862e4b3526" category="paragraph">インストールと運用を簡素化する管理パッケージである、事前検証済みのOpen Virtual Appliance（OVA）を使用して、オンプレミスのVMware vSphere環境にNetApp Data Classificationをデプロイします。</block>
   <block id="408d01175a02c0b79ef407289a1d2244" category="list-text">vSphere クライアントを開きます。対象のクラスターまたはホストを右クリックし、「OVF テンプレートのデプロイ」&gt;「OVA から VM を作成」を選択します。</block>
@@ -2875,4 +2860,20 @@
   <block id="a482ccaec906fdea018c252d7b469289" category="paragraph">個人情報または機密性の高い個人情報を含むファイルで、最終更新日が7年以上前</block>
   <block id="750f1f9e452fdbe4031761e5c11be5fd" category="paragraph">3年以上アクセスされていないファイル</block>
   <block id="97717d7dfa17c00b3d260b7c4e76dca4" category="paragraph">ID番号、納税者番号、運転免許証番号、医療ID、パスポート番号などの個人データ識別子を含むファイルまたはデータベース列</block>
+  <block id="aac4e2f0b9cd012a3e7cd42bb201c04a" category="section-title">データ分類の基礎</block>
+  <block id="55a6f2bbfb71a03a8e09a07f24a58d12" category="list-text">AzureのCloud Volumes ONTAPまたはAzure NetApp Filesの場合：コンソールエージェントはAzureにあります。</block>
+  <block id="489072d67dfc54145ece46785f09270c" category="paragraph-title">ダークサイト展開において、Console エージェントまたは NetApp Data Classification インスタンスを別のホストに移行できますか？</block>
+  <block id="2bb582bce9724f3e0434030873deb300" category="paragraph">いいえ。NetApp Data ClassificationがConsoleエージェントにデプロイされている場合、Consoleエージェントを別のホストに移行することはサポートされていません。ダークサイトで別のConsoleエージェントにNetApp Data Classificationが必要な場合は、新しいホストに新しいConsoleエージェントとNetApp Data Classificationインスタンスをデプロイしてください。</block>
+  <block id="50cd194d2bcd6780d11151849819e983" category="section-title">データ分類管理</block>
+  <block id="3408e3f8292083a29e32f660b42f82d5" category="paragraph">以下の質問は、NetApp Data Classificationの管理方法に関する情報を提供します。</block>
+  <block id="1043813bb181c8e39242e3e14019b739" category="section-title">ソースシステムとデータ型</block>
+  <block id="d5ca92a08491d72ffb0fca19f2f5470e" category="list-text">*マップのみのスキャン*：NetApp Data Classification はメタデータのみをスキャンします。これは、データ管理とガバナンス全般、迅速なプロジェクト範囲設定、非常に大規模な環境、および優先順位付けに役立ちます。データマッピングはメタデータに基づいており、*高速*スキャンとみなされます。</block>
+  <block id="1147c7664f8a8cf1767b978acdd69446" category="list-text">*フルスキャン*：データ分類機能は、標準プロトコルと読み取り専用権限を使用して、環境全体でデータをスキャンします。選択されたファイルを開き、機密性の高い業務関連データ、個人情報、およびランサムウェアに関連する問題がないかスキャンします。</block>
+  <block id="e28dafe26ab29c32d4d8c5fd325bbbc3" category="section-title">プライバシーとデータアクセス</block>
+  <block id="e1866edff45a3209960a0641d82f44d2" category="paragraph">以下の質問は、NetApp Data Classificationにおける個人データの取り扱いおよびデータアクセスに関するものです。</block>
+  <block id="9da5a16eea29ebfd17fa84c30d1d0b74" category="paragraph">インターネットにアクセスできないオンプレミスサイトのLinuxホストに、オフラインインストール（ダークサイトとも呼ばれます）でNetApp Data Classificationをインストールするには、_プライベートモード_を使用します。このデプロイではインストールスクリプトを使用し、Data ClassificationインスタンスをNetApp Console SaaSレイヤから切断された状態に維持するため、隔離された環境でローカルデータソースをスキャンできます。</block>
+  <block id="8ed7a7d677867187b11d0e61dd946195" category="paragraph">プライベートモードでインストールした場合、NetApp Data Classificationは、オンプレミスサイトにもローカルに存在するデータソースのデータのみをスキャンできます。現時点では、NetApp Data Classificationは次の*ローカル*データソースをスキャンできます：</block>
+  <block id="8d5d5a08f12c930e753c9a1de97232bb" category="paragraph">NetApp Data Classification がコンソールエージェントにデプロイされている場合、コンソールエージェントを別のホストに移行することはサポートされていません。ダークサイトで別のコンソールエージェントに NetApp Data Classification が必要な場合は、新しいホストに新しいコンソールエージェントと NetApp Data Classification インスタンスをデプロイしてください。</block>
+  <block id="67a8305e7a676d49ebcd08df6486f951" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Console エージェントをインストールする</block>
+  <block id="081129414efd59217ae2e9d0e25d133f" category="section-title">コンソールエージェントをインストールする</block>
 </blocks>

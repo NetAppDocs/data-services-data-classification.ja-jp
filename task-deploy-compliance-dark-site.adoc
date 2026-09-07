@@ -14,7 +14,7 @@ summary: 'インターネットにアクセスできないオンプレミス サ
 
 
 [role="lead"]
-インターネットアクセスがないオンプレミスサイトの Linux ホストに NetApp Data Classification をインストールするには、_プライベートモード_を使用します。このデプロイではインストールスクリプトを使用し、Data Classification インスタンスを NetApp Console SaaS レイヤーから切断された状態に維持するため、隔離された環境でローカルデータソースをスキャンできます。
+インターネットにアクセスできないオンプレミスサイトのLinuxホストに、オフラインインストール（ダークサイトとも呼ばれます）でNetApp Data Classificationをインストールするには、_プライベートモード_を使用します。このデプロイではインストールスクリプトを使用し、Data ClassificationインスタンスをNetApp Console SaaSレイヤから切断された状態に維持するため、隔離された環境でローカルデータソースをスキャンできます。
 
 link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Console エージェントと Data Classification のさまざまな導入モードについて説明します"^]。
 
@@ -28,7 +28,7 @@ TIP: オンプレミスの VMware vSphere 環境では、Data Classification は
 [[supported-data-sources]]
 == サポートされているデータソース
 
-プライベートモード（「オフライン」または「ダーク」サイトと呼ばれることもあります）でインストールされた場合、Data Classificationは、オンプレミスサイトにローカルに存在するデータソースからのデータのみをスキャンできます。現時点では、Data Classificationは次の*ローカル*データソースをスキャンできます：
+プライベートモードでインストールした場合、NetApp Data Classificationは、オンプレミスサイトにもローカルに存在するデータソースのデータのみをスキャンできます。現時点では、NetApp Data Classificationは次の*ローカル*データソースをスキャンできます：
 
 * オンプレミスのONTAPシステム
 * データベーススキーマ
@@ -40,6 +40,8 @@ TIP: オンプレミスの VMware vSphere 環境では、Data Classification は
 
 [[limitations]]
 == 制限事項
+
+NetApp Data Classification がコンソールエージェントにデプロイされている場合、コンソールエージェントを別のホストに移行することはサポートされていません。ダークサイトで別のコンソールエージェントに NetApp Data Classification が必要な場合は、新しいホストに新しいコンソールエージェントと NetApp Data Classification インスタンスをデプロイしてください。
 
 ほとんどのデータ分類機能は、インターネットにアクセスできないサイトに展開された場合でも機能します。ただし、インターネット アクセスを必要とする特定の機能はサポートされていません。例：
 

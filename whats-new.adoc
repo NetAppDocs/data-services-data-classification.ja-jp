@@ -792,7 +792,7 @@ BlueXP classificationは、 Microsoft Azure および Google Cloud Platform (GCP
 * ファイル数
 * ファイル サイズ
 * ファイル作成
-* ファイルの最終アクセス
+* ファイルの最終アクセス日時
 * ファイルの最終更新日時
 * ファイル発見時刻
 * 権限の抽出
