@@ -48,6 +48,10 @@ OVAファイルを使用してData Classificationをインストールする前�
 
 | `DataClassification-<version>-XL.ova` | 大規模な本番環境ワークロード：32 CPU、128 GB RAM、1 TB ディスク | 5億ファイル 
 |===
++
+
+NOTE: OVAファイルはベースイメージであり、特定のデータ分類バージョンには関連付けられていません。複数のOVAバージョンがNetApp Support Siteで提供されており、そのいずれもアプライアンスの導入に使用できます。<<Data Classificationをインストールする,次のセクション>>で、OVAの上に目的のデータ分類バージョンをインストールします。データ分類リリースと一致するOVAバージョンは必要ありません。
+
 . vSphere クライアントを開きます。対象のクラスターまたはホストを右クリックし、「OVF テンプレートのデプロイ」>「OVA から VM を作成」を選択します。
 . ステップ1でダウンロードしたOVAファイルをアップロードします。
 . *VM名*、ターゲットとなるデータセンター、ホストまたはクラスタ、およびデータストアを指定します。
@@ -78,12 +82,14 @@ NOTE: パスワードは、rootアクセス、SSHアクセス、およびシス�
 [[install-data-classification]]
 == Data Classificationをインストールする
 
+
+NOTE: ダウンロードするインストーラーのバージョンによって、アプライアンス上で実行されるData Classificationのバージョンが決まります。OVAとは異なり、インストーラーのバージョンが重要です。使用するData Classificationバージョンのインストーラーをダウンロードしてください。
+
 . link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetAppサポート サイト"^]からData Classificationソフトウェアをダウンロードします。
 +
-*DATASENSE-INSTALLER-<version>.tar.gz* という名前のファイルを選択します。
+*DATASENSE-INSTALLER-<version>.tar.gz* という名前のファイルを選択し、適切なバージョンを選択したことを確認します。link:whats-new.html["リリースノート"] で最新バージョンを確認してください。
 
-. VMホスト上でインストーラーアーカイブを展開するには、 `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`を実行します。
-. ホストマシン上でインストーラーアーカイブを展開します。
+. ホストマシン上でインストーラーアーカイブを展開します： `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`。
 . コンソールで、*ガバナンス > 分類*を選択します。
 . *Deploy Classification* を選択します。
 +
